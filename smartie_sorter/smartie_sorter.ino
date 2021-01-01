@@ -15,3 +15,21 @@ void loop() {
   // put your main code here, to run repeatedly:
 
 }
+
+
+
+// Reads the red RGB value of the Smartie
+int readRedValue() {
+
+}
+
+// Reads the green RGB value of the Smartie
+int readGreenValue() {
+
+}
+
+// Reads the blue RGB value of the Smartie
+int readBluevalue() {
+
+}
+
