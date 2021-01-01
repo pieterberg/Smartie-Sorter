@@ -6,8 +6,22 @@
 // https://howtomechatronics.com/projects/arduino-color-sorter-project/
 
 
+// Colour Sensor's pins
+const int colourSensorS0 = 6;
+const int colourSensorS1 = 5;
+const int colourSensorS2 = 4;
+const int colourSensorS3 = 3;
+const int colourSensorOut = 2;
+
+
 void setup() {
-  // put your setup code here, to run once:
+  // Set up Colour Sensor's pins
+  pinMode(colourSensorS0, OUTPUT);
+  pinMode(colourSensorS1, OUTPUT);
+  pinMode(colourSensorS2, OUTPUT);
+  pinMode(colourSensorS3, OUTPUT);
+  pinMode(colourSensorOut, INPUT);
+
 
 }
 
