@@ -24,28 +24,27 @@ void setup() {
   pinMode(colourSensorLED, OUTPUT);
   pinMode(colourSensorOut, INPUT);
 
-  // Set scaling frequency of colour sensor to 100%
-  digitalWrite(colourSensorS0, HIGH);
+  // Set scaling frequency of colour sensor to 2%
+  digitalWrite(colourSensorS0, LOW);
   digitalWrite(colourSensorS1, HIGH);
 
   digitalWrite(colourSensorLED, HIGH);
 
   // Begin a serial channel
   Serial.begin(9600);
+  
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
- 
-  Serial.print("red: ");
-  Serial.print(readRedValue());
-  Serial.print("  green: ");
-  Serial.print(readGreenValue());
-  Serial.print("  blue: ");
-  Serial.println(readBlueValue());
+ //readMaxFrequency();
 
-  delay(100);
-
+while(Serial.read() != 'c')
+  {
+    // Wait
+  }
+  
+  calibrateWhiteFrequency();
 }
 
 
@@ -87,4 +86,46 @@ int readBlueValue() {
   // Read the blue colour frequency
   blueFrequency = pulseIn(colourSensorOut, LOW);
   return blueFrequency;
+}
+
+
+
+
+
+
+// Calibrate the color sensor's frequency for white
+int calibrateWhiteFrequency() {
+  int whiteValue = 0;
+  int currentReading;
+
+  Serial.println();
+  Serial.println("Starting frequency calibration for white");
+  Serial.println("Place white in front of the sensor and enter 'c' to start calibration...");
+  Serial.println("");
+
+  while(Serial.read() != 'c')
+  {
+    // Wait
+  }
+
+  for (int i = 0; i < 10; i++) {
+    // Uses the blue frequency for colour calibration
+    currentReading = readBlueValue();
+    whiteValue += currentReading;
+
+    Serial.print("Reading ");
+    Serial.print(i);
+    Serial.print(":  ");
+    Serial.println(currentReading);
+
+    delay(1000);
+  }
+
+  whiteValue /= 10;
+
+  // Prints the average frequency for white
+  Serial.println();
+  Serial.print("White frequency:  ");
+  Serial.print(whiteValue);
+  Serial.println();
 }

@@ -24,8 +24,8 @@ void setup() {
   pinMode(colourSensorLED, OUTPUT);
   pinMode(colourSensorOut, INPUT);
 
-  // Set scaling frequency of colour sensor to 100%
-  digitalWrite(colourSensorS0, HIGH);
+  // Set scaling frequency of colour sensor to 2%
+  digitalWrite(colourSensorS0, LOW);
   digitalWrite(colourSensorS1, HIGH);
 
   digitalWrite(colourSensorLED, HIGH);
