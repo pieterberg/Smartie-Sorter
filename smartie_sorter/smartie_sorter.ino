@@ -9,8 +9,9 @@
 // Calibration settings
 // Use colour_calibration.ino to calibrate the following values
 
-const int whiteFrequency = 244;
-const int blackFrequency = 1389;
+const int redFrequency = 1131;
+const int greenFrequency = 1150;
+const int blueFrequency = 947;
 
 // Colour Sensor's pins
 const int colourSensorS0 = 6;

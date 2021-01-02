@@ -46,24 +46,29 @@ void loop() {
   Serial.println("Please enter a number to continue...");
 
   Serial.println();
-  Serial.println("1. Calibrate white frequency");
-  Serial.println("2. Calibrate black frequency");
-  Serial.println("3. Calibrate smartie colours");
+  Serial.println("1. Calibrate red frequency");
+  Serial.println("2. Calibrate green frequency");
+  Serial.println("3. Calibrate blue frequency");
+  Serial.println("4. Calibrate smartie colours");
 
   // Wait for selected calibration function
   do
   {
     currentSelection = Serial.read();
-  } while ((currentSelection != '1') && (currentSelection != '2'));
+  } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3'));
  
   switch (currentSelection)
     {
       case '1':
-        calibrateWhiteFrequency();
+        calibrateRedFrequency();
         break;
 
       case '2':
-        calibrateBlackFrequency();
+        calibrateGreenFrequency();
+        break;
+
+      case '3':
+        calibrateBlueFrequency();
         break;
       
       default:
@@ -116,14 +121,14 @@ int readBlueValue() {
 
 /* Calibration functions */
 
-// Calibrate the color sensor's frequency for white
-int calibrateWhiteFrequency() {
-  int whiteValue = 0;
+// Calibrate the color sensor's frequency for red
+int calibrateRedFrequency() {
+  int redValue = 0;
   int currentReading;
 
   Serial.println();
-  Serial.println("Starting frequency calibration for white");
-  Serial.println("Place white in front of the sensor and enter 'c' to start calibration...");
+  Serial.println("Starting frequency calibration for red");
+  Serial.println("Place red in front of the sensor and enter 'c' to start calibration...");
   Serial.println("");
 
   while(Serial.read() != 'c')
@@ -133,8 +138,8 @@ int calibrateWhiteFrequency() {
 
   for (int i = 0; i < 10; i++) {
     // Uses the blue frequency for colour calibration
-    currentReading = readBlueValue();
-    whiteValue += currentReading;
+    currentReading = readRedValue();
+    redValue += currentReading;
 
     Serial.print("Reading ");
     Serial.print(i + 1);
@@ -144,24 +149,62 @@ int calibrateWhiteFrequency() {
     delay(1000);
   }
 
-  whiteValue /= 10;
+  redValue /= 10;
 
-  // Prints the average frequency for white
+  // Prints the average frequency for red
   Serial.println();
-  Serial.print("White frequency:  ");
-  Serial.print(whiteValue);
+  Serial.print("Red frequency:  ");
+  Serial.print(redValue);
   Serial.println();
   Serial.println();
 }
 
-// Calibrate the color sensor's frequency for black
-int calibrateBlackFrequency() {
-  int blackValue = 0;
+// Calibrate the color sensor's frequency for green
+int calibrateGreenFrequency() {
+  int greenValue = 0;
   int currentReading;
 
   Serial.println();
-  Serial.println("Starting frequency calibration for black");
-  Serial.println("Place black in front of the sensor and enter 'c' to start calibration...");
+  Serial.println("Starting frequency calibration for green");
+  Serial.println("Place green in front of the sensor and enter 'c' to start calibration...");
+  Serial.println("");
+
+  while(Serial.read() != 'c')
+  {
+    // Wait
+  }
+
+  for (int i = 0; i < 10; i++) {
+    // Uses the blue frequency for colour calibration
+    currentReading = readGreenValue();
+    greenValue += currentReading;
+
+    Serial.print("Reading ");
+    Serial.print(i + 1);
+    Serial.print(":  ");
+    Serial.println(currentReading);
+
+    delay(1000);
+  }
+
+  greenValue /= 10;
+
+  // Prints the average frequency for green
+  Serial.println();
+  Serial.print("Green frequency:  ");
+  Serial.print(greenValue);
+  Serial.println();
+  Serial.println();
+}
+
+// Calibrate the color sensor's frequency for blue
+int calibrateBlueFrequency() {
+  int blueValue = 0;
+  int currentReading;
+
+  Serial.println();
+  Serial.println("Starting frequency calibration for blue");
+  Serial.println("Place blue in front of the sensor and enter 'c' to start calibration...");
   Serial.println("");
 
   while(Serial.read() != 'c')
@@ -172,7 +215,7 @@ int calibrateBlackFrequency() {
   for (int i = 0; i < 10; i++) {
     // Uses the blue frequency for colour calibration
     currentReading = readBlueValue();
-    blackValue += currentReading;
+    blueValue += currentReading;
 
     Serial.print("Reading ");
     Serial.print(i + 1);
@@ -182,12 +225,12 @@ int calibrateBlackFrequency() {
     delay(1000);
   }
 
-  blackValue /= 10;
+  blueValue /= 10;
 
-  // Prints the average frequency for white
+  // Prints the average frequency for blue
   Serial.println();
-  Serial.print("Black frequency:  ");
-  Serial.print(blackValue);
+  Serial.print("Blue frequency:  ");
+  Serial.print(blueValue);
   Serial.println();
   Serial.println();
 }
