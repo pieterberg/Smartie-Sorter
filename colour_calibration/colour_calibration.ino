@@ -36,18 +36,41 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
- //readMaxFrequency();
+  char currentSelection;
+  // Opens the calibration menu
 
-while(Serial.read() != 'c')
+  // Print the calibration menu
+  Serial.println("Welcome to the calibration menu for the Arduino Smartie Sorter");
+  Serial.println("Please enter a number to continue...");
+
+  Serial.println();
+  Serial.println("1. Calibrate white frequency");
+  Serial.println("2. Calibrate black frequency");
+  Serial.println("3. Calibrate smartie colours");
+
+  // Wait for selected calibration function
+  do
   {
-    // Wait
-  }
+    currentSelection = Serial.read();
+  } while ((currentSelection != '1') && (currentSelection != '2'));
+ 
+  switch (currentSelection)
+    {
+      case '1':
+        calibrateWhiteFrequency();
+        break;
+
+      case '2':
+        calibrateBlackFrequency();
+        break;
+      
+      default:
+        break;
+    }
   
-  calibrateBlackFrequency();
 }
 
-
+/* Color reading functions */
 
 // Reads the red RGB value of the Smartie
 int readRedValue() {
@@ -89,9 +112,7 @@ int readBlueValue() {
 }
 
 
-
-
-
+/* Calibration functions */
 
 // Calibrate the color sensor's frequency for white
 int calibrateWhiteFrequency() {
@@ -127,6 +148,7 @@ int calibrateWhiteFrequency() {
   Serial.println();
   Serial.print("White frequency:  ");
   Serial.print(whiteValue);
+  Serial.println();
   Serial.println();
 }
 
@@ -164,5 +186,6 @@ int calibrateBlackFrequency() {
   Serial.println();
   Serial.print("Black frequency:  ");
   Serial.print(blackValue);
+  Serial.println();
   Serial.println();
 }
