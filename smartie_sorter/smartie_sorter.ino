@@ -6,6 +6,12 @@
 // https://howtomechatronics.com/projects/arduino-color-sorter-project/
 
 
+// Calibration settings
+// Use colour_calibration.ino to calibrate the following values
+
+const int whiteFrequency = 244;
+const int blackFrequency = 1389;
+
 // Colour Sensor's pins
 const int colourSensorS0 = 6;
 const int colourSensorS1 = 5;
@@ -38,17 +44,14 @@ void loop() {
   // put your main code here, to run repeatedly:
  
   Serial.print("red: ");
-  Serial.print(readRedValue());
+  Serial.print(mapToRGB(readRedValue()));
   Serial.print("  green: ");
-  Serial.print(readGreenValue());
+  Serial.print(mapToRGB(readGreenValue()));
   Serial.print("  blue: ");
-  Serial.println(readBlueValue());
+  Serial.println(mapToRGB(readBlueValue()));
 
-  delay(100);
-
+  delay(1000);
 }
-
-
 
 // Reads the red RGB value of the Smartie
 int readRedValue() {
@@ -87,4 +90,12 @@ int readBlueValue() {
   // Read the blue colour frequency
   blueFrequency = pulseIn(colourSensorOut, LOW);
   return blueFrequency;
+}
+
+// Map the read frequency to an RGB value using the calibration settings
+int mapToRGB(int frequency) {
+  int RGBValue;
+
+  RGBValue = map(frequency, whiteFrequency, blackFrequency, 255, 0);
+  return RGBValue;
 }
