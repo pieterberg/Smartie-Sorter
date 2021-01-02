@@ -44,7 +44,7 @@ while(Serial.read() != 'c')
     // Wait
   }
   
-  calibrateWhiteFrequency();
+  calibrateBlackFrequency();
 }
 
 
@@ -127,5 +127,42 @@ int calibrateWhiteFrequency() {
   Serial.println();
   Serial.print("White frequency:  ");
   Serial.print(whiteValue);
+  Serial.println();
+}
+
+// Calibrate the color sensor's frequency for black
+int calibrateBlackFrequency() {
+  int blackValue = 0;
+  int currentReading;
+
+  Serial.println();
+  Serial.println("Starting frequency calibration for black");
+  Serial.println("Place black in front of the sensor and enter 'c' to start calibration...");
+  Serial.println("");
+
+  while(Serial.read() != 'c')
+  {
+    // Wait
+  }
+
+  for (int i = 0; i < 10; i++) {
+    // Uses the blue frequency for colour calibration
+    currentReading = readBlueValue();
+    blackValue += currentReading;
+
+    Serial.print("Reading ");
+    Serial.print(i);
+    Serial.print(":  ");
+    Serial.println(currentReading);
+
+    delay(1000);
+  }
+
+  blackValue /= 10;
+
+  // Prints the average frequency for white
+  Serial.println();
+  Serial.print("Black frequency:  ");
+  Serial.print(blackValue);
   Serial.println();
 }
