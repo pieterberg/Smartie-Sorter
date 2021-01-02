@@ -33,6 +33,9 @@ void setup() {
   // Begin a serial channel
   Serial.begin(9600);
   
+  // Print welcome message
+  Serial.println("Welcome to the calibration menu for the Arduino Smartie Sorter");
+  
 }
 
 void loop() {
@@ -40,7 +43,6 @@ void loop() {
   // Opens the calibration menu
 
   // Print the calibration menu
-  Serial.println("Welcome to the calibration menu for the Arduino Smartie Sorter");
   Serial.println("Please enter a number to continue...");
 
   Serial.println();
@@ -135,7 +137,7 @@ int calibrateWhiteFrequency() {
     whiteValue += currentReading;
 
     Serial.print("Reading ");
-    Serial.print(i);
+    Serial.print(i + 1);
     Serial.print(":  ");
     Serial.println(currentReading);
 
@@ -173,7 +175,7 @@ int calibrateBlackFrequency() {
     blackValue += currentReading;
 
     Serial.print("Reading ");
-    Serial.print(i);
+    Serial.print(i + 1);
     Serial.print(":  ");
     Serial.println(currentReading);
 
