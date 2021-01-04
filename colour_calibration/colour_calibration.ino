@@ -122,10 +122,8 @@ int calibrateColorFrequency(int selectedColour) {
   int frequencyValue = 0;
   int currentReading;
 
-  Serial.println();
-  Serial.println("-----------------------------------------------------------------");
+  printDivider();
 
-  Serial.println();
   Serial.print("Starting frequency calibration for ");
   Serial.print(sensorColours[selectedColour]);
   Serial.println();
@@ -178,8 +176,16 @@ int calibrateColorFrequency(int selectedColour) {
   Serial.print(frequencyValue);
   
   Serial.println();
-  Serial.println();
-  Serial.println("-----------------------------------------------------------------");
+  printDivider();
+}
+
+// Print divider
+void printDivider() {
   Serial.println();
 
+  for (int i = 0; i < 72 ; i++) {
+    Serial.print("-");
+  }
+
+  Serial.println();
 }
