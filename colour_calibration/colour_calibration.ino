@@ -118,9 +118,10 @@ int readBlueValue() {
 }
 
 // Calibrate the color sensor's frequencies
-int calibrateColorFrequency(int selectedColour) {
+void calibrateColorFrequency(int selectedColour) {
   int frequencyValue = 0;
   int currentReading;
+  char currentSelection;
 
   printDivider();
 
@@ -133,10 +134,20 @@ int calibrateColorFrequency(int selectedColour) {
   Serial.println(); 
   Serial.println(); 
 
-  while(Serial.read() != 'c')
+  do
   {
-    // Wait
+    currentSelection = Serial.read();
+  } while((currentSelection != 'c') && (currentSelection != 'q'));
+
+  // Return if 'q' is entered
+  if (currentSelection == 'q'){  
+   Serial.print("Canceling calibration for ");
+   Serial.print(sensorColours[selectedColour]);
+   Serial.println();
+   printDivider();
+   return;
   }
+
 
   for (int i = 0; i < 10; i++) {
     // Use the correct colour sensing function
