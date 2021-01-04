@@ -5,7 +5,6 @@
 // Based on Skittles Sorter from How to Mechatronics
 // https://howtomechatronics.com/projects/arduino-color-sorter-project/
 
-
 // Colour Sensor's pins
 const int colourSensorS0 = 6;
 const int colourSensorS1 = 5;
@@ -14,6 +13,8 @@ const int colourSensorS3 = 3;
 const int colourSensorLED = 7;
 const int colourSensorOut = 2;
 
+// Arrays of calibration options
+String sensorColours[3] = {"Red", "Green", "Blue"};
 
 void setup() {
   // Set up Colour Sensor's pins
@@ -39,42 +40,40 @@ void setup() {
 }
 
 void loop() {
-  char currentSelection;
+  char currentSelection = '0';
+  
   // Opens the calibration menu
 
   // Print the calibration menu
   Serial.println("Please enter a number to continue...");
 
   Serial.println();
-  Serial.println("1. Calibrate red frequency");
-  Serial.println("2. Calibrate green frequency");
-  Serial.println("3. Calibrate blue frequency");
-  Serial.println("4. Calibrate smartie colours");
 
+  for (int i = 0; i < 3; i++)
+  {
+    Serial.print("   ");
+    Serial.print(i + 1);
+    Serial.print(". Calibrate ");
+    Serial.print(sensorColours[i]);
+    Serial.println(" frequencies");
+  }
+
+  Serial.println();
+  Serial.println("   4. Calibrate Smartie colours");
+  
   // Wait for selected calibration function
   do
   {
     currentSelection = Serial.read();
   } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3'));
  
-  switch (currentSelection)
-    {
-      case '1':
-        calibrateRedFrequency();
-        break;
+ if ((currentSelection == '1') || (currentSelection == '2') || (currentSelection == '3')) 
+ {
+    // Call the calibration function with the selected colour
+    calibrateColorFrequency((currentSelection - '0') - 1);
+ }
 
-      case '2':
-        calibrateGreenFrequency();
-        break;
-
-      case '3':
-        calibrateBlueFrequency();
-        break;
-      
-      default:
-        break;
-    }
-  
+ currentSelection = '0';
 }
 
 /* Color reading functions */
@@ -118,18 +117,23 @@ int readBlueValue() {
   return blueFrequency;
 }
 
-
-/* Calibration functions */
-
-// Calibrate the color sensor's frequency for red
-int calibrateRedFrequency() {
-  int redValue = 0;
+// Calibrate the color sensor's frequencies
+int calibrateColorFrequency(int selectedColour) {
+  int frequencyValue = 0;
   int currentReading;
 
   Serial.println();
-  Serial.println("Starting frequency calibration for red");
-  Serial.println("Place red in front of the sensor and enter 'c' to start calibration...");
-  Serial.println("");
+  Serial.println("-----------------------------------------------------------------");
+
+  Serial.println();
+  Serial.print("Starting frequency calibration for ");
+  Serial.print(sensorColours[selectedColour]);
+  Serial.println();
+  Serial.print("Place ");
+  Serial.print(sensorColours[selectedColour]);
+  Serial.print(" in front of the sensor and enter 'c' to start calibration...");
+  Serial.println(); 
+  Serial.println(); 
 
   while(Serial.read() != 'c')
   {
@@ -137,11 +141,26 @@ int calibrateRedFrequency() {
   }
 
   for (int i = 0; i < 10; i++) {
-    // Uses the blue frequency for colour calibration
-    currentReading = readRedValue();
-    redValue += currentReading;
+    // Use the correct colour sensing function
+    switch (selectedColour)
+    {
+    case 0:
+      currentReading = readRedValue();
+      break;
 
-    Serial.print("Reading ");
+    case 1:
+      currentReading = readGreenValue();
+      break;
+
+    case 2:
+      currentReading = readBlueValue();
+      break;
+    }
+    
+    // Increase the total counter
+    frequencyValue += currentReading;
+ 
+    Serial.print("   Reading ");
     Serial.print(i + 1);
     Serial.print(":  ");
     Serial.println(currentReading);
@@ -149,88 +168,18 @@ int calibrateRedFrequency() {
     delay(1000);
   }
 
-  redValue /= 10;
+  frequencyValue /= 10;
 
-  // Prints the average frequency for red
+  // Prints the average frequency for the selected colour
   Serial.println();
-  Serial.print("Red frequency:  ");
-  Serial.print(redValue);
-  Serial.println();
-  Serial.println();
-}
-
-// Calibrate the color sensor's frequency for green
-int calibrateGreenFrequency() {
-  int greenValue = 0;
-  int currentReading;
-
-  Serial.println();
-  Serial.println("Starting frequency calibration for green");
-  Serial.println("Place green in front of the sensor and enter 'c' to start calibration...");
-  Serial.println("");
-
-  while(Serial.read() != 'c')
-  {
-    // Wait
-  }
-
-  for (int i = 0; i < 10; i++) {
-    // Uses the blue frequency for colour calibration
-    currentReading = readGreenValue();
-    greenValue += currentReading;
-
-    Serial.print("Reading ");
-    Serial.print(i + 1);
-    Serial.print(":  ");
-    Serial.println(currentReading);
-
-    delay(1000);
-  }
-
-  greenValue /= 10;
-
-  // Prints the average frequency for green
-  Serial.println();
-  Serial.print("Green frequency:  ");
-  Serial.print(greenValue);
+  Serial.print("   ");
+  Serial.print(sensorColours[selectedColour]);
+  Serial.print(" frequency:  ");
+  Serial.print(frequencyValue);
+  
   Serial.println();
   Serial.println();
-}
-
-// Calibrate the color sensor's frequency for blue
-int calibrateBlueFrequency() {
-  int blueValue = 0;
-  int currentReading;
-
+  Serial.println("-----------------------------------------------------------------");
   Serial.println();
-  Serial.println("Starting frequency calibration for blue");
-  Serial.println("Place blue in front of the sensor and enter 'c' to start calibration...");
-  Serial.println("");
 
-  while(Serial.read() != 'c')
-  {
-    // Wait
-  }
-
-  for (int i = 0; i < 10; i++) {
-    // Uses the blue frequency for colour calibration
-    currentReading = readBlueValue();
-    blueValue += currentReading;
-
-    Serial.print("Reading ");
-    Serial.print(i + 1);
-    Serial.print(":  ");
-    Serial.println(currentReading);
-
-    delay(1000);
-  }
-
-  blueValue /= 10;
-
-  // Prints the average frequency for blue
-  Serial.println();
-  Serial.print("Blue frequency:  ");
-  Serial.print(blueValue);
-  Serial.println();
-  Serial.println();
 }
