@@ -8,13 +8,13 @@
 
 // Calibration settings
 // Use colour_calibration.ino to calibrate the following values
-    const int redMaxFrequency = 1419;
-    const int greenMaxFrequency = 1351;
-    const int blueMaxFrequency = 1109;
+  const int redMaxFrequency = 45;
+  const int greenMaxFrequency = 60;
+  const int blueMaxFrequency = 52;
 
-    const int redMinFrequency = 1773;
-    const int greenMinFrequency = 2464;
-    const int blueMinFrequency = 2217;
+  const int redMinFrequency = 306;
+  const int greenMinFrequency = 454;
+  const int blueMinFrequency = 399;
 
 // Colour Sensor's pins
 const int colourSensorS0 = 6;
@@ -70,7 +70,8 @@ int readRedValue() {
   redFrequency = pulseIn(colourSensorOut, LOW);
 
   // Map the frequency to a RGB value
-  redRGBValue = map(redFrequency, redMaxFrequency, redMinFrequency, 255, 0);
+  redRGBValue = mapFrequencyToRGB(redFrequency, 0);
+
   return redRGBValue;
 }
 
@@ -81,13 +82,14 @@ int readGreenValue() {
 
   // Set up the colour sensor's pins to read the green frequency value
   digitalWrite(colourSensorS2, HIGH);
-  digitalWrite(colourSensorS3,HIGH);
+  digitalWrite(colourSensorS3, HIGH);
 
   // Read the green colour frequency
   greenFrequency = pulseIn(colourSensorOut, LOW);
 
   // Map the frequency to a RGB value
-  greenRGBValue = map(greenFrequency, greenMaxFrequency, greenMinFrequency, 255, 0);
+  greenRGBValue = mapFrequencyToRGB(greenFrequency, 1);
+
   return greenRGBValue;
 }
 
@@ -105,6 +107,42 @@ int readBlueValue() {
   blueFrequency = pulseIn(colourSensorOut, LOW);
 
   // Map the frequency to a RGB value
-  blueRGBValue = map(blueFrequency, blueMaxFrequency, blueMinFrequency, 255, 0);
+  blueRGBValue = mapFrequencyToRGB(blueFrequency, 2);
+
   return blueRGBValue;
+}
+
+// Maps the read frequency to a RGB value
+int mapFrequencyToRGB(int frequency, int colour) {
+  int RGBValue;
+
+  // Map the frequency to the cprresponding RGB value
+  switch (colour)
+  {
+    case 0:
+      RGBValue = map(frequency, redMaxFrequency, redMinFrequency, 255, 0);
+      break;
+
+    case 1:
+      RGBValue = map(frequency, greenMaxFrequency, greenMinFrequency, 255, 0);
+      break;
+
+    case 2:
+      RGBValue = map(frequency, blueMaxFrequency, blueMinFrequency, 255, 0);
+      break;
+
+    default:
+      break;
+  }
+
+  // Limit the upper and lower values
+  if (RGBValue > 255) {
+    RGBValue = 255;
+  }
+
+  if (RGBValue < 0) {
+    RGBValue = 0;
+  }
+
+  return RGBValue;
 }
