@@ -24,6 +24,7 @@ const int colourSensorLED = 7;
 const int colourSensorOut = 2;
 
 // Arrays of calibration options
+bool isCalibrating = false;
 String sensorCalibrationOptions[2] = {"White", "Black"};
 String smartieColours[8] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown"};
 
@@ -46,50 +47,34 @@ void setup() {
   Serial.begin(9600);
 
   // Print welcome message
-  Serial.println("Welcome to the calibration menu for the Arduino Smartie Sorter");
+  Serial.println("Welcome to the menu for the Arduino Smartie Sorter");
+  Serial.println("Enter 'c' to enter the calibration");
+  Serial.println("Enter 'q' to cancel calibration");
+
+  printDivider();
 }
 
 void loop() {
-  char currentSelection = '0';
-  bool isCalibrating = false;
 
-  // Print the calibration menu
-  Serial.println("Please enter a number to continue...");
-
-  Serial.println();
-
-  for (int i = 0; i < sizeof(sensorCalibrationOptions)/sizeof(sensorCalibrationOptions[0]); i++)
+  // Open the calibration menu if 'c' is entered 
+  if (Serial.read() == 'c')
   {
-    Serial.print("   ");
-    Serial.print(i + 1);
-    Serial.print(". Calibrate ");
-    Serial.print(sensorCalibrationOptions[i]);
-    Serial.println(" frequencies");
+    isCalibrating = true;
   }
 
-  Serial.println();
-  Serial.println("   3. Calibrate Smartie colours");
-  
-  // Wait for selected calibration function
-  do
+  if (isCalibrating)
   {
-    currentSelection = Serial.read();
-  } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3'));
- 
- if ((currentSelection == '1') || (currentSelection == '2') || (currentSelection == '3')) 
- {
-    // Call the calibration function with the selected colour
-    calibrateColorFrequency((currentSelection - '0') - 1);
- }
-
- currentSelection = '0';
-
-  // Serial.print("red: ");
-  // Serial.print(readRedValue());
-  // Serial.print("  green: ");
-  // Serial.print(readGreenValue());
-  // Serial.print("  blue: ");
-  // Serial.println(readBlueValue());
+    printDivider();
+    openCalibrationMenu();
+  }
+  else {
+    Serial.print("red: ");
+    Serial.print(readRedValue());
+    Serial.print("  green: ");
+    Serial.print(readGreenValue());
+    Serial.print("  blue: ");
+    Serial.println(readBlueValue());
+  }
 
   delay(1000);
 }
@@ -280,4 +265,40 @@ void printDivider() {
   }
 
   Serial.println();
+}
+
+// Print the calibration menu 
+void openCalibrationMenu() {
+  char currentSelection = '0';
+  
+  // Print the calibration menu
+  Serial.println("Welcome to the Smartie Sorter calibration menu");
+  Serial.println("Please enter a number to continue...");
+
+  // Print the options
+  Serial.println(); 
+  Serial.println("   1. Calibrate white frequency");
+  Serial.println("   2. Calibrate black frequency");
+  Serial.println("   3. Calibrate Smartie colours");
+  
+  // Wait for selected calibration function
+  do
+  {
+    currentSelection = Serial.read();
+  } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3') && (currentSelection != 'q'));
+ 
+ // Call the correct calibration function
+ if ((currentSelection == '1') || (currentSelection == '2') || (currentSelection == '3')) 
+ {
+    // Call the calibration function with the selected colour
+    calibrateColorFrequency((currentSelection - '0') - 1);
+ }
+ 
+ // Exit the calibration menu
+ if (currentSelection == 'q')
+ {
+    isCalibrating = false;
+    printDivider();
+    return;
+ } 
 }
