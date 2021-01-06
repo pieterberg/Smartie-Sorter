@@ -5,16 +5,15 @@
 // Based on Skittles Sorter from How to Mechatronics
 // https://howtomechatronics.com/projects/arduino-color-sorter-project/
 
-
 // Calibration settings
-// Use colour_calibration.ino to calibrate the following values
-  const int redMaxFrequency = 45;
-  const int greenMaxFrequency = 60;
-  const int blueMaxFrequency = 52;
+// Use the calibration functions to calibrate the following values
+const int redMaxFrequency = 106;
+const int greenMaxFrequency = 117;
+const int blueMaxFrequency = 90;
 
-  const int redMinFrequency = 306;
-  const int greenMinFrequency = 454;
-  const int blueMinFrequency = 399;
+const int redMinFrequency = 446;
+const int greenMinFrequency = 574;
+const int blueMinFrequency = 487;
 
 // Colour Sensor's pins
 const int colourSensorS0 = 6;
@@ -24,6 +23,9 @@ const int colourSensorS3 = 3;
 const int colourSensorLED = 7;
 const int colourSensorOut = 2;
 
+// Arrays of calibration options
+String sensorCalibrationOptions[2] = {"White", "Black"};
+String smartieColours[8] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown"};
 
 void setup() {
   // Set up Colour Sensor's pins
@@ -42,17 +44,52 @@ void setup() {
 
   // Begin a serial channel
   Serial.begin(9600);
+
+  // Print welcome message
+  Serial.println("Welcome to the calibration menu for the Arduino Smartie Sorter");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  char currentSelection = '0';
+  bool isCalibrating = false;
+
+  // Print the calibration menu
+  Serial.println("Please enter a number to continue...");
+
+  Serial.println();
+
+  for (int i = 0; i < sizeof(sensorCalibrationOptions)/sizeof(sensorCalibrationOptions[0]); i++)
+  {
+    Serial.print("   ");
+    Serial.print(i + 1);
+    Serial.print(". Calibrate ");
+    Serial.print(sensorCalibrationOptions[i]);
+    Serial.println(" frequencies");
+  }
+
+  Serial.println();
+  Serial.println("   3. Calibrate Smartie colours");
+  
+  // Wait for selected calibration function
+  do
+  {
+    currentSelection = Serial.read();
+  } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3'));
  
-  Serial.print("red: ");
-  Serial.print(readRedValue());
-  Serial.print("  green: ");
-  Serial.print(readGreenValue());
-  Serial.print("  blue: ");
-  Serial.println(readBlueValue());
+ if ((currentSelection == '1') || (currentSelection == '2') || (currentSelection == '3')) 
+ {
+    // Call the calibration function with the selected colour
+    calibrateColorFrequency((currentSelection - '0') - 1);
+ }
+
+ currentSelection = '0';
+
+  // Serial.print("red: ");
+  // Serial.print(readRedValue());
+  // Serial.print("  green: ");
+  // Serial.print(readGreenValue());
+  // Serial.print("  blue: ");
+  // Serial.println(readBlueValue());
 
   delay(1000);
 }
@@ -97,7 +134,6 @@ int readGreenValue() {
 int readBlueValue() {
   int blueFrequency;
   int blueRGBValue;
-
 
   // Set up the colour sensor's pins to read the blue frequency value
   digitalWrite(colourSensorS2, LOW);
@@ -145,4 +181,103 @@ int mapFrequencyToRGB(int frequency, int colour) {
   }
 
   return RGBValue;
+}
+
+// Calibrate the color sensor's frequencies
+void calibrateColorFrequency(int selectedColour) {
+  int redFrequency = 0;
+  int greenFrequency = 0;
+  int blueFrequency = 0;
+
+  int currentRedReading;
+  int currentGreenReading;
+  int currentBlueReading;
+
+  char currentSelection;
+
+  printDivider();
+
+  Serial.print("Starting frequency calibration for ");
+  Serial.print(sensorCalibrationOptions[selectedColour]);
+  Serial.println();
+  Serial.print("Place ");
+  Serial.print(sensorCalibrationOptions[selectedColour]);
+  Serial.print(" in front of the sensor and enter 'c' to start calibration...");
+  Serial.println(); 
+  Serial.println(); 
+
+  do
+  {
+    currentSelection = Serial.read();
+  } while((currentSelection != 'c') && (currentSelection != 'q'));
+
+  // Return if 'q' is entered
+  if (currentSelection == 'q'){  
+   Serial.print("Canceling calibration for ");
+   Serial.print(sensorCalibrationOptions[selectedColour]);
+   Serial.println();
+   printDivider();
+   return;
+  }
+
+  Serial.println("\t\tRed\tGreen\tBlue");
+
+  for (int i = 0; i < 10; i++) {
+    // Read the frequency given off by each diode
+    currentRedReading = readRedValue();
+    currentGreenReading = readGreenValue();
+    currentBlueReading = readBlueValue();
+    
+    // Increase the total counter
+    redFrequency += currentRedReading;
+    greenFrequency += currentGreenReading;
+    blueFrequency += currentBlueReading;
+ 
+    Serial.print("   Reading ");
+    Serial.print(i + 1);
+
+    // Aligns spacing before colon
+    if (i!= 9) {
+      Serial.print(" ");
+    }
+    
+    Serial.print(":\t");
+    Serial.print(currentRedReading);
+    Serial.print("\t");
+    Serial.print(currentGreenReading);
+    Serial.print("\t");
+    Serial.println(currentBlueReading);
+
+    delay(1000);
+  }
+
+  // Find the average frewuency for each diode
+  redFrequency /= 10;
+  greenFrequency /= 10;
+  blueFrequency /= 10;
+
+  // Prints the average frequency for the selected colour
+  Serial.println();
+  Serial.print("   ");
+  Serial.print(sensorCalibrationOptions[selectedColour]);
+  Serial.print(" freq:\t");
+  Serial.print(redFrequency);
+  Serial.print("\t");
+  Serial.print(greenFrequency);
+  Serial.print("\t");
+  Serial.print(blueFrequency);
+  
+  Serial.println();
+  printDivider();
+}
+
+// Print divider
+void printDivider() {
+  Serial.println();
+
+  for (int i = 0; i < 72 ; i++) {
+    Serial.print("-");
+  }
+
+  Serial.println();
 }
