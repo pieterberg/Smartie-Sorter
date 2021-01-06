@@ -67,20 +67,21 @@ void loop() {
     printDivider();
     openCalibrationMenu();
   }
-  else {
+  else 
+  {
     Serial.print("red: ");
-    Serial.print(readRedValue());
+    Serial.print(readRedValue(true));
     Serial.print("  green: ");
-    Serial.print(readGreenValue());
+    Serial.print(readGreenValue(true));
     Serial.print("  blue: ");
-    Serial.println(readBlueValue());
+    Serial.println(readBlueValue(true));
   }
 
   delay(1000);
 }
 
 // Reads the red RGB value of the Smartie
-int readRedValue() {
+int readRedValue(bool readRGB) {
   int redFrequency;
   int redRGBValue;
 
@@ -91,14 +92,20 @@ int readRedValue() {
   // Read the red colour frequency
   redFrequency = pulseIn(colourSensorOut, LOW);
 
-  // Map the frequency to a RGB value
-  redRGBValue = mapFrequencyToRGB(redFrequency, 0);
-
-  return redRGBValue;
+  if (readRGB)
+  {
+    // Map the frequency to a RGB value and return it
+    redRGBValue = mapFrequencyToRGB(redFrequency, 0);
+    return redRGBValue;
+  }
+  else 
+  {
+    return redFrequency;
+  }
 }
 
 // Reads the green RGB value of the Smartie
-int readGreenValue() {
+int readGreenValue(bool readRGB) {
   int greenFrequency;
   int greenRGBValue;
 
@@ -109,14 +116,20 @@ int readGreenValue() {
   // Read the green colour frequency
   greenFrequency = pulseIn(colourSensorOut, LOW);
 
-  // Map the frequency to a RGB value
-  greenRGBValue = mapFrequencyToRGB(greenFrequency, 1);
-
-  return greenRGBValue;
+  if (readRGB)
+  {
+    // Map the frequency to a RGB value and return it
+    greenRGBValue = mapFrequencyToRGB(greenFrequency, 0);
+    return greenRGBValue;
+  }
+  else 
+  {
+    return greenFrequency;
+  }
 }
 
 // Reads the blue RGB value of the Smartie
-int readBlueValue() {
+int readBlueValue(bool readRGB) {
   int blueFrequency;
   int blueRGBValue;
 
@@ -127,10 +140,16 @@ int readBlueValue() {
   // Read the blue colour frequency
   blueFrequency = pulseIn(colourSensorOut, LOW);
 
-  // Map the frequency to a RGB value
-  blueRGBValue = mapFrequencyToRGB(blueFrequency, 2);
-
-  return blueRGBValue;
+  if (readRGB)
+  {
+    // Map the frequency to a RGB value and return it
+    blueRGBValue = mapFrequencyToRGB(blueFrequency, 0);
+    return blueRGBValue;
+  }
+  else 
+  {
+    return blueFrequency;
+  }
 }
 
 // Maps the read frequency to a RGB value
@@ -209,9 +228,9 @@ void calibrateColorFrequency(int selectedColour) {
 
   for (int i = 0; i < 10; i++) {
     // Read the frequency given off by each diode
-    currentRedReading = readRedValue();
-    currentGreenReading = readGreenValue();
-    currentBlueReading = readBlueValue();
+    currentRedReading = readRedValue(false);
+    currentGreenReading = readGreenValue(false);
+    currentBlueReading = readBlueValue(false);
     
     // Increase the total counter
     redFrequency += currentRedReading;
