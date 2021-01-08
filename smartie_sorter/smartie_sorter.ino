@@ -119,7 +119,7 @@ int readGreenValue(bool readRGB) {
   if (readRGB)
   {
     // Map the frequency to a RGB value and return it
-    greenRGBValue = mapFrequencyToRGB(greenFrequency, 0);
+    greenRGBValue = mapFrequencyToRGB(greenFrequency, 1);
     return greenRGBValue;
   }
   else 
@@ -143,7 +143,7 @@ int readBlueValue(bool readRGB) {
   if (readRGB)
   {
     // Map the frequency to a RGB value and return it
-    blueRGBValue = mapFrequencyToRGB(blueFrequency, 0);
+    blueRGBValue = mapFrequencyToRGB(blueFrequency, 2);
     return blueRGBValue;
   }
   else 
