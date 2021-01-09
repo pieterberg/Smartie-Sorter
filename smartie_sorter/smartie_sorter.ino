@@ -26,7 +26,7 @@ const int colourSensorOut = 2;
 // Arrays of calibration options
 bool isCalibrating = false;
 String sensorCalibrationOptions[2] = {"White", "Black"};
-String smartieColours[9] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown", "No Smartie"};
+String smartieColours[9] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown", "No"};
 
 void setup() {
   // Set up Colour Sensor's pins
@@ -330,6 +330,7 @@ void openCalibrationMenu() {
 void OpenSmartieColourCalibrationMenu() {
   char currentSelection = '0';
 
+  // Print a divider before the Smartie colour calibration menu
   printDivider();
   
   // Print the calibration menu
@@ -353,11 +354,40 @@ void OpenSmartieColourCalibrationMenu() {
     currentSelection = Serial.read();
   } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3') && (currentSelection != '4') && (currentSelection != '5') && (currentSelection != '6') && (currentSelection != '7') && (currentSelection != '8') && (currentSelection != '9') && (currentSelection != 'q'));
 
+  if ((currentSelection == '1') || (currentSelection == '2') || (currentSelection == '3') || (currentSelection == '4') || (currentSelection == '5') || (currentSelection == '6') || (currentSelection == '7') || (currentSelection == '8') || (currentSelection == '9'))
+  {
+    calibrateSmartieColours((currentSelection - '0') - 1);
+  }
+  
+  // Return the calibration menu if 'q' was entered
   if (currentSelection == 'q')
  {
     return;
  } 
+}
 
+// Function to calibrate the RGB vaue of the Smarties
+void calibrateSmartieColours(int selectedColour) {
+  int redFrequency = 0;
+  int greenFrequency = 0;
+  int blueFrequency = 0;
 
+  int currentRedReading;
+  int currentGreenReading;
+  int currentBlueReading;
+
+  char currentSelection;
+
+  printDivider();
+
+  Serial.print("Starting colour calibration for ");
+  Serial.print(smartieColours[selectedColour]); 
+  Serial.print(" Smartie");
+  Serial.println();
+  Serial.print("Place ");
+  Serial.print(smartieColours[selectedColour]);
+  Serial.print(" Smartie in front of the sensor and enter 'c' to start calibration...");
+  Serial.println(); 
+  Serial.println(); 
 
 }
