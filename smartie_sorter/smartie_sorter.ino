@@ -271,7 +271,6 @@ void calibrateColorFrequency(int selectedColour) {
   Serial.print(blueFrequency);
   
   Serial.println();
-  printDivider();
 }
 
 // Print divider
