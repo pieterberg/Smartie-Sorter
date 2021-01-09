@@ -26,7 +26,7 @@ const int colourSensorOut = 2;
 // Arrays of calibration options
 bool isCalibrating = false;
 String sensorCalibrationOptions[2] = {"White", "Black"};
-String smartieColours[8] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown"};
+String smartieColours[9] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown", "No Smartie"};
 
 void setup() {
   // Set up Colour Sensor's pins
@@ -307,11 +307,15 @@ void openCalibrationMenu() {
   } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3') && (currentSelection != 'q'));
  
  // Call the correct calibration function
- if ((currentSelection == '1') || (currentSelection == '2') || (currentSelection == '3')) 
+ if ((currentSelection == '1') || (currentSelection == '2')) 
  {
     // Call the calibration function with the selected colour
     calibrateColorFrequency((currentSelection - '0') - 1);
  }
+
+  if (currentSelection == '3') {
+    OpenSmartieColourCalibrationMenu();
+  }
  
  // Exit the calibration menu
  if (currentSelection == 'q')
@@ -320,4 +324,40 @@ void openCalibrationMenu() {
     printDivider();
     return;
  } 
+}
+
+// Print the Smartie colour calibration menu
+void OpenSmartieColourCalibrationMenu() {
+  char currentSelection = '0';
+
+  printDivider();
+  
+  // Print the calibration menu
+  Serial.println("Smartie Colour Calibration");
+  Serial.println("Please select a colour to calibrate...");
+
+  // Print the options
+  Serial.println(); 
+  Serial.println("   1. Calibrate Red colour");
+  Serial.println("   2. Calibrate Orange colour");
+  Serial.println("   3. Calibrate Yellow colour");
+  Serial.println("   4. Calibrate Green colour");
+  Serial.println("   5. Calibrate Blue colour");
+  Serial.println("   6. Calibrate Mauve colours");
+  Serial.println("   7. Calibrate Pink colour");
+  Serial.println("   8. Calibrate Brown colour");
+  Serial.println("   9. Calibrate No Smartie");
+
+  do
+  {
+    currentSelection = Serial.read();
+  } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3') && (currentSelection != '4') && (currentSelection != '5') && (currentSelection != '6') && (currentSelection != '7') && (currentSelection != '8') && (currentSelection != '9') && (currentSelection != 'q'));
+
+  if (currentSelection == 'q')
+ {
+    return;
+ } 
+
+
+
 }
