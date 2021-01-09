@@ -26,7 +26,7 @@ const int colourSensorOut = 2;
 // Arrays of calibration options
 bool isCalibrating = false;
 String sensorCalibrationOptions[2] = {"White", "Black"};
-String smartieColours[8] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown"};
+String smartieColours[9] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown", "No"};
 
 void setup() {
   // Set up Colour Sensor's pins
@@ -220,7 +220,6 @@ void calibrateColorFrequency(int selectedColour) {
    Serial.print("Canceling calibration for ");
    Serial.print(sensorCalibrationOptions[selectedColour]);
    Serial.println();
-   printDivider();
    return;
   }
 
@@ -272,7 +271,6 @@ void calibrateColorFrequency(int selectedColour) {
   Serial.print(blueFrequency);
   
   Serial.println();
-  printDivider();
 }
 
 // Print divider
@@ -307,11 +305,15 @@ void openCalibrationMenu() {
   } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3') && (currentSelection != 'q'));
  
  // Call the correct calibration function
- if ((currentSelection == '1') || (currentSelection == '2') || (currentSelection == '3')) 
+ if ((currentSelection == '1') || (currentSelection == '2')) 
  {
     // Call the calibration function with the selected colour
     calibrateColorFrequency((currentSelection - '0') - 1);
  }
+
+  if (currentSelection == '3') {
+    OpenSmartieColourCalibrationMenu();
+  }
  
  // Exit the calibration menu
  if (currentSelection == 'q')
@@ -320,4 +322,140 @@ void openCalibrationMenu() {
     printDivider();
     return;
  } 
+}
+
+// Print the Smartie colour calibration menu
+void OpenSmartieColourCalibrationMenu() {
+  char currentSelection = '0';
+
+  do{
+    // Print a divider before the Smartie colour calibration menu
+    printDivider();
+    
+    // Print the calibration menu
+    Serial.println("Smartie Colour Calibration");
+    Serial.println("Please select a colour to calibrate...");
+
+    // Print the options
+    Serial.println(); 
+    Serial.println("   1. Calibrate Red");
+    Serial.println("   2. Calibrate Orange");
+    Serial.println("   3. Calibrate Yellow");
+    Serial.println("   4. Calibrate Green");
+    Serial.println("   5. Calibrate Blue");
+    Serial.println("   6. Calibrate Mauve");
+    Serial.println("   7. Calibrate Pink");
+    Serial.println("   8. Calibrate Brown");
+    Serial.println("   9. Calibrate No Smartie");
+
+    do
+    {
+      currentSelection = Serial.read();
+    } while ((currentSelection != '1') && (currentSelection != '2') && (currentSelection != '3') && (currentSelection != '4') && (currentSelection != '5') && (currentSelection != '6') && (currentSelection != '7') && (currentSelection != '8') && (currentSelection != '9') && (currentSelection != 'q'));
+
+    if ((currentSelection == '1') || (currentSelection == '2') || (currentSelection == '3') || (currentSelection == '4') || (currentSelection == '5') || (currentSelection == '6') || (currentSelection == '7') || (currentSelection == '8') || (currentSelection == '9'))
+    {
+      calibrateSmartieColours((currentSelection - '0') - 1);
+    }
+  } while (currentSelection != 'q');
+ 
+}
+
+// Function to calibrate the RGB vaue of the Smarties
+void calibrateSmartieColours(int selectedColour) {
+  int redRGBValue = 0;
+  int greenRGBValue = 0;
+  int blueRGBValue = 0;
+
+  int currentRedReading;
+  int currentGreenReading;
+  int currentBlueReading;
+
+  char currentSelection;
+
+  printDivider();
+
+  Serial.print("Starting colour calibration for ");
+  Serial.print(smartieColours[selectedColour]); 
+  Serial.print(" Smartie");
+  Serial.println();
+  Serial.print("Place ");
+  Serial.print(smartieColours[selectedColour]);
+  Serial.print(" Smartie in front of the sensor and enter 'c' to start calibration...");
+  Serial.println(); 
+  Serial.println(); 
+
+  do
+  {
+    currentSelection = Serial.read();
+  } while((currentSelection != 'c') && (currentSelection != 'q'));
+
+  // Return to calibration menu if 'q' is entered
+  if (currentSelection == 'q'){  
+   Serial.print("Canceling calibration for ");
+   Serial.print(smartieColours[selectedColour]);
+   Serial.println();
+   return;
+  }
+
+  Serial.println("\t\tRed\tGreen\tBlue");
+
+  for (int i = 0; i < 10; i++) {
+    // Read the frequency given off by each diode
+    currentRedReading = readRedValue(true);
+    currentGreenReading = readGreenValue(true);
+    currentBlueReading = readBlueValue(true);
+    
+    // Increase the total counter
+    redRGBValue += currentRedReading;
+    greenRGBValue += currentGreenReading;
+    blueRGBValue += currentBlueReading;
+ 
+    Serial.print("   Reading ");
+    Serial.print(i + 1);
+
+    // Aligns spacing before colon
+    if (i!= 9) {
+      Serial.print(" ");
+    }
+    
+    Serial.print(":\t");
+    Serial.print(currentRedReading);
+    Serial.print("\t");
+    Serial.print(currentGreenReading);
+    Serial.print("\t");
+    Serial.println(currentBlueReading);
+
+    delay(1000);
+  }
+
+  // Find the average frewuency for each diode
+  redRGBValue /= 10;
+  greenRGBValue /= 10;
+  blueRGBValue /= 10;
+
+  // Prints the average frequency for the selected colour
+  Serial.println();
+  Serial.print("   ");
+  Serial.print(smartieColours[selectedColour]);
+
+  if (selectedColour == 8) {
+    Serial.print(" S. RGB ");
+  }
+  else {
+    Serial.print(" RGB");
+
+    for (unsigned int i = 0; i < 6 - (smartieColours[selectedColour]).length() ; i++)
+    {
+      Serial.print(" ");
+    }
+  } 
+
+  Serial.print(":\t");
+  Serial.print(redRGBValue);
+  Serial.print("\t");
+  Serial.print(greenRGBValue);
+  Serial.print("\t");
+  Serial.print(blueRGBValue);
+  Serial.println();
 }
