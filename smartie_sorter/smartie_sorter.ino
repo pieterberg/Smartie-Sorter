@@ -220,7 +220,6 @@ void calibrateColorFrequency(int selectedColour) {
    Serial.print("Canceling calibration for ");
    Serial.print(sensorCalibrationOptions[selectedColour]);
    Serial.println();
-   printDivider();
    return;
   }
 
