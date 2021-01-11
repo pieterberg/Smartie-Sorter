@@ -24,9 +24,12 @@ const int colourSensorLED = 7;
 const int colourSensorOut = 2;
 
 // Arrays of calibration options
-bool isCalibrating = false;
 String sensorCalibrationOptions[2] = {"White", "Black"};
 String smartieColours[9] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown", "No"};
+
+// Menu options
+bool isCalibrating = false;
+bool isViewingColours = false;
 
 // The RGB values for each Smartie colour
 const int redSmartieRedRGB = 197;
@@ -87,19 +90,35 @@ void setup() {
   Serial.begin(9600);
 
   // Print welcome message
-  Serial.println("Welcome to the menu for the Arduino Smartie Sorter");
-  Serial.println("Enter 'c' to enter the calibration");
-  Serial.println("Enter 'q' to cancel calibration");
-
-  printDivider();
+  printMainMenu();
 }
 
 void loop() {
+  char currentSelection = '0';
 
-  // Open the calibration menu if 'c' is entered 
-  if (Serial.read() == 'c')
+  currentSelection = Serial.read();
+
+  if (currentSelection == '1')
   {
     isCalibrating = true;
+    isViewingColours = false;
+  }
+
+  if (currentSelection == '2')
+  {
+    isViewingColours = true;
+    isCalibrating = false;
+
+    printDivider();
+  }
+
+  if (currentSelection == 'q')
+  {
+    isViewingColours = false;
+    isCalibrating = false;
+
+    printDivider();
+    printMainMenu();
   }
 
   if (isCalibrating)
@@ -107,12 +126,24 @@ void loop() {
     printDivider();
     openCalibrationMenu();
   }
-  else 
+
+  if (isViewingColours)
   {
     detectSmartieColour();
   }
 
   delay(1000);
+}
+
+// Prints the main menu
+void printMainMenu() {
+  Serial.println("Arduino Smartie Sorter menu");
+  Serial.println("Please select an option...");
+
+  Serial.println();
+  Serial.println("   1. Open calibration menu");
+  Serial.println("   2. View Smartie colours");
+
 }
 
 // Reads the red RGB value of the Smartie
@@ -355,6 +386,7 @@ void openCalibrationMenu() {
  {
     isCalibrating = false;
     printDivider();
+    printMainMenu();
     return;
  } 
 }
@@ -529,53 +561,53 @@ int detectSmartieColour() {
   if ((redRGBValue > redSmartieRedRGB - tolerance) && (redRGBValue < redSmartieRedRGB + tolerance) && (greenRGBValue > redSmartieGreenRGB - tolerance) && (greenRGBValue < redSmartieGreenRGB + tolerance) && (blueRGBValue > redSmartieBlueRGB - tolerance) && (blueRGBValue < redSmartieBlueRGB + tolerance))
   {
     // Smartie is red
-    Serial.println("Red");
+    Serial.println("   Red");
   }
   else if ((redRGBValue > orangeSmartieRedRGB - tolerance) && (redRGBValue < orangeSmartieRedRGB + tolerance) && (greenRGBValue > orangeSmartieGreenRGB - tolerance) && (greenRGBValue < orangeSmartieGreenRGB + tolerance) && (blueRGBValue > orangeSmartieBlueRGB - tolerance) && (blueRGBValue < orangeSmartieBlueRGB + tolerance))
   {
     // Smartie is orange
-    Serial.println("Orange");
+    Serial.println("   Orange");
   }
   else if ((redRGBValue > yellowSmartieRedRGB - tolerance) && (redRGBValue < yellowSmartieRedRGB + tolerance) && (greenRGBValue > yellowSmartieGreenRGB - tolerance) && (greenRGBValue < yellowSmartieGreenRGB + tolerance) && (blueRGBValue > yellowSmartieBlueRGB - tolerance) && (blueRGBValue < yellowSmartieBlueRGB + tolerance))
   {
     // Smartie is yellow
-    Serial.println("Yellow");
+    Serial.println("   Yellow");
   }
   else if ((redRGBValue > greenSmartieRedRGB - tolerance) && (redRGBValue < greenSmartieRedRGB + tolerance) && (greenRGBValue > greenSmartieGreenRGB - tolerance) && (greenRGBValue < greenSmartieGreenRGB + tolerance) && (blueRGBValue > greenSmartieBlueRGB - tolerance) && (blueRGBValue < greenSmartieBlueRGB + tolerance))
   {
     // Smartie is green
-    Serial.println("Green");
+    Serial.println("   Green");
   }
   else if ((redRGBValue > blueSmartieRedRGB - tolerance) && (redRGBValue < blueSmartieRedRGB + tolerance) && (greenRGBValue > blueSmartieGreenRGB - tolerance) && (greenRGBValue < blueSmartieGreenRGB + tolerance) && (blueRGBValue > blueSmartieBlueRGB - tolerance) && (blueRGBValue < blueSmartieBlueRGB + tolerance))
   {
     // Smartie is blue
-    Serial.println("Blue");
+    Serial.println("   Blue");
   }
   else if ((redRGBValue > mauveSmartieRedRGB - tolerance) && (redRGBValue < mauveSmartieRedRGB + tolerance) && (greenRGBValue > mauveSmartieGreenRGB - tolerance) && (greenRGBValue < mauveSmartieGreenRGB + tolerance) && (blueRGBValue > mauveSmartieBlueRGB - tolerance) && (blueRGBValue < mauveSmartieBlueRGB + tolerance))
   {
     // Smartie is mauve
-    Serial.println("Mauve");
+    Serial.println("   Mauve");
   }
   else if ((redRGBValue > pinkSmartieRedRGB - tolerance) && (redRGBValue < pinkSmartieRedRGB + tolerance) && (greenRGBValue > pinkSmartieGreenRGB - tolerance) && (greenRGBValue < pinkSmartieGreenRGB + tolerance) && (blueRGBValue > pinkSmartieBlueRGB - tolerance) && (blueRGBValue < pinkSmartieBlueRGB + tolerance))
   {
     // Smartie is pink
-    Serial.println("Pink");
+    Serial.println("   Pink");
   }
   else if ((redRGBValue > brownSmartieRedRGB - tolerance) && (redRGBValue < brownSmartieRedRGB + tolerance) && (greenRGBValue > brownSmartieGreenRGB - tolerance) && (greenRGBValue < brownSmartieGreenRGB + tolerance) && (blueRGBValue > brownSmartieBlueRGB - tolerance) && (blueRGBValue < brownSmartieBlueRGB + tolerance))
   {
     // Smartie is brown
-    Serial.println("Brown");
+    Serial.println("   Brown");
   }
   else
   if ((redRGBValue > noSmartieRedRGB - tolerance) && (redRGBValue < noSmartieRedRGB + tolerance) && (greenRGBValue > noSmartieGreenRGB - tolerance) && (greenRGBValue < noSmartieGreenRGB + tolerance) && (blueRGBValue > noSmartieBlueRGB - tolerance) && (blueRGBValue < noSmartieBlueRGB + tolerance))
   {
     // No Smartie
-    Serial.println("No Smartie");
+    Serial.println("   No Smartie");
   }
   else
   {
     // Unknown
-    Serial.println("Unknown");
+    Serial.println("   Unknown");
   }
   
 
