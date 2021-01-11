@@ -41,32 +41,32 @@ const int yellowSmartieRedRGB = 240;
 const int yellowSmartieGreenRGB = 205;
 const int yellowSmartieBlueRGB = 164;
 
-const int greenSmartieRedRGB = 195;
-const int greenSmartieGreenRGB = 181;
-const int greenSmartieBlueRGB = 156;
+const int greenSmartieRedRGB = 186;
+const int greenSmartieGreenRGB = 172;
+const int greenSmartieBlueRGB = 149;
 
-const int blueSmartieRedRGB = 225;
-const int blueSmartieGreenRGB = 210;
-const int blueSmartieBlueRGB = 220;
+const int blueSmartieRedRGB = 162;
+const int blueSmartieGreenRGB = 156;
+const int blueSmartieBlueRGB = 169;
 
-const int mauveSmartieRedRGB = 188;
-const int mauveSmartieGreenRGB = 179;
-const int mauveSmartieBlueRGB = 193;
+const int mauveSmartieRedRGB = 173;
+const int mauveSmartieGreenRGB = 165;
+const int mauveSmartieBlueRGB = 183;
 
-const int pinkSmartieRedRGB = 216;
-const int pinkSmartieGreenRGB = 179;
-const int pinkSmartieBlueRGB = 193;
+const int pinkSmartieRedRGB = 204;
+const int pinkSmartieGreenRGB = 169;
+const int pinkSmartieBlueRGB = 184;
 
-const int brownSmartieRedRGB = 191;
-const int brownSmartieGreenRGB = 157;
-const int brownSmartieBlueRGB = 147;
+const int brownSmartieRedRGB = 155;
+const int brownSmartieGreenRGB = 125;
+const int brownSmartieBlueRGB = 115;
 
 const int noSmartieRedRGB = 255;
 const int noSmartieGreenRGB = 255;
 const int noSmartieBlueRGB = 255;
 
 // Tolerance for Smartie colour detecion
-const int tolerance = 15;
+const int tolerance = 12;
 
 void setup() {
   // Set up Colour Sensor's pins
