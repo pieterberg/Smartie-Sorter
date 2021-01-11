@@ -45,21 +45,21 @@ const int greenSmartieRedRGB = 186;
 const int greenSmartieGreenRGB = 172;
 const int greenSmartieBlueRGB = 149;
 
-const int blueSmartieRedRGB = 162;
-const int blueSmartieGreenRGB = 156;
-const int blueSmartieBlueRGB = 169;
+const int blueSmartieRedRGB = 203;
+const int blueSmartieGreenRGB = 189;
+const int blueSmartieBlueRGB = 210;
 
 const int mauveSmartieRedRGB = 173;
 const int mauveSmartieGreenRGB = 165;
 const int mauveSmartieBlueRGB = 183;
 
-const int pinkSmartieRedRGB = 204;
-const int pinkSmartieGreenRGB = 169;
-const int pinkSmartieBlueRGB = 184;
+const int pinkSmartieRedRGB = 207;
+const int pinkSmartieGreenRGB = 168;
+const int pinkSmartieBlueRGB = 187;
 
-const int brownSmartieRedRGB = 155;
-const int brownSmartieGreenRGB = 125;
-const int brownSmartieBlueRGB = 115;
+const int brownSmartieRedRGB = 180;
+const int brownSmartieGreenRGB = 152;
+const int brownSmartieBlueRGB = 136;
 
 const int noSmartieRedRGB = 255;
 const int noSmartieGreenRGB = 255;
