@@ -583,7 +583,7 @@ int detectSmartieColour() {
   else
   {
     // Unknown
-    Serial.print("Unkown);
+    Serial.print("Unknown");
   }
   
 
