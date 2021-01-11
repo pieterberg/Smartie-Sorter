@@ -7,13 +7,13 @@
 
 // Calibration settings
 // Use the calibration functions to calibrate the following values
-const int redMaxFrequency = 106;
-const int greenMaxFrequency = 117;
-const int blueMaxFrequency = 90;
+const int redMaxFrequency = 239;
+const int greenMaxFrequency = 219;
+const int blueMaxFrequency = 163;
 
-const int redMinFrequency = 446;
-const int greenMinFrequency = 574;
-const int blueMinFrequency = 487;
+const int redMinFrequency = 345;
+const int greenMinFrequency = 324;
+const int blueMinFrequency = 240;
 
 // Colour Sensor's pins
 const int colourSensorS0 = 6;
@@ -27,6 +27,46 @@ const int colourSensorOut = 2;
 bool isCalibrating = false;
 String sensorCalibrationOptions[2] = {"White", "Black"};
 String smartieColours[9] = {"Red", "Orange", "Yellow", "Green", "Blue", "Mauve", "Pink", "Brown", "No"};
+
+// The RGB values for each Smartie colour
+const int redSmartieRedRGB;
+const int redSmartieGreenRGB;
+const int redSmartieBlueRGB;
+
+const int orangeSmartieRedRGB;
+const int orangeSmartieGreenRGB;
+const int orangeSmartieBlueRGB;
+
+const int yellowSmartieRedRGB;
+const int yellowSmartieGreenRGB;
+const int yellowSmartieBlueRGB;
+
+const int greenSmartieRedRGB;
+const int greenSmartieGreenRGB;
+const int greenSmartieBlueRGB;
+
+const int blueSmartieRedRGB;
+const int blueSmartieGreenRGB;
+const int blueSmartieBlueRGB;
+
+const int mauveSmartieRedRGB;
+const int mauveSmartieGreenRGB;
+const int mauveSmartieBlueRGB;
+
+const int pinkSmartieRedRGB;
+const int pinkSmartieGreenRGB;
+const int pinkSmartieBlueRGB;
+
+const int brownSmartieRedRGB;
+const int brownSmartieGreenRGB;
+const int brownSmartieBlueRGB;
+
+const int noSmartieRedRGB;
+const int noSmartieGreenRGB;
+const int noSmartieBlueRGB;
+
+// Tolerance for smartie colour detecion
+const int tolerance;
 
 void setup() {
   // Set up Colour Sensor's pins
@@ -69,12 +109,7 @@ void loop() {
   }
   else 
   {
-    Serial.print("red: ");
-    Serial.print(readRedValue(true));
-    Serial.print("  green: ");
-    Serial.print(readGreenValue(true));
-    Serial.print("  blue: ");
-    Serial.println(readBlueValue(true));
+    detectSmartieColour();
   }
 
   delay(1000);
@@ -429,7 +464,7 @@ void calibrateSmartieColours(int selectedColour) {
     delay(1000);
   }
 
-  // Find the average frewuency for each diode
+  // Find the average frequency for each diode
   redRGBValue /= 10;
   greenRGBValue /= 10;
   blueRGBValue /= 10;
@@ -458,4 +493,105 @@ void calibrateSmartieColours(int selectedColour) {
   Serial.print("\t");
   Serial.print(blueRGBValue);
   Serial.println();
+}
+
+// Function to detect which colour Smartie is placed in front of the colour sensor
+int detectSmartieColour() {
+  int redRGBValue = 0;
+  int greenRGBValue = 0;
+  int blueRGBValue = 0;
+
+  int currentRedReading;
+  int currentGreenReading;
+  int currentBlueReading;
+
+  // Read the RGB value of the Smartie in fornt of the sensor
+  for (int i = 0; i < 10; i++) {
+    // Read the frequency given off by each diode
+    currentRedReading = readRedValue(true);
+    currentGreenReading = readGreenValue(true);
+    currentBlueReading = readBlueValue(true);
+    
+    // Increase the total counter
+    redRGBValue += currentRedReading;
+    greenRGBValue += currentGreenReading;
+    blueRGBValue += currentBlueReading;
+
+    delay(10);
+  }
+
+  // Find the average frequency for each diode
+  redRGBValue /= 10;
+  greenRGBValue /= 10;
+  blueRGBValue /= 10;
+
+  Serial.print(":\t");
+  Serial.print(redRGBValue);
+  Serial.print("\t");
+  Serial.print(greenRGBValue);
+  Serial.print("\t");
+  Serial.print(blueRGBValue);
+  Serial.println();
+
+  // Determine which colour is placed in front of the sensor
+  if ((redRGBValue > redSmartieRedRGB - tolerance) && (redRGBValue < redSmartieRedRGB + tolerance) && (greenRGBValue > redSmartieGreenRGB - tolerance) && (greenRGBValue < redSmartieGreenRGB + tolerance) && (blueRGBValue > redSmartieBlueRGB - tolerance) && (blueRGBValue < redSmartieBlueRGB + tolerance))
+  {
+    // Smartie is red
+    Serial.print("Red");
+  }
+  else if ((redRGBValue > orangeSmartieRedRGB - tolerance) && (redRGBValue < orangeSmartieRedRGB + tolerance) && (greenRGBValue > orangeSmartieGreenRGB - tolerance) && (greenRGBValue < orangeSmartieGreenRGB + tolerance) && (blueRGBValue > orangeSmartieBlueRGB - tolerance) && (blueRGBValue < orangeSmartieBlueRGB + tolerance))
+  {
+    // Smartie is orange
+    Serial.print("Orange");
+  }
+  else if ((redRGBValue > yellowSmartieRedRGB - tolerance) && (redRGBValue < yellowSmartieRedRGB + tolerance) && (greenRGBValue > yellowSmartieGreenRGB - tolerance) && (greenRGBValue < yellowSmartieGreenRGB + tolerance) && (blueRGBValue > yellowSmartieBlueRGB - tolerance) && (blueRGBValue < yellowSmartieBlueRGB + tolerance))
+  {
+    // Smartie is yellow
+    Serial.print("Yellow");
+  }
+  else if ((redRGBValue > greenSmartieRedRGB - tolerance) && (redRGBValue < greenSmartieRedRGB + tolerance) && (greenRGBValue > greenSmartieGreenRGB - tolerance) && (greenRGBValue < greenSmartieGreenRGB + tolerance) && (blueRGBValue > greenSmartieBlueRGB - tolerance) && (blueRGBValue < greenSmartieBlueRGB + tolerance))
+  {
+    // Smartie is green
+    Serial.print("Green");
+  }
+  else if ((redRGBValue > blueSmartieRedRGB - tolerance) && (redRGBValue < blueSmartieRedRGB + tolerance) && (greenRGBValue > blueSmartieGreenRGB - tolerance) && (greenRGBValue < blueSmartieGreenRGB + tolerance) && (blueRGBValue > blueSmartieBlueRGB - tolerance) && (blueRGBValue < blueSmartieBlueRGB + tolerance))
+  {
+    // Smartie is blue
+    Serial.print("Blue");
+  }
+  else if ((redRGBValue > mauveSmartieRedRGB - tolerance) && (redRGBValue < mauveSmartieRedRGB + tolerance) && (greenRGBValue > mauveSmartieGreenRGB - tolerance) && (greenRGBValue < mauveSmartieGreenRGB + tolerance) && (blueRGBValue > mauveSmartieBlueRGB - tolerance) && (blueRGBValue < mauveSmartieBlueRGB + tolerance))
+  {
+    // Smartie is mauve
+    Serial.print("Mauve");
+  }
+  else if ((redRGBValue > pinkSmartieRedRGB - tolerance) && (redRGBValue < pinkSmartieRedRGB + tolerance) && (greenRGBValue > pinkSmartieGreenRGB - tolerance) && (greenRGBValue < pinkSmartieGreenRGB + tolerance) && (blueRGBValue > pinkSmartieBlueRGB - tolerance) && (blueRGBValue < pinkSmartieBlueRGB + tolerance))
+  {
+    // Smartie is pink
+    Serial.print("Pink");
+  }
+  else if ((redRGBValue > brownSmartieRedRGB - tolerance) && (redRGBValue < brownSmartieRedRGB + tolerance) && (greenRGBValue > brownSmartieGreenRGB - tolerance) && (greenRGBValue < brownSmartieGreenRGB + tolerance) && (blueRGBValue > brownSmartieBlueRGB - tolerance) && (blueRGBValue < brownSmartieBlueRGB + tolerance))
+  {
+    // Smartie is brown
+    Serial.print("Brown");
+  }
+  else
+  if ((redRGBValue > noSmartieRedRGB - tolerance) && (redRGBValue < noSmartieRedRGB + tolerance) && (greenRGBValue > noSmartieGreenRGB - tolerance) && (greenRGBValue < noSmartieGreenRGB + tolerance) && (blueRGBValue > noSmartieBlueRGB - tolerance) && (blueRGBValue < noSmartieBlueRGB + tolerance))
+  {
+    // No Smartie
+    Serial.print("No Smartie");
+  }
+  else
+  {
+    // Unknown
+    Serial.print("Unkown);
+  }
+  
+
+
+
+
+
+
+
+
 }
