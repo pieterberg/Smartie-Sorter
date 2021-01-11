@@ -40,9 +40,9 @@ const int orangeSmartieRedRGB = 220;
 const int orangeSmartieGreenRGB = 173;
 const int orangeSmartieBlueRGB = 154;
 
-const int yellowSmartieRedRGB = 240;
-const int yellowSmartieGreenRGB = 205;
-const int yellowSmartieBlueRGB = 164;
+const int yellowSmartieRedRGB = 230;
+const int yellowSmartieGreenRGB = 199;
+const int yellowSmartieBlueRGB = 155;
 
 const int greenSmartieRedRGB = 186;
 const int greenSmartieGreenRGB = 172;
