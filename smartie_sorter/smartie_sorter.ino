@@ -146,10 +146,9 @@ void printMainMenu() {
 
 }
 
-// Reads the red RGB value of the Smartie
-int readRedValue(bool readRGB) {
+// Reads the red frequency from the colour sensor
+int readRedFrequency() {
   int redFrequency;
-  int redRGBValue;
 
   // Set up the colour sensor's pins to read the red frequency value
   digitalWrite(colourSensorS2, LOW);
@@ -158,22 +157,13 @@ int readRedValue(bool readRGB) {
   // Read the red colour frequency
   redFrequency = pulseIn(colourSensorOut, LOW);
 
-  if (readRGB)
-  {
-    // Map the frequency to a RGB value and return it
-    redRGBValue = mapFrequencyToRGB(redFrequency, 0);
-    return redRGBValue;
-  }
-  else 
-  {
-    return redFrequency;
-  }
+  // Return the read frequency
+  return redFrequency;
 }
 
-// Reads the green RGB value of the Smartie
-int readGreenValue(bool readRGB) {
+// Reads the green frequency from the colour sensor
+int readGreenFrequency() {
   int greenFrequency;
-  int greenRGBValue;
 
   // Set up the colour sensor's pins to read the green frequency value
   digitalWrite(colourSensorS2, HIGH);
@@ -182,22 +172,13 @@ int readGreenValue(bool readRGB) {
   // Read the green colour frequency
   greenFrequency = pulseIn(colourSensorOut, LOW);
 
-  if (readRGB)
-  {
-    // Map the frequency to a RGB value and return it
-    greenRGBValue = mapFrequencyToRGB(greenFrequency, 1);
-    return greenRGBValue;
-  }
-  else 
-  {
-    return greenFrequency;
-  }
+  // Return the read frequency
+  return greenFrequency;
 }
 
-// Reads the blue RGB value of the Smartie
-int readBlueValue(bool readRGB) {
+// Reads the blue frequency from the colour sensor
+int readBlueFrequency() {
   int blueFrequency;
-  int blueRGBValue;
 
   // Set up the colour sensor's pins to read the blue frequency value
   digitalWrite(colourSensorS2, LOW);
@@ -206,51 +187,71 @@ int readBlueValue(bool readRGB) {
   // Read the blue colour frequency
   blueFrequency = pulseIn(colourSensorOut, LOW);
 
-  if (readRGB)
-  {
-    // Map the frequency to a RGB value and return it
-    blueRGBValue = mapFrequencyToRGB(blueFrequency, 2);
-    return blueRGBValue;
-  }
-  else 
-  {
-    return blueFrequency;
-  }
+  // Return the read frequency
+  return blueFrequency;
 }
 
-// Maps the read frequency to a RGB value
-int mapFrequencyToRGB(int frequency, int colour) {
-  int RGBValue;
+// Maps the read red frequency to a RGB value
+int mapRedFrequencyToRGB(int frequency) {
+  int redRGBValue;
 
-  // Map the frequency to the cprresponding RGB value
-  switch (colour)
-  {
-    case 0:
-      RGBValue = map(frequency, redMaxFrequency, redMinFrequency, 255, 0);
-      break;
+  // Map the frequency to the corresponding RGB value 
+  redRGBValue = map(frequency, redMaxFrequency, redMinFrequency, 255, 0);
 
-    case 1:
-      RGBValue = map(frequency, greenMaxFrequency, greenMinFrequency, 255, 0);
-      break;
-
-    case 2:
-      RGBValue = map(frequency, blueMaxFrequency, blueMinFrequency, 255, 0);
-      break;
-
-    default:
-      break;
+  // Limit the upper value
+  if (redRGBValue > 255) {
+    redRGBValue = 255;
   }
 
-  // Limit the upper and lower values
-  if (RGBValue > 255) {
-    RGBValue = 255;
+  // Limit the lower value
+  if (redRGBValue < 0) {
+    redRGBValue = 0;
   }
 
-  if (RGBValue < 0) {
-    RGBValue = 0;
+  // Return the mapped red RGB value
+  return redRGBValue;
+}
+
+// Maps the read green frequency to a RGB value
+int mapGreenFrequencyToRGB(int frequency) {
+  int greenRGBValue;
+
+  // Map the frequency to the corresponding RGB value 
+  greenRGBValue = map(frequency, greenMaxFrequency, greenMinFrequency, 255, 0);
+
+  // Limit the upper value
+  if (greenRGBValue > 255) {
+    greenRGBValue = 255;
   }
 
-  return RGBValue;
+  // Limit the lower value
+  if (greenRGBValue < 0) {
+    greenRGBValue = 0;
+  }
+
+  // Return the mapped red RGB value
+  return greenRGBValue;
+}
+
+// Maps the read blue frequency to a RGB value
+int mapBlueFrequencyToRGB(int frequency) {
+  int blueRGBValue;
+
+  // Map the frequency to the corresponding RGB value 
+  blueRGBValue = map(frequency, blueMaxFrequency, blueMinFrequency, 255, 0);
+
+  // Limit the upper value
+  if (blueRGBValue > 255) {
+    blueRGBValue = 255;
+  }
+
+  // Limit the lower value
+  if (blueRGBValue < 0) {
+    blueRGBValue = 0;
+  }
+
+  // Return the mapped red RGB value
+  return blueRGBValue;
 }
 
 // Calibrate the color sensor's frequencies
@@ -293,9 +294,9 @@ void calibrateColorFrequency(int selectedColour) {
 
   for (int i = 0; i < 10; i++) {
     // Read the frequency given off by each diode
-    currentRedReading = readRedValue(false);
-    currentGreenReading = readGreenValue(false);
-    currentBlueReading = readBlueValue(false);
+    currentRedReading = readRedFrequency();
+    currentGreenReading = readGreenFrequency();
+    currentBlueReading = readBlueFrequency();
     
     // Increase the total counter
     redFrequency += currentRedReading;
@@ -469,9 +470,9 @@ void calibrateSmartieColours(int selectedColour) {
 
   for (int i = 0; i < 10; i++) {
     // Read the frequency given off by each diode
-    currentRedReading = readRedValue(true);
-    currentGreenReading = readGreenValue(true);
-    currentBlueReading = readBlueValue(true);
+    currentRedReading =   mapRedFrequencyToRGB(readRedFrequency());
+    currentGreenReading =  mapGreenFrequencyToRGB(readGreenFrequency());
+    currentBlueReading =  mapBlueFrequencyToRGB(readBlueFrequency());
     
     // Increase the total counter
     redRGBValue += currentRedReading;
@@ -540,9 +541,9 @@ int detectSmartieColour() {
   // Read the RGB value of the Smartie in fornt of the sensor
   for (int i = 0; i < 10; i++) {
     // Read the frequency given off by each diode
-    currentRedReading = readRedValue(true);
-    currentGreenReading = readGreenValue(true);
-    currentBlueReading = readBlueValue(true);
+    currentRedReading =  mapRedFrequencyToRGB(readRedFrequency());
+    currentGreenReading = mapGreenFrequencyToRGB(readGreenFrequency());
+    currentBlueReading = mapBlueFrequencyToRGB(readBlueFrequency());
     
     // Increase the total counter
     redRGBValue += currentRedReading;
