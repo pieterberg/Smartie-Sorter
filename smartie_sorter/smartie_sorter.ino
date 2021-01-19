@@ -5,6 +5,8 @@
 // Based on Skittles Sorter from How to Mechatronics
 // https://howtomechatronics.com/projects/arduino-color-sorter-project/
 
+#include <Arduino.h>
+
 // Calibration settings
 // Use the calibration functions to calibrate the following values
 const int redMaxFrequency = 239;
