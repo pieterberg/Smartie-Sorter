@@ -9,8 +9,8 @@
 #include "calibrated_values.h"
 #include "TCS3200_colour_sensor.h"
 
-#pragma region Arduino Pins
-// ---------------------------------------------------------------- //
+// Arduino Pins
+// ----------------------------------------------------------------- //
 
   // Colour Sensor's pins
   const int colourSensorS0 = 6;
@@ -20,8 +20,7 @@
   const int colourSensorLED = 7;
   const int colourSensorOut = 2;
 
-// ---------------------------------------------------------------- //
-#pragma endregion Arduino Pins
+// ----------------------------------------------------------------- //
 
 // Smartie Colours
 enum Smartie
