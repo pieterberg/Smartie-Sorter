@@ -10,13 +10,13 @@
 
 // Calibration settings
 // Use the calibration functions to calibrate the following values
-const int redWhiteFrequency = 239;
-const int greenWhiteFrequency = 219;
-const int blueWhiteFrequency = 163;
+const int redWhiteFrequency = 245;
+const int greenWhiteFrequency = 224;
+const int blueWhiteFrequency = 166;
 
-const int redBlackFrequency = 345;
-const int greenBlackFrequency = 324;
-const int blueBlackFrequency = 240;
+const int redBlackFrequency = 399;
+const int greenBlackFrequency = 372;
+const int blueBlackFrequency = 273;
 
 // Colour Sensor's pins
 const int colourSensorS0 = 6;
@@ -66,13 +66,13 @@ const int greenSmartieRedRGB = 186;
 const int greenSmartieGreenRGB = 172;
 const int greenSmartieBlueRGB = 149;
 
-const int blueSmartieRedRGB = 203;
-const int blueSmartieGreenRGB = 189;
-const int blueSmartieBlueRGB = 210;
+const int blueSmartieRedRGB = 217;
+const int blueSmartieGreenRGB = 209;
+const int blueSmartieBlueRGB = 217;
 
-const int mauveSmartieRedRGB = 173;
-const int mauveSmartieGreenRGB = 165;
-const int mauveSmartieBlueRGB = 183;
+const int mauveSmartieRedRGB = 201;
+const int mauveSmartieGreenRGB = 189;
+const int mauveSmartieBlueRGB = 203;
 
 const int pinkSmartieRedRGB = 207;
 const int pinkSmartieGreenRGB = 168;
