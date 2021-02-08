@@ -9,6 +9,10 @@ class TCS3200_colour_sensor
         // Constructor
         TCS3200_colour_sensor(int S0, int S1, int S2, int S3, int LED, int OUT);
 
+        // Set up frequencies for RGB mapping
+        void setWhiteFrequencies(int redWhiteFrequency, int greenWhiteFrequency, int blueWhiteFrequency);
+        void setBlackFrequencies(int redBlackFrequency, int greenblackFrequency, int blueblackFrequency);
+
         // Set frequency scaling for the TCS3200 colour sensor
         void setFrequencyScalingToZero();
         void setFrequencyScalingTo2Percent();
@@ -39,7 +43,6 @@ class TCS3200_colour_sensor
         int _colourSensorOut;
 
         // Calibrated frequencies for white and black
-        // Use the calibration function to determine these values
         int _redWhiteFrequency;
         int _greenWhiteFrequency;
         int _blueWhiteFrequency;
