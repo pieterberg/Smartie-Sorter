@@ -77,13 +77,7 @@ const int noSmartieBlueRGB = 255;
 const int tolerance = 12;
 
 void setup() {
-  // Set up Colour Sensor's pins
-  pinMode(colourSensorS0, OUTPUT);
-  pinMode(colourSensorS1, OUTPUT);
-  pinMode(colourSensorS2, OUTPUT);
-  pinMode(colourSensorS3, OUTPUT);
-  pinMode(colourSensorLED, OUTPUT);
-  pinMode(colourSensorOut, INPUT);
+  
 
   // Set scaling frequency of colour sensor to 2%
   digitalWrite(colourSensorS0, LOW);
@@ -371,7 +365,7 @@ void calibrateColorFrequency(int selectedColour) {
     delay(1000);
   }
 
-  // Find the average frewuency for each diode
+  // Find the average frequency for each diode
   redFrequency /= 10;
   greenFrequency /= 10;
   blueFrequency /= 10;
