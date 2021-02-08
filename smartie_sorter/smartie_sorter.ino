@@ -79,11 +79,10 @@ const int tolerance = 12;
 void setup() {
   
 
-  // Set scaling frequency of colour sensor to 2%
-  digitalWrite(colourSensorS0, LOW);
-  digitalWrite(colourSensorS1, HIGH);
 
-  digitalWrite(colourSensorLED, HIGH);
+  // todo // Construct colour sensor // Set frequency scaling to 2% // Turn LED on
+
+  
 
   // Begin a serial channel
   Serial.begin(9600);
