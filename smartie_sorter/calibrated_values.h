@@ -1,4 +1,4 @@
-// A file containing all of the calibrated values for the Arduino Smartie Sorter
+// All of the calibrated values for the Arduino Smartie Sorter
 
 #pragma once
 
