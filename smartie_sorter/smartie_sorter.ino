@@ -9,8 +9,6 @@
 #include "calibrated_values.h"
 #include "TCS3200_colour_sensor.h"
 
-
-
 // Colour Sensor's pins
 const int colourSensorS0 = 6;
 const int colourSensorS1 = 5;
