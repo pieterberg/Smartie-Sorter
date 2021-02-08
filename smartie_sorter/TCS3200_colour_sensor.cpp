@@ -1,3 +1,7 @@
+// Library for the TCS3200 colour sensor
+// Created by Pieter Leon van den Berg
+// on 8 February 2021
+
 #include <Arduino.h>
 #include "TCS3200_colour_sensor.h"
 
