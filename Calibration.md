@@ -27,14 +27,3 @@ Calibrated values for the TCS3200 colour sensor
 | Pink       |     |       |      |
 | Brown      |     |       |      |
 | No Smartie |     |       |      |
-
-## Servos
-
-Calibrated values for the 2 servos
-
-### Smartie Feeder Arm
-
-
-### Sorted Smartie Positions
-
-
