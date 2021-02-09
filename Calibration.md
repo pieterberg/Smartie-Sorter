@@ -14,7 +14,7 @@ Calibrated values for the TCS3200 colour sensor
 | Green |       |       |
 | Blue  |       |       |
 
-### Smartie Colours
+### RGB Smartie Colours
 
 |            | Red | Green | Blue |
 |------------|-----|-------|------|
