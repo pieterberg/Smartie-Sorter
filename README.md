@@ -2,5 +2,3 @@
 
 
 Arduino Smartie Sorter project
-
-
