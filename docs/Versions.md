@@ -1,6 +1,6 @@
 # Versions
 
-  - 0.1.0
+Version history for the Arduino Smartie Sorter
 
 ## Version 0.1.0
 
