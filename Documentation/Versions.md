@@ -7,6 +7,6 @@
 New features:
 
 - Colour sensor enclosure
-- Calirbation functions
+- Calibration functions
 - Colour detection functions
 - TCS3200 colour sensor library
