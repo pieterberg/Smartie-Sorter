@@ -2,7 +2,11 @@
 
 The calibrated values for the Arduino Smartie Sorter
 
-## White and Black frequencies
+## TCS3200 Colour Sensor
+
+Calibrated values for the TCS3200 colour sensor
+
+### White and Black frequencies
 
 |       | White | Black |
 |-------|-------|-------|
@@ -10,7 +14,7 @@ The calibrated values for the Arduino Smartie Sorter
 | Green |       |       |
 | Blue  |       |       |
 
-## Smartie Colours
+### Smartie Colours
 
 |            | Red | Green | Blue |
 |------------|-----|-------|------|
@@ -23,3 +27,14 @@ The calibrated values for the Arduino Smartie Sorter
 | Pink       |     |       |      |
 | Brown      |     |       |      |
 | No Smartie |     |       |      |
+
+## Servos
+
+Calibrated values for the 2 servos
+
+### Smartie Feeder Arm
+
+
+### Sorted Smartie Positions
+
+
