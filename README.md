@@ -1,7 +1,5 @@
 # Smartie-Sorter
 
-![Colour sensor enclosure](assets/images/colour_sensor_enclosure.png)
-
 ## About 
 
 Arduino Smartie Sorter projects using an Arduino Nano board
