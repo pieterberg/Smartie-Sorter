@@ -6,15 +6,14 @@ The calibrated values for the Arduino Smartie Sorter
 
 Calibrated values for the TCS3200 colour sensor
 
-### White and Black frequencies
+### White and Black frequencies [Hz]
 
-|       | White | Black |
-|-------|-------|-------|
-| Red   |       |       |
-| Green |       |       |
-| Blue  |       |       |
+|            | Red | Green | Blue |
+|------------|-----|-------|------|
+| White      |     |       |      |
+| Black      |     |       |      |
 
-### RGB Smartie Colours
+### RGB Smartie Colours [RGB]
 
 |            | Red | Green | Blue |
 |------------|-----|-------|------|
