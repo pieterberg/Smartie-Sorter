@@ -8,7 +8,7 @@ Based on the [Arduino Skittles Sorter](https://howtomechatronics.com/projects/ar
 
 ## Documentation
 
-- [Calibrated values](docs/Calibration.md) // All of the calibrated values for the Smartie Sorter
+- [Calibrated values](docs/calibrated_values.md) // All of the calibrated values for the Smartie Sorter
 
 
 
