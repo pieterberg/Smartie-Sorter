@@ -1,6 +1,11 @@
 # Smartie-Sorter
 
-## About 
+## Contents
+
+- About
+- Documentation
+
+## About
 
 Arduino Smartie Sorter projects using an Arduino Nano board
 
