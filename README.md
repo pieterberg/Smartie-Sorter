@@ -2,8 +2,8 @@
 
 ## Contents
 
-- About
-- Documentation
+  - [About](#about)
+  - [Documentation](#documentation)
 
 ## About
 
