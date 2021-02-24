@@ -1,9 +1,11 @@
 # Smartie-Sorter
 
+![Arduino Smartie Sorter](assets/images/Smartie_Sorter.png)
+
 ## Contents
 
   - [About](#about)
-  - [Documentation](#documentation)
+  - [Images](#images)
 
 ## About
 
@@ -11,9 +13,8 @@ Arduino Smartie Sorter projects using an Arduino Nano board
 
 Based on the [Arduino Skittles Sorter](https://howtomechatronics.com/projects/arduino-color-sorter-project/) from How To Mechatronics
 
-## Documentation
+## Images
 
-- [Calibrated values](docs/calibrated_values.md) // All of the calibrated values for the Smartie Sorter
-
-
+![Colour Sensor Enclosuer Closed](assets/images/colour_sensor_enclosure_closed.png)
+![Colour Sensor Enclosuer Open](assets/images/colour_sensor_enclosure_open.png)
 
