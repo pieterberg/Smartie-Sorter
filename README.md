@@ -1,6 +1,13 @@
 # Smartie-Sorter
 
-![Arduino Smartie Sorter](assets/images/Smartie_Sorter.png)
+<table>
+  <tr>
+    <td><img src="assets/images/Smartie_Sorter.png" alt="Arduino Smartie Sorter"/></td>
+    <td><img src="" alt=""/></td>
+  </tr>
+</table>
+
+
 
 ## Contents
 
@@ -15,6 +22,13 @@ Based on the [Arduino Skittles Sorter](https://howtomechatronics.com/projects/ar
 
 ## Images
 
-![Colour Sensor Enclosuer Closed](assets/images/colour_sensor_enclosure_closed.png)
-![Colour Sensor Enclosuer Open](assets/images/colour_sensor_enclosure_open.png)
-
+<table>
+  <tr>
+    <td><img src="assets/images/colour_sensor_enclosure_closed.png" alt="Colour Sensor Enclosuer Closed"/></td>
+    <td><img src="" alt=""/></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/colour_sensor_enclosure_closed.png" alt="Colour Sensor Enclosuer Closed"/></td>
+    <td><img src="" alt=""/></td>
+  </tr>
+</table>
