@@ -7,8 +7,6 @@
   </tr>
 </table>
 
-
-
 ## Contents
 
   - [About](#about)
