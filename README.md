@@ -7,11 +7,6 @@
   </tr>
 </table>
 
-## Contents
-
-  - [About](#about)
-  - [Images](#images)
-
 ## About
 
 Arduino Smartie Sorter projects using an Arduino Nano board
