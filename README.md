@@ -21,7 +21,7 @@ Based on the [Arduino Skittles Sorter](https://howtomechatronics.com/projects/ar
     <td><img src="" alt=""/></td>
   </tr>
   <tr>
-    <td><img src="assets/images/colour_sensor_enclosure_closed.png" alt="Colour Sensor Enclosuer Closed"/></td>
+    <td><img src="assets/images/colour_sensor_enclosure_open.png" alt="Colour Sensor Enclosuer Closed"/></td>
     <td><img src="" alt=""/></td>
   </tr>
 </table>
