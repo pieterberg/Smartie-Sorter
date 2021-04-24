@@ -1,4 +1,4 @@
-# Smartie-Sorter
+# Smartie Sorter 3000
 
 <img src="assets/images/Smartie_Sorter.png" alt="Arduino Smartie Sorter" width="50%"/><img src="assets/images/smartie_sorter_interface.png" alt="Smartie Sorter Interface" width="50%"/>
 
