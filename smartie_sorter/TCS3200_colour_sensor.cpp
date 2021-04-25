@@ -181,7 +181,7 @@ int TCS3200_colour_sensor::readGreenRGB()
     greenRGBValue = 0;
     }
 
-    // Return the mapped red RGB value
+    // Return the mapped green RGB value
     return greenRGBValue;
 }
 
@@ -209,7 +209,7 @@ int TCS3200_colour_sensor::readBlueRGB()
     blueRGBValue = 0;
     }
 
-    // Return the mapped red RGB value
+    // Return the mapped blue RGB value
     return blueRGBValue;
 }
 
