@@ -6,6 +6,8 @@
 
 ### Base Plate
 
+![Base Plate](wooden_components/base_plate.png)
+
 ### Control Panel Bottom
 
 ### Control Panel Front
