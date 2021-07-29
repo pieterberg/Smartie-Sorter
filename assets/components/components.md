@@ -22,6 +22,8 @@
 
 ### Side Panel
 
+![Side Panel](wooden_components/side_panel.png)
+
 ### Top Plate
 
 ## Polycarbonate Components
