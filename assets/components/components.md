@@ -1,18 +1,5 @@
 # Components
 
-- [Wooden Components](#wooden-components)
-  - [Back Panel](#back-panel)
-  - [Base Plate](#base-plate)
-  - [Control Panel Bottom](#control-panel-bottom)
-  - [Control Panel Front](#control-panel-front)
-  - [Control Panel Top](#control-panel-top)
-  - [Name Sign Bottom](#name-sign-bottom)
-  - [Side Panel](#side-panel)
-  - [Top Plate](#top-plate)
-- [Polycarbonate Components](#polycarbonate-components)
-  - [Name Sign](#name-sign)
-- [3D Printed Components](#3d-printed-components)
-
 ## Wooden Components
 
 ### Back Panel
