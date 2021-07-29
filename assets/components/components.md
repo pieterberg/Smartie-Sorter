@@ -10,6 +10,8 @@
 
 ### Control Panel Bottom
 
+![Control Panel Bottom](wooden_components/control_panel_bottom.png)
+
 ### Control Panel Front
 
 ![Control Panel Front](wooden_components/control_panel_front.png)
