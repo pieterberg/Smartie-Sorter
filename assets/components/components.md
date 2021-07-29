@@ -10,6 +10,8 @@
 
 ### Control Panel Front
 
+![Control Panel Front](wooden_components/control_panel_front.png)
+
 ### Control Panel Top
 
 ### Name Sign Bottom
