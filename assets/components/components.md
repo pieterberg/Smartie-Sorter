@@ -30,6 +30,8 @@
 
 ### Name Sign
 
+![Name Sign](polycarbonate_components/name_sign.png)
+
 ## 3D Printed Components
 
 
