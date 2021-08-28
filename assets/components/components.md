@@ -20,6 +20,8 @@
 
 ### Name Sign Bottom
 
+![Name Sign Bottom](wooden_components/name_sign_bottom_panel.png)
+
 ### Side Panel
 
 ![Side Panel](wooden_components/side_panel.png)
