@@ -18,9 +18,9 @@
 
 ### Control Panel Top
 
-### Name Sign Bottom
+### Name Sign Bottom Panel
 
-![Name Sign Bottom](wooden_components/name_sign_bottom_panel.png)
+![Name Sign Bottom Panel](wooden_components/name_sign_bottom_panel.png)
 
 ### Side Panel
 
