@@ -1,0 +1,5 @@
+# Python: 
+# -------
+
+# Ignore the Python virtual environment
+.venv
