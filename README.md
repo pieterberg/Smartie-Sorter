@@ -1,5 +1,7 @@
 # Smartie Sorter 3000
 
+<img src="https://img.shields.io/badge/Arduino-Nano-00979D?logo=arduino&logoColor=FFFFFF&style=flat"/> <img src="https://img.shields.io/badge/Version-0.2.0-008BC0?&logoColor=FFFFFF&style=flat"/>
+
 <img src="images/Smartie_Sorter.png" alt="Arduino Smartie Sorter" width="50%"/><img src="images/smartie_sorter_interface.png" alt="Smartie Sorter Interface" width="50%"/>
 
 ## About
