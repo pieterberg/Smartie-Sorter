@@ -18,7 +18,7 @@ Figure 1: Smartie Sorter 3000 name sign used at the top of the mini arcade game 
 
 ### 2.1 Enclosure design
 
-<img src="colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="100%">
+<img src="colour_scheme/enclosure_colours_small.png" alt="Enclosure colour scheme" width="100%">
 
 Figure 2: Colours used in the construction of the mini arcade game enclosure
 
@@ -29,7 +29,7 @@ Table 1: Hex codes used to represent the enclosure colours
 | Brown             | `#8D6B3E` |
 | White             | `#FFFFFF` |
 
-<img src="colour_scheme/button_colours.png" alt="Button colour scheme" width="100%">
+<img src="colour_scheme/button_colours_small.png" alt="Button colour scheme" width="100%">
 
 Figure 3: Colours used for the arcade buttons
 
