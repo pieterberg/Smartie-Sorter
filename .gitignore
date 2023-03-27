@@ -1,0 +1,8 @@
+# Ignore the Python virtual environment .venv
+.venv
+
+# Ignore the sorting data csv files
+python/sorting_data
+
+# Ignore the generated graphs
+python/graphs
