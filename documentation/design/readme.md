@@ -22,9 +22,23 @@ Figure 1: Smartie Sorter 3000 name sign used at the top of the mini arcade game 
 
 Figure 2: Colours used in the construction of the mini arcade game enclosure
 
+Table 1: Hex codes used to represent the enclosure colours
+
+| Enclosure Colours |  Hex code |
+|-------------------|:---------:|
+| Brown             | `#8D6B3E` |
+| White             | `#FFFFFF` |
+
 <img src="colour_scheme/button_colours.png" alt="Button colour scheme" width="100%">
 
 Figure 3: Colours used for the arcade buttons
+
+Table 2: Hex codes used to represent the arcade button colours
+
+| Arcade Button Colours |  Hex code |
+|-----------------------|:---------:|
+| Blue                  | `#07AEE9` |
+| White                 | `#FFFFFF` |
 
 ### 2.2 Smartie colours
 
@@ -32,7 +46,7 @@ Figure 3: Colours used for the arcade buttons
 
 Figure 4: Colours used to represent the eight different Smartie colours
 
-Table : Hex codes used to represent the Smartie colours
+Table 3: Hex codes used to represent the Smartie colours
 
 | Smartie Colours |  Hex code |
 |-----------------|:---------:|
@@ -55,7 +69,7 @@ Figure 5: Colours used to represent the six M&M colours using the Smarties colou
 
 Figure 6: Colours used to represent the six M&M colours using the official M&M colour scheme
 
-Table : Hex codes used to represent the official M&M colours
+Table 4: Hex codes used to represent the official M&M colours
 
 | Official M&M Colours |  Hex code |
 |----------------------|:---------:|
