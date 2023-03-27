@@ -54,3 +54,14 @@ Figure 5: Colours used to represent the six M&M colours using the Smarties colou
 <img src="colour_scheme/m&m_colours_official.png" alt="Official M&M colours" width="100%">
 
 Figure 6: Colours used to represent the six M&M colours using the official M&M colour scheme
+
+Table : Hex codes used to represent the official M&M colours
+
+| Official M&M Colours |  Hex code |
+|----------------------|:---------:|
+| Red                  | `#C10D0C` |
+| Orange               | `#E17324` |
+| Yellow               | `#FFD101` |
+| Green                | `#25B44B` |
+| Blue                 | `#265EAB` |
+| Brown                | `#6E4F30` |
