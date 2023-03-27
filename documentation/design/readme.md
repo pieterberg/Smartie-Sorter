@@ -1,5 +1,13 @@
 # Design
 
+### Table of Contents
+
+- [1. Name sign](#1-name-sign)
+- [2. Colour scheme](#2-colour-scheme)
+  - [2.1 Enclosure design](#21-enclosure-design)
+  - [2.2 Smartie colours](#22-smartie-colours)
+  - [2.3 M\&M colours](#23-mm-colours)
+
 ## 1. Name sign
 
 <img src="name_sign/name_sign.png" alt="Smartie Sorter 3000 Name sign" width="100%">
