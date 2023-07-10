@@ -13,7 +13,9 @@ Based on the [Arduino Skittles Sorter](https://howtomechatronics.com/projects/ar
 - [ ] 0.3.0 Sorting Mechanism
 - [ ] 1.0.0 Electronics
 
-## Colour Sensing
+## Resources
+
+## Results
 
 <img src="images/Smartie_Sorter.png" alt="Arduino Smartie Sorter" width="50%"/><img src="images/smartie_sorter_interface.png" alt="Smartie Sorter Interface" width="50%"/>
 
