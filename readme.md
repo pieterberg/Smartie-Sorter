@@ -6,6 +6,13 @@ Arduino Smartie Sorter projects using an Arduino Nano board
 
 Based on the [Arduino Skittles Sorter](https://howtomechatronics.com/projects/arduino-color-sorter-project/) from How To Mechatronics
 
+## Progress
+
+- [x] 0.1.0 Colour Sensing
+- [x] 0.2.0 Enclosure Design
+- [ ] 0.3.0 Sorting Mechanism
+- [ ] 1.0.0 Electronics
+
 ## Colour Sensing
 
 <img src="images/Smartie_Sorter.png" alt="Arduino Smartie Sorter" width="50%"/><img src="images/smartie_sorter_interface.png" alt="Smartie Sorter Interface" width="50%"/>
