@@ -1,6 +1,6 @@
 # Smartie Sorter 3000
 
-<img src="https://img.shields.io/badge/Arduino-Nano-00979D?logo=arduino&logoColor=FFFFFF&style=flat"/> <img src="https://img.shields.io/badge/Autodesk-Fusion 360-008BC0?logo=autodesk&logoColor=FFFFFF&style=flat"/>
+<img src="https://img.shields.io/badge/Arduino-Nano-008BC0?logo=arduino&logoColor=FFFFFF&style=flat"/> <img src="https://img.shields.io/badge/Autodesk-Fusion 360-008BC0?logo=autodesk&logoColor=FFFFFF&style=flat"/>
 
 Arduino Smartie Sorter projects using an Arduino Nano board
 
