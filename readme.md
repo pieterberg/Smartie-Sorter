@@ -4,7 +4,7 @@
 
 Arduino Smartie Sorter 3000 project for sorting Smarties and M&M's based on their colour using the TCS3200 colour sensor built into a mini Arcade Game enclosure.
 
-Arduino Smartie Sorter project based on the Arduino Color Sorter Project from How to Mechatronics (2016).
+The sorting mechanism and the sorting algorithm is based on the Arduino Color Sorter Project from How to Mechatronics (2016).
 
 ## Progress
 
