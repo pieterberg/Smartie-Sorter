@@ -15,10 +15,4 @@ Based on the [Arduino Skittles Sorter](https://howtomechatronics.com/projects/ar
 
 ## Resources
 
-## Results
-
-<img src="images/Smartie_Sorter.png" alt="Arduino Smartie Sorter" width="50%"/><img src="images/smartie_sorter_interface.png" alt="Smartie Sorter Interface" width="50%"/>
-
-<img src="images/colour_sensor_enclosure_open.png" alt="Colour sensor enclosuer Open" width="50%"/><img src="images/smartie_colour_calibration_menu.png" alt="Smartie colour calibration menu" width="50%"/>
-
 ## References
