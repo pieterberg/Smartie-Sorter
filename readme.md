@@ -13,6 +13,8 @@ Arduino Smartie Sorter project based on the Arduino Color Sorter Project from Ho
 
 ## Resources
 
+Documentation for the Smartie Sorter is provided in the [wiki](https://github.com/pieterberg/Smartie-Sorter/wiki).
+
 ## References
 
 How to Mechatronics, 2016. Arduino Color Sorter Project [WWW Document]. URL https://howtomechatronics.com/projects/arduino-color-sorter-project/ (accessed 1.1.21).
