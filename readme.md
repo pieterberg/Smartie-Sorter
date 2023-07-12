@@ -11,7 +11,8 @@ The sorting mechanism and the sorting algorithm is based on the Arduino Color So
 - [x] 0.1.0 Colour Sensing
 - [x] 0.2.0 Enclosure Design
 - [ ] 0.3.0 Sorting Mechanism
-- [ ] 1.0.0 Electronics
+- [ ] 0.4.0 Electronics
+- [ ] 1.0.0 Smartie Sorting
 
 ## Resources
 
