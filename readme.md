@@ -6,14 +6,6 @@ Arduino Smartie Sorter 3000 project for sorting Smarties and M&M's based on thei
 
 The sorting mechanism and the sorting algorithm is based on the Arduino Color Sorter Project from How to Mechatronics (2016).
 
-## Progress
-
-- [x] 0.1.0 Colour Sensing
-- [x] 0.2.0 Enclosure Design
-- [ ] 0.3.0 Sorting Mechanism
-- [ ] 0.4.0 Electronics
-- [ ] 1.0.0 Smartie Sorting
-
 ## Resources
 
 Documentation for the Smartie Sorter is provided in the [Wiki](https://github.com/pieterberg/Smartie-Sorter/wiki).
