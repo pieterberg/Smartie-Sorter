@@ -1,5 +1,13 @@
 # Documentation
 
+### Table of contents
+
+- [1. Components](#1-components)
+  - [1.1. Project components](#11-project-components)
+  - [1.2. Fusion 360 project](#12-fusion-360-project)
+- [2. Electronics](#2-electronics)
+- [3. Design](#3-design)
+
 ## 1. Components
 
 ### 1.1. Project components
