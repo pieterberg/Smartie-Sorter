@@ -1,6 +1,0 @@
-{
-    "board": "arduino:avr:nano",
-    "configuration": "cpu=atmega328",
-    "sketch": "smartie_sorter\\smartie_sorter.ino",
-    "port": "COM4"
-}
