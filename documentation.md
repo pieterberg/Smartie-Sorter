@@ -12,11 +12,11 @@
 
 ### 1.1. Project components
 
-The mini Arcade Game enclosure and Smartie sorting functionality were designed in Fusion 360. 
+The mini arcade game enclosure and Smartie sorting functionality were designed in Fusion 360. 
 
 The physical components used for this project were either laser cut or 3D printed.
 
-The woodon components were laser cut from:
+The wooden components were laser cut from:
 
 - 6 mm MDF
 
@@ -51,6 +51,29 @@ The main `Smartie Sorter 3000` project folder contains the final Smartie Sorter 
 
 ## 2. Electronics
 
-
-
 ## 3. Design
+
+### 3.1. Name sign
+
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/documentation/documentation/design/name_sign/name_sign.png" width="100%">
+
+Figure 1: Smartie Sorter 3000 name sign used at the top of the mini arcade game enclosure
+
+### 3.2. Enclosure design
+
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="70%">
+
+Figure 1: Colours used in the construction of the mini arcade game enclosure
+
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/button_colours.png" alt="Button colour scheme" width="70%">
+
+Figure 2: Colours used for the arcade buttons
+
+### 3.3. Smartie colours
+
+There are 8 different Smartie colours, namely: red, orange, yellow, green, blue, mauve, pink, and brown. The hex codes used by this project to represent the different Smartie colours are presented below:
+
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/smartie_colours.png" alt="Smartie colours" width="70%">
+
+Figure 3: Colours used to represent the eight different Smartie colours
+
