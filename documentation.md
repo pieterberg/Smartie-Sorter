@@ -2,7 +2,26 @@
 
 ## 1. Components
 
-### 1.2 Fusion 360 Project
+### 1.1. Project components
+
+The mini Arcade Game enclosure and Smartie sorting functionality were designed in Fusion 360. 
+
+The physical components used for this project were either laser cut or 3D printed.
+
+The woodon components were laser cut from:
+
+- 6 mm MDF
+
+And the acrylic components were laser cut from either:
+
+- 3 mm transparent acrylic
+- or 6 mm transparent acrylic
+
+The 3D printed components were printed using a Zortrax M300 3D printer. The components were printed using:
+
+- White PLA filament
+
+### 1.2. Fusion 360 project
 
 The Fusion 360 project contains the following folder structure:
 
@@ -22,6 +41,8 @@ The Fusion 360 project contains the following folder structure:
 
 The main `Smartie Sorter 3000` project folder contains the final Smartie Sorter assembly. The `assemblies` folder contains the Smartie Colour Detection and Smartie Sorting Mechanism assemblies.
 
+## 2. Electronics
 
 
-## 2. Design
+
+## 3. Design
