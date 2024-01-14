@@ -1,5 +1,2 @@
-# Arduino:
-# --------
-
 # Ignore the VS Code settings for the Arduino extension
 .vscode
