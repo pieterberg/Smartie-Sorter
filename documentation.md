@@ -51,9 +51,13 @@ The main `Smartie Sorter 3000` project folder contains the final Smartie Sorter 
 
 ## 2. Electronics
 
-
-
 ## 3. Design
+
+### 3.1. Name sign
+
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/documentation/documentation/design/name_sign/name_sign.png" width="100%">
+
+Figure 1: Smartie Sorter 3000 name sign used at the top of the mini arcade game enclosure
 
 ### 3.2. Enclosure design
 
