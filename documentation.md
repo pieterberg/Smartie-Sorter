@@ -61,40 +61,13 @@ The main `Smartie Sorter 3000` project folder contains the final Smartie Sorter 
 
 Figure 1: Colours used in the construction of the mini arcade game enclosure
 
-Table 1: Hex codes used to represent the enclosure colours
-
-| Enclosure Colours |  Hex code |
-|-------------------|:---------:|
-| Brown             | `#8D6B3E` |
-| White             | `#FFFFFF` |
-
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/button_colours.png" alt="Button colour scheme" width="70%">
 
 Figure 2: Colours used for the arcade buttons
-
-Table 2: Hex codes used to represent the arcade button colours
-
-| Arcade Button Colours |  Hex code |
-|-----------------------|:---------:|
-| Blue                  | `#07AEE9` |
-| White                 | `#FFFFFF` |
 
 ### 3.3. Smartie colours
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/smartie_colours.png" alt="Smartie colours" width="70%">
 
 Figure 3: Colours used to represent the eight different Smartie colours
-
-Table 3: Hex codes used to represent the Smartie colours
-
-| Smartie Colours |  Hex code |
-|-----------------|:---------:|
-| Red             | `#FF5F5F` |
-| Orange          | `#FAA161` |
-| Yellow          | `#FFF77D` |
-| Green           | `#20BF55` |
-| Blue            | `#06ACE9` |
-| Mauve           | `#A975FF` |
-| Pink            | `#E599FF` |
-| Brown           | `#A5703F` |
 
