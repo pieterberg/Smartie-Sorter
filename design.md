@@ -1,6 +1,6 @@
 # Design 
 
-The design aspects of the Smartie Sorter 3000 are presented here. First, Section 1 looks at the "Smartie Sorter 3000" logo and name sign used for the design. Then, Section 2 looks at the colour schemes used for the mini arcade-game enclosure, the arcade-game buttons, and the Smartie chocolates and M&M chocolates. Finally, Section 3 looks at the sorting locations once the colours of the Smarties and M&M's have been determined.
+The design aspects of the Smartie Sorter 3000 are presented here. First, Section 1 looks at the "Smartie Sorter 3000" logo and name sign used for the design. Then, Section 2 looks at the colour schemes used for the mini arcade-game enclosure, the arcade game buttons, and the Smartie chocolates and M&M chocolates. Finally, Section 3 looks at the sorting locations once the colours of the Smarties and M&M's have been determined.
 
 All colour schemes were designed using Affinity Designer, and all renders were made using Fusion 360.
 
@@ -11,7 +11,7 @@ All colour schemes were designed using Affinity Designer, and all renders were m
   - [1.2. Enclosure placement](#12-enclosure-placement)
 - [2. Colour scheme](#2-colour-scheme)
   - [2.1. Enclosure design](#21-enclosure-design)
-  - [2.2. Arcade-game buttons](#22-arcade-game-buttons)
+  - [2.2. Arcade game buttons](#22-arcade-game-buttons)
   - [2.3. Smartie colours](#23-smartie-colours)
   - [2.4. M\&M colours](#24-mm-colours)
 - [3. Sorting locations](#3-sorting-locations)
@@ -28,13 +28,13 @@ The "Smartie Sorter 3000" name sign placed at the top of the mini arcade-game en
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/name_sign/name_sign.png" width="100%">
 
-Figure 1: "Smartie Sorter 3000" name sign used at the top of the mini arcade-game enclosure
+Figure 1: "Smartie Sorter 3000" name sign used at the top of the mini arcade game enclosure
 
 The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/name_sign) folder contains both a .png version and an .svg version of the "Smartie Sorter 3000" name sign.
 
 ### 1.2. Enclosure placement
 
-The "Smartie Sorter 3000" name sign was printed on a 270 mm x 55 mm vinyl sticker and placed at the top of the mini arcade-game enclosure, on top of the 6 mm transparent acrylic Name Sign component. The name sign is backlit using the 12 V LED strips present in the top-section of the mini arcade-game enclosure. The placement of the "Smartie Sorter 3000" name sign is shown in Figure 2.
+The "Smartie Sorter 3000" name sign was printed on a 270 mm x 55 mm vinyl sticker and placed at the top of the mini arcade game enclosure, on top of the 6 mm transparent acrylic Name Sign component. The name sign is backlit using the 12 V LED strips present in the top-section of the mini arcade game enclosure. The placement of the "Smartie Sorter 3000" name sign is shown in Figure 2.
 
 ---------------------------- Name Sign Placement ----------------------------
 
@@ -42,15 +42,15 @@ Figure 2: "Smartie Sorter 3000" name sign placement
 
 ## 2. Colour scheme
 
-The colour schemes and hex codes used for the mini arcade-game enclosure, arcade-game buttons, Smartie chocolates, and M&M chocolates are provided in this section.
+The colour schemes and hex codes used for the mini arcade game enclosure, arcade game buttons, Smartie chocolates, and M&M chocolates are provided in this section.
 
 ### 2.1. Enclosure design
 
-The Smartie Sorter's mini arcade-game enclosure has a brown and white colour scheme, and was painted using brown and white Rust-Oleum spray paint. The colour scheme used for the enclosure is presented in Figure 3.
+The Smartie Sorter's mini arcade game enclosure has a brown and white colour scheme, and was painted using brown and white Rust-Oleum spray paint. The colour scheme used for the enclosure is presented in Figure 3.
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="70%">
 
-Figure 3: The mini arcade-game enclosure's colour scheme
+Figure 3: The mini arcade game enclosure's colour scheme
 
 The hex codes used for the enclosure's colour scheme are provided in Table 1.
 
@@ -63,26 +63,26 @@ Table 1: Hex codes for the enclosure's colour scheme
 
 ### 2.2. Arcade-game buttons
 
-The Smartie Sorter uses three Sanwa arcade-game buttons to control the sorting process: one light-blue arcade-game button to control the lighting, and two white arcade-game buttons to control the start and stop of the colour sorting process. The colour scheme used to represent the Sanwa arcade-game buttons is presented in Figure 4.
+The Smartie Sorter uses three Sanwa arcade game buttons to control the sorting process: one light-blue arcade game button to control the lighting, and two white arcade game buttons to control the start and stop of the colour sorting process. The colour scheme used to represent the Sanwa arcade game buttons is presented in Figure 4.
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/button_colours.png" alt="Button colour scheme" width="70%">
 
-Figure 4: The Sanwa arcade-game buttons' colour scheme
+Figure 4: The Sanwa arcade game buttons' colour scheme
 
-The hex codes used to represent the blue and white Sanwa arcade buttons are provided in Table 2.
+The hex codes used to represent the blue and white Sanwa arcade game buttons are provided in Table 2.
 
-Table 2: Hex codes for the Sanwa arcade-game buttons' colour scheme
+Table 2: Hex codes for the Sanwa arcade game buttons' colour scheme
 
 | Arcade Button Colours |  Hex code |
 |-----------------------|:---------:|
 | Blue                  | `#07AEE9` |
 | White                 | `#FFFFFF` |
 
-The mapping of the three arcade-game buttons is provided in Figure 5. The light-blue arcade-game button on the left controls the lighting of the Smartie sorter, while the two white arcade-game buttons are used to control the sorting process. When the left white arcade-game button is pressed, then the sorting process starts, and when the right white arcade-game button is pressed, the the sorting process stops.
+The mapping of the three arcade game buttons is provided in Figure 5. The light-blue arcade game button on the left controls the lighting of the Smartie sorter, while the two white arcade game buttons are used to control the sorting process. When the left white arcade game button is pressed, then the sorting process starts, and when the right white arcade game button is pressed, the the sorting process stops.
 
 ---------------------------- Arcade buttons ----------------------------
 
-Figure 5: The Smartie Sorter's arcade-game button mapping
+Figure 5: The Smartie Sorter's arcade game button mapping
 
 ### 2.3. Smartie colours
 
