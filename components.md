@@ -27,6 +27,10 @@ The 3D printed components were printed using a Zortrax M300 3D printer. The comp
 
 ## 2. Resources
 
+The documentation foler contains the following resources:
+
+- Fusion 360 archive files (.f3d) of all the components
+- DXF files (.dxf) to use for laser cutting the wooden components
 
 ## 3. Folder Structure
 
