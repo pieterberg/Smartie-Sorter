@@ -29,3 +29,25 @@ The 3D printed components were printed using a Zortrax M300 3D printer. The comp
 
 
 ## 3. Folder Structure
+
+The components folder structure:
+
+```
+.
+|__ components
+    |__ dxf_files
+    |__ fusion_360_files
+        |__ assemblies
+        |__ components
+            |__ 3d_printed_components
+            |__ acrylic_components
+            |__ chocolates
+                |__ M&Ms
+                |__ smarties
+            |__ connectors
+            |__ electronics
+            |__ supports
+            |__ wooden_components
+```
+
+The main `fusion_360_files` project folder contains the final Smartie Sorter assembly. The `assemblies` folder contains the proposed Smartie Colour Detection mechanism assembly.
