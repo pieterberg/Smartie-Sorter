@@ -20,7 +20,7 @@ All colour schemes were designed using Affinity Designer, and all renders were m
 
 ## 1. Name sign
 
-The documentation for the "Smartie Sorter 3000" name sign used in this project is provided in this section.
+The documentation for the "Smartie Sorter 3000" name sign used for this project is provided in this section.
 
 ### 1.1. Digital file
 
