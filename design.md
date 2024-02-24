@@ -78,7 +78,7 @@ Table 2: Hex codes for the Sanwa arcade game buttons' colour scheme
 | Blue                  | `#07AEE9` |
 | White                 | `#FFFFFF` |
 
-The mapping of the three arcade game buttons is provided in Figure 5. The light-blue arcade game button on the left controls the lighting of the Smartie sorter, while the two white arcade game buttons are used to control the sorting process. When the left white arcade game button is pressed, then the sorting process starts, and when the right white arcade game button is pressed, the the sorting process stops.
+The mapping of the three arcade game buttons is provided in Figure 5. The light-blue arcade game button on the left controls the lighting of the Smartie sorter, while the two white arcade game buttons are used to control the sorting process. When the left white arcade game button is pressed, the sorting process starts, and when the right white arcade game button is pressed, the sorting process stops.
 
 ---------------------------- Arcade buttons ----------------------------
 
