@@ -26,7 +26,7 @@ The documentation for the "Smartie Sorter 3000" name sign used in this project i
 
 The "Smartie Sorter 3000" name sign placed at the top of the mini arcade game enclosure is presented in Figure 1. The name sign has 8 slanted stripes corresponding to the 8 Smartie colours, presented in Section 2.3. The name "Smartie Sorter 3000" comes from the TCS3200 colour sensor that the Smartie Sorter uses to determine the Smartie and M&M colours.
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/name_sign/name_sign.png" width="100%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/name_sign/name_sign.png" alt="Name sign" width="100%">
 
 Figure 1: "Smartie Sorter 3000" name sign used at the top of the mini arcade game enclosure
 
