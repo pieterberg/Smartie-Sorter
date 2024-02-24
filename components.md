@@ -37,26 +37,27 @@ The following resources are available in the [components](https://github.com/pie
 
 ## 3. Folder Structure
 
-The components folder structure:
+The folder structure for the [components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components) folder, containing the resources listed in Section 2, is presented below:
 
 ```
 .
-|__ components
-    |__ dxf_files
-    |__ fusion_360_files
-        |__ assemblies
-        |__ components
-            |__ 3d_printed_components
-            |__ acrylic_components
-            |__ chocolates
-                |__ M&Ms
-                |__ smarties
-            |__ connectors
-            |__ electronics
-            |__ supports
-            |__ wooden_components
+|__ documentation
+    |__ components
+        |__ dxf_files
+        |__ fusion_360_files
+            |__ assemblies
+            |__ components
+                |__ 3d_printed_components
+                |__ acrylic_components
+                |__ chocolates
+                    |__ M&Ms
+                    |__ smarties
+                |__ connectors
+                |__ electronics
+                |__ supports
+                |__ wooden_components
 ```
 
-The main [fusion_360_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files) project folder contains the final Smartie Sorter assembly. The [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files/assemblies) folder contains the proposed Smartie Colour Detection mechanism assembly.
+The main [fusion_360_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files) project folder contains the final Smartie Sorter 3000's mini arcade game assembly. The [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files/assemblies) folder contains the proposed Smartie Colour Detection Mechanism assembly.
 
 
