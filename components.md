@@ -12,15 +12,13 @@ All components were designed and modelled using Fusion 360.
 
 ## 1. Components
 
-The mini arcade game enclosure and Smartie sorting functionality were designed in Fusion 360. 
+The Smartie Sorter 3000's mini arcade game enclosure was designed using Fusion 360. There are three different types of components used in the design, namely wooden components, acrylic components, and 3D printed components. The wooden components consist of medium density fiberboard (MDF) components for the enclosure's panels, and pine for the enclosure's supports.
 
-The physical components used for this project were either laser cut or 3D printed.
-
-DXF files for laser cutting the wooden components are provided in the [dxf_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/dxf_files) folder. Using these DXF files, the wooden components were laser cut from:
+DXF files for laser cutting the MDF components are provided in the [dxf_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/dxf_files) folder. Using these DXF files, the Smartie Sorter 3000's enclosure's panels were laser cut from:
 
 - 6 mm MDF
 
-The different panels that make up the acrylic components were designed to fit together with finger joints. The [acrylic_components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files/components/acrylic_components) folder provides both the overall models of the components, as well as the finger joint versions. Once designed, the acrylic components were laser cut from either:
+The different panels that make up the acrylic components were designed to fit together using finger joints. The [acrylic_components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files/components/acrylic_components) folder provides both the overall models and the finger joint versionsof the Unsorted Smarties Holder and the Sorted Smarties Collector. Once designed, the acrylic components were laser cut from either:
 
 - 3 mm transparent acrylic
 - or 6 mm transparent acrylic
