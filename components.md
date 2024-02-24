@@ -16,16 +16,16 @@ The mini arcade game enclosure and Smartie sorting functionality were designed i
 
 The physical components used for this project were either laser cut or 3D printed.
 
-The wooden components were laser cut from:
+DXF files for laser cutting the wooden components are provided in the [dxf_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/dxf_files) folder. Using these DXF files, the wooden components were laser cut from:
 
 - 6 mm MDF
 
-And the acrylic components were laser cut from either:
+The different panels that make up the acrylic components were designed to fit together with finger joints. The [acrylic_components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files/components/acrylic_components) folder provides both the overall models of the components, as well as the finger joint versions. Once designed, the acrylic components were laser cut from either:
 
 - 3 mm transparent acrylic
 - or 6 mm transparent acrylic
 
-The 3D printed components were printed using a Zortrax M300 3D printer. The components were printed using:
+The 3D printed components were printed using a Zortrax M300 3D printer using:
 
 - White PLA filament
 
