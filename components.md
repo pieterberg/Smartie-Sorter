@@ -31,8 +31,8 @@ The 3D printed components were printed using a Zortrax M300 3D printer using:
 
 The following resources are available in the [components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components) folder:
 
-- Fusion 360 archive files (.f3d) of the components
-- Fusion 360 archive files (.f3z) of the Smartie Sorter assemblies
+- Fusion 360 archive files (.f3d) of the components,
+- Fusion 360 archive files (.f3z) of the Smartie Sorter assemblies,
 - and DXF files (.dxf) for laser cutting the wooden MDF components
 
 ## 3. Folder Structure
