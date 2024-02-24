@@ -56,3 +56,5 @@ The components folder structure:
 ```
 
 The main [fusion_360_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files) project folder contains the final Smartie Sorter assembly. The [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files/assemblies) folder contains the proposed Smartie Colour Detection mechanism assembly.
+
+

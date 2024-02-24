@@ -147,3 +147,5 @@ The locations of the sorted M&M's in the Sorted Smarties Collector component are
 ---------------------------- Sorted M&M Positions ----------------------------
 
 Figure 9: Sorted M&M locations
+
+
