@@ -1,6 +1,6 @@
 # Components
 
-The computer-aided design (CAD) aspects of the Smartie Sorter 3000's mini arcade game enclosure are presented in this document. First, Section 1 looks at the physical materials that the Smartie Sorter 3000's mini arcade game enclosure components are made from. Then, Section 2 lists the available resources for the Smartie Sorter 3000's mini arcade game enclosure Finaly, Section 3 outlines the folder structure of the [components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components) documentation folder.
+The computer-aided design (CAD) aspects of the Smartie Sorter 3000's mini arcade game enclosure are presented in this document. First, Section 1 looks at the physical materials that the Smartie Sorter 3000's mini arcade game enclosure's components are made from. Then, Section 2 lists the available resources for the Smartie Sorter 3000's mini arcade game enclosure. Finaly, Section 3 outlines the folder structure of the [components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components) documentation folder.
 
 All components were designed and modelled using Fusion 360.
 
