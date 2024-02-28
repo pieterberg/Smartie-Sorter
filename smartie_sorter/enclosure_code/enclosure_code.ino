@@ -2,7 +2,9 @@
 // Created by Pieter van den Berg
 // on 28 February 2024
 
-// Create the variables for the different pins
+// Code to control the Smartie Sorter 3000's mini arcade game enclosure
+
+// Assign the pin numbers
 const int LEDTransistor = 2;
 const int button1       = 3;
 const int button2       = 4;
@@ -25,8 +27,7 @@ int button3State         = 0;
 int button3StatePrevious = 0;
 
 void setup() {
-
-  // Setup the Arduino Nano's pins
+  // Setup the transistor pins
   pinMode(LEDTransistor, OUTPUT);
 
   // Setup the button pins
@@ -42,14 +43,12 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
   // Read button 1's state
   button1State = digitalRead(button1);
 
+  // Flash the LEDs if button 1 is pressed
   if ((button1State == 1) && (button1StatePrevious == 0)) {
     Serial.println("Button 1 pressed");
-
     if (isFlashing == true)
     {
       isFlashing = false;
@@ -61,6 +60,7 @@ void loop() {
   // Read button 2's state
   button2State = digitalRead(button2);
 
+  // Print when button 2 is pressed
   if ((button2State == 1) && (button2StatePrevious == 0)) {
     Serial.println("Button 2 pressed");
   }
@@ -68,14 +68,10 @@ void loop() {
   // Read button 3's state
   button3State = digitalRead(button3);
 
+  // Print when button 3 is pressed
   if ((button3State == 1) && (button3StatePrevious == 0)) {
     Serial.println("Button 3 pressed");
   }
-
-  // Capture the previous button states
-  button1StatePrevious = button1State;
-  button2StatePrevious = button2State;
-  button3StatePrevious = button3State;
 
   if (isFlashing == true) {
     if(transistorState == 1){
@@ -88,6 +84,11 @@ void loop() {
   } else {
     digitalWrite(LEDTransistor, HIGH);  
   }
+
+  // Capture the previous button states
+  button1StatePrevious = button1State;
+  button2StatePrevious = button2State;
+  button3StatePrevious = button3State;
 
   // Flash the lights every 300 ms
   delay(300);
