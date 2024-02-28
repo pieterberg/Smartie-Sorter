@@ -1,5 +1,16 @@
 # Electronics
 
+The electronic aspects of the Smartie Sorter 3000 are presented in this document. First, Section 1 lists the electronic components used for the mini arcade game enclosure. Then, Section 2 provides the breadboard and circuit schematics of the mini arcade game enclosure.
+
+All circuit schematics were designed using Fritzing. The Fritzing file is available in the [Fritzing](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/electronics/fritzing) folder.
+
+### Table of Contents
+
+- [1. Component list](#1-component-list)
+- [2. Circuit Schematics](#2-circuit-schematics)
+  - [2.1. Breadboard Schematic](#21-breadboard-schematic)
+  - [2.2. Schematic](#22-schematic)
+
 ## 1. Component list
 
 Table 1: Electronic component list
