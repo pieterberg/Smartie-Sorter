@@ -14,9 +14,5 @@ The [smartie_sorter](https://github.com/pieterberg/Smartie-Sorter/tree/main/smar
 
 The [documentation](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation) folder contains the documentation related to the components, design, and electronics of the Smartie Sorter 3000's mini arcade game enclosure. More information is provided in the [components.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/components.md), [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/design.md), and [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/electronics.md) documents.
 
-## Images
-
-<img src="images/colour_sensor_enclosure_closed.png" alt="Colour sensor enclosuer Closed" width="50%"/><img src="images/calibration_menu.png" alt="Calibration menu" width="50%"/>
-
-<img src="images/colour_sensor_enclosure_open.png" alt="Colour sensor enclosuer Open" width="50%"/><img src="images/smartie_colour_calibration_menu.png" alt="Smartie colour calibration menu" width="50%"/>
+The [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder contains the .f3d and .f3z Fusion 360 component and assembly files for the Smartie Sorter 3000's mini arcade game enclosure.
 
