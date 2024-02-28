@@ -8,8 +8,9 @@ const int button1       = 3;
 const int button2       = 4;
 const int button3       = 5;
 
-// Create a bool to control the lighting state
-bool isFlashing = false;
+// Create variables to control the lighting state
+bool isFlashing      = false;
+int  transistorState = 1;
 
 // Create the variables to keep track of the blue arcade game button's state
 int button1State         = 0;
@@ -33,6 +34,9 @@ void setup() {
   pinMode(button2, INPUT);
   pinMode(button3, INPUT);
 
+  // Start the LED lights
+  digitalWrite(LEDTransistor, HIGH);
+
   // Begin a serial channel
   Serial.begin(9600);
 }
@@ -44,15 +48,20 @@ void loop() {
   button1State = digitalRead(button1);
 
   if ((button1State == 1) && (button1StatePrevious == 0)) {
-
     Serial.println("Button 1 pressed");
+
+    if (isFlashing == true)
+    {
+      isFlashing = false;
+    }else{
+      isFlashing = true;
+    }
   }
 
   // Read button 2's state
   button2State = digitalRead(button2);
 
   if ((button2State == 1) && (button2StatePrevious == 0)) {
-
     Serial.println("Button 2 pressed");
   }
 
@@ -60,7 +69,6 @@ void loop() {
   button3State = digitalRead(button3);
 
   if ((button3State == 1) && (button3StatePrevious == 0)) {
-
     Serial.println("Button 3 pressed");
   }
 
@@ -69,7 +77,21 @@ void loop() {
   button2StatePrevious = button2State;
   button3StatePrevious = button3State;
 
-  delay(200);
+  if (isFlashing == true) {
+    if(transistorState == 1){
+      digitalWrite(LEDTransistor, LOW);
+      transistorState = 0;
+    } else {
+      digitalWrite(LEDTransistor, HIGH);
+      transistorState = 1;
+    }
+  } else {
+    digitalWrite(LEDTransistor, HIGH);  
+  }
+
+  // Flash the lights every 300 ms
+  delay(300);
+
 }
 
 
