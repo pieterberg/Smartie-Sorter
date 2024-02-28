@@ -2,7 +2,7 @@
 
 The design aspects of the Smartie Sorter 3000 are presented in this document. First, Section 1 looks at the "Smartie Sorter 3000" logo and name sign used for the design. Then, Section 2 looks at the colour schemes used for the mini arcade game enclosure, the arcade game buttons, and the Smartie chocolates and M&M chocolates. Finally, Section 3 looks at the sorting locations once the colours of the Smarties and M&M's have been determined.
 
-All colour schemes were designed using Affinity Designer, and all renders were made using Fusion 360.
+All colour schemes were designed using Affinity Designer, and all renders were made using Fusion 360. The Affinity Designer files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/affinity_designer) folder.
 
 ### Table of Contents
 
