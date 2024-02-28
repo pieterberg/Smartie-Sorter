@@ -19,3 +19,14 @@ Table 1: Electronic component list
 | 4-part 12V LED strips               |   2x   |
 | 5-part 12V LED strips               |   4x   |
 | Power switch                        |   1x   |
+
+
+## 2. Circuit Schematics
+
+### 2.1. Breadboard Schematic
+
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics/breadboard.png" alt="Breadboard schematic" width="100%">
+
+### 2.2. Schematic
+
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics/schematic.png" alt="Schematic" width="100%">
