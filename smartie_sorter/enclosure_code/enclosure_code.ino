@@ -35,10 +35,41 @@ void setup() {
 
   // Begin a serial channel
   Serial.begin(9600);
-
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
 
+  // Read button 1's state
+  button1State = digitalRead(button1);
+
+  if ((button1State == 1) && (button1StatePrevious == 0)) {
+
+    Serial.println("Button 1 pressed");
+  }
+
+  // Read button 2's state
+  button2State = digitalRead(button2);
+
+  if ((button2State == 1) && (button2StatePrevious == 0)) {
+
+    Serial.println("Button 2 pressed");
+  }
+
+  // Read button 3's state
+  button3State = digitalRead(button3);
+
+  if ((button3State == 1) && (button3StatePrevious == 0)) {
+
+    Serial.println("Button 3 pressed");
+  }
+
+  // Capture the previous button states
+  button1StatePrevious = button1State;
+  button2StatePrevious = button2State;
+  button3StatePrevious = button3State;
+
+  delay(200);
 }
+
+
