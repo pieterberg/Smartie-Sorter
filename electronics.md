@@ -15,7 +15,7 @@ All circuit schematics were designed using Fritzing. The Fritzing file is availa
 
 The Smartie Sorter 3000 uses an Arduino Nano microcontroller. Table 1 lists the electronic components used for the mini arcade game enclosure.
 
-The Smartie Sorter 3000 has two different circuits running, a 9V circuit used to power the Arduino Nano and circuit components, and a 12V circuit used to power the LED strips. The 12V LED strips are controlled by the Arduino Nano using a 2N2222 NPN transistor.
+The Smartie Sorter 3000 has two different circuits, namely a 9V circuit used to power the Arduino Nano and circuit components, and a 12V circuit used to power the LED strips. The 12V LED strips are controlled by the Arduino Nano using a 2N2222 NPN transistor.
 
 Table 1: Electronic component list
 
