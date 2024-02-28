@@ -15,3 +15,7 @@ Table 1: Electronic component list
 | White Sanwa arcade game button      |   2x   |
 | Pull-up resistors                   |   3x   |
 | 2N2222 transistor                   |   1x   |
+| Transistor resistor                 |   1x   |
+| 4-part 12V LED strip                |   2x   |
+| 5-part 12V LED strip                |   4x   |
+| Power switch                        |   1x   |
