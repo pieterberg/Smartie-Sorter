@@ -25,8 +25,8 @@ Table 1: Electronic component list
 
 ### 2.1. Breadboard Schematic
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics/breadboard.png" alt="Breadboard schematic" width="100%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics/breadboard.png" alt="Breadboard schematic" width="70%">
 
 ### 2.2. Schematic
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics/schematic.png" alt="Schematic" width="100%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics/schematic.png" alt="Schematic" width="70%">
