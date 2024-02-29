@@ -1,9 +1,6 @@
 // Arduino Smartie Sorter Project
 // Created by Pieter van den Berg
 // on 1 January 2021
-//
-// Based on Skittles Sorter from How to Mechatronics
-// https://howtomechatronics.com/projects/arduino-color-sorter-project/
 
 #include <Arduino.h>
 #include "calibrated_values.h"
