@@ -14,7 +14,7 @@ All components were designed and modelled using Fusion 360.
 
 The Smartie Sorter 3000's mini arcade game enclosure was designed using Fusion 360. There are three different types of components used in the design, namely wooden components, acrylic components, and 3D printed components. The wooden components consist of medium density fiberboard (MDF) components for the enclosure's panels and pine for the enclosure's supports.
 
-DXF files for laser cutting the MDF components are provided in the [dxf_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/dxf_files) folder. Using these DXF files, the Smartie Sorter 3000's enclosure's panels were laser cut from:
+DXF files for laser cutting the MDF components are provided in the [dxf_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/dxf_files) folder. Using these DXF files, the Smartie Sorter 3000's enclosure's panels were laser cut from:
 
 - 6 mm MDF
 
@@ -54,6 +54,6 @@ The folder structure for the [fusion_360](https://github.com/pieterberg/Smartie-
         |__ wooden_components
 ```
 
-The main [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) project folder contains the final Smartie Sorter 3000's mini arcade game assembly. The https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies folder contains the proposed Smartie Colour Detection Mechanism assembly.
+The main [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) project folder contains the final Smartie Sorter 3000's mini arcade game assembly. The [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies) folder contains the proposed Smartie Colour Detection Mechanism assembly.
 
 
