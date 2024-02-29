@@ -1,6 +1,6 @@
 # Components
 
-The computer-aided design (CAD) aspects of the Smartie Sorter 3000's mini arcade game enclosure are presented in this document. First, Section 1 looks at the physical materials that the Smartie Sorter 3000's mini arcade game enclosure's components are made from. Then, Section 2 lists the available resources for the Smartie Sorter 3000's mini arcade game enclosure. Finaly, Section 3 outlines the folder structure of the [components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components) documentation folder.
+The computer-aided design (CAD) aspects of the Smartie Sorter 3000's mini arcade game enclosure are presented in this document. First, Section 1 looks at the physical materials that the Smartie Sorter 3000's mini arcade game enclosure's components are made from. Then, Section 2 lists the available resources for the Smartie Sorter 3000's mini arcade game enclosure. Finaly, Section 3 outlines the folder structure of the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
 
 All components were designed and modelled using Fusion 360.
 
@@ -18,7 +18,7 @@ DXF files for laser cutting the MDF components are provided in the [dxf_files](h
 
 - 6 mm MDF
 
-The different panels that make up the acrylic components were designed to fit together using finger joints. The [acrylic_components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files/components/acrylic_components) folder provides both the overall models and the finger joint versions of the Unsorted Smarties Holder and the Sorted Smarties Collector. Once designed, the acrylic components were laser cut from either:
+The different panels that make up the acrylic components were designed to fit together using finger joints. The [acrylic_components](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/components/acrylic_components) folder provides both the overall models and the finger joint versions of the Unsorted Smarties Holder and the Sorted Smarties Collector. Once designed, the acrylic components were laser cut from either:
 
 - 3 mm transparent acrylic
 - or 6 mm transparent acrylic
@@ -29,35 +29,31 @@ The 3D printed components were printed using a Zortrax M300 3D printer using:
 
 ## 2. Resources
 
-The following resources are available in the [components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components) folder:
+The following resources are available in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder:
 
-- Fusion 360 archive files (.f3d) of the components,
-- Fusion 360 archive files (.f3z) of the Smartie Sorter assemblies,
-- and DXF files (.dxf) for laser cutting the wooden MDF components
+- Fusion 360 archive files (.f3d) of the components
+- Fusion 360 archive files (.f3z) of the Smartie Sorter assemblies
 
 ## 3. Folder Structure
 
-The folder structure for the [components](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components) folder, containing the resources listed in Section 2, is presented below:
+The folder structure for the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder, containing the resources listed in Section 2, is presented below:
 
 ```
 .
-|__ documentation
+|__ fusion_360
+    |__ assemblies
     |__ components
-        |__ dxf_files
-        |__ fusion_360_files
-            |__ assemblies
-            |__ components
-                |__ 3d_printed_components
-                |__ acrylic_components
-                |__ chocolates
-                    |__ M&Ms
-                    |__ smarties
-                |__ connectors
-                |__ electronics
-                |__ supports
-                |__ wooden_components
+        |__ 3d_printed_components
+        |__ acrylic_components
+        |__ chocolates
+            |__ M&Ms
+            |__ smarties
+        |__ connectors
+        |__ electronics
+        |__ supports
+        |__ wooden_components
 ```
 
-The main [fusion_360_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files) project folder contains the final Smartie Sorter 3000's mini arcade game assembly. The [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/components/fusion_360_files/assemblies) folder contains the proposed Smartie Colour Detection Mechanism assembly.
+The main [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) project folder contains the final Smartie Sorter 3000's mini arcade game assembly. The https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies folder contains the proposed Smartie Colour Detection Mechanism assembly.
 
 
