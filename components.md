@@ -1,8 +1,6 @@
 # Components
 
-The computer-aided design (CAD) aspects of the Smartie Sorter 3000's mini arcade game enclosure are presented in this document. First, Section 1 looks at the physical materials that the Smartie Sorter 3000's mini arcade game enclosure's components are made from. Then, Section 2 lists the available resources for the Smartie Sorter 3000's mini arcade game enclosure. Finaly, Section 3 outlines the folder structure of the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
-
-All components were designed and modelled using Fusion 360.
+Information about the components used to build the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the different types of components used in the design. Thereafter, Section 2 provides more information about the computer aided design (CAD) files that are provided in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
 
 ### Table of Contents
 
@@ -74,9 +72,13 @@ The labels were affixed in position and sealed using Rust-Oleum Painter's Touch 
 
 ## 2. Fusion 360 Files
 
+All components, mechanisms, and assemblies were designed and modelled using Fusion 360.
+
+The CAD files have been exported and are available in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
+
 ### 2.1. Resources
 
-The following Fusion 360 files are available in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder:
+The following Fusion 360 files are available in the fusion_360 folder:
 
 - Fusion 360 archive files (.f3d) of the components
 - Fusion 360 archive file (.f3z) of the Colour Detection Mechanism
@@ -84,7 +86,7 @@ The following Fusion 360 files are available in the [fusion_360](https://github.
 
 ### 2.2. Folder Structure
 
-The folder structure of the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder is presented below:
+The folder structure of the fusion_360 folder is presented below:
 
 ```
 .
@@ -102,7 +104,7 @@ The folder structure of the [fusion_360](https://github.com/pieterberg/Smartie-S
         |__ supports
         |__ wooden_panels
 ```
-The Smartie Sorter 3000 assembly is available in the top-level [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
+The Smartie Sorter 3000 assembly is available in the top-level of the fusion_360 folder.
 
 The Colour Detection Mechanism assembly is available in the [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies) folder.
 
