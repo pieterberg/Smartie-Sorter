@@ -46,10 +46,17 @@ The brown colour was achieved using Rust-Oleum Painter's Touch Ultra Cover satin
 
 ### 1.2. Acrylic Components
 
-The different panels that make up the acrylic components were designed to fit together using finger joints. The [acrylic_components](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/components/acrylic_components) folder provides both the overall models and the finger joint versions of the Unsorted Smarties Holder and the Sorted Smarties Collector. Once designed, the acrylic components were laser cut from either:
+The acrylic component use for the Name Sign was laser cut from:
+
+- 6 mm transparent acrylic
+
+The Unsorted Smarties Holder and the Sorted Smarties Collector were constructed using acrylic panels that fit together using finger joints.
+
+DXF files for laser cutting the acrylic panels are provided in the [unsorted_smarties_holder_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/dxf_files/unsorted_smarties_holder_finger_joints) and [sorted_smarties_collector_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/dxf_files/sorted_smarties_collector_finger_joints) DXF folders. Using these DXF files, the acrylic panels were laser cut from: 
 
 - 3 mm transparent acrylic
-- or 6 mm transparent acrylic
+
+The acrylic panels were then assembled using acrylic cement.
 
 ### 1.3. 3D Printed Components
 
