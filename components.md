@@ -17,7 +17,18 @@ All components were designed and modelled using Fusion 360.
 
 ## 1. Components
 
-The Smartie Sorter 3000's mini arcade game enclosure was designed using Fusion 360. There are three different types of components used in the design, namely wooden components, acrylic components, and 3D printed components.
+There are eight different types of components used in the design of the Smartie Sorter 3000, namely: 
+
+1. 3D printed components
+2. Acrylic components
+3. Chocolates
+4. Connectors
+5. Electronics
+6. Labels
+7. Supports
+8. Wooden components
+
+This section provides more information about the wooden components, acrylic components, 3D printed components, and labels.
 
 Information about the [electronic](https://github.com/pieterberg/Smartie-Sorter/blob/main/electronics.md) components is provided in a separate document.
 
@@ -44,7 +55,7 @@ The 3D printed components were printed using a Zortrax M300 3D printer using:
 
 ### 1.4. Labels
 
-The labels were printed using a Brother PT-H110 Label Printer using:
+The labels were printed using a Brother PT-H110 label printer using:
 
 - 12 mm black on white laminated tape
 
