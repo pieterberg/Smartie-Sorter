@@ -27,6 +27,10 @@ The 3D printed components were printed using a Zortrax M300 3D printer using:
 
 - White PLA filament
 
+The labels were printed using a Brother PT-H110 Label Printer using:
+
+- 12 mm black on white laminated tape
+
 ## 2. Resources
 
 The following resources are available in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder:
@@ -50,6 +54,7 @@ The folder structure for the [fusion_360](https://github.com/pieterberg/Smartie-
             |__ smarties
         |__ connectors
         |__ electronics
+        |__ labels      
         |__ supports
         |__ wooden_components
 ```
