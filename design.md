@@ -20,17 +20,19 @@ All colour schemes were designed using Affinity Designer, and all renders were m
 
 ## 1. Name sign
 
-The documentation for the "Smartie Sorter 3000" name sign used for this project is provided in this section.
+This section provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enlcosure.
 
-The name "Smartie Sorter 3000" comes from the TCS3200 colour sensor that the Smartie Sorter 3000 uses to determine the Smartie and M&M colours.
+The "3000" in the Smartie Sorter 3000's name comes from the TCS3200 colour sensor that the Smartie Sorter 3000 uses to determine the Smartie and M&M colours.
+
+The logo was stylized using the Bauhaus 93 typeface.
 
 ### 1.1. Digital file
 
-The "Smartie Sorter 3000" logo placed at the top of the mini arcade game enclosure is presented in Figure 1. The logo has 8 slanted stripes that correspond to the 8 Smartie colours, which are presented in Section 2.3. 
+The Smartie Sorter 3000 logo is presented in Figure 1. The logo has 8 slanted stripes that correspond to the 8 Smartie colours, which are presented in Section 2.3. 
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/name_sign/name_sign.png" alt="Name sign" width="100%">
 
-Figure 1: "Smartie Sorter 3000" logo used for the name sign at the top of the mini arcade game enclosure
+Figure 1: The Smartie Sorter 3000 logo used for the name at the top of the mini arcade game enclosure
 
 The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/name_sign) folder contains both a .png version and an .svg version of the "Smartie Sorter 3000" logo.
 
