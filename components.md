@@ -43,6 +43,8 @@ The labels were printed using a Brother PT-H110 Label Printer using:
 
 - 12 mm black on white laminated tape
 
+The labels were affixed in position and sealed using a Rust-Oleum satin clear coat.
+
 ## 2. Resources
 
 The following resources are available in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder:
