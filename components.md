@@ -40,6 +40,10 @@ DXF files for laser cutting the MDF components are provided in the [wooden_panel
 
 - 6 mm MDF
 
+The woodem components were painted according to the colour scheme presented in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/design.md).
+
+The brown colour was achieved using Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg. The white colour was achieved using Rust-Oleum Painter's Touch Ultra Cover flat white. Finally, the white paint was sealed using Rust-Oleum Painter's Touch Ultra Cover satin clear coat.
+
 ### 1.2. Acrylic Components
 
 The different panels that make up the acrylic components were designed to fit together using finger joints. The [acrylic_components](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/components/acrylic_components) folder provides both the overall models and the finger joint versions of the Unsorted Smarties Holder and the Sorted Smarties Collector. Once designed, the acrylic components were laser cut from either:
@@ -59,7 +63,7 @@ The labels were printed using a Brother PT-H110 label printer using:
 
 - 12 mm black on white laminated tape
 
-The labels were affixed in position and sealed using a Rust-Oleum satin clear coat.
+The labels were affixed in position and sealed using Rust-Oleum Painter's Touch Ultra Cover satin clear coat.
 
 ## 2. Fusion 360 Files
 
