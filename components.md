@@ -26,17 +26,17 @@ There are eight different types of components used in the design of the Smartie 
 5. Electronics
 6. Labels
 7. Supports
-8. Wooden components
+8. Wooden panels
 
-This section provides more information about the wooden components, acrylic components, 3D printed components, and labels.
+This section provides more information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, and labels.
 
 Information about the [electronic](https://github.com/pieterberg/Smartie-Sorter/blob/main/electronics.md) components is provided in a separate document.
 
 ### 1.1. Wooden Components
 
-The wooden components consist of medium density fiberboard (MDF) components for the enclosure's panels and pine for the enclosure's supports.
+The wooden components make use of medium density fiberboard (MDF) for the panels and pine for the supports.
 
-DXF files for laser cutting the MDF components are provided in the [dxf_files](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/dxf_files) folder. Using these DXF files, the Smartie Sorter 3000's enclosure's panels were laser cut from:
+DXF files for laser cutting the MDF components are provided in the [wooden_panels](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/dxf_files/wooden_panels) DXF folder. Using these DXF files, the wooden panels were laser cut from:
 
 - 6 mm MDF
 
@@ -89,7 +89,7 @@ The folder structure of the [fusion_360](https://github.com/pieterberg/Smartie-S
         |__ electronics
         |__ labels      
         |__ supports
-        |__ wooden_components
+        |__ wooden_panels
 ```
 The Smartie Sorter 3000 assembly is available in the top-level [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
 
