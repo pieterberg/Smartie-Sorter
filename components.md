@@ -11,8 +11,9 @@ All components were designed and modelled using Fusion 360.
   - [1.2. Acrylic Components](#12-acrylic-components)
   - [1.3. 3D Printed Components](#13-3d-printed-components)
   - [1.4. Labels](#14-labels)
-- [2. Resources](#2-resources)
-- [3. Folder Structure](#3-folder-structure)
+- [2. Fusion 360 Files](#2-fusion-360-files)
+  - [2.1. Resources](#21-resources)
+  - [2.2. Folder Structure](#22-folder-structure)
 
 ## 1. Components
 
@@ -49,7 +50,9 @@ The labels were printed using a Brother PT-H110 Label Printer using:
 
 The labels were affixed in position and sealed using a Rust-Oleum satin clear coat.
 
-## 2. Resources
+## 2. Fusion 360 Files
+
+### 2.1. Resources
 
 The following Fusion 360 files are available in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder:
 
@@ -57,7 +60,7 @@ The following Fusion 360 files are available in the [fusion_360](https://github.
 - Fusion 360 archive file (.f3z) of the Colour Detection Mechanism
 - Fusion 360 archive file (.f3z) of the Smartie Sorter
 
-## 3. Folder Structure
+### 2.2. Folder Structure
 
 The folder structure of the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder is presented below:
 
