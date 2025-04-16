@@ -56,9 +56,9 @@ The brown colour used for the design of the mini arcade game enclosure is based 
 
 Figure 2: The mini arcade game enclosure's colour scheme
 
-The hex codes used for the enclosure's colour scheme are provided in Table 1.
+The hex codes used for the mini arcade game enclosure's colour scheme are provided in Table 1.
 
-Table 1: Hex codes for the enclosure's colour scheme
+Table 1: The hex codes for the mini arcade game enclosure's colour scheme
 
 | Enclosure Colours |  Hex code |
 |-------------------|:---------:|
@@ -75,7 +75,7 @@ Figure 3: The Sanwa arcade game buttons' colour scheme
 
 The hex codes used to represent the blue and white Sanwa arcade game buttons are provided in Table 2.
 
-Table 2: Hex codes for the Sanwa arcade game buttons' colour scheme
+Table 2: The hex codes for the Sanwa arcade game buttons' colour scheme
 
 | Arcade Button Colours |  Hex code |
 |-----------------------|:---------:|
@@ -84,15 +84,15 @@ Table 2: Hex codes for the Sanwa arcade game buttons' colour scheme
 
 ### 2.3. Smartie Colours
 
-There are 8 different Smartie colours, namely: red, orange, yellow, green, blue, mauve, pink, and brown. The colour scheme used by this project to represent the 8 different Smartie colours is presented in Figure 4.
+There are 8 different Smartie colours, namely: red, orange, yellow, green, blue, mauve, pink, and brown. Figure 4 presents the colour scheme that this project uses to represent the 8 different Smartie colours.
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/smartie_colours.png" alt="Smartie colours" width="70%">
 
 Figure 4: The Smartie chocolates' colour scheme
 
-The hex codes used to represent the Smartie chocolates are provided in Table 3.
+The hex codes for the Smartie chocolates' colour scheme are provided in Table 3.
 
-Table 3: Hex codes for the Smartie chocolates' colour scheme
+Table 3: The hex codes for the Smartie chocolates' colour scheme
 
 | Smartie Colours |  Hex code |
 |-----------------|:---------:|
@@ -107,15 +107,15 @@ Table 3: Hex codes for the Smartie chocolates' colour scheme
 
 ### 2.4. M&M Colours
 
-There are 6 different M&M colours, namely: red, orange, yellow, green, blue, and brown. The official colour scheme used to represent the different M&M colours is presented in Figure 5.
+There are 6 different M&M colours, namely: red, orange, yellow, green, blue, and brown. Figure 5 presents the official M&M colour scheme.
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/m_and_m_colours.png" alt="M&M colours" width="70%">
 
 Figure 5: The official M&M colour scheme
 
-The hex codes used in official M&M colour scheme are provided in Table 4.
+The hex codes for the official M&M colour scheme are provided in Table 4.
 
-Table 4: Hex codes for the official M&M colour scheme
+Table 4: The hex codes for the official M&M colour scheme
 
 | Official M&M Colours |  Hex code |
 |----------------------|:---------:|
