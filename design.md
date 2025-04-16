@@ -20,7 +20,7 @@ The Smartie Sorter 3000 logo and the colour schemes were created using Affinity 
 
 ## 1. Name Sign
 
-This section provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enlcosure.
+This section provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure.
 
 The "3000" in the Smartie Sorter 3000's name comes from the TCS3200 colour sensor that the Smartie Sorter 3000 uses to determine the Smartie and M&M colours.
 
