@@ -1,8 +1,8 @@
 # Design 
 
-The design aspects of the Smartie Sorter 3000 are presented in this document. First, Section 1 looks at the "Smartie Sorter 3000" logo and name sign used for the design. Then, Section 2 looks at the colour schemes used for the mini arcade game enclosure, the arcade game buttons, and the Smartie chocolates and M&M chocolates. Finally, Section 3 looks at the sorting locations once the colours of the Smarties and M&M's have been determined.
+Information about the design of the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, section 2 provides more information about the Smartie Sorter 3000's colour scheme.
 
-All colour schemes were designed using Affinity Designer, and all renders were made using Fusion 360. The Affinity Designer files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/affinity_designer) folder.
+The Smartie Sorter 3000 logo and the colour schemes were created using Affinity Designer. The .afdesign files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/affinity_designer) folder.
 
 ### Table of Contents
 
@@ -34,11 +34,11 @@ The Smartie Sorter 3000 logo is presented in Figure 1. The logo has 8 slanted st
 
 Figure 1: The Smartie Sorter 3000 logo used for the name at the top of the mini arcade game enclosure
 
-The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/name_sign) folder contains both a .png version and an .svg version of the "Smartie Sorter 3000" logo.
+The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/name_sign) folder contains both a .png version and an .svg version of the Smartie Sorter 3000 logo.
 
 ### 1.2. Enclosure placement
 
-The "Smartie Sorter 3000" logo was printed on a 270 mm x 55 mm vinyl sticker and affixed to the Name Sign component.
+The Smartie Sorter 3000 logo was printed on a 270 mm x 55 mm vinyl sticker and affixed to the Name Sign component.
 
 The Name Sign component is backlit using 12 V LED strips present in the top-section of the mini arcade game enclosure, as documented in [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/electronics.md).
 
