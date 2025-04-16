@@ -22,3 +22,16 @@ The Smartie Sorter 3000 will enter the selected mode if a valid combination of w
 
 ### 2.2. Combinations
 
+Table 1 provides the combinations for selecting the different operating modes.
+
+For the combinations, `L` refers to a press of the left white arcade game button and `R` refers to a press of the right white arcade game button.
+
+A numerical system is used to keep track of the button presses. Presses of the left white arcade game button (`L`) count +1 point while presses of the right white arcade game button (`R`) count +10 points. The selected operating mode is then entered based on the total points score.
+
+Table 1: Combinations for entering the different operating modes
+
+| Mode number | Combination | Numeric Value | Description                       |
+|:-----------:|-------------|:-------------:|-----------------------------------|
+| -           | `L`         |       1       | Display the active chocolate mode |
+| -           | `R`         |       10      | Display the active sorting mode   |
+
