@@ -48,7 +48,9 @@ The colour schemes and hex codes used for the mini arcade game enclosure, arcade
 
 ### 2.1. Enclosure Design
 
-The Smartie Sorter 3000's mini arcade game enclosure has a brown and white colour scheme, and was painted using brown and white Rust-Oleum spray paint. The colour scheme used for the enclosure is presented in Figure 2.
+The colour scheme used for the design of the Smartie Sorter 3000's mini arcade game enclosure is presented by Figure 2. The outside surfaces of the mini arcade game enclosure are painted brown while the internal surfaces of the mini arcade game enclosure are painted white.
+
+The brown colour used for the design of the mini arcade game enclosure is based on the Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg paint.
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="70%">
 
