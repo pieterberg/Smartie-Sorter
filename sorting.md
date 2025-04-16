@@ -30,8 +30,12 @@ A numerical system is used to keep track of the button presses. Presses of the l
 
 Table 1: Combinations for entering the different operating modes
 
-| Mode number | Combination | Numeric Value | Description                       |
-|:-----------:|-------------|:-------------:|-----------------------------------|
-| -           | `L`         |       1       | Display the active chocolate mode |
-| -           | `R`         |       10      | Display the active sorting mode   |
+| Mode number | Combination     | Numeric Value | Description                       |
+|:-----------:|-----------------|:-------------:|-----------------------------------|
+|      -      | `L`             |       1       | Display the active chocolate mode |
+|      -      | `R`             |       10      | Display the active sorting mode   |
+|      1      | `L L R L L R L` |       25      | Enter the Smartie chocolate mode  |
+|      2      | `L R L L R L R` |       34      | Enter the M&M chocolate mode      |
+|      3      | `R L R R R L R` |       52      | Enter the uncollated sorting mode |
+|      4      | `R R L R L L R` |       43      | Enter the collated sorting mode   |
 
