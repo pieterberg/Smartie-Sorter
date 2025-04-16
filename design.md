@@ -58,7 +58,7 @@ The brown colour used for the design of the mini arcade game enclosure is based 
 
 Figure 2: The mini arcade game enclosure's colour scheme
 
-The hex codes used for the mini arcade game enclosure's colour scheme are provided in Table 1.
+The hex codes for the mini arcade game enclosure's colour scheme are provided in Table 1.
 
 Table 1: The hex codes for the mini arcade game enclosure's colour scheme
 
@@ -69,13 +69,13 @@ Table 1: The hex codes for the mini arcade game enclosure's colour scheme
 
 ### 2.2. Arcade Game Buttons
 
-The Smartie Sorter 3000 uses three Sanwa arcade game buttons to control the sorting process.The light-blue arcade game button on the left controls the lighting of the Smartie sorter, while the two white arcade game buttons are used to control the sorting process. When the left white arcade game button is pressed, the sorting process starts, and when the right white arcade game button is pressed, the sorting process stops. The colour scheme used to represent the Sanwa arcade game buttons is presented in Figure 3.
+The Smartie Sorter 3000 uses three Sanwa arcade game buttons to control the sorting process: one light-blue arcade game button and two white arcade game buttons. Figure 3 presents the colour scheme for the selected Sanwa arcade game buttons.
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/button_colours.png" alt="Button colour scheme" width="70%">
 
 Figure 3: The Sanwa arcade game buttons' colour scheme
 
-The hex codes used to represent the blue and white Sanwa arcade game buttons are provided in Table 2.
+The hex codes for the Sanwa arcade game buttons' colour scheme are provided in Table 2.
 
 Table 2: The hex codes for the Sanwa arcade game buttons' colour scheme
 
