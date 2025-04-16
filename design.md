@@ -48,7 +48,7 @@ The colour schemes and hex codes used for the mini arcade game enclosure, arcade
 
 ### 2.1. Enclosure Design
 
-The colour scheme used for the design of the Smartie Sorter 3000's mini arcade game enclosure is presented by Figure 2. The outside surfaces of the mini arcade game enclosure are painted brown while the internal surfaces of the mini arcade game enclosure are painted white.
+The colour scheme used for the design of the mini arcade game enclosure is presented by Figure 2. The outside surfaces of the mini arcade game enclosure are painted brown while the internal surfaces of the mini arcade game enclosure are painted white.
 
 The brown colour used for the design of the mini arcade game enclosure is based on the Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg paint.
 
@@ -84,15 +84,15 @@ Table 2: The hex codes for the Sanwa arcade game buttons' colour scheme
 
 ### 2.3. Smartie Colours
 
-There are 8 different Smartie colours, namely: red, orange, yellow, green, blue, mauve, pink, and brown. Figure 4 presents the colour scheme that this project uses to represent the 8 different Smartie colours.
+There are 8 different Smartie colours, namely: red, orange, yellow, green, blue, mauve, pink, and brown. Figure 4 presents the Smarties colour scheme.
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/smartie_colours.png" alt="Smartie colours" width="70%">
 
-Figure 4: The Smartie chocolates' colour scheme
+Figure 4: The Smarties colour scheme
 
-The hex codes for the Smartie chocolates' colour scheme are provided in Table 3.
+The hex codes for the Smarties colour scheme are provided in Table 3.
 
-Table 3: The hex codes for the Smartie chocolates' colour scheme
+Table 3: The hex codes for the Smarties colour scheme
 
 | Smartie Colours |  Hex code |
 |-----------------|:---------:|
