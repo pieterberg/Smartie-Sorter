@@ -32,13 +32,13 @@ Information about the electronic components is provided in [electronics.md](http
 
 ### 1.1. Wooden Components
 
-The wooden components make use of medium density fiberboard (MDF) for the panels and pine for the supports.
+The wooden components make use of medium density fibreboard (MDF) for the panels and pine for the supports.
 
 DXF files for laser cutting the MDF components are provided in the [wooden_panels](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/dxf_files/wooden_panels) DXF folder. Using these DXF files, the wooden panels were laser cut from:
 
 - 6 mm MDF
 
-The woodem components were painted according to the colour scheme presented in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/design.md).
+The wooden components were painted according to the colour scheme presented in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/design.md).
 
 The brown colour was achieved using Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg. The white colour was achieved using Rust-Oleum Painter's Touch Ultra Cover flat white. Finally, the white paint was sealed using Rust-Oleum Painter's Touch Ultra Cover satin clear coat.
 
