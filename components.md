@@ -28,7 +28,7 @@ There are eight different types of components used in the design of the Smartie 
 
 This section provides more information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, and labels.
 
-Information about the [electronic](https://github.com/pieterberg/Smartie-Sorter/blob/main/electronics.md) components is provided in a separate document.
+Information about the electronic components is provided in [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/electronics.md).
 
 ### 1.1. Wooden Components
 
@@ -58,7 +58,7 @@ The acrylic panels were then assembled using acrylic cement.
 
 ### 1.3. 3D Printed Components
 
-The 3D printed components were printed using a Zortrax M300 3D printer using:
+The mini arcade game enclosure's 3D printed components were printed using a Zortrax M300 3D printer using:
 
 - White PLA filament
 
