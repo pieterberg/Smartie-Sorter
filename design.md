@@ -44,7 +44,9 @@ The Name Sign component is backlit using 12 V LED strips present in the top-sect
 
 ## 2. Colour Scheme
 
-The colour schemes and hex codes used for the mini arcade game enclosure, arcade game buttons, Smartie chocolates, and M&M chocolates are provided in this section.
+This section presents the colour schemes used to design the Smartie Sorter 3000. The colour schemes and hex codes of the mini arcade game enclosure, arcade game buttons, Smartie chocolates, and M&M chocolates are provided.
+
+The [colour_scheme](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/colour_scheme) folder contains .png versions of the colour schemes.
 
 ### 2.1. Enclosure Design
 
