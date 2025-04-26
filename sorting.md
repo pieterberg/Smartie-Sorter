@@ -4,13 +4,37 @@
 
 ## 1. Sorting Procedure
 
-## 2. Codes
+## 2. Process States
+
+There are 2 different states and 4 different modes that the Smartie Sorter 3000 can be in:
+
+- `SORTING_STATE`
+- `CHOCOLATE_MODE`
+- `SORTING_MODE`
+
+Section 2.1 provides more information about the different states while Section 2.2 provides the default values of the states.
+
+### 2.1. Enumerated Values
+
+### 2.2. Default Values
+
+The default values when powering on the Smartie Sorter 3000 are given by Table 1.
+
+Table 1: Default values
+
+| State            | Default Value |
+|------------------|---------------|
+| `SORTING_STATE`  | NOT_SORTING   |
+| `CHOCOLATE_MODE` | SMARTIES      |
+| `SORTING_MODE`   | UNCOLLATED    |
+
+## 3. Codes
 
 The Smartie Sorter 3000 can operate in 4 different modes.
 
-The different modes are selected by entering different codes using the arcade game buttons. Section 2.1. outlines the procedure for entering a code and Section 2.2. provides the codes for the different operating modes.
+The different modes are selected by entering different codes using the arcade game buttons. Section 3.1 outlines the procedure for entering a code and Section 3.2 provides the codes for the different operating modes.
 
-### 2.1. Procedure
+### 3.1. Procedure
 
 The procedure to enter a code is as follows:
 
@@ -20,15 +44,15 @@ The procedure to enter a code is as follows:
 
 The Smartie Sorter 3000 will enter the selected mode if a valid combination of white button presses was entered. The built-in LEDs will flash a certain number of times, corresponding to the mode number, to confirm that the code has been accepted.
 
-### 2.2. Combinations
+### 3.2. Combinations
 
-Table 1 provides the combinations for selecting the different operating modes.
+Table 2 provides the combinations for selecting the different operating modes.
 
 For the combinations, `L` refers to a press of the left white arcade game button and `R` refers to a press of the right white arcade game button.
 
 A numerical system is used to keep track of the button presses. Presses of the left white arcade game button (`L`) count +1 point while presses of the right white arcade game button (`R`) count +10 points. The selected operating mode is then entered based on the total points score.
 
-Table 1: Combinations for entering the different operating modes
+Table 2: Combinations for entering the different operating modes
 
 | Mode number | Combination     | Numeric Value | Description                       |
 |:-----------:|-----------------|:-------------:|-----------------------------------|
