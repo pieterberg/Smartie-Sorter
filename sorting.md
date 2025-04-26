@@ -6,13 +6,13 @@
 
 ## 2. Operating Modes
 
-There are three different properties that control the sorting behaviour of the Smartie Sorter 3000, namely:
+There are three different operating properties that control the sorting behaviour of the Smartie Sorter 3000, namely:
 
 - `SORTING_STATE`
 - `CHOCOLATE_MODE`
 - `SORTING_MODE`
 
-Each of these properties have two different possible states that the Smartie Sorter 3000 can be in at any given time. Section 2.1 provides more information about the different states while Section 2.2 provides the default values for each property.
+Each of these properties have two different possible values that they can have at any given time. Section 2.1 provides more information about the different values that the operating properties can have while Section 2.2 provides the default values for each operating property.
 
 ### 2.1. Enumerated Values
 
@@ -35,9 +35,9 @@ The `SORTING_MODE` property allows the Smartie Sorter 3000 to switch between gro
 
 ### 2.2. Default Values
 
-The default values when powering on the Smartie Sorter 3000 are given by Table 1.
+The default values of the three operating property are given by Table 1. These values have been hard-coded into the Arduino script and represent the values that the operating properties will have when powering on the Smartie Sorter 3000.
 
-Table 1: Default values
+Table 1: The default values of the operating properties
 
 | Property         | Default Value |
 |------------------|---------------|
