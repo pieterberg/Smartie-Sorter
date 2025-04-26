@@ -4,7 +4,7 @@
 
 ## 1. Sorting Procedure
 
-## 2. Process States
+## 2. Operating Modes
 
 There are three different properties that control the sorting behaviour of the Smartie Sorter 3000, namely:
 
@@ -16,13 +16,30 @@ Each of these properties have two different possible states that the Smartie Sor
 
 ### 2.1. Enumerated Values
 
-### 2.2. Default States
+The values of the three operating properties are tracked using enums. The Smartie Sorter 3000 must have a value for each property at any given time.
+
+The `SORTING_STATE` property controls whether the Smartie Sorter 3000 is currently performing the sorting procedure that was outlined in Section 1. The two possible enumerated values are:
+
+- SORTING
+- NOT_SORTING
+
+The `CHOCOLATE_MODE` property allows the Smartie Sorter 3000 to switch between sorting Smarties and sorting M&M's. The two possible enumerated values are:
+
+- SMARTIES
+- M_AND_M_S
+
+The `SORTING_MODE` property allows the Smartie Sorter 3000 to switch between grouping the same-coloured Smarties and M&M's together (uncollated) and grouping the Smarties and M&M's in such a way that consecutive chocolates of the same colour end up in consecutive compartments (collated). The two possible enumerated values are:
+
+- COLLATED
+- UNCOLLATED 
+
+### 2.2. Default Values
 
 The default values when powering on the Smartie Sorter 3000 are given by Table 1.
 
 Table 1: Default values
 
-| Property         | Default State |
+| Property         | Default Value |
 |------------------|---------------|
 | `SORTING_STATE`  | NOT_SORTING   |
 | `CHOCOLATE_MODE` | SMARTIES      |
