@@ -6,23 +6,23 @@
 
 ## 2. Process States
 
-There are 2 different states and 4 different modes that the Smartie Sorter 3000 can be in:
+There are three different properties that control the sorting behaviour of the Smartie Sorter 3000, namely:
 
 - `SORTING_STATE`
 - `CHOCOLATE_MODE`
 - `SORTING_MODE`
 
-Section 2.1 provides more information about the different states while Section 2.2 provides the default values of the states.
+Each of these properties have two different possible states that the Smartie Sorter 3000 can be in at any given time. Section 2.1 provides more information about the different states while Section 2.2 provides the default values for each property.
 
 ### 2.1. Enumerated Values
 
-### 2.2. Default Values
+### 2.2. Default States
 
 The default values when powering on the Smartie Sorter 3000 are given by Table 1.
 
 Table 1: Default values
 
-| State            | Default Value |
+| Property         | Default State |
 |------------------|---------------|
 | `SORTING_STATE`  | NOT_SORTING   |
 | `CHOCOLATE_MODE` | SMARTIES      |
