@@ -2,7 +2,7 @@
 
 Information about the design of the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, section 2 provides more information about the Smartie Sorter 3000's colour scheme.
 
-The Smartie Sorter 3000 logo and the colour schemes were created using Affinity Designer. The .afdesign files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/affinity_designer) folder.
+The Smartie Sorter 3000 logo and the colour schemes were created using Affinity Designer. The .afdesign files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/affinity_designer) folder.
 
 ### Table of Contents
 
@@ -30,23 +30,23 @@ The logo was stylized using the Bauhaus 93 typeface.
 
 The Smartie Sorter 3000 logo is presented in Figure 1. The logo has 8 slanted stripes that correspond to the 8 Smartie colours, which are presented in Section 2.3. 
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/name_sign/name_sign.png" alt="Name sign" width="100%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/name_sign/name_sign.png" alt="Name sign" width="100%">
 
 Figure 1: The Smartie Sorter 3000 logo used for the name at the top of the mini arcade game enclosure
 
-The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/name_sign) folder contains both a .png version and an .svg version of the Smartie Sorter 3000 logo.
+The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/name_sign) folder contains both a .png version and an .svg version of the Smartie Sorter 3000 logo.
 
 ### 1.2. Enclosure Placement
 
 The Smartie Sorter 3000 logo was printed on a 270 mm x 55 mm vinyl sticker and affixed to the Name Sign component.
 
-The Name Sign component is backlit using 12 V LED strips present in the top-section of the mini arcade game enclosure, as documented in [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/electronics.md).
+The Name Sign component is backlit using 12 V LED strips present in the top-section of the mini arcade game enclosure, as documented in [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics.md).
 
 ## 2. Colour Scheme
 
 This section presents the colour schemes used to design the Smartie Sorter 3000. The colour schemes and hex codes of the mini arcade game enclosure, arcade game buttons, Smartie chocolates, and M&M chocolates are provided.
 
-The [colour_scheme](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/design/colour_scheme) folder contains .png versions of the colour schemes.
+The [colour_scheme](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/colour_scheme) folder contains .png versions of the colour schemes.
 
 ### 2.1. Enclosure Design
 
@@ -54,7 +54,7 @@ The colour scheme used for the design of the mini arcade game enclosure is prese
 
 The brown colour used for the design of the mini arcade game enclosure is based on the Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg paint.
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="70%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="70%">
 
 Figure 2: The mini arcade game enclosure's colour scheme
 
@@ -71,7 +71,7 @@ Table 1: The hex codes for the mini arcade game enclosure's colour scheme
 
 The Smartie Sorter 3000 uses three Sanwa arcade game buttons to control the sorting process: one light-blue arcade game button and two white arcade game buttons. Figure 3 presents the colour scheme for the selected Sanwa arcade game buttons.
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/button_colours.png" alt="Button colour scheme" width="70%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/button_colours.png" alt="Button colour scheme" width="70%">
 
 Figure 3: The Sanwa arcade game buttons' colour scheme
 
@@ -88,7 +88,7 @@ Table 2: The hex codes for the Sanwa arcade game buttons' colour scheme
 
 There are 8 different Smartie colours, namely: red, orange, yellow, green, blue, mauve, pink, and brown. Figure 4 presents the Smarties colour scheme.
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/smartie_colours.png" alt="Smartie colours" width="70%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/smartie_colours.png" alt="Smartie colours" width="70%">
 
 Figure 4: The Smarties colour scheme
 
@@ -111,7 +111,7 @@ Table 3: The hex codes for the Smarties colour scheme
 
 There are 6 different M&M colours, namely: red, orange, yellow, green, blue, and brown. Figure 5 presents the official M&M colour scheme.
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design/colour_scheme/m_and_m_colours.png" alt="M&M colours" width="70%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/m_and_m_colours.png" alt="M&M colours" width="70%">
 
 Figure 5: The official M&M colour scheme
 
