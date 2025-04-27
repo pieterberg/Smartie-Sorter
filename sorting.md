@@ -30,8 +30,8 @@ The `CHOCOLATE_MODE` property allows the Smartie Sorter 3000 to switch between s
 
 The `SORTING_MODE` property allows the Smartie Sorter 3000 to switch between grouping the same-coloured Smarties and M&M's together (uncollated) and grouping the Smarties and M&M's in such a way that consecutive chocolates of the same colour end up in consecutive compartments (collated). The two possible enumerated values are:
 
-- COLLATED
 - UNCOLLATED 
+- COLLATED
 
 ### 2.2. Default Values
 
