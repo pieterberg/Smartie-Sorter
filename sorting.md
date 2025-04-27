@@ -55,7 +55,7 @@ The different modes are selected by entering different codes using the arcade ga
 
 The Smartie Sorter 3000 uses three Sanwa arcade game buttons to control the sorting process. As mentioned in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md), the arcade game buttons consist of one light-blue arcade game button and two white arcade game buttons. Table 2 provides the normal behaviour of the arcade game buttons.
 
-Table 2: Normal behaviour of the arcade game buttons
+Table 2: The normal behaviour of the arcade game buttons
 
 | Mode Number    | Button                         | Symbol | Action                                                                                                      |
 |:--------------:|--------------------------------|:------:|-------------------------------------------------------------------------------------------------------------|
@@ -65,7 +65,7 @@ Table 2: Normal behaviour of the arcade game buttons
 
 The Arduino sketch continuously monitors for button presses during the sorting procedure, and the built-in LEDs will flash a certain number of times, corresponding to the mode number, when the `SORTING_STATE` property changes.
 
-### 3.2. Procedure
+### 3.2. Combination Mode
 
 The procedure to enter a code is as follows:
 
@@ -77,20 +77,16 @@ The Smartie Sorter 3000 will enter the selected mode if a valid combination of w
 
 ### 3.3. Combinations
 
-Table 3 provides the combinations for selecting the different operating modes.
+A numeric system is used to keep track of the white arcade game button presses during "combination" mode. Presses of the left white arcade game button (`L`) count +1 point while presses of the right white arcade game button (`R`) count +10 points. The selected operating mode is then entered based on the total points score. Table 3 provides the supported combinations and their respective actions.
 
-For the combinations, `L` refers to a press of the left white arcade game button and `R` refers to a press of the right white arcade game button.
+Table 3: The combinations for setting the values of the `CHOCOLATE_MODE` and `SORTING_MODE` properties
 
-A numerical system is used to keep track of the button presses. Presses of the left white arcade game button (`L`) count +1 point while presses of the right white arcade game button (`R`) count +10 points. The selected operating mode is then entered based on the total points score.
-
-Table 3: Combinations for entering the different operating modes
-
-| Mode number | Combination     | Numeric Value | Description                        |
-|:-----------:|-----------------|:-------------:|------------------------------------|
-|      -      | `L`             |       1       | Display the active chocolate mode. |
-|      -      | `R`             |       10      | Display the active sorting mode.   |
-|      3      | `L L R L L R L` |       25      | Enter the Smartie chocolate mode.  |
-|      4      | `L R L L R L R` |       34      | Enter the M&M chocolate mode.      |
-|      5      | `R L R R R L R` |       52      | Enter the uncollated sorting mode. |
-|      6      | `R R L R L L R` |       43      | Enter the collated sorting mode.   |
+| Mode number | Combination     | Numeric Value | Action                                           |
+|:-----------:|-----------------|:-------------:|--------------------------------------------------|
+|      -      | `L`             |       1       | Displays the active chocolate mode.              |
+|      -      | `R`             |       10      | Displays the active sorting mode.                |
+|      3      | `L L R L L R L` |       25      | Sets the value of `CHOCOLATE_MODE` to SMARTIES.  |
+|      4      | `L R L L R L R` |       34      | Sets the value of `CHOCOLATE_MODE` to M_AND_M_S. |
+|      5      | `R L R R R L R` |       52      | Sets the value of `SORTING_MODE` to UNCOLLATED.  |
+|      6      | `R R L R L L R` |       43      | Sets the value of `SORTING_MODE` to COLLATED.    |
 
