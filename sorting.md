@@ -2,6 +2,15 @@
 
 ### Table of Contents
 
+- [1. Sorting Procedure](#1-sorting-procedure)
+- [2. Operating Modes](#2-operating-modes)
+  - [2.1. Enumerated Values](#21-enumerated-values)
+  - [2.2. Default Values](#22-default-values)
+- [3. Control](#3-control)
+  - [3.1. Buttons](#31-buttons)
+  - [3.2. Combination Mode](#32-combination-mode)
+  - [3.3. Combinations](#33-combinations)
+
 ## 1. Sorting Procedure
 
 ## 2. Operating Modes
