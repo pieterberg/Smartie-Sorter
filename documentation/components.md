@@ -28,17 +28,17 @@ There are eight different types of components used in the design of the Smartie 
 
 This section provides more information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, and labels.
 
-Information about the electronic components is provided in [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/electronics.md).
+Information about the electronic components is provided in [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics.md).
 
 ### 1.1. Wooden Components
 
 The wooden components make use of medium density fibreboard (MDF) for the panels and pine for the supports.
 
-DXF files for laser cutting the MDF components are provided in the [wooden_panels](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/dxf_files/wooden_panels) DXF folder. Using these DXF files, the wooden panels were laser cut from:
+DXF files for laser cutting the MDF components are provided in the [wooden_panels](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/dxf_files/wooden_panels) DXF folder. Using these DXF files, the wooden panels were laser cut from:
 
 - 6 mm MDF
 
-The wooden components were painted according to the colour scheme presented in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/design.md).
+The wooden components were painted according to the colour scheme presented in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md).
 
 The brown colour was achieved using Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg. The white colour was achieved using Rust-Oleum Painter's Touch Ultra Cover flat white. Finally, the white paint was sealed using Rust-Oleum Painter's Touch Ultra Cover satin clear coat.
 
@@ -50,7 +50,7 @@ The acrylic component use for the Name Sign was laser cut from:
 
 The Unsorted Smarties Holder and the Sorted Smarties Collector were constructed using acrylic panels that fit together using finger joints.
 
-DXF files for laser cutting the acrylic panels are provided in the [unsorted_smarties_holder_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/dxf_files/unsorted_smarties_holder_finger_joints) and [sorted_smarties_collector_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation/dxf_files/sorted_smarties_collector_finger_joints) DXF folders. Using these DXF files, the acrylic panels were laser cut from: 
+DXF files for laser cutting the acrylic panels are provided in the [unsorted_smarties_holder_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/dxf_files/unsorted_smarties_holder_finger_joints) and [sorted_smarties_collector_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/dxf_files/sorted_smarties_collector_finger_joints) DXF folders. Using these DXF files, the acrylic panels were laser cut from: 
 
 - 3 mm transparent acrylic
 
