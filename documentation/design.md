@@ -1,6 +1,6 @@
 # Design 
 
-Information about the design of the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, section 2 provides more information about the Smartie Sorter 3000's colour scheme.
+Information about the design of the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides more information about the Smartie Sorter 3000's colour scheme.
 
 The Smartie Sorter 3000 logo and the colour schemes were created using Affinity Designer. The .afdesign files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/affinity_designer) folder.
 
@@ -83,6 +83,8 @@ Table 2: The hex codes for the Sanwa arcade game buttons' colour scheme
 |-----------------------|:---------:|
 | Blue                  | `#07AEE9` |
 | White                 | `#FFFFFF` |
+
+More information about the arcade game buttons and how they control the sorting process is given in [sorting.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/sorting.md).
 
 ### 2.3. Smartie Colours
 
