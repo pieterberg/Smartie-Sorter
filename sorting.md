@@ -8,7 +8,7 @@
   - [2.2. Default Values](#22-default-values)
 - [3. Control](#3-control)
   - [3.1. Buttons](#31-buttons)
-  - [3.2. Combination Mode](#32-combination-mode)
+  - [3.2. Combinations Mode](#32-combinations-mode)
   - [3.3. Combinations](#33-combinations)
 
 ## 1. Sorting Procedure
