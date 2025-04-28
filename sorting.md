@@ -56,9 +56,7 @@ Table 1: The default values of the operating properties
 
 ## 3. Control
 
-The Smartie Sorter 3000 can operate in 4 different modes.
-
-The different modes are selected by entering different codes using the arcade game buttons. Section 3.1 outlines the procedure for entering a code and Section 3.2 provides the codes for the different operating modes.
+Control of the Smartie Sorter 3000 is achieved through the use of arcade game buttons to set the values of the three operating properties that were defined in Section 2.
 
 ### 3.1. Buttons
 
