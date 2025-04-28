@@ -74,15 +74,17 @@ Table 2: The normal behaviour of the arcade game buttons
 
 The Arduino sketch continuously monitors for button presses during the sorting procedure, and the built-in LEDs will flash a certain number of times, corresponding to the mode number, when the `SORTING_STATE` property changes.
 
-### 3.2. Combination Mode
+### 3.2. Combinations Mode
 
-The procedure to enter a code is as follows:
+The "combinations" mode can be used to set the values of the `CHOCOLATE_MODE` and `SORTING_MODE` properties through entering a combination of left and right white arcade game button presses. 
 
-1. Press the blue arcade game button
-2. Enter a combination of white button presses
-3. Press the blue arcade game button again
+The procedure to enter a combination is as follows:
 
-The Smartie Sorter 3000 will enter the selected mode if a valid combination of white button presses was entered. The built-in LEDs will flash a certain number of times, corresponding to the mode number, to confirm that the code has been accepted.
+1. Press the blue arcade game button to enter the "combinations" mode
+2. Enter a combination of left and right white arcade game button presses
+3. Press the blue arcade game button again to exit the "combinations" mode
+
+The Smartie Sorter 3000 will enter the selected operating mode if a valid combination of white arcade game button presses was entered. The built-in LEDs will flash a certain number of times, corresponding to the mode number, to confirm that the combination has been accepted.
 
 ### 3.3. Combinations
 
@@ -90,7 +92,7 @@ A numeric system is used to keep track of the white arcade game button presses d
 
 Table 3: The combinations for setting the values of the `CHOCOLATE_MODE` and `SORTING_MODE` properties
 
-| Mode number | Combination     | Numeric Value | Action                                           |
+| Mode Number | Combination     | Numeric Value | Action                                           |
 |:-----------:|-----------------|:-------------:|--------------------------------------------------|
 |      -      | `L`             |       1       | Displays the active chocolate mode.              |
 |      -      | `R`             |       10      | Displays the active sorting mode.                |
