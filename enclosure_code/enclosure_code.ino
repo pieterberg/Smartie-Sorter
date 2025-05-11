@@ -4,7 +4,6 @@
 
 // Code to control the Smartie Sorter 3000's mini arcade game enclosure
 
-
 // Create enums to track the states of the three operating properties
 enum SORTING_STATE {
   SORTING,
@@ -29,6 +28,8 @@ SORTING_MODE sorting_mode     = UNCOLLATED;
 // Create a bool to keep track of the combinations mode
 bool isCombinationsMode = false;
 
+// Create a numeric counter for keeping track of the button presses during combinations mode
+int combinationsScore = 0;
 
 // Assign the pin numbers
 const int LEDTransistor = 2;
@@ -37,7 +38,7 @@ const int button2       = 4;  // The left white arcade game button
 const int button3       = 5;  // The right white arcade game button
 
 // Create a variable to control the length of the LED flashes
-const int LEDFlashingDelay = 150; // [ms]
+const int LEDFlashingDelay = 200; // [ms]
 
 // Create the variables to keep track of the blue arcade game button's state
 int button1State         = 0;
@@ -142,10 +143,10 @@ void button1Pressed() {
     case true:
       isCombinationsMode = false;
       // Evaluate the entered combination
+      evaluateCombinations();
       Serial.println("Exit combinations mode");     
       break;
-
-    }
+    }   
 }
 
 // Code to run when the left white arcade game button is pressed
@@ -164,9 +165,9 @@ void button2Pressed() {
       break;
       
     case true:
-      // Increase combinations score    
+      // Increase the value of the numeric counter used to keep track of the button presses for entering the combinations
+      combinationsScore = combinationsScore + 1;    
       break;
-
     }
 }
 
@@ -186,10 +187,66 @@ void button3Pressed() {
       break;
       
     case true:
-      // Increase combinations score    
+      // Increase the value of the numeric counter used to keep track of the button presses for entering the combinations
+      combinationsScore = combinationsScore + 10;    
+      break;
+    }
+}
+
+// A function for determining which combination was entered based on the final value of the numeric counter used to keep track of the button presses
+void evaluateCombinations() {
+
+  // Evaluate the entered combination based on the final value of the numeric counter
+  switch(combinationsScore) {
+    case 1:
+      if (chocolate_mode == SMARTIES) {
+        // Flash the built-in LEDs 4 times to indicate that the CHOCOLATE_MODE state is currently set to SMARTIES
+        flashLEDs(4);
+      }
+      if (chocolate_mode == M_AND_M_S) {
+        // Flash the built-in LEDs 5 times to indicate that the CHOCOLATE_MODE state is currently set to M_AND_M_S
+        flashLEDs(5);
+      }
+      break;
+    
+    case 10:
+      if (sorting_mode == UNCOLLATED){
+        // Flash the built-in LEDs 6 times to indicate that the SORTING_MODE state is currently set to UNCOLLATED
+        flashLEDs(6);
+      }
+      if (sorting_mode == COLLATED) {
+        // Flash the built-in LEDs 7 times to indicate that the SORTING_MODE state is currently set to COLLATED
+        flashLEDs(7);
+      }
       break;
 
-    }
+    case 25:
+      chocolate_mode = SMARTIES;
+      // Flash the built-in LEDs 4 times to indicate that the CHOCOLATE_MODE state has now been set to SMARTIES
+      flashLEDs(4);
+      break;
+
+    case 34:
+      chocolate_mode = M_AND_M_S;
+      // Flash the built-in LEDs 5 times to indicate that the CHOCOLATE_MODE state has now been set to M_AND_M_S
+      flashLEDs(5);
+      break;
+
+    case 52:
+      sorting_mode = UNCOLLATED;
+      // Flash the built-in LEDs 6 times to indicate that the SORTING_MODE state has now been set to UNCOLLATED
+      flashLEDs(6);
+      break;
+
+    case 43:
+      sorting_mode = COLLATED;
+      // Flash the built-in LEDs 7 times to indicate that the SORTING_MODE state has now been set to COLLATED
+      flashLEDs(7);
+      break;
+  }
+
+  // Reset the score counter back to zero
+  combinationsScore = 0;
 }
 
 // A function for flashing the built-in LEDs a certain number of times corresponding to the mode number of the selected operating state
