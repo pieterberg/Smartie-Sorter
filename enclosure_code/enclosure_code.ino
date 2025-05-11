@@ -4,6 +4,28 @@
 
 // Code to control the Smartie Sorter 3000's mini arcade game enclosure
 
+
+// Create enums to track the states of the three operating properties
+enum SORTING_STATE {
+  SORTING,
+  NOT_SORTING
+};
+
+enum CHOCOLATE_MODE {
+  SMARTIES,
+  M_AND_M_S
+};
+
+enum SORTING_MODE {
+  UNCOLLATED,
+  COLLATED
+};
+
+// Set the default values of the three operating properties
+SORTING_STATE sorting_state   = NOT_SORTING;
+CHOCOLATE_MODE chocolate_mode = SMARTIES;
+SORTING_MODE sorting_mode     = UNCOLLATED;
+
 // Assign the pin numbers
 const int LEDTransistor = 2;
 const int button1       = 3;
@@ -40,6 +62,7 @@ void setup() {
 
   // Begin a serial channel
   Serial.begin(9600);
+
 }
 
 void loop() {
