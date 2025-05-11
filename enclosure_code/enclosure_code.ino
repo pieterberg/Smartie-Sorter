@@ -28,13 +28,12 @@ SORTING_MODE sorting_mode     = UNCOLLATED;
 
 // Assign the pin numbers
 const int LEDTransistor = 2;
-const int button1       = 3;
-const int button2       = 4;
-const int button3       = 5;
+const int button1       = 3;  // The blue arcade game button
+const int button2       = 4;  // The left white arcade game button
+const int button3       = 5;  // The right white arcade game button
 
-// Create variables to control the lighting state
-bool isFlashing      = false;
-int  transistorState = 1;
+// Create a variable to control the length of the LED flashes
+const int LEDFlashingDelay = 250; // [ms]
 
 // Create the variables to keep track of the blue arcade game button's state
 int button1State         = 0;
@@ -66,18 +65,31 @@ void setup() {
 }
 
 void loop() {
+  // Scan for any button presses
+  readButtonPresses();
+
+  // Run the sorting procedure when the SORTING_STATE property is set to SORTING
+  if (sorting_state == SORTING){
+
+
+
+
+
+
+  }
+}
+
+
+void readButtonPresses(){
+
   // Read button 1's state
   button1State = digitalRead(button1);
 
   // Flash the LEDs if button 1 is pressed
   if ((button1State == 1) && (button1StatePrevious == 0)) {
     Serial.println("Button 1 pressed");
-    if (isFlashing == true)
-    {
-      isFlashing = false;
-    }else{
-      isFlashing = true;
-    }
+
+
   }
 
   // Read button 2's state
@@ -86,26 +98,37 @@ void loop() {
   // Print when button 2 is pressed
   if ((button2State == 1) && (button2StatePrevious == 0)) {
     Serial.println("Button 2 pressed");
+
+    if (sorting_state == NOT_SORTING) {
+      sorting_state = SORTING;
+
+      // Flash the lights to show that the sorting mode is now not sorting
+      digitalWrite(LEDTransistor, LOW);
+      delay (LEDFlashingDelay);
+      digitalWrite(LEDTransistor, HIGH);
+    }
   }
 
   // Read button 3's state
   button3State = digitalRead(button3);
 
+
   // Print when button 3 is pressed
   if ((button3State == 1) && (button3StatePrevious == 0)) {
     Serial.println("Button 3 pressed");
-  }
 
-  if (isFlashing == true) {
-    if(transistorState == 1){
+    if (sorting_state == SORTING) {
+      sorting_state = NOT_SORTING;
+
+      // Flash the lights to show that the sorting mode is now not sorting
       digitalWrite(LEDTransistor, LOW);
-      transistorState = 0;
-    } else {
+      delay (LEDFlashingDelay);
       digitalWrite(LEDTransistor, HIGH);
-      transistorState = 1;
+      delay (LEDFlashingDelay);
+      digitalWrite(LEDTransistor, LOW);
+      delay (LEDFlashingDelay);
+      digitalWrite(LEDTransistor, HIGH);
     }
-  } else {
-    digitalWrite(LEDTransistor, HIGH);  
   }
 
   // Capture the previous button states
@@ -113,9 +136,7 @@ void loop() {
   button2StatePrevious = button2State;
   button3StatePrevious = button3State;
 
-  // Flash the lights every 300 ms
-  delay(300);
-
 }
+
 
 
