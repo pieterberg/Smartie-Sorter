@@ -26,6 +26,10 @@ SORTING_STATE sorting_state   = NOT_SORTING;
 CHOCOLATE_MODE chocolate_mode = SMARTIES;
 SORTING_MODE sorting_mode     = UNCOLLATED;
 
+// Create a bool to keep track of the combinations mode
+bool isCombinationsMode = false;
+
+
 // Assign the pin numbers
 const int LEDTransistor = 2;
 const int button1       = 3;  // The blue arcade game button
@@ -121,42 +125,71 @@ void readButtonPresses(){
 // Code to run when the blue arcade game button is pressed
 void button1Pressed() {
 
-    Serial.println("Button 1 pressed");
-       flashLEDs(3); 
+  // Print a message to the serial monitor to confirm that button 1 has been pressed
+  Serial.println("Button 1 pressed");
 
+  // Use a switch statement to control the logic for the combinations and normal operating modes
+  switch(isCombinationsMode) {
+    case false: 
+      if (sorting_state == NOT_SORTING) {
+        isCombinationsMode = true;
+        Serial.println("Enter combinations mode");
+        // Flash the built-in LEDs 3 times to indicate that the Smartie Sorter 3000 has now entered the combinations mode
+        flashLEDs(3); 
+      }               
+      break;
+      
+    case true:
+      isCombinationsMode = false;
+      // Evaluate the entered combination
+      Serial.println("Exit combinations mode");     
+      break;
 
+    }
 }
 
 // Code to run when the left white arcade game button is pressed
 void button2Pressed() {
 
-    Serial.println("Button 2 pressed");
+  // Print a message to the serial monitor to confirm that button 2 has been pressed
+  Serial.println("Button 2 pressed");
 
-    if (sorting_state == NOT_SORTING) {
-      sorting_state = SORTING;
+  switch(isCombinationsMode) {
+    case false: 
+      if (sorting_state == NOT_SORTING) {
+        sorting_state = SORTING;
+        // Flash the built-in LEDs 1 time to indicate that the SORTING_STATE has now been set to SORTING
+        flashLEDs(1);
+      }                    
+      break;
+      
+    case true:
+      // Increase combinations score    
+      break;
 
-      // Flash the built-in LEDs 1 time to indicate that the SORTING_STATE has now been set to SORTING
-      flashLEDs(1);
     }
-
 }
-
 
 // Code to run when the right white arcade game button is pressed
 void button3Pressed() {
 
+  // Print a message to the serial monitor to confirm that button 3 has been pressed
+  Serial.println("Button 3 pressed");
 
-    Serial.println("Button 3 pressed");
-
-    if (sorting_state == SORTING) {
-      sorting_state = NOT_SORTING;
-
-      // Flash the built-in LEDs 2 times to indicate that the SORTING_STATE has now been set to NOT_SORTING
-      flashLEDs(2);
+  switch(isCombinationsMode) {
+    case false: 
+      if (sorting_state == SORTING) {
+        sorting_state = NOT_SORTING;
+        // Flash the built-in LEDs 2 times to indicate that the SORTING_STATE has now been set to NOT_SORTING
+        flashLEDs(2);
+      }       
+      break;
+      
+    case true:
+      // Increase combinations score    
+      break;
 
     }
-
-
 }
 
 // A function for flashing the built-in LEDs a certain number of times corresponding to the mode number of the selected operating state
@@ -173,7 +206,6 @@ void flashLEDs(int modeNumber) {
   // Turn the built-in LEDs back on
   digitalWrite(LEDTransistor, HIGH); 
 }
-
 
 
 
