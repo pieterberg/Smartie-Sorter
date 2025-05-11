@@ -33,7 +33,7 @@ const int button2       = 4;  // The left white arcade game button
 const int button3       = 5;  // The right white arcade game button
 
 // Create a variable to control the length of the LED flashes
-const int LEDFlashingDelay = 250; // [ms]
+const int LEDFlashingDelay = 150; // [ms]
 
 // Create the variables to keep track of the blue arcade game button's state
 int button1State         = 0;
@@ -72,10 +72,6 @@ void loop() {
   if (sorting_state == SORTING){
 
 
-
-
-
-
   }
 }
 
@@ -87,8 +83,8 @@ void readButtonPresses(){
 
   // Flash the LEDs if button 1 is pressed
   if ((button1State == 1) && (button1StatePrevious == 0)) {
-    Serial.println("Button 1 pressed");
 
+    button1Pressed();
 
   }
 
@@ -97,16 +93,9 @@ void readButtonPresses(){
 
   // Print when button 2 is pressed
   if ((button2State == 1) && (button2StatePrevious == 0)) {
-    Serial.println("Button 2 pressed");
 
-    if (sorting_state == NOT_SORTING) {
-      sorting_state = SORTING;
+    button2Pressed();
 
-      // Flash the lights to show that the sorting mode is now not sorting
-      digitalWrite(LEDTransistor, LOW);
-      delay (LEDFlashingDelay);
-      digitalWrite(LEDTransistor, HIGH);
-    }
   }
 
   // Read button 3's state
@@ -115,20 +104,10 @@ void readButtonPresses(){
 
   // Print when button 3 is pressed
   if ((button3State == 1) && (button3StatePrevious == 0)) {
-    Serial.println("Button 3 pressed");
 
-    if (sorting_state == SORTING) {
-      sorting_state = NOT_SORTING;
+    button3Pressed();
+  
 
-      // Flash the lights to show that the sorting mode is now not sorting
-      digitalWrite(LEDTransistor, LOW);
-      delay (LEDFlashingDelay);
-      digitalWrite(LEDTransistor, HIGH);
-      delay (LEDFlashingDelay);
-      digitalWrite(LEDTransistor, LOW);
-      delay (LEDFlashingDelay);
-      digitalWrite(LEDTransistor, HIGH);
-    }
   }
 
   // Capture the previous button states
@@ -137,6 +116,64 @@ void readButtonPresses(){
   button3StatePrevious = button3State;
 
 }
+
+
+// Code to run when the blue arcade game button is pressed
+void button1Pressed() {
+
+    Serial.println("Button 1 pressed");
+       flashLEDs(3); 
+
+
+}
+
+// Code to run when the left white arcade game button is pressed
+void button2Pressed() {
+
+    Serial.println("Button 2 pressed");
+
+    if (sorting_state == NOT_SORTING) {
+      sorting_state = SORTING;
+
+      // Flash the built-in LEDs 1 time to indicate that the SORTING_STATE has now been set to SORTING
+      flashLEDs(1);
+    }
+
+}
+
+
+// Code to run when the right white arcade game button is pressed
+void button3Pressed() {
+
+
+    Serial.println("Button 3 pressed");
+
+    if (sorting_state == SORTING) {
+      sorting_state = NOT_SORTING;
+
+      // Flash the built-in LEDs 2 times to indicate that the SORTING_STATE has now been set to NOT_SORTING
+      flashLEDs(2);
+
+    }
+
+
+}
+
+// A function for flashing the built-in LEDs a certain number of times corresponding to the mode number of the selected operating state
+void flashLEDs(int modeNumber) {
+
+  // Flash the built-in LEDs a certain number of times corresponding to the mode number of the selected operating state
+  for (int i = 0; i <= (modeNumber - 1); i++){
+    digitalWrite(LEDTransistor, LOW);
+    delay (LEDFlashingDelay);
+    digitalWrite(LEDTransistor, HIGH);
+    delay (LEDFlashingDelay);
+  }
+      
+  // Turn the built-in LEDs back on
+  digitalWrite(LEDTransistor, HIGH); 
+}
+
 
 
 
