@@ -13,9 +13,13 @@
 
 ### 1.1. Name Sign
 
+To create the Name Sign, laser cut the following DXF files out of 6 mm clear acrylic:
+
 - 1× name_sign.dxf
 
 ### 1.2. Smartie Slide
+
+To create the Smartie Slide, laser cut the following DXF files out of 3 mm clear acrylic:
 
 - 1× back_panel.dxf
 - 1× bottom_panel.dxf
@@ -26,6 +30,8 @@
 - 1× top_panel.dxf
 
 ### 1.3. Sorted Smarties Collector
+
+To create the Sorted Smarties Collector, laser cut the following DXF files out of 3 mm clear acrylic:
 
 - 1× back_panel.dxf
 - 3× divider_bottom.dxf
@@ -38,6 +44,8 @@
 ## 2. Wooden Panels
 
 ### 2.1. Mini Arcade-Game Enclosure
+
+To construct the Mini Arcade-Game Enclosure, laser cut the following DXF files out of 6 mm MDF:
 
 - 1× back_panel.dxf
 - 1× back_panel_tolerances.dxf
