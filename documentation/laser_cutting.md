@@ -13,10 +13,48 @@
 
 ### 1.1. Name Sign
 
+- 1× name_sign.dxf
+
 ### 1.2. Smartie Slide
 
-### 1.3. Sorted Smarties Collector 
+- 1× back_panel.dxf
+- 1× bottom_panel.dxf
+- 1× front_panel.dxf
+- 2× middle_panel.dxf
+- 2× side_panel.dxf
+- 1× slide_panel.dxf
+- 1× top_panel.dxf
+
+### 1.3. Sorted Smarties Collector
+
+- 1× back_panel.dxf
+- 3× divider_bottom.dxf
+- 3× divider_top.dxf
+- 1× front_panel.dxf
+- 2× horizontal_panel.dxf
+- 2× side_panel.dxf
+- 1× top_panel.dxf
 
 ## 2. Wooden Panels
 
 ### 2.1. Mini Arcade-Game Enclosure
+
+- 1× back_panel.dxf
+- 1× back_panel_tolerances.dxf
+- 1× base_plate.dxf
+- 1× bottom_access_panel_tolerances.dxf
+- 1× colour_detection_mechanism_top_panel.dxf
+- 1× control_panel_bottom.dxf
+- 1× control_panel_front.dxf
+- 1× control_panel_top.dxf
+- 1× front_panel.dxf
+- 1× name_sign_bottom_panel.dxf
+- 2× side_panel.dxf
+- 1× sorted_smarties_cover.dxf
+- 1× sorted_smarties_top.dxf
+- 1× top_access_panel.dxf
+- 1× top_access_panel_tolerances.dxf
+- 1× top_panel.dxf
+- 1× unsorted_smarties_back.dxf
+- 1× unsorted_smarties_top.dxf
+
