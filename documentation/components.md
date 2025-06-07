@@ -10,13 +10,14 @@ Information about the components used to build the Smartie Sorter 3000 is presen
   - [1.3. 3D Printed Components](#13-3d-printed-components)
   - [1.4. Labels](#14-labels)
 - [2. Laser Cutting](#2-laser-cutting)
-  - [2.1. Name Sign](#21-name-sign)
-  - [2.2. Smartie Slide](#22-smartie-slide)
-  - [2.3. Sorted Smarties Collector](#23-sorted-smarties-collector)
-  - [2.4. Wooden Panels](#24-wooden-panels)
+  - [2.1. DXF Files Folder Structure](#21-dxf-files-folder-structure)
+  - [2.2. Name Sign](#22-name-sign)
+  - [2.3. Smartie Slide](#23-smartie-slide)
+  - [2.4. Sorted Smarties Collector](#24-sorted-smarties-collector)
+  - [2.5. Wooden Panels](#25-wooden-panels)
 - [3. Fusion 360 Files](#3-fusion-360-files)
   - [3.1. Resources](#31-resources)
-  - [3.2. Folder Structure](#32-folder-structure)
+  - [3.2. Fusion 360 Folder Structure](#32-fusion-360-folder-structure)
 
 ## 1. Components
 
@@ -77,13 +78,28 @@ The labels were affixed in position and sealed using Rust-Oleum Painter's Touch 
 
 ## 2. Laser Cutting
 
-### 2.1. Name Sign
+### 2.1. DXF Files Folder Structure
+
+The folder structure of the fusion_360 folder is presented below:
+
+```
+.
+|__ assets
+    |__ dxf_files
+        |__ acrylic_components
+            |__ name_sign
+            |__ smartie_slide
+            |__ sorted_smarties_collector
+        |__ wooden_panels
+```
+
+### 2.2. Name Sign
 
 To create the Name Sign, laser cut the following DXF files out of 6 mm clear acrylic:
 
 - 1 × name_sign.dxf
 
-### 2.2. Smartie Slide
+### 2.3. Smartie Slide
 
 To create the Smartie Slide, laser cut the following DXF files out of 3 mm clear acrylic:
 
@@ -95,7 +111,7 @@ To create the Smartie Slide, laser cut the following DXF files out of 3 mm clear
 - 1 × slide_panel.dxf
 - 1 × top_panel.dxf
 
-### 2.3. Sorted Smarties Collector
+### 2.4. Sorted Smarties Collector
 
 To create the Sorted Smarties Collector, laser cut the following DXF files out of 3 mm clear acrylic:
 
@@ -107,7 +123,7 @@ To create the Sorted Smarties Collector, laser cut the following DXF files out o
 - 2 × side_panel.dxf
 - 1 × top_panel.dxf
 
-### 2.4. Wooden Panels
+### 2.5. Wooden Panels
 
 To construct the Mini Arcade-Game Enclosure, laser cut the following DXF files out of 6 mm MDF:
 
@@ -144,7 +160,7 @@ The following Fusion 360 files are available in the fusion_360 folder:
 - Fusion 360 archive file (.f3z) of the Colour Detection Mechanism
 - Fusion 360 archive file (.f3z) of the Smartie Sorter
 
-### 3.2. Folder Structure
+### 3.2. Fusion 360 Folder Structure
 
 The folder structure of the fusion_360 folder is presented below:
 
