@@ -9,9 +9,14 @@ Information about the components used to build the Smartie Sorter 3000 is presen
   - [1.2. Acrylic Components](#12-acrylic-components)
   - [1.3. 3D Printed Components](#13-3d-printed-components)
   - [1.4. Labels](#14-labels)
-- [2. Fusion 360 Files](#2-fusion-360-files)
-  - [2.1. Resources](#21-resources)
-  - [2.2. Folder Structure](#22-folder-structure)
+- [2. Laser Cutting](#2-laser-cutting)
+  - [2.1. Name Sign](#21-name-sign)
+  - [2.2. Smartie Slide](#22-smartie-slide)
+  - [2.3. Sorted Smarties Collector](#23-sorted-smarties-collector)
+  - [2.4. Wooden Panels](#24-wooden-panels)
+- [3. Fusion 360 Files](#3-fusion-360-files)
+  - [3.1. Resources](#31-resources)
+  - [3.2. Folder Structure](#32-folder-structure)
 
 ## 1. Components
 
@@ -70,13 +75,68 @@ The labels were printed using a Brother PT-H110 label printer using:
 
 The labels were affixed in position and sealed using Rust-Oleum Painter's Touch Ultra Cover satin clear coat.
 
-## 2. Fusion 360 Files
+## 2. Laser Cutting
+
+### 2.1. Name Sign
+
+To create the Name Sign, laser cut the following DXF files out of 6 mm clear acrylic:
+
+- 1 × name_sign.dxf
+
+### 2.2. Smartie Slide
+
+To create the Smartie Slide, laser cut the following DXF files out of 3 mm clear acrylic:
+
+- 1 × back_panel.dxf
+- 1 × bottom_panel.dxf
+- 1 × front_panel.dxf
+- 2 × middle_panel.dxf
+- 2 × side_panel.dxf
+- 1 × slide_panel.dxf
+- 1 × top_panel.dxf
+
+### 2.3. Sorted Smarties Collector
+
+To create the Sorted Smarties Collector, laser cut the following DXF files out of 3 mm clear acrylic:
+
+- 1 × back_panel.dxf
+- 3 × divider_bottom.dxf
+- 3 × divider_top.dxf
+- 1 × front_panel.dxf
+- 2 × horizontal_panel.dxf
+- 2 × side_panel.dxf
+- 1 × top_panel.dxf
+
+### 2.4. Wooden Panels
+
+To construct the Mini Arcade-Game Enclosure, laser cut the following DXF files out of 6 mm MDF:
+
+- 1 × back_panel.dxf
+- 1 × back_panel_tolerances.dxf
+- 1 × base_plate.dxf
+- 1 × bottom_access_panel_tolerances.dxf
+- 1 × colour_detection_mechanism_top_panel.dxf
+- 1 × control_panel_bottom.dxf
+- 1 × control_panel_front.dxf
+- 1 × control_panel_top.dxf
+- 1 × front_panel.dxf
+- 1 × name_sign_bottom_panel.dxf
+- 2 × side_panel.dxf
+- 1 × sorted_smarties_cover.dxf
+- 1 × sorted_smarties_top.dxf
+- 1 × top_access_panel.dxf
+- 1 × top_access_panel_tolerances.dxf
+- 1 × top_panel.dxf
+- 1 × unsorted_smarties_back.dxf
+- 1 × unsorted_smarties_top.dxf
+
+## 3. Fusion 360 Files
 
 All components, mechanisms, and assemblies were designed and modelled using Fusion 360.
 
 The CAD files have been exported and are available in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
 
-### 2.1. Resources
+### 3.1. Resources
 
 The following Fusion 360 files are available in the fusion_360 folder:
 
@@ -84,7 +144,7 @@ The following Fusion 360 files are available in the fusion_360 folder:
 - Fusion 360 archive file (.f3z) of the Colour Detection Mechanism
 - Fusion 360 archive file (.f3z) of the Smartie Sorter
 
-### 2.2. Folder Structure
+### 3.2. Folder Structure
 
 The folder structure of the fusion_360 folder is presented below:
 
