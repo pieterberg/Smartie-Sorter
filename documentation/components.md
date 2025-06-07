@@ -106,7 +106,7 @@ The folder structure of the fusion_360 folder is presented below:
         |__ supports
         |__ wooden_panels
 ```
-The Smartie Sorter 3000 assembly is available in the top-level of the fusion_360 folder.
+The Smartie Sorter 3000 assembly is available in the fusion_360 folder.
 
 The Colour Detection Mechanism assembly is available in the [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies) folder.
 
