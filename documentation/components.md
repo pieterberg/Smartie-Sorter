@@ -171,8 +171,8 @@ The folder structure of the fusion_360 folder is presented below:
     |__ components
         |__ 3d_printed_components
         |__ acrylic_components
-            |__ sorted_smarties_collector_finger_joints
-            |__ unsorted_smarties_holder_finger_joints
+            |__ smartie_slide
+            |__ sorted_smarties_collector
         |__ chocolates
             |__ M&Ms
             |__ smarties
