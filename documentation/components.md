@@ -80,7 +80,7 @@ The labels were affixed in position and sealed using Rust-Oleum Painter's Touch 
 
 ### 2.1. DXF Files Folder Structure
 
-The folder structure of the fusion_360 folder is presented below:
+The folder structure of the dxf_files folder is presented below:
 
 ```
 .
