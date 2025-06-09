@@ -132,7 +132,18 @@ Table 4: The hex codes for the official M&M colour scheme
 
 ## 3. Sorting Locations
 
-Once sorted, the Smarties and M&M's are transferred to the acrylic Sorted Smarties Collector component. The sorted positions of the Smarties and M&M's are presented in this section.
+Once sorted, the Smarties and M&M's are transferred to the acrylic Sorted Smarties Collector component. The Sorted Smarties Collector component contains 8 compartments, and the locations of the sorted Smarties and M&M's are dependent on the value of the `SORTING_MODE` property. 
+
+The Smartie Sorter 3000 can operate in 2 different sorting modes, as shown by Table 5.
+
+Table 5: Sorting modes and their descriptions
+
+| Sorting Mode | Description                                                                          |
+|--------------|--------------------------------------------------------------------------------------|
+| Uncollated   | Smarties and M&M's of the same colour are grouped together in the same compartment.  |
+| Collated     | Consecutive Smarties and M&Ms of the same colour end up in consecutive compartments. |
+
+More information about setting and viewing the value of the `SORTING_MODE` property is provided in [sorting.md](sorting.md).
 
 ### 3.1. Smartie Locations
 
