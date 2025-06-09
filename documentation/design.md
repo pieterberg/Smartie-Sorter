@@ -138,7 +138,7 @@ Once sorted, the Smarties and M&M's are transferred to the acrylic Sorted Smarti
 
 The locations of the sorted Smarties in the Sorted Smarties Collector component are similar to their locations in the Smartie chocolates' colour scheme that was presented in Figure 4.
 
-<img src="../assets/design/sorting_locations/smartie_locations.png" alt="Smartie Locations" width="100%">
+<img src="../assets/design/sorting_locations/smartie_locations.png" alt="Smartie Locations" width="70%">
 
 Figure 6: The sorted Smartie locations
 
@@ -146,7 +146,7 @@ Figure 6: The sorted Smartie locations
 
 The locations of the sorted M&M's in the Sorted Smarties Collector component are similar to their locations in the official M&M colour scheme that was presented in Figure 5. Since there are only 6 M&M colours, the final two locations in the Sorted Smarties Collector component are not used when sorting M&M's.
 
-<img src="../assets/design/sorting_locations/m_and_m_locations.png" alt="M&M Locations" width="100%">
+<img src="../assets/design/sorting_locations/m_and_m_locations.png" alt="M&M Locations" width="70%">
 
 Figure 7: The sorted M&M locations
 
