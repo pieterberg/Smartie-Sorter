@@ -34,7 +34,7 @@ The Smartie Sorter 3000 logo is presented in Figure 1. The logo has 8 slanted st
 
 Figure 1: The Smartie Sorter 3000 logo used for the name at the top of the mini arcade game enclosure
 
-The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/name_sign) folder contains both a .png version and an .svg version of the Smartie Sorter 3000 logo.
+The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/name_sign) folder contains both a `.png` version and an `.svg` version of the Smartie Sorter 3000 logo.
 
 ### 1.2. Enclosure Placement
 
@@ -147,17 +147,17 @@ More information about setting and viewing the value of the `SORTING_MODE` prope
 
 ### 3.1. Smartie Locations
 
-The locations of the sorted Smarties in the Sorted Smarties Collector component are similar to their locations in the Smartie chocolates' colour scheme that was presented in Figure 4.
+Figure 6 provides the sorted Smartie locations. The uncollated Smarties locations correspond with the Smartie colour scheme that was presented in Figure 4.
 
 <img src="../assets/design/sorting_locations/smartie_locations.png" alt="Smartie Locations" width="70%">
 
-Figure 6: The sorted Smartie locations
+Figure 6: The uncollated and collated sorted Smartie locations
 
 ### 3.2. M&M Locations
 
-The locations of the sorted M&M's in the Sorted Smarties Collector component are similar to their locations in the official M&M colour scheme that was presented in Figure 5. Since there are only 6 M&M colours, the final two locations in the Sorted Smarties Collector component are not used when sorting M&M's.
+Figure 6 provides the sorted M&M locations. The uncollated M&M locations correspond with the official M&M colour scheme that was presented in Figure 5. Since there are only 6 M&M colours, only the first 6 compartments of the Sorted Smarties Collector component are used.
 
 <img src="../assets/design/sorting_locations/m_and_m_locations.png" alt="M&M Locations" width="70%">
 
-Figure 7: The sorted M&M locations
+Figure 7: The uncollated and collated sorted M&M locations
 
