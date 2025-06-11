@@ -42,6 +42,8 @@ The `SORTING_MODE` property allows the Smartie Sorter 3000 to switch between gro
 - UNCOLLATED 
 - COLLATED
 
+More information about the sorting locations is provided in [design.md](design.md).
+
 ### 2.2. Default Values
 
 The default values of the three operating property are given by Table 1. These values have been hard-coded into the Arduino sketch and represent the values that the operating properties will have when powering on the Smartie Sorter 3000.
