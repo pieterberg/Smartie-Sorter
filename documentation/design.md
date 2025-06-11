@@ -1,8 +1,8 @@
 # Design 
 
-Information about the design of the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides more information about the Smartie Sorter 3000's colour scheme.
+Information about the design of the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides more information about the Smartie Sorter 3000's colour scheme. Finally, Section 3 provides more information about the sorted Smartie and M&M locations.
 
-The Smartie Sorter 3000 logo and the colour schemes were created using Affinity Designer. The .afdesign files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/affinity_designer) folder.
+The Smartie Sorter 3000 logo, colour scheme, and sorted Smartie and M&M locations were created using Affinity Designer. The `.afdesign` files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/affinity_designer) folder.
 
 ### Table of Contents
 
