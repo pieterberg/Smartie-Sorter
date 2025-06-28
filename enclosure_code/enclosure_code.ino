@@ -51,7 +51,8 @@ int button2StateCurrent  = 0;
 int button2StatePrevious = 0;
 
 // Create the variables to keep track of the right white arcade game button's state
-int button3State         = 0;
+int button3Reading       = 0;
+int button3StateCurrent  = 0;
 int button3StatePrevious = 0;
 
 // Use a debounce delay of 50 ms
@@ -60,6 +61,7 @@ unsigned long debounceDelay = 50;
 // Create the variables to keep track of the arcade game buttons' last debounce times
 unsigned long button1LastDebounceTime = 0;
 unsigned long button2LastDebounceTime = 0;
+unsigned long button3LastDebounceTime = 0;
 
 void setup() {
   // Setup the transistor pins
@@ -162,17 +164,30 @@ void readButton2() {
 void readButton3() {
 
   // Read button 3's state
-  button3State = digitalRead(button3);
+  button3Reading = digitalRead(button3);
+ 
+  if (button3Reading != button3StatePrevious) {
 
-  // Call the button3Pressed() function when the right white arcade game button has been pressed
-  if ((button3State == 1) && (button3StatePrevious == 0)) {
+    button3LastDebounceTime = millis();
 
-    button3Pressed();
-  
+  }
+
+  if ((millis() - button3LastDebounceTime) > debounceDelay) {
+
+    if (button3Reading != button3StateCurrent) {
+
+      // Update the current button 3 state
+      button3StateCurrent = button3Reading;
+
+      // Call the button3Pressed() function when the right white arcade game button has been pressed
+      if (button3StateCurrent == 1) {
+        button3Pressed();
+      }
+    }
   }
 
   // Capture the previous button state
-  button3StatePrevious = button3State;  
+  button3StatePrevious = button3Reading;
 }
 
 // Code to run when the blue arcade game button is pressed
