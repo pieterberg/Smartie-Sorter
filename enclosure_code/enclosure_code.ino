@@ -46,7 +46,8 @@ int button1StateCurrent  = 0;
 int button1StatePrevious = 0;
 
 // Create the variables to keep track of the left white arcade game button's state
-int button2State         = 0;
+int button2Reading       = 0;
+int button2StateCurrent  = 0;
 int button2StatePrevious = 0;
 
 // Create the variables to keep track of the right white arcade game button's state
@@ -58,6 +59,7 @@ unsigned long debounceDelay = 50;
 
 // Create the variables to keep track of the arcade game buttons' last debounce times
 unsigned long button1LastDebounceTime = 0;
+unsigned long button2LastDebounceTime = 0;
 
 void setup() {
   // Setup the transistor pins
@@ -130,17 +132,30 @@ void readButton1() {
 void readButton2() {
 
   // Read button 2's state
-  button2State = digitalRead(button2);
+  button2Reading = digitalRead(button2);
+ 
+  if (button2Reading != button2StatePrevious) {
 
-  // Call the button2Pressed() function when the left white arcade game button has been pressed
-  if ((button2State == 1) && (button2StatePrevious == 0)) {
-
-    button2Pressed();
+    button2LastDebounceTime = millis();
 
   }
 
+  if ((millis() - button2LastDebounceTime) > debounceDelay) {
+
+    if (button2Reading != button2StateCurrent) {
+
+      // Update the current button 2 state
+      button2StateCurrent = button2Reading;
+
+      // Call the button2Pressed() function when the left white arcade game button has been pressed
+      if (button2StateCurrent == 1) {
+        button2Pressed();
+      }
+    }
+  }
+
   // Capture the previous button state
-  button2StatePrevious = button2State; 
+  button2StatePrevious = button2Reading;
 }
 
 // Code to determine whether the right white arcade game button has been pressed
