@@ -56,12 +56,12 @@ int button3StateCurrent  = 0;
 int button3StatePrevious = 0;
 
 // Use a debounce delay of 50 ms
-unsigned long debounceDelay = 50;
+unsigned long debounceDelay = 50;  // [ms]
 
 // Create the variables to keep track of the arcade game buttons' last debounce times
-unsigned long button1LastDebounceTime = 0;
-unsigned long button2LastDebounceTime = 0;
-unsigned long button3LastDebounceTime = 0;
+unsigned long button1LastDebounceTime = 0;  // [ms]
+unsigned long button2LastDebounceTime = 0;  // [ms]
+unsigned long button3LastDebounceTime = 0;  // [ms]
 
 void setup() {
   // Setup the transistor pins
@@ -106,7 +106,7 @@ void readButton1() {
   // Read the current state of the blue arcade game button
   button1Reading = digitalRead(button1);
  
-  // Reset the blue arcade game button's debounce timer
+  // Reset the debounce timer of the blue arcade game button
   if (button1Reading != button1StatePrevious) {
     button1LastDebounceTime = millis();
   }
@@ -133,7 +133,7 @@ void readButton2() {
   // Read the current state of the left white arcade game button
   button2Reading = digitalRead(button2);
  
-  // Reset the left white arcade game button's debounce timer
+  // Reset the debounce timer of the left white arcade game button
   if (button2Reading != button2StatePrevious) {
     button2LastDebounceTime = millis();
   }
@@ -160,7 +160,7 @@ void readButton3() {
   // Read the current state of the right white arcade game button
   button3Reading = digitalRead(button3);
  
-  // Reset the right white arcade game button's debounce timer
+  // Reset the debounce timer of the right white arcade game button
   if (button3Reading != button3StatePrevious) {
     button3LastDebounceTime = millis();
   }
