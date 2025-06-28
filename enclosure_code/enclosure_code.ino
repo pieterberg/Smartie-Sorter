@@ -80,48 +80,65 @@ void loop() {
   }
 }
 
-
+// Grouping function for determining whether the arcade game buttons have been pressed
 void readButtonPresses(){
+
+  readButton1();
+  readButton2();
+  readButton3();
+
+}
+
+// Code to determine whether the blue arcade game button has been pressed
+void readButton1() {
 
   // Read button 1's state
   button1State = digitalRead(button1);
 
-  // Flash the LEDs if button 1 is pressed
+  // Call the button1Pressed() function when the blue arcade game button has been pressed
   if ((button1State == 1) && (button1StatePrevious == 0)) {
 
     button1Pressed();
 
   }
 
+  // Capture the previous button state
+  button1StatePrevious = button1State;
+}
+
+// Code to determine whether the left white arcade game button has been pressed
+void readButton2() {
+
   // Read button 2's state
   button2State = digitalRead(button2);
 
-  // Print when button 2 is pressed
+  // Call the button2Pressed() function when the left white arcade game button has been pressed
   if ((button2State == 1) && (button2StatePrevious == 0)) {
 
     button2Pressed();
 
   }
 
+  // Capture the previous button state
+  button2StatePrevious = button2State; 
+}
+
+// Code to determine whether the right white arcade game button has been pressed
+void readButton3() {
+
   // Read button 3's state
   button3State = digitalRead(button3);
 
-
-  // Print when button 3 is pressed
+  // Call the button3Pressed() function when the right white arcade game button has been pressed
   if ((button3State == 1) && (button3StatePrevious == 0)) {
 
     button3Pressed();
   
-
   }
 
-  // Capture the previous button states
-  button1StatePrevious = button1State;
-  button2StatePrevious = button2State;
-  button3StatePrevious = button3State;
-
+  // Capture the previous button state
+  button3StatePrevious = button3State;  
 }
-
 
 // Code to run when the blue arcade game button is pressed
 void button1Pressed() {
