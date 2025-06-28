@@ -66,7 +66,7 @@ Table 2: The normal behaviour of the arcade game buttons
 
 | Mode Number    | Button                         | Symbol | Action                                                                                                      |
 |:--------------:|--------------------------------|:------:|-------------------------------------------------------------------------------------------------------------|
-| -              | Blue arcade game button        | `B`    | Enters the "combination" mode for setting the values of the `CHOCOLATE_MODE` and `SORTING_MODE` properties. |
+| 3              | Blue arcade game button        | `B`    | Enters the "combination" mode for setting the values of the `CHOCOLATE_MODE` and `SORTING_MODE` properties. |
 | 1              | Left white arcade game button  | `L`    | Starts the sorting procedure by setting the value of the `SORTING_STATE` property to SORTING.               |
 | 2              | Right white arcade game button | `R`    | Stops the sorting procedure by setting the value of the `SORTING_STATE` property to NOT_SORTING.            |
 
@@ -94,8 +94,8 @@ Table 3: The combinations for setting the values of the `CHOCOLATE_MODE` and `SO
 |:-----------:|-----------------|:-------------:|--------------------------------------------------|
 |      -      | `L`             |       1       | Displays the active chocolate mode.              |
 |      -      | `R`             |       10      | Displays the active sorting mode.                |
-|      3      | `L L R L L R L` |       25      | Sets the value of `CHOCOLATE_MODE` to SMARTIES.  |
-|      4      | `L R L L R L R` |       34      | Sets the value of `CHOCOLATE_MODE` to M_AND_M_S. |
-|      5      | `R L R R R L R` |       52      | Sets the value of `SORTING_MODE` to UNCOLLATED.  |
-|      6      | `R R L R L L R` |       43      | Sets the value of `SORTING_MODE` to COLLATED.    |
+|      4      | `L L R L L R L` |       25      | Sets the value of `CHOCOLATE_MODE` to SMARTIES.  |
+|      5      | `L R L L R L R` |       34      | Sets the value of `CHOCOLATE_MODE` to M_AND_M_S. |
+|      6      | `R L R R R L R` |       52      | Sets the value of `SORTING_MODE` to UNCOLLATED.  |
+|      7      | `R R L R L L R` |       43      | Sets the value of `SORTING_MODE` to COLLATED.    |
 
