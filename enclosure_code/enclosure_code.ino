@@ -77,7 +77,6 @@ void setup() {
 
   // Begin a serial channel
   Serial.begin(9600);
-
 }
 
 void loop() {
@@ -91,34 +90,32 @@ void loop() {
   }
 }
 
-// Grouping function for determining whether the arcade game buttons have been pressed
+// A grouping function for determining whether the arcade game buttons have been pressed
 void readButtonPresses(){
-
+  // Determine whether the blue arcade game button has been pressed
   readButton1();
+  // Determine whether the left white arcade game button has been pressed
   readButton2();
+  // Determine whether the right white arcade game button has been pressed
   readButton3();
-
 }
 
-// Code to determine whether the blue arcade game button has been pressed
+// A function for determining whether the blue arcade game button has been pressed
 void readButton1() {
 
-  // Read button 1's state
+  // Read the current state of the blue arcade game button
   button1Reading = digitalRead(button1);
  
+  // Reset the blue arcade game button's debounce timer
   if (button1Reading != button1StatePrevious) {
-
     button1LastDebounceTime = millis();
-
   }
 
+  // Determine whether the blue arcade game button has been pressed
   if ((millis() - button1LastDebounceTime) > debounceDelay) {
-
     if (button1Reading != button1StateCurrent) {
-
-      // Update the current button 1 state
+      // Update the current state of the blue arcade game button
       button1StateCurrent = button1Reading;
-
       // Call the button1Pressed() function when the blue arcade game button has been pressed
       if (button1StateCurrent == 1) {
         button1Pressed();
@@ -126,29 +123,26 @@ void readButton1() {
     }
   }
 
-  // Capture the previous button state
+  // Capture the previous state of the blue arcade game button
   button1StatePrevious = button1Reading;
 }
 
-// Code to determine whether the left white arcade game button has been pressed
+// A function for determining whether the left white arcade game button has been pressed
 void readButton2() {
 
-  // Read button 2's state
+  // Read the current state of the left white arcade game button
   button2Reading = digitalRead(button2);
  
+  // Reset the left white arcade game button's debounce timer
   if (button2Reading != button2StatePrevious) {
-
     button2LastDebounceTime = millis();
-
   }
 
+  // Determine whether the left white arcade game button has been pressed
   if ((millis() - button2LastDebounceTime) > debounceDelay) {
-
     if (button2Reading != button2StateCurrent) {
-
-      // Update the current button 2 state
+      // Update the current state of the left white arcade game button
       button2StateCurrent = button2Reading;
-
       // Call the button2Pressed() function when the left white arcade game button has been pressed
       if (button2StateCurrent == 1) {
         button2Pressed();
@@ -156,29 +150,26 @@ void readButton2() {
     }
   }
 
-  // Capture the previous button state
+  // Capture the previous state of the left white arcade game button
   button2StatePrevious = button2Reading;
 }
 
-// Code to determine whether the right white arcade game button has been pressed
+// A function for determining whether the right white arcade game button has been pressed
 void readButton3() {
 
-  // Read button 3's state
+  // Read the current state of the right white arcade game button
   button3Reading = digitalRead(button3);
  
+  // Reset the right white arcade game button's debounce timer
   if (button3Reading != button3StatePrevious) {
-
     button3LastDebounceTime = millis();
-
   }
 
+  // Determine whether the right white arcade game button has been pressed
   if ((millis() - button3LastDebounceTime) > debounceDelay) {
-
     if (button3Reading != button3StateCurrent) {
-
-      // Update the current button 3 state
+      // Update the current state of the right white arcade game button
       button3StateCurrent = button3Reading;
-
       // Call the button3Pressed() function when the right white arcade game button has been pressed
       if (button3StateCurrent == 1) {
         button3Pressed();
@@ -186,7 +177,7 @@ void readButton3() {
     }
   }
 
-  // Capture the previous button state
+  // Capture the previous state of the right white arcade game button
   button3StatePrevious = button3Reading;
 }
 
