@@ -41,7 +41,8 @@ const int button3       = 5;  // The right white arcade game button
 const int LEDFlashingDelay = 200; // [ms]
 
 // Create the variables to keep track of the blue arcade game button's state
-int button1State         = 0;
+int button1Reading       = 0;
+int button1StateCurrent  = 0;
 int button1StatePrevious = 0;
 
 // Create the variables to keep track of the left white arcade game button's state
@@ -51,6 +52,12 @@ int button2StatePrevious = 0;
 // Create the variables to keep track of the right white arcade game button's state
 int button3State         = 0;
 int button3StatePrevious = 0;
+
+// Use a debounce delay of 50 ms
+unsigned long debounceDelay = 50;
+
+// Create the variables to keep track of the arcade game buttons' last debounce times
+unsigned long button1LastDebounceTime = 0;
 
 void setup() {
   // Setup the transistor pins
@@ -93,17 +100,30 @@ void readButtonPresses(){
 void readButton1() {
 
   // Read button 1's state
-  button1State = digitalRead(button1);
+  button1Reading = digitalRead(button1);
+ 
+  if (button1Reading != button1StatePrevious) {
 
-  // Call the button1Pressed() function when the blue arcade game button has been pressed
-  if ((button1State == 1) && (button1StatePrevious == 0)) {
-
-    button1Pressed();
+    button1LastDebounceTime = millis();
 
   }
 
+  if ((millis() - button1LastDebounceTime) > debounceDelay) {
+
+    if (button1Reading != button1StateCurrent) {
+
+      // Update the current button 1 state
+      button1StateCurrent = button1Reading;
+
+      // Call the button1Pressed() function when the blue arcade game button has been pressed
+      if (button1StateCurrent == 1) {
+        button1Pressed();
+      }
+    }
+  }
+
   // Capture the previous button state
-  button1StatePrevious = button1State;
+  button1StatePrevious = button1Reading;
 }
 
 // Code to determine whether the left white arcade game button has been pressed
