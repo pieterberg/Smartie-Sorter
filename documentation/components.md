@@ -87,9 +87,9 @@ The folder structure of the dxf_files folder is presented below:
 |__ assets
     |__ dxf_files
         |__ acrylic_components
-            |__ name_sign
-            |__ smartie_slide
-            |__ sorted_smarties_collector
+        |   |__ name_sign
+        |   |__ smartie_slide
+        |   |__ sorted_smarties_collector
         |__ wooden_panels
 ```
 
@@ -171,11 +171,11 @@ The folder structure of the fusion_360 folder is presented below:
     |__ components
         |__ 3d_printed_components
         |__ acrylic_components
-            |__ smartie_slide
-            |__ sorted_smarties_collector
+        |   |__ smartie_slide
+        |   |__ sorted_smarties_collector
         |__ chocolates
-            |__ M&Ms
-            |__ smarties
+        |   |__ M&Ms
+        |   |__ smarties
         |__ connectors
         |__ electronics
         |__ labels      
