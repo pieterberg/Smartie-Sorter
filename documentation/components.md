@@ -78,6 +78,10 @@ The labels were affixed in position and sealed using Rust-Oleum Painter's Touch 
 
 ## 2. Laser Cutting
 
+The outlines of the wooden panels and acrylic components have been exported as DXF files and are available in the [dxf_files](../assets/dxf_files) folder.
+
+These DXF files can be used for laser cutting the wooden panels and acrylic components out of MDF and clear acrylic, respectively.
+
 ### 2.1. DXF Files Folder Structure
 
 The folder structure of the dxf_files folder is presented below:
