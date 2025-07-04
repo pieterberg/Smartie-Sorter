@@ -20,7 +20,7 @@ The Smartie Sorter 3000 logo, colour scheme, and sorted Smartie and M&M location
 
 ## 1. Name Sign
 
-This section provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure.
+This section provides information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure.
 
 The "3000" in the Smartie Sorter 3000's name comes from the TCS3200 colour sensor that the Smartie Sorter 3000 uses to determine the Smartie and M&M colours.
 
@@ -84,7 +84,7 @@ Table 2: The hex codes for the Sanwa arcade game buttons' colour scheme
 | Blue                  | `#07AEE9` |
 | White                 | `#FFFFFF` |
 
-More information about the arcade game buttons and how they control the sorting process is given in [sorting.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/sorting.md).
+Information about the arcade game buttons and how they control the sorting process is given in [sorting.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/sorting.md).
 
 ### 2.3. Smartie Colours
 
@@ -143,7 +143,7 @@ Table 5: Sorting modes and their descriptions
 | Uncollated   | Smarties and M&M's of the same colour are grouped together in the same compartment.  |
 | Collated     | Consecutive Smarties and M&Ms of the same colour end up in consecutive compartments. |
 
-More information about setting and viewing the value of the `SORTING_MODE` property is provided in [sorting.md](sorting.md).
+Information about setting and viewing the value of the `SORTING_MODE` property is provided in [sorting.md](sorting.md).
 
 ### 3.1. Smartie Locations
 
