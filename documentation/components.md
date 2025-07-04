@@ -1,6 +1,6 @@
 # Components
 
-Information about the components used to build the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the different types of components used in the design. Thereafter, Section 2 provides more information about the computer aided design (CAD) files that are provided in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
+This documents provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, Section 1 provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Therafter, Section 2 provides information about laser cutting the wooden panels and acrylic components. Finally, Section 3 provides information about the Fusion 360 computer aided design (CAD) files.
 
 ### Table of Contents
 
