@@ -52,7 +52,7 @@ The [colour_scheme](https://github.com/pieterberg/Smartie-Sorter/tree/main/asset
 
 The colour scheme used for the design of the mini arcade game enclosure is presented by Figure 2. The outside surfaces of the mini arcade game enclosure are painted brown while the internal surfaces of the mini arcade game enclosure are painted white.
 
-The brown colour used for the design of the mini arcade game enclosure is based on the Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg paint.
+The brown colour used for the design of the mini arcade game enclosure is based on the colour of the Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg paint.
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="70%">
 
