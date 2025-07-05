@@ -70,11 +70,11 @@ The mini arcade game enclosure's 3D printed components were printed using a Zort
 
 ### 1.4. Labels
 
-The labels were printed using a Brother PT-H110 label printer using:
+The labels should be printed using a label maker, such as the Brother PT-H110 label maker, using:
 
 - 12 mm black on white laminated tape
 
-The labels were affixed in position and sealed using Rust-Oleum Painter's Touch Ultra Cover satin clear coat.
+The labels should then be affixed in position and sealed using a clear coat.
 
 ## 2. Laser Cutting
 
