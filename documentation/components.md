@@ -50,17 +50,23 @@ The brown colour was achieved using Rust-Oleum Painter's Touch Ultra Cover satin
 
 ### 1.2. Acrylic Components
 
-The acrylic component use for the Name Sign was laser cut from:
+Clear acrylic is used for the Name Sign, Smartie Slide, and Sorted Smarties Collector.
 
-- 6 mm transparent acrylic
+The Name Sign should be laser cut out of:
 
-The Unsorted Smarties Holder and the Sorted Smarties Collector were constructed using acrylic panels that fit together using finger joints.
+- 6 mm clear acrylic
 
-DXF files for laser cutting the acrylic panels are provided in the [unsorted_smarties_holder_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/dxf_files/unsorted_smarties_holder_finger_joints) and [sorted_smarties_collector_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/dxf_files/sorted_smarties_collector_finger_joints) DXF folders. Using these DXF files, the acrylic panels were laser cut from: 
+Section 2.2 provides more information about laser cutting the Name Sign.
+
+The Smartie Slide and Sorted Smarties Collector are assemblies whose panels have been designed to fit together using finger joints.
+
+The Smartie Slide panels and Sorted Smarties Collector panels should be laser cut out of:
 
 - 3 mm transparent acrylic
 
-The acrylic panels were then assembled using acrylic cement.
+Section 2.3 and 2.4 provide more information about laser cutting the Smartie Slide panels and Sorted Smarties Collector panels, respectively.
+
+The Smartie Slide and Sorted Smarties Collector should then be assembled by welding their respective panels together using an acrylic cement.
 
 ### 1.3. 3D Printed Components
 
