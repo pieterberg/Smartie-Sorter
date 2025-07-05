@@ -32,21 +32,26 @@ There are eight different types of components used in the design of the Smartie 
 7. Supports
 8. Wooden panels
 
-This section provides more information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, and labels.
+This section provides information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, and labels.
 
 Information about the electronic components is provided in [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics.md).
 
 ### 1.1. Wooden Components
 
-The wooden components make use of medium density fibreboard (MDF) for the panels and pine for the supports.
+The wooden components are comprised of medium density fibreboard (MDF) panels and pine supports.
 
-DXF files for laser cutting the MDF components are provided in the [wooden_panels](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/dxf_files/wooden_panels) DXF folder. Using these DXF files, the wooden panels were laser cut from:
+The wooden panels should be laser cut out of:
 
 - 6 mm MDF
 
-The wooden components were painted according to the colour scheme presented in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md).
+Section 2.5 provides more information about laser cutting the wooden panels.
 
-The brown colour was achieved using Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg. The white colour was achieved using Rust-Oleum Painter's Touch Ultra Cover flat white. Finally, the white paint was sealed using Rust-Oleum Painter's Touch Ultra Cover satin clear coat.
+The pine supports should be cut from:
+
+- 12 mm pine
+- 21 mm × 21 mm pine
+
+The wooden components should be painted according to the colour scheme provided in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md). The wooden components should then be sealed using a clear coat.
 
 ### 1.2. Acrylic Components
 
