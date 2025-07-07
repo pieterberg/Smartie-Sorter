@@ -1,6 +1,6 @@
 # Components
 
-This documents provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, Section 1 provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Therafter, Section 2 provides information about laser cutting the wooden panels and acrylic components. Finally, Section 3 provides information about the Fusion 360 computer aided design (CAD) files.
+This documents provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, Section 1 provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides information about laser cutting the wooden panels and acrylic components. Finally, Section 3 provides information about the Fusion 360 computer aided design (CAD) files.
 
 ### Table of Contents
 
