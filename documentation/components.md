@@ -143,9 +143,8 @@ Laser cut the following DXF files in the [sorted_smarties_collector](../assets/d
 Laser cut the following DXF files in the [wooden_panels](../assets/dxf_files/wooden_panels) folder out of 6 mm MDF to construct the mini arcade game enclosure:
 
 - 1 × back_panel.dxf
-- 1 × back_panel_tolerances.dxf
 - 1 × base_plate.dxf
-- 1 × bottom_access_panel_tolerances.dxf
+- 1 × bottom_access_panel.dxf
 - 1 × colour_detection_mechanism_top_panel.dxf
 - 1 × control_panel_bottom.dxf
 - 1 × control_panel_front.dxf
@@ -154,12 +153,11 @@ Laser cut the following DXF files in the [wooden_panels](../assets/dxf_files/woo
 - 1 × name_sign_bottom_panel.dxf
 - 2 × side_panel.dxf
 - 1 × sorted_smarties_cover.dxf
-- 1 × sorted_smarties_top.dxf
+- 1 × sorted_smarties_top_panel.dxf
 - 1 × top_access_panel.dxf
-- 1 × top_access_panel_tolerances.dxf
 - 1 × top_panel.dxf
-- 1 × unsorted_smarties_back.dxf
-- 1 × unsorted_smarties_top.dxf
+- 1 × unsorted_smarties_back_panel.dxf
+- 1 × unsorted_smarties_top_panel.dxf
 
 ## 3. Fusion 360 Files
 
