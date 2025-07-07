@@ -75,9 +75,15 @@ The Smartie Slide and Sorted Smarties Collector should then be assembled by weld
 
 ### 1.3. 3D Printed Components
 
-The mini arcade game enclosure's 3D printed components were printed using a Zortrax M300 3D printer using:
+3D printed components are used for the Colour Detection Mechanism and to house the electronic components.
+
+The 3D printed components should be printed using a 3D printer, such as the Zortrax M300 3D printer, using:
 
 - White PLA filament
+
+Infill settings that maximise the part strength of the 3D printed components should be used.
+
+The 3D printed components should then be glued in place.
 
 ### 1.4. Labels
 
