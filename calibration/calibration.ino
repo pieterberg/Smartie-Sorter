@@ -48,6 +48,37 @@ void printCalibrationMenu() {
   // Print a divider
   printDivider();
 
+  if (current_selection == '3'){
+    printEEPROMMenu();
+  }
+
+}
+
+void printEEPROMMenu() {
+
+  // Create a variable for keeping track of the selected EEPROM option
+  char current_selection = '0';
+
+  // Print the introduction
+  Serial.println("EEPROM settings menu");
+  Serial.println("Please select an option...");
+  Serial.println();
+
+  // Print the list of calibration options
+  Serial.println("   1. View the number of sorted Smarties");
+  Serial.println("   2. View the number of sorted M&M's");
+  Serial.println("   3. Reset the number of sorted Smarties");
+  Serial.println("   4. Reset the number of sorted M&M's");
+  Serial.println("   5. Return to the main menu");
+  Serial.println();
+
+  // Read the selected calibration option
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3') && (current_selection != '4') && (current_selection != '5'));
+
+  // Print a divider
+  printDivider();
 }
 
 // A function for printing a divider between the different menus
