@@ -72,13 +72,14 @@ void printEEPROMMenu() {
   Serial.println("   2. View the number of sorted M&M's");
   Serial.println("   3. Reset the number of sorted Smarties");
   Serial.println("   4. Reset the number of sorted M&M's");
-  Serial.println("   5. Return to the main menu");
+  Serial.println("   5. Initialise the EEPROM"); 
+  Serial.println("   6. Return to the main menu");
   Serial.println();
 
   // Read the selected EEPROM setting
   do {
     current_selection = Serial.read();
-  } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3') && (current_selection != '4') && (current_selection != '5'));
+  } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3') && (current_selection != '4') && (current_selection != '5') && (current_selection != '6'));
 
   // Print a divider
   printDivider();
@@ -99,6 +100,9 @@ void printEEPROMMenu() {
       viewSortedMMs(); 
       break;
     case '5':
+      confirmInitialiseEEPROM();
+      break;
+    case '6':
       break;    
   }
 }
@@ -195,6 +199,68 @@ void viewSortedMMs() {
     case '2':
       break;   
   }
+}
+
+// A function asking for confirmation before initialising the EEPROM of new Arduino boads
+void confirmInitialiseEEPROM() {
+
+  // Create a variable for keeping track of the selected confirmation option
+  char current_selection = '0';
+
+  // Print the introduction
+  Serial.println("You are about to initialise all of the EEPROM values to zero:");
+  Serial.println("Please confirm...");
+  Serial.println();
+
+  // Print the list of confirmation options
+  Serial.println("   1. Yes");
+  Serial.println("   2. No");
+  Serial.println();
+
+  // Read the selected confirmation option
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2'));
+
+  // Take the selected action
+  switch (current_selection) {
+    case '1':
+      // Initialise the EEPROM
+      Serial.println("Initialising the EEPROM...");
+      Serial.println();
+      break;
+    case '2':
+      // Abort the initialisation process
+      Serial.println("Initialisation aborted");
+      Serial.println();
+      break;   
+  }
+
+  Serial.println("Please select an option...");
+  Serial.println();
+
+  // Print the list of navigational options
+  Serial.println("   1. Return to the EEPROM settings menu");
+  Serial.println("   2. Return to the main menu");
+  Serial.println();
+
+  // Read the selected navigational option
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2'));
+
+  // Print a divider
+  printDivider();
+
+  // Call the selected navigational function
+  switch (current_selection) {
+    case '1':
+      printEEPROMMenu();
+      break;
+    case '2':
+      break;   
+  }
+
 }
 
 // A function for printing a divider between the different menus
