@@ -5,6 +5,9 @@
 
 // Code to calibrate and setup the Smartie Sorter 3000's mini arcade game enclosure
 
+#include <EEPROM.h>
+#include <math.h>
+
 void setup() {
   // Begin a serial channel
   Serial.begin(9600);
@@ -226,8 +229,7 @@ void confirmInitialiseEEPROM() {
   switch (current_selection) {
     case '1':
       // Initialise the EEPROM
-      Serial.println("Initialising the EEPROM...");
-      Serial.println();
+      initialiseEEPROM();
       break;
     case '2':
       // Abort the initialisation process
@@ -260,7 +262,45 @@ void confirmInitialiseEEPROM() {
     case '2':
       break;   
   }
+}
 
+// A function for initialising the EEPROM of new Arduino boads
+void initialiseEEPROM() {
+
+  Serial.println("Initialising the EEPROM...");
+  Serial.println();
+
+  // Initialise the EEPROM
+  for (int i = 0; i < EEPROM.length(); i++) {
+    EEPROM.write(i,0);
+
+    // Print the progress
+    if ( i == round(EEPROM.length() / 10 * 1)) {
+      Serial.println("   10%");
+    } else if (i == round(EEPROM.length() / 10 * 2)) {
+      Serial.println("   20%");
+    } else if (i == round(EEPROM.length() / 10 * 3)) {
+      Serial.println("   30%");
+    } else if (i == round(EEPROM.length() / 10 * 4)) {
+      Serial.println("   40%");
+    } else if (i == round(EEPROM.length() / 10 * 5)) {
+      Serial.println("   50%");
+    } else if (i == round(EEPROM.length() / 10 * 6)) {
+      Serial.println("   60%");
+    } else if (i == round(EEPROM.length() / 10 * 7)) {
+      Serial.println("   70%");
+    } else if (i == round(EEPROM.length() / 10 * 8)) {
+      Serial.println("   80%");
+    } else if (i == round(EEPROM.length() / 10 * 9)) {
+      Serial.println("   90%");
+    }
+  }
+  Serial.println("   100%");
+  Serial.println();
+
+  // Print the completion message
+  Serial.println("Initialisation complete");
+  Serial.println();
 }
 
 // A function for printing a divider between the different menus
