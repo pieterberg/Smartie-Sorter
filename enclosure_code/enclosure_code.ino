@@ -1,6 +1,7 @@
-// Arduino Smartie Sorter 3000
-// Created by Pieter van den Berg
-// on 28 February 2024
+// Project name: Smartie Sorter 3000
+// Sketch name:  enclosure_code.ino
+// Created by:   Pieter van den Berg
+// Created on:   28 February 2024
 
 // Code to control the Smartie Sorter 3000's mini arcade game enclosure
 
