@@ -9,24 +9,24 @@
 #include <math.h>
 
 // Add the EEPROM addresses for the total number of sorted Smarties
-byte eeAddressTotalNumberOfSortedSmartiesRed     = 0;
-byte eeAddressTotalNumberOfSortedSmartiesOrange  = 2;
-byte eeAddressTotalNumberOfSortedSmartiesYellow  = 4;
-byte eeAddressTotalNumberOfSortedSmartiesGreen   = 6;
-byte eeAddressTotalNumberOfSortedSmartiesBlue    = 8;
-byte eeAddressTotalNumberOfSortedSmartiesMauve   = 10;
-byte eeAddressTotalNumberOfSortedSmartiesPink    = 12;
-byte eeAddressTotalNumberOfSortedSmartiesBrown   = 14;
-byte eeAddressTotalNumberOfSortedSmartiesUnknown = 16;
+const byte eeAddressTotalNumberOfSortedSmartiesRed     = 0;
+const byte eeAddressTotalNumberOfSortedSmartiesOrange  = 2;
+const byte eeAddressTotalNumberOfSortedSmartiesYellow  = 4;
+const byte eeAddressTotalNumberOfSortedSmartiesGreen   = 6;
+const byte eeAddressTotalNumberOfSortedSmartiesBlue    = 8;
+const byte eeAddressTotalNumberOfSortedSmartiesMauve   = 10;
+const byte eeAddressTotalNumberOfSortedSmartiesPink    = 12;
+const byte eeAddressTotalNumberOfSortedSmartiesBrown   = 14;
+const byte eeAddressTotalNumberOfSortedSmartiesUnknown = 16;
 
 // Add the EEPROM addresses for the total number of sorted M&M's
-byte eeAddressTotalNumberOfSortedMMsRed     = 18;
-byte eeAddressTotalNumberOfSortedMMsOrange  = 20;
-byte eeAddressTotalNumberOfSortedMMsYellow  = 22;
-byte eeAddressTotalNumberOfSortedMMsGreen   = 24;
-byte eeAddressTotalNumberOfSortedMMsBlue    = 26;
-byte eeAddressTotalNumberOfSortedMMsBrown   = 28;
-byte eeAddressTotalNumberOfSortedMMsUnknown = 30;
+const byte eeAddressTotalNumberOfSortedMMsRed     = 18;
+const byte eeAddressTotalNumberOfSortedMMsOrange  = 20;
+const byte eeAddressTotalNumberOfSortedMMsYellow  = 22;
+const byte eeAddressTotalNumberOfSortedMMsGreen   = 24;
+const byte eeAddressTotalNumberOfSortedMMsBlue    = 26;
+const byte eeAddressTotalNumberOfSortedMMsBrown   = 28;
+const byte eeAddressTotalNumberOfSortedMMsUnknown = 30;
 
 void setup() {
   // Begin a serial channel
@@ -195,18 +195,27 @@ void viewSortedMMs() {
   // Create a variable for keeping track of the selected EEPROM option
   char current_selection = '0';
 
+  // Create variables to store the number of sorted M&M's stored in the EEPROM
+  unsigned int totalNumberOfSortedMMsRed     = 0;
+  unsigned int totalNumberOfSortedMMsOrange  = 0;
+  unsigned int totalNumberOfSortedMMsYellow  = 0;
+  unsigned int totalNumberOfSortedMMsGreen   = 0;
+  unsigned int totalNumberOfSortedMMsBlue    = 0;
+  unsigned int totalNumberOfSortedMMsBrown   = 0;
+  unsigned int totalNumberOfSortedMMsUnknown = 0;
+
   // Print the introduction
   Serial.println("Now displaying the number of sorted M&M's stored in the EEPROM:");
   Serial.println();
 
   // Print the number of sorted M&M's stored in the EEPROM
-  Serial.println("   Red:     x");
-  Serial.println("   Orange:  x");
-  Serial.println("   Yellow:  x");
-  Serial.println("   Green:   x");
-  Serial.println("   Blue:    x");
-  Serial.println("   Brown:   x");
-  Serial.println("   Unknown: x");
+  Serial.print("   Red:     "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsRed, totalNumberOfSortedMMsRed));
+  Serial.print("   Orange:  "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsOrange, totalNumberOfSortedMMsOrange));
+  Serial.print("   Yellow:  "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsYellow, totalNumberOfSortedMMsYellow));
+  Serial.print("   Green:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsGreen, totalNumberOfSortedMMsGreen));
+  Serial.print("   Blue:    "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsBlue, totalNumberOfSortedMMsBlue));
+  Serial.print("   Brown:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsBrown, totalNumberOfSortedMMsBrown));
+  Serial.print("   Unknown: "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsUnknown, totalNumberOfSortedMMsUnknown));
   Serial.println();
 
   Serial.println("Please select an option...");
