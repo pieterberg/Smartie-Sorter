@@ -8,6 +8,26 @@
 #include <EEPROM.h>
 #include <math.h>
 
+// Add the EEPROM addresses for the total number of sorted Smarties
+byte eeAddressTotalNumberOfSortedSmartiesRed     = 0;
+byte eeAddressTotalNumberOfSortedSmartiesOrange  = 2;
+byte eeAddressTotalNumberOfSortedSmartiesYellow  = 4;
+byte eeAddressTotalNumberOfSortedSmartiesGreen   = 6;
+byte eeAddressTotalNumberOfSortedSmartiesBlue    = 8;
+byte eeAddressTotalNumberOfSortedSmartiesMauve   = 10;
+byte eeAddressTotalNumberOfSortedSmartiesPink    = 12;
+byte eeAddressTotalNumberOfSortedSmartiesBrown   = 14;
+byte eeAddressTotalNumberOfSortedSmartiesUnknown = 16;
+
+// Add the EEPROM addresses for the total number of sorted M&M's
+byte eeAddressTotalNumberOfSortedMMsRed     = 18;
+byte eeAddressTotalNumberOfSortedMMsOrange  = 20;
+byte eeAddressTotalNumberOfSortedMMsYellow  = 22;
+byte eeAddressTotalNumberOfSortedMMsGreen   = 24;
+byte eeAddressTotalNumberOfSortedMMsBlue    = 26;
+byte eeAddressTotalNumberOfSortedMMsBrown   = 28;
+byte eeAddressTotalNumberOfSortedMMsUnknown = 30;
+
 void setup() {
   // Begin a serial channel
   Serial.begin(9600);
@@ -116,20 +136,31 @@ void viewSortedSmartie() {
   // Create a variable for keeping track of the selected navigational option
   char current_selection = '0';
 
+  // Create variables to store the number of sorted Smarties stored in the EEPROM
+  unsigned int totalNumberOfSortedSmartiesRed     = 0;
+  unsigned int totalNumberOfSortedSmartiesOrange  = 0;
+  unsigned int totalNumberOfSortedSmartiesYellow  = 0;
+  unsigned int totalNumberOfSortedSmartiesGreen   = 0;
+  unsigned int totalNumberOfSortedSmartiesBlue    = 0;
+  unsigned int totalNumberOfSortedSmartiesMauve   = 0;
+  unsigned int totalNumberOfSortedSmartiesPink    = 0;
+  unsigned int totalNumberOfSortedSmartiesBrown   = 0;
+  unsigned int totalNumberOfSortedSmartiesUnknown = 0;
+
   // Print the introduction
   Serial.println("Now displaying the number of sorted Smarties stored in the EEPROM:");
   Serial.println();
 
   // Print the number of sorted Smarties stored in the EEPROM
-  Serial.println("   Red:     x");
-  Serial.println("   Orange:  x");
-  Serial.println("   Yellow:  x");
-  Serial.println("   Green:   x");
-  Serial.println("   Blue:    x");
-  Serial.println("   Mauve:   x");
-  Serial.println("   Pink:    x");
-  Serial.println("   Brown:   x");
-  Serial.println("   Unknown: x");
+  Serial.print("   Red:     "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesRed, totalNumberOfSortedSmartiesRed));
+  Serial.print("   Orange:  "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesOrange, totalNumberOfSortedSmartiesOrange));
+  Serial.print("   Yellow:  "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesYellow, totalNumberOfSortedSmartiesYellow));
+  Serial.print("   Green:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesGreen, totalNumberOfSortedSmartiesGreen));
+  Serial.print("   Blue:    "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesBlue, totalNumberOfSortedSmartiesBlue));
+  Serial.print("   Mauve:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesMauve, totalNumberOfSortedSmartiesMauve));
+  Serial.print("   Pink:    "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesPink, totalNumberOfSortedSmartiesPink));
+  Serial.print("   Brown:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesBrown, totalNumberOfSortedSmartiesBrown));
+  Serial.print("   Unknown: "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesUnknown, totalNumberOfSortedSmartiesUnknown));
   Serial.println();
 
   Serial.println("Please select an option...");
