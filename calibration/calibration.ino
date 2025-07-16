@@ -29,6 +29,7 @@ const byte eeAddressTotalNumberOfSortedMMsBrown   = 28;
 const byte eeAddressTotalNumberOfSortedMMsUnknown = 30;
 
 void setup() {
+
   // Begin a serial channel
   Serial.begin(9600);
 
@@ -38,9 +39,11 @@ void setup() {
 
   // Print a divider
   printDivider();
+  
 }
 
 void loop() {
+
   // Print the calibration menu
   printCalibrationMenu();
 
@@ -375,6 +378,7 @@ void confirmResetNumberOfSortedSmarties() {
   switch (current_selection) {
     case '1':
       // Reset the number of sorted Smarties
+      resetNumberOfSortedSmarties();
       break;
     case '2':
       // Abort the reset process
@@ -407,6 +411,25 @@ void confirmResetNumberOfSortedSmarties() {
     case '2':
       break;   
   }
+}
+
+// A function for resetting the number of sorted Smarties stored in the EEPROM
+void resetNumberOfSortedSmarties() {
+
+  // Reset the number of sorted Smarties stored in the EEPROM
+  EEPROM.put(eeAddressTotalNumberOfSortedSmartiesRed, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedSmartiesOrange, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedSmartiesYellow, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedSmartiesGreen, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedSmartiesBlue, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedSmartiesMauve, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedSmartiesPink, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedSmartiesBrown, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedSmartiesUnknown, 0);
+
+  // Print the completion message
+  Serial.println("Reset complete");
+  Serial.println();
 }
 
 // A function asking for confirmation before resetting the number of sorted M&M's stored in the EEPROM
