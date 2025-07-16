@@ -39,7 +39,7 @@ void setup() {
 
   // Print a divider
   printDivider();
-  
+
 }
 
 void loop() {
@@ -457,6 +457,7 @@ void confirmResetNumberOfSortedMMs() {
   switch (current_selection) {
     case '1':
       // Reset the number of sorted M&M's
+      resetNumberOfSortedMMs();
       break;
     case '2':
       // Abort the reset process
@@ -489,6 +490,23 @@ void confirmResetNumberOfSortedMMs() {
     case '2':
       break;   
   }
+}
+
+// A function for resetting the number of sorted M&M's stored in the EEPROM
+void resetNumberOfSortedMMs() {
+
+  // Reset the number of sorted M&M's stored in the EEPROM
+  EEPROM.put(eeAddressTotalNumberOfSortedMMsRed, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedMMsOrange, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedMMsYellow, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedMMsGreen, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedMMsBlue, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedMMsBrown, 0);
+  EEPROM.put(eeAddressTotalNumberOfSortedMMsUnknown, 0);
+
+  // Print the completion message
+  Serial.println("Reset complete");
+  Serial.println();
 }
 
 // A function for printing a divider between the different menus
