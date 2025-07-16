@@ -122,6 +122,12 @@ void printEEPROMMenu() {
     case '2':
       viewSortedMMs(); 
       break;
+    case '3':
+      confirmResetNumberOfSortedSmarties();
+      break;
+    case '4':
+      confirmResetNumberOfSortedMMs();
+      break;
     case '5':
       confirmInitialiseEEPROM();
       break;
@@ -341,6 +347,125 @@ void initialiseEEPROM() {
   // Print the completion message
   Serial.println("Initialisation complete");
   Serial.println();
+}
+
+
+// A function asking for confirmation before resetting the number of sorted Smarties stored in the EEPROM
+void confirmResetNumberOfSortedSmarties() {
+
+  // Create a variable for keeping track of the selected confirmation option
+  char current_selection = '0';
+
+  // Print the introduction
+  Serial.println("You are about to reset the number of sorted Smarties:");
+  Serial.println("Please confirm...");
+  Serial.println();
+
+  // Print the list of confirmation options
+  Serial.println("   1. Yes");
+  Serial.println("   2. No");
+  Serial.println();
+
+  // Read the selected confirmation option
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2'));
+
+  // Take the selected action
+  switch (current_selection) {
+    case '1':
+      // Reset the number of sorted Smarties
+      break;
+    case '2':
+      // Abort the reset process
+      Serial.println("Reset aborted");
+      Serial.println();
+      break;   
+  }
+
+  Serial.println("Please select an option...");
+  Serial.println();
+
+  // Print the list of navigational options
+  Serial.println("   1. Return to the EEPROM settings menu");
+  Serial.println("   2. Return to the main menu");
+  Serial.println();
+
+  // Read the selected navigational option
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2'));
+
+  // Print a divider
+  printDivider();
+
+  // Call the selected navigational function
+  switch (current_selection) {
+    case '1':
+      printEEPROMMenu();
+      break;
+    case '2':
+      break;   
+  }
+}
+
+// A function asking for confirmation before resetting the number of sorted M&M's stored in the EEPROM
+void confirmResetNumberOfSortedMMs() {
+
+  // Create a variable for keeping track of the selected confirmation option
+  char current_selection = '0';
+
+  // Print the introduction
+  Serial.println("You are about to reset the number of sorted M&M's:");
+  Serial.println("Please confirm...");
+  Serial.println();
+
+  // Print the list of confirmation options
+  Serial.println("   1. Yes");
+  Serial.println("   2. No");
+  Serial.println();
+
+  // Read the selected confirmation option
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2'));
+
+  // Take the selected action
+  switch (current_selection) {
+    case '1':
+      // Reset the number of sorted M&M's
+      break;
+    case '2':
+      // Abort the reset process
+      Serial.println("Reset aborted");
+      Serial.println();
+      break;   
+  }
+
+  Serial.println("Please select an option...");
+  Serial.println();
+
+  // Print the list of navigational options
+  Serial.println("   1. Return to the EEPROM settings menu");
+  Serial.println("   2. Return to the main menu");
+  Serial.println();
+
+  // Read the selected navigational option
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2'));
+
+  // Print a divider
+  printDivider();
+
+  // Call the selected navigational function
+  switch (current_selection) {
+    case '1':
+      printEEPROMMenu();
+      break;
+    case '2':
+      break;   
+  }
 }
 
 // A function for printing a divider between the different menus
