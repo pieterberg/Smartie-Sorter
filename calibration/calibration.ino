@@ -287,7 +287,14 @@ void confirmInitialiseEEPROM() {
   char current_selection = '0';
 
   // Print the introduction
-  Serial.println("You are about to initialise all of the EEPROM values to zero:");
+  Serial.println("You are about to initialise all of the EEPROM values to zero");
+  Serial.println();
+  Serial.println("This will reset the:");
+  Serial.println();
+  Serial.println("   - Operating modes");
+  Serial.println("   - Number of sorted Smarties");
+  Serial.println("   - Number of sorted M&M's");
+  Serial.println();
   Serial.println("Please confirm...");
   Serial.println();
 
