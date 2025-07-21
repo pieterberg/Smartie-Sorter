@@ -63,13 +63,14 @@ void printCalibrationMenu() {
   // Print the list of calibration options
   Serial.println("   1. Colour sensor calibration");
   Serial.println("   2. Servo calibration");
-  Serial.println("   3. EEPROM settings");
+  Serial.println("   3. Sorting data");
+  Serial.println("   4. EEPROM settings");
   Serial.println();
 
   // Read the selected calibration option
   do {
     current_selection = Serial.read();
-  } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3'));
+  } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3') && (current_selection != '4'));
 
   // Print a divider
   printDivider();
@@ -77,8 +78,57 @@ void printCalibrationMenu() {
   // Call the selected calibration function
   switch (current_selection) {
     case '3':
+      printSortingDataMenu();
+      break;
+    case '4':
       printEEPROMMenu();
       break;      
+  }
+}
+
+// A function for printing the sorting data menu
+void printSortingDataMenu() {
+
+  // Create a variable for keeping track of the selected sorting data option
+  char current_selection = '0';
+
+  // Print the introduction
+  Serial.println("Sorting data menu");
+  Serial.println("Please select an option...");
+  Serial.println();
+
+  // Print the list of sorting data options
+  Serial.println("   1. View the number of sorted Smarties");
+  Serial.println("   2. View the number of sorted M&M's");
+  Serial.println("   3. Reset the number of sorted Smarties");
+  Serial.println("   4. Reset the number of sorted M&M's");
+  Serial.println("   5. Return to the main menu");
+  Serial.println();
+
+  // Read the selected sorting data option
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3') && (current_selection != '4') && (current_selection != '5'));
+
+  // Print a divider
+  printDivider();
+
+  // Call the selected sorting data option
+  switch (current_selection) {
+    case '1':
+      viewSortedSmarties();
+      break;
+    case '2':
+      viewSortedMMs(); 
+      break;
+    case '3':
+      confirmResetNumberOfSortedSmarties();
+      break;
+    case '4':
+      confirmResetNumberOfSortedMMs();
+      break;
+    case '5':
+      break;  
   }
 }
 
@@ -94,53 +144,30 @@ void printEEPROMMenu() {
   Serial.println();
 
   // Print the list of EEPROM settings
-  Serial.println("   1. View the number of sorted Smarties");
-  Serial.println("   2. View the number of sorted M&M's");
-  Serial.println("   3. Reset the number of sorted Smarties");
-  Serial.println("   4. Reset the number of sorted M&M's");
-  Serial.println("   5. Initialise the EEPROM"); 
-  Serial.println("   6. Return to the main menu");
+  Serial.println("   1. Initialise the EEPROM"); 
+  Serial.println("   2. Return to the main menu");
   Serial.println();
 
   // Read the selected EEPROM setting
   do {
     current_selection = Serial.read();
-  } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3') && (current_selection != '4') && (current_selection != '5') && (current_selection != '6'));
+  } while ((current_selection != '1') && (current_selection != '2'));
 
   // Print a divider
   printDivider();
 
-  
-  if (current_selection == '1'){
-    
-  } else if (current_selection == '2'){
-    
-  }
-
   // Call the selected EEPROM setting
   switch (current_selection) {
     case '1':
-      viewSortedSmartie();
-      break;
-    case '2':
-      viewSortedMMs(); 
-      break;
-    case '3':
-      confirmResetNumberOfSortedSmarties();
-      break;
-    case '4':
-      confirmResetNumberOfSortedMMs();
-      break;
-    case '5':
       confirmInitialiseEEPROM();
       break;
-    case '6':
+    case '2':
       break;    
   }
 }
 
 // A function for viewing the number of sorted Smarties stored in the EEPROM
-void viewSortedSmartie() {
+void viewSortedSmarties() {
 
   // Create a variable for keeping track of the selected navigational option
   char current_selection = '0';
@@ -176,7 +203,7 @@ void viewSortedSmartie() {
   Serial.println();
 
   // Print the list of navigational options
-  Serial.println("   1. Return to the EEPROM settings menu");
+  Serial.println("   1. Return to the sorting data menu");
   Serial.println("   2. Return to the main menu");
   Serial.println();
 
@@ -191,7 +218,7 @@ void viewSortedSmartie() {
   // Call the selected navigational function
   switch (current_selection) {
     case '1':
-      printEEPROMMenu();
+      printSortingDataMenu();
       break;
     case '2':
       break;   
@@ -231,7 +258,7 @@ void viewSortedMMs() {
   Serial.println();
 
   // Print the list of navigational options
-  Serial.println("   1. Return to the EEPROM settings menu");
+  Serial.println("   1. Return to the sorting data menu");
   Serial.println("   2. Return to the main menu");
   Serial.println();
 
@@ -246,7 +273,7 @@ void viewSortedMMs() {
   // Call the selected navigational function
   switch (current_selection) {
     case '1':
-      printEEPROMMenu();
+      printSortingDataMenu();
       break;
     case '2':
       break;   
@@ -391,7 +418,7 @@ void confirmResetNumberOfSortedSmarties() {
   Serial.println();
 
   // Print the list of navigational options
-  Serial.println("   1. Return to the EEPROM settings menu");
+  Serial.println("   1. Return to the sorting data menu");
   Serial.println("   2. Return to the main menu");
   Serial.println();
 
@@ -406,7 +433,7 @@ void confirmResetNumberOfSortedSmarties() {
   // Call the selected navigational function
   switch (current_selection) {
     case '1':
-      printEEPROMMenu();
+      printSortingDataMenu();
       break;
     case '2':
       break;   
@@ -470,7 +497,7 @@ void confirmResetNumberOfSortedMMs() {
   Serial.println();
 
   // Print the list of navigational options
-  Serial.println("   1. Return to the EEPROM settings menu");
+  Serial.println("   1. Return to the sorting data menu");
   Serial.println("   2. Return to the main menu");
   Serial.println();
 
@@ -485,7 +512,7 @@ void confirmResetNumberOfSortedMMs() {
   // Call the selected navigational function
   switch (current_selection) {
     case '1':
-      printEEPROMMenu();
+      printSortingDataMenu();
       break;
     case '2':
       break;   
