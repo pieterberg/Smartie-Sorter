@@ -34,7 +34,7 @@ void setup() {
   Serial.begin(9600);
 
   // Print the welcome message
-  Serial.println("Welcome to the Smartie Sorter 3000's calibration menu");
+  Serial.println(F("Welcome to the Smartie Sorter 3000's calibration menu"));
   Serial.println();
 
   // Print a divider
@@ -56,15 +56,15 @@ void printCalibrationMenu() {
   char current_selection = '0';
 
   // Print the introduction
-  Serial.println("Smartie Sorter 3000 calibration menu");
-  Serial.println("Please select an option...");
+  Serial.println(F("Smartie Sorter 3000 calibration menu"));
+  Serial.println(F("Please select an option..."));
   Serial.println();
 
   // Print the list of calibration options
-  Serial.println("   1. Colour sensor calibration");
-  Serial.println("   2. Servo calibration");
-  Serial.println("   3. Sorting data");
-  Serial.println("   4. EEPROM settings");
+  Serial.println(F("   1. Colour sensor calibration"));
+  Serial.println(F("   2. Servo calibration"));
+  Serial.println(F("   3. Sorting data"));
+  Serial.println(F("   4. EEPROM settings"));
   Serial.println();
 
   // Read the selected calibration option
@@ -93,16 +93,16 @@ void printSortingDataMenu() {
   char current_selection = '0';
 
   // Print the introduction
-  Serial.println("Sorting data menu");
-  Serial.println("Please select an option...");
+  Serial.println(F("Sorting data menu"));
+  Serial.println(F("Please select an option..."));
   Serial.println();
 
   // Print the list of sorting data options
-  Serial.println("   1. View the number of sorted Smarties");
-  Serial.println("   2. View the number of sorted M&M's");
-  Serial.println("   3. Reset the number of sorted Smarties");
-  Serial.println("   4. Reset the number of sorted M&M's");
-  Serial.println("   5. Return to the main menu");
+  Serial.println(F("   1. View the number of sorted Smarties"));
+  Serial.println(F("   2. View the number of sorted M&M's"));
+  Serial.println(F("   3. Reset the number of sorted Smarties"));
+  Serial.println(F("   4. Reset the number of sorted M&M's"));
+  Serial.println(F("   5. Return to the main menu"));
   Serial.println();
 
   // Read the selected sorting data option
@@ -139,13 +139,13 @@ void printEEPROMMenu() {
   char current_selection = '0';
 
   // Print the introduction
-  Serial.println("EEPROM settings menu");
-  Serial.println("Please select an option...");
+  Serial.println(F("EEPROM settings menu"));
+  Serial.println(F("Please select an option..."));
   Serial.println();
 
   // Print the list of EEPROM settings
-  Serial.println("   1. Initialise the EEPROM"); 
-  Serial.println("   2. Return to the main menu");
+  Serial.println(F("   1. Initialise the EEPROM")); 
+  Serial.println(F("   2. Return to the main menu"));
   Serial.println();
 
   // Read the selected EEPROM setting
@@ -184,27 +184,27 @@ void viewSortedSmarties() {
   unsigned int totalNumberOfSortedSmartiesUnknown = 0;
 
   // Print the introduction
-  Serial.println("Now displaying the number of sorted Smarties stored in the EEPROM:");
+  Serial.println(F("Now displaying the number of sorted Smarties stored in the EEPROM:"));
   Serial.println();
 
   // Print the number of sorted Smarties stored in the EEPROM
-  Serial.print("   Red:     "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesRed, totalNumberOfSortedSmartiesRed));
-  Serial.print("   Orange:  "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesOrange, totalNumberOfSortedSmartiesOrange));
-  Serial.print("   Yellow:  "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesYellow, totalNumberOfSortedSmartiesYellow));
-  Serial.print("   Green:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesGreen, totalNumberOfSortedSmartiesGreen));
-  Serial.print("   Blue:    "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesBlue, totalNumberOfSortedSmartiesBlue));
-  Serial.print("   Mauve:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesMauve, totalNumberOfSortedSmartiesMauve));
-  Serial.print("   Pink:    "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesPink, totalNumberOfSortedSmartiesPink));
-  Serial.print("   Brown:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesBrown, totalNumberOfSortedSmartiesBrown));
-  Serial.print("   Unknown: "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesUnknown, totalNumberOfSortedSmartiesUnknown));
+  Serial.print(F("   Red:     ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesRed, totalNumberOfSortedSmartiesRed));
+  Serial.print(F("   Orange:  ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesOrange, totalNumberOfSortedSmartiesOrange));
+  Serial.print(F("   Yellow:  ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesYellow, totalNumberOfSortedSmartiesYellow));
+  Serial.print(F("   Green:   ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesGreen, totalNumberOfSortedSmartiesGreen));
+  Serial.print(F("   Blue:    ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesBlue, totalNumberOfSortedSmartiesBlue));
+  Serial.print(F("   Mauve:   ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesMauve, totalNumberOfSortedSmartiesMauve));
+  Serial.print(F("   Pink:    ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesPink, totalNumberOfSortedSmartiesPink));
+  Serial.print(F("   Brown:   ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesBrown, totalNumberOfSortedSmartiesBrown));
+  Serial.print(F("   Unknown: ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedSmartiesUnknown, totalNumberOfSortedSmartiesUnknown));
   Serial.println();
 
-  Serial.println("Please select an option...");
+  Serial.println(F("Please select an option..."));
   Serial.println();
 
   // Print the list of navigational options
-  Serial.println("   1. Return to the sorting data menu");
-  Serial.println("   2. Return to the main menu");
+  Serial.println(F("   1. Return to the sorting data menu"));
+  Serial.println(F("   2. Return to the main menu"));
   Serial.println();
 
   // Read the selected navigational option
@@ -241,25 +241,25 @@ void viewSortedMMs() {
   unsigned int totalNumberOfSortedMMsUnknown = 0;
 
   // Print the introduction
-  Serial.println("Now displaying the number of sorted M&M's stored in the EEPROM:");
+  Serial.println(F("Now displaying the number of sorted M&M's stored in the EEPROM:"));
   Serial.println();
 
   // Print the number of sorted M&M's stored in the EEPROM
-  Serial.print("   Red:     "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsRed, totalNumberOfSortedMMsRed));
-  Serial.print("   Orange:  "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsOrange, totalNumberOfSortedMMsOrange));
-  Serial.print("   Yellow:  "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsYellow, totalNumberOfSortedMMsYellow));
-  Serial.print("   Green:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsGreen, totalNumberOfSortedMMsGreen));
-  Serial.print("   Blue:    "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsBlue, totalNumberOfSortedMMsBlue));
-  Serial.print("   Brown:   "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsBrown, totalNumberOfSortedMMsBrown));
-  Serial.print("   Unknown: "); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsUnknown, totalNumberOfSortedMMsUnknown));
+  Serial.print(F("   Red:     ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsRed, totalNumberOfSortedMMsRed));
+  Serial.print(F("   Orange:  ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsOrange, totalNumberOfSortedMMsOrange));
+  Serial.print(F("   Yellow:  ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsYellow, totalNumberOfSortedMMsYellow));
+  Serial.print(F("   Green:   ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsGreen, totalNumberOfSortedMMsGreen));
+  Serial.print(F("   Blue:    ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsBlue, totalNumberOfSortedMMsBlue));
+  Serial.print(F("   Brown:   ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsBrown, totalNumberOfSortedMMsBrown));
+  Serial.print(F("   Unknown: ")); Serial.println(EEPROM.get(eeAddressTotalNumberOfSortedMMsUnknown, totalNumberOfSortedMMsUnknown));
   Serial.println();
 
-  Serial.println("Please select an option...");
+  Serial.println(F("Please select an option..."));
   Serial.println();
 
   // Print the list of navigational options
-  Serial.println("   1. Return to the sorting data menu");
-  Serial.println("   2. Return to the main menu");
+  Serial.println(F("   1. Return to the sorting data menu"));
+  Serial.println(F("   2. Return to the main menu"));
   Serial.println();
 
   // Read the selected navigational option
@@ -287,20 +287,20 @@ void confirmInitialiseEEPROM() {
   char current_selection = '0';
 
   // Print the introduction
-  Serial.println("You are about to initialise all of the EEPROM values to zero");
+  Serial.println(F("You are about to initialise all of the EEPROM values to zero"));
   Serial.println();
-  Serial.println("This will reset the:");
+  Serial.println(F("This will reset the:"));
   Serial.println();
-  Serial.println("   - Operating modes");
-  Serial.println("   - Number of sorted Smarties");
-  Serial.println("   - Number of sorted M&M's");
+  Serial.println(F("   - Operating modes"));
+  Serial.println(F("   - Number of sorted Smarties"));
+  Serial.println(F("   - Number of sorted M&M's"));
   Serial.println();
-  Serial.println("Please confirm...");
+  Serial.println(F("Please confirm..."));
   Serial.println();
 
   // Print the list of confirmation options
-  Serial.println("   1. Yes");
-  Serial.println("   2. No");
+  Serial.println(F("   1. Yes"));
+  Serial.println(F("   2. No"));
   Serial.println();
 
   // Read the selected confirmation option
@@ -316,17 +316,17 @@ void confirmInitialiseEEPROM() {
       break;
     case '2':
       // Abort the initialisation process
-      Serial.println("Initialisation aborted");
+      Serial.println(F("Initialisation aborted"));
       Serial.println();
       break;   
   }
 
-  Serial.println("Please select an option...");
+  Serial.println(F("Please select an option..."));
   Serial.println();
 
   // Print the list of navigational options
-  Serial.println("   1. Return to the EEPROM settings menu");
-  Serial.println("   2. Return to the main menu");
+  Serial.println(F("   1. Return to the EEPROM settings menu"));
+  Serial.println(F("   2. Return to the main menu"));
   Serial.println();
 
   // Read the selected navigational option
@@ -350,7 +350,7 @@ void confirmInitialiseEEPROM() {
 // A function for initialising the EEPROM of new Arduino boads
 void initialiseEEPROM() {
 
-  Serial.println("Initialising the EEPROM...");
+  Serial.println(F("Initialising the EEPROM..."));
   Serial.println();
 
   // Initialise the EEPROM
@@ -359,30 +359,30 @@ void initialiseEEPROM() {
 
     // Print the progress
     if ( i == round(EEPROM.length() / 10 * 1)) {
-      Serial.println("   10%");
+      Serial.println(F("   10%"));
     } else if (i == round(EEPROM.length() / 10 * 2)) {
-      Serial.println("   20%");
+      Serial.println(F("   20%"));
     } else if (i == round(EEPROM.length() / 10 * 3)) {
-      Serial.println("   30%");
+      Serial.println(F("   30%"));
     } else if (i == round(EEPROM.length() / 10 * 4)) {
-      Serial.println("   40%");
+      Serial.println(F("   40%"));
     } else if (i == round(EEPROM.length() / 10 * 5)) {
-      Serial.println("   50%");
+      Serial.println(F("   50%"));
     } else if (i == round(EEPROM.length() / 10 * 6)) {
-      Serial.println("   60%");
+      Serial.println(F("   60%"));
     } else if (i == round(EEPROM.length() / 10 * 7)) {
-      Serial.println("   70%");
+      Serial.println(F("   70%"));
     } else if (i == round(EEPROM.length() / 10 * 8)) {
-      Serial.println("   80%");
+      Serial.println(F("   80%"));
     } else if (i == round(EEPROM.length() / 10 * 9)) {
-      Serial.println("   90%");
+      Serial.println(F("   90%"));
     }
   }
-  Serial.println("   100%");
+  Serial.println(F("   100%"));
   Serial.println();
 
   // Print the completion message
-  Serial.println("Initialisation complete");
+  Serial.println(F("Initialisation complete"));
   Serial.println();
 }
 
@@ -394,13 +394,13 @@ void confirmResetNumberOfSortedSmarties() {
   char current_selection = '0';
 
   // Print the introduction
-  Serial.println("You are about to reset the number of sorted Smarties:");
-  Serial.println("Please confirm...");
+  Serial.println(F("You are about to reset the number of sorted Smarties:"));
+  Serial.println(F("Please confirm..."));
   Serial.println();
 
   // Print the list of confirmation options
-  Serial.println("   1. Yes");
-  Serial.println("   2. No");
+  Serial.println(F("   1. Yes"));
+  Serial.println(F("   2. No"));
   Serial.println();
 
   // Read the selected confirmation option
@@ -416,17 +416,17 @@ void confirmResetNumberOfSortedSmarties() {
       break;
     case '2':
       // Abort the reset process
-      Serial.println("Reset aborted");
+      Serial.println(F("Reset aborted"));
       Serial.println();
       break;   
   }
 
-  Serial.println("Please select an option...");
+  Serial.println(F("Please select an option..."));
   Serial.println();
 
   // Print the list of navigational options
-  Serial.println("   1. Return to the sorting data menu");
-  Serial.println("   2. Return to the main menu");
+  Serial.println(F("   1. Return to the sorting data menu"));
+  Serial.println(F("   2. Return to the main menu"));
   Serial.println();
 
   // Read the selected navigational option
@@ -462,7 +462,7 @@ void resetNumberOfSortedSmarties() {
   EEPROM.put(eeAddressTotalNumberOfSortedSmartiesUnknown, 0);
 
   // Print the completion message
-  Serial.println("Reset complete");
+  Serial.println(F("Reset complete"));
   Serial.println();
 }
 
@@ -473,13 +473,13 @@ void confirmResetNumberOfSortedMMs() {
   char current_selection = '0';
 
   // Print the introduction
-  Serial.println("You are about to reset the number of sorted M&M's:");
-  Serial.println("Please confirm...");
+  Serial.println(F("You are about to reset the number of sorted M&M's:"));
+  Serial.println(F("Please confirm..."));
   Serial.println();
 
   // Print the list of confirmation options
-  Serial.println("   1. Yes");
-  Serial.println("   2. No");
+  Serial.println(F("   1. Yes"));
+  Serial.println(F("   2. No"));
   Serial.println();
 
   // Read the selected confirmation option
@@ -495,17 +495,17 @@ void confirmResetNumberOfSortedMMs() {
       break;
     case '2':
       // Abort the reset process
-      Serial.println("Reset aborted");
+      Serial.println(F("Reset aborted"));
       Serial.println();
       break;   
   }
 
-  Serial.println("Please select an option...");
+  Serial.println(F("Please select an option..."));
   Serial.println();
 
   // Print the list of navigational options
-  Serial.println("   1. Return to the sorting data menu");
-  Serial.println("   2. Return to the main menu");
+  Serial.println(F("   1. Return to the sorting data menu"));
+  Serial.println(F("   2. Return to the main menu"));
   Serial.println();
 
   // Read the selected navigational option
@@ -539,7 +539,7 @@ void resetNumberOfSortedMMs() {
   EEPROM.put(eeAddressTotalNumberOfSortedMMsUnknown, 0);
 
   // Print the completion message
-  Serial.println("Reset complete");
+  Serial.println(F("Reset complete"));
   Serial.println();
 }
 
@@ -547,7 +547,7 @@ void resetNumberOfSortedMMs() {
 void printDivider() {
 
   for (int i = 0; i < 72; i++ ) {
-    Serial.print("-");
+    Serial.print(F("-"));
   }
 
   Serial.println();
