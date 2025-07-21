@@ -9,24 +9,24 @@
 #include <math.h>
 
 // Add the EEPROM addresses for the total number of sorted Smarties
-const byte eeAddressTotalNumberOfSortedSmartiesRed     = 0;
-const byte eeAddressTotalNumberOfSortedSmartiesOrange  = 2;
-const byte eeAddressTotalNumberOfSortedSmartiesYellow  = 4;
-const byte eeAddressTotalNumberOfSortedSmartiesGreen   = 6;
-const byte eeAddressTotalNumberOfSortedSmartiesBlue    = 8;
-const byte eeAddressTotalNumberOfSortedSmartiesMauve   = 10;
-const byte eeAddressTotalNumberOfSortedSmartiesPink    = 12;
-const byte eeAddressTotalNumberOfSortedSmartiesBrown   = 14;
-const byte eeAddressTotalNumberOfSortedSmartiesUnknown = 16;
+const byte eeAddressTotalNumberOfSortedSmartiesRed     = 2;
+const byte eeAddressTotalNumberOfSortedSmartiesOrange  = 4;
+const byte eeAddressTotalNumberOfSortedSmartiesYellow  = 6;
+const byte eeAddressTotalNumberOfSortedSmartiesGreen   = 8;
+const byte eeAddressTotalNumberOfSortedSmartiesBlue    = 10;
+const byte eeAddressTotalNumberOfSortedSmartiesMauve   = 12;
+const byte eeAddressTotalNumberOfSortedSmartiesPink    = 14;
+const byte eeAddressTotalNumberOfSortedSmartiesBrown   = 16;
+const byte eeAddressTotalNumberOfSortedSmartiesUnknown = 18;
 
 // Add the EEPROM addresses for the total number of sorted M&M's
-const byte eeAddressTotalNumberOfSortedMMsRed     = 18;
-const byte eeAddressTotalNumberOfSortedMMsOrange  = 20;
-const byte eeAddressTotalNumberOfSortedMMsYellow  = 22;
-const byte eeAddressTotalNumberOfSortedMMsGreen   = 24;
-const byte eeAddressTotalNumberOfSortedMMsBlue    = 26;
-const byte eeAddressTotalNumberOfSortedMMsBrown   = 28;
-const byte eeAddressTotalNumberOfSortedMMsUnknown = 30;
+const byte eeAddressTotalNumberOfSortedMMsRed     = 20;
+const byte eeAddressTotalNumberOfSortedMMsOrange  = 22;
+const byte eeAddressTotalNumberOfSortedMMsYellow  = 24;
+const byte eeAddressTotalNumberOfSortedMMsGreen   = 26;
+const byte eeAddressTotalNumberOfSortedMMsBlue    = 28;
+const byte eeAddressTotalNumberOfSortedMMsBrown   = 30;
+const byte eeAddressTotalNumberOfSortedMMsUnknown = 32;
 
 void setup() {
 
