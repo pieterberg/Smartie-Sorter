@@ -195,15 +195,11 @@ void readButton3() {
 // Code to run when the blue arcade game button is pressed
 void button1Pressed() {
 
-  // Print a message to the serial monitor to confirm that button 1 has been pressed
-  Serial.println("Button 1 pressed");
-
   // Use a switch statement to control the logic for the combinations and normal operating modes
   switch(isCombinationsMode) {
     case false: 
       if (sorting_state == NOT_SORTING) {
         isCombinationsMode = true;
-        Serial.println("Enter combinations mode");
         // Flash the built-in LEDs 3 times to indicate that the Smartie Sorter 3000 has now entered the combinations mode
         flashLEDs(3); 
       }               
@@ -213,16 +209,12 @@ void button1Pressed() {
       isCombinationsMode = false;
       // Evaluate the entered combination
       evaluateCombinations();
-      Serial.println("Exit combinations mode");     
       break;
     }   
 }
 
 // Code to run when the left white arcade game button is pressed
 void button2Pressed() {
-
-  // Print a message to the serial monitor to confirm that button 2 has been pressed
-  Serial.println("Button 2 pressed");
 
   switch(isCombinationsMode) {
     case false: 
@@ -242,9 +234,6 @@ void button2Pressed() {
 
 // Code to run when the right white arcade game button is pressed
 void button3Pressed() {
-
-  // Print a message to the serial monitor to confirm that button 3 has been pressed
-  Serial.println("Button 3 pressed");
 
   switch(isCombinationsMode) {
     case false: 
