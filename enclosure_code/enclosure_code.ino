@@ -5,6 +5,12 @@
 
 // Code to control the Smartie Sorter 3000's mini arcade game enclosure
 
+#include <EEPROM.h>
+
+// Add the EEPROM addresses for the operating modes
+const byte eeAddressChocolateMode = 0;      // enum (1 byte)
+const byte eeAddressSortingMode   = 1;      // enum (1 byte)
+
 // Create enums to track the states of the three operating properties
 enum SORTING_STATE {
   SORTING,
@@ -75,6 +81,10 @@ void setup() {
 
   // Start the LED lights
   digitalWrite(LEDTransistor, HIGH);
+
+  // Read the operating modes from the EEPROM
+  chocolate_mode = (CHOCOLATE_MODE)EEPROM.read(eeAddressChocolateMode);
+  sorting_mode   = (SORTING_MODE)EEPROM.read(eeAddressSortingMode);
 
   // Begin a serial channel
   Serial.begin(9600);
@@ -281,24 +291,28 @@ void evaluateCombinations() {
 
     case 25:
       chocolate_mode = SMARTIES;
+      EEPROM.write(eeAddressChocolateMode, chocolate_mode);
       // Flash the built-in LEDs 4 times to indicate that the CHOCOLATE_MODE state has now been set to SMARTIES
       flashLEDs(4);
       break;
 
     case 34:
       chocolate_mode = M_AND_M_S;
+      EEPROM.write(eeAddressChocolateMode, chocolate_mode);
       // Flash the built-in LEDs 5 times to indicate that the CHOCOLATE_MODE state has now been set to M_AND_M_S
       flashLEDs(5);
       break;
 
     case 52:
       sorting_mode = UNCOLLATED;
+      EEPROM.write(eeAddressSortingMode, sorting_mode);
       // Flash the built-in LEDs 6 times to indicate that the SORTING_MODE state has now been set to UNCOLLATED
       flashLEDs(6);
       break;
 
     case 43:
       sorting_mode = COLLATED;
+      EEPROM.write(eeAddressSortingMode, sorting_mode);
       // Flash the built-in LEDs 7 times to indicate that the SORTING_MODE state has now been set to COLLATED
       flashLEDs(7);
       break;
