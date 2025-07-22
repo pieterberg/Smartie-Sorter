@@ -44,7 +44,7 @@ The `SORTING_MODE` property allows the Smartie Sorter 3000 to switch between gro
 
 ### 2.2. Default Values
 
-The default values of the three operating property are given by Table 1. These values have been hard-coded into the Arduino sketch and represent the values that the operating properties will have when powering on the Smartie Sorter 3000.
+The default values of the three operating properties are given by Table 1. These values have been hard-coded into the Arduino sketch and represent the values that the operating properties will have when powering on the Smartie Sorter 3000 for the first time.
 
 Table 1: The default values of the operating properties
 
@@ -53,6 +53,8 @@ Table 1: The default values of the operating properties
 | `SORTING_STATE`  | NOT_SORTING   |
 | `CHOCOLATE_MODE` | SMARTIES      |
 | `SORTING_MODE`   | UNCOLLATED    |
+
+Subsequent changes made to the `CHOCOLATE_MODE` property and the `SORTING_MODE` property will be stored in the EEPROM. However, the `SORTING_STATE` property will always be set to NOT_SORTING when powering on the Smartie Sorter 3000.
 
 ## 3. Control
 
