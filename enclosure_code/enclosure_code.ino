@@ -88,6 +88,10 @@ void setup() {
 
   // Begin a serial channel
   Serial.begin(9600);
+
+  // Flash the built-in LEDs 2 times to indicate that the setup is complete
+  delay(1000);
+  flashLEDs(2);
 }
 
 void loop() {
