@@ -9,24 +9,24 @@
 #include <math.h>
 
 // Add the EEPROM addresses for the total number of sorted Smarties
-const byte eeAddressTotalNumberOfSortedSmartiesRed     = 2;
-const byte eeAddressTotalNumberOfSortedSmartiesOrange  = 4;
-const byte eeAddressTotalNumberOfSortedSmartiesYellow  = 6;
-const byte eeAddressTotalNumberOfSortedSmartiesGreen   = 8;
-const byte eeAddressTotalNumberOfSortedSmartiesBlue    = 10;
-const byte eeAddressTotalNumberOfSortedSmartiesMauve   = 12;
-const byte eeAddressTotalNumberOfSortedSmartiesPink    = 14;
-const byte eeAddressTotalNumberOfSortedSmartiesBrown   = 16;
-const byte eeAddressTotalNumberOfSortedSmartiesUnknown = 18;
+const byte eeAddressTotalNumberOfSortedSmartiesRed     = 2;       // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesOrange  = 4;       // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesYellow  = 6;       // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesGreen   = 8;       // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesBlue    = 10;      // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesMauve   = 12;      // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesPink    = 14;      // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesBrown   = 16;      // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesUnknown = 18;      // unsigned int (2 bytes)
 
 // Add the EEPROM addresses for the total number of sorted M&M's
-const byte eeAddressTotalNumberOfSortedMMsRed     = 20;
-const byte eeAddressTotalNumberOfSortedMMsOrange  = 22;
-const byte eeAddressTotalNumberOfSortedMMsYellow  = 24;
-const byte eeAddressTotalNumberOfSortedMMsGreen   = 26;
-const byte eeAddressTotalNumberOfSortedMMsBlue    = 28;
-const byte eeAddressTotalNumberOfSortedMMsBrown   = 30;
-const byte eeAddressTotalNumberOfSortedMMsUnknown = 32;
+const byte eeAddressTotalNumberOfSortedMMsRed     = 20;     // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsOrange  = 22;     // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsYellow  = 24;     // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsGreen   = 26;     // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsBlue    = 28;     // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsBrown   = 30;     // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsUnknown = 32;     // unsigned int (2 bytes)
 
 void setup() {
 
