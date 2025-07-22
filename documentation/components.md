@@ -71,7 +71,7 @@ The Smartie Slide panels and Sorted Smarties Collector panels should be laser cu
 
 Section 2.3 and 2.4 provide more information about laser cutting the Smartie Slide panels and Sorted Smarties Collector panels, respectively.
 
-The Smartie Slide and Sorted Smarties Collector should then be assembled by welding their respective panels together using an acrylic cement such as ACRIFIX® 1S 0117.
+The Smartie Slide and Sorted Smarties Collector should then be assembled by welding their respective panels together using an acrylic cement such as ACRIFIX® 1S 0117. The acrylic cement should be applied using a fine needle and syringe, such as a 0.6&nbsp;mm × 32&nbsp;mm needle and a 1&nbsp;mL syringe.
 
 ### 1.3. 3D Printed Components
 
