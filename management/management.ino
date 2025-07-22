@@ -1,9 +1,17 @@
 // Project name: Smartie Sorter 3000
-// Sketch name:  calibration.ino
+// Sketch name:  management.ino
 // Created by:   Pieter van den Berg
 // Created on:   14 July 2025
-
-// Code to calibrate and setup the Smartie Sorter 3000's mini arcade game enclosure
+//
+// An Arduino Sketch for managing the Smartie Sorter 3000
+//
+// Includes the following features:
+//
+//    - Perform the servo calibration
+//    - Perform the colour sensor calibration
+//    - View the number of sorted Smarties and M&M's
+//    - Initialise the EEPROM
+//
 
 #include <EEPROM.h>
 #include <math.h>
@@ -34,7 +42,7 @@ void setup() {
   Serial.begin(9600);
 
   // Print the welcome message
-  Serial.println(F("Welcome to the Smartie Sorter 3000's calibration menu"));
+  Serial.println(F("Welcome to the Smartie Sorter 3000's management utility"));
   Serial.println();
 
   // Print a divider
@@ -44,30 +52,30 @@ void setup() {
 
 void loop() {
 
-  // Print the calibration menu
-  printCalibrationMenu();
+  // Print the main menu
+  printMainMenu();
 
 }
 
-// A function for printing the main calibration menu
-void printCalibrationMenu() {
+// A function for printing the main menu
+void printMainMenu() {
 
-  // Create a variable for keeping track of the selected calibration option
+  // Create a variable for keeping track of the selected option
   char current_selection = '0';
 
   // Print the introduction
-  Serial.println(F("Smartie Sorter 3000 calibration menu"));
+  Serial.println(F("Smartie Sorter 3000 main menu"));
   Serial.println(F("Please select an option..."));
   Serial.println();
 
-  // Print the list of calibration options
-  Serial.println(F("   1. Colour sensor calibration"));
-  Serial.println(F("   2. Servo calibration"));
+  // Print the list of options
+  Serial.println(F("   1. Servo calibration"));
+  Serial.println(F("   2. Colour sensor calibration"));
   Serial.println(F("   3. Sorting data"));
   Serial.println(F("   4. EEPROM settings"));
   Serial.println();
 
-  // Read the selected calibration option
+  // Read the selected option
   do {
     current_selection = Serial.read();
   } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3') && (current_selection != '4'));
@@ -75,7 +83,7 @@ void printCalibrationMenu() {
   // Print a divider
   printDivider();
 
-  // Call the selected calibration function
+  // Call the selected function
   switch (current_selection) {
     case '3':
       printSortingDataMenu();
