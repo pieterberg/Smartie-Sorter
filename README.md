@@ -14,7 +14,15 @@ The [smartie_sorter](https://github.com/pieterberg/Smartie-Sorter/tree/main/smar
 
 ## Documentation
 
-The [documentation](https://github.com/pieterberg/Smartie-Sorter/tree/main/documentation) folder contains the documentation related to the components, design, and electronics of the Smartie Sorter 3000's mini arcade game enclosure. More information is provided in the [components.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/components.md), [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md), and [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics.md) documents.
+- [Components.md](documentation/components.md) provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, it provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, it provides information about laser cutting the wooden panels and acrylic components. Finally, it provides information about the Fusion 360 computer aided design (CAD) files.
+
+- [Design.md](documentation/design.md) provides information about the design of the Smartie Sorter 3000. First, it provides information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, it provides information about the Smartie Sorter 3000's colour scheme. Finally, it provides information about the sorted Smartie and M&M locations.
+
+- [Electronics.md](documentation/electronics.md)
+
+- [Management.md](documentation/management.md)
+
+- [Sorting.md](documentation/sorting.md)
 
 ## Fusion 360
 
