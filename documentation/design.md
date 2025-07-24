@@ -84,7 +84,7 @@ Table 2: The hex codes for the Sanwa arcade game buttons' colour scheme
 | Blue                  | `#07AEE9` |
 | White                 | `#FFFFFF` |
 
-Information about the arcade game buttons and how they control the sorting process is given in [sorting.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/sorting.md).
+Information about the arcade game buttons and how they control the sorting process is provided in [sorting.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/sorting.md).
 
 ### 2.3. Smartie Colours
 
