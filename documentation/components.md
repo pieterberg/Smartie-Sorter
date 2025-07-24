@@ -83,7 +83,7 @@ The 3D printed components should be printed using a 3D printer, such as the Zort
 
 Infill settings that maximise the part strength of the 3D printed components should be used.
 
-The 3D printed components should then be glued in place.
+The 3D printed components should then be glued in place. The structural 3D printed components, such as the Electronics Holder, should be glued using a clear epoxy. The 3D printed components that are involved in the Colour Detection Mechanism should be glued using a cyanoacrylate adhesive (super glue).
 
 ### 1.4. Labels
 
