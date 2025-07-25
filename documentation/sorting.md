@@ -54,7 +54,9 @@ Table 1: The default values of the operating properties
 | `CHOCOLATE_MODE` | SMARTIES      |
 | `SORTING_MODE`   | UNCOLLATED    |
 
-Subsequent changes made to the `CHOCOLATE_MODE` property and the `SORTING_MODE` property will be stored in the EEPROM. However, the `SORTING_STATE` property will always be set to NOT_SORTING when powering on the Smartie Sorter 3000.
+Subsequent changes made to the `CHOCOLATE_MODE` and `SORTING_MODE` properties will be stored in the EEPROM. The `SORTING_STATE` property will always be set to its default value of NOT_SORTING when powering on the Smartie Sorter 3000.
+
+More information about the EEPROM is provided in [management.md](management.md).
 
 ## 3. Control
 
