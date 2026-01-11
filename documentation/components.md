@@ -77,13 +77,17 @@ The Smartie Slide and Sorted Smarties Collector should then be assembled by weld
 
 3D printed components are used for the Colour Detection Mechanism and to house the electronic components.
 
-The 3D printed components should be printed using a 3D printer, such as the Zortrax M300 3D printer, using:
+The 3D printed components should be printed using a 3D printer, such as the Bambu Lab X1 Series 3D printer, using:
 
 - White PLA filament
 
-Infill settings that maximise the part strength of the 3D printed components should be used.
+A layer height of 0.16 mm should be used for a high print quality.
 
-The 3D printed components should then be glued in place. The structural 3D printed components, such as the Electronics Holder, should be glued using a clear epoxy adhesive such as the Pattex Clear Power Epoxy. The 3D printed components that are involved in the Colour Detection Mechanism should be glued using a cyanoacrylate adhesive such as the Pattex Ultra Gel Super Glue.
+An infill setting of 35% should be used to maximise the strength of the 3D printed components while minimizing their weight.
+
+The 3D printed components should then be glued in place. The structural 3D printed components, such as the Electronics Holder, should be glued using a clear epoxy adhesive such as the Pattex Clear Power Epoxy. The Servo Horn should also be glued to the Smartie Arm using the clear epoxy adhesive.
+
+The 3D printed components that are involved in the Colour Detection Mechanism should be glued using a cyanoacrylate adhesive such as the Pattex Ultra Gel Super Glue.
 
 ### 1.4. Labels
 
