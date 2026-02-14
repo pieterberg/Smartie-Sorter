@@ -85,6 +85,8 @@ A layer height of 0.16 mm should be used for a high print quality.
 
 An infill setting of 35% should be used to maximise the strength of the 3D printed components while minimizing their weight.
 
+The Smartie Hopper has a 10° slant on its front face which should be used as the bottom face when 3D printing the Smartie Hopper.
+
 The 3D printed components should then be glued in place. The structural 3D printed components, such as the Electronics Holder, should be glued using a clear epoxy adhesive such as the Pattex Clear Power Epoxy. The Servo Horn should also be glued to the Smartie Arm using the clear epoxy adhesive.
 
 The 3D printed components that are involved in the Colour Detection Mechanism should be glued using a cyanoacrylate adhesive such as the Pattex Ultra Gel Super Glue.
