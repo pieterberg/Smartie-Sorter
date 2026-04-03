@@ -1,8 +1,8 @@
 # Design 
 
-Information about the design of the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides more information about the Smartie Sorter 3000's colour scheme.
+This document provides information about the design of the Smartie Sorter 3000. First, Section 1 provides information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides information about the Smartie Sorter 3000's colour scheme. Finally, Section 3 provides information about the sorted Smartie and M&M locations.
 
-The Smartie Sorter 3000 logo and the colour schemes were created using Affinity Designer. The .afdesign files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/affinity_designer) folder.
+The Smartie Sorter 3000 logo, colour scheme, and sorted Smartie and M&M locations were created using Affinity Designer. The `.afdesign` files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/affinity_designer) folder.
 
 ### Table of Contents
 
@@ -20,7 +20,7 @@ The Smartie Sorter 3000 logo and the colour schemes were created using Affinity 
 
 ## 1. Name Sign
 
-This section provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure.
+This section provides information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure.
 
 The "3000" in the Smartie Sorter 3000's name comes from the TCS3200 colour sensor that the Smartie Sorter 3000 uses to determine the Smartie and M&M colours.
 
@@ -34,7 +34,7 @@ The Smartie Sorter 3000 logo is presented in Figure 1. The logo has 8 slanted st
 
 Figure 1: The Smartie Sorter 3000 logo used for the name at the top of the mini arcade game enclosure
 
-The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/name_sign) folder contains both a .png version and an .svg version of the Smartie Sorter 3000 logo.
+The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/name_sign) folder contains both a `.png` version and an `.svg` version of the Smartie Sorter 3000 logo.
 
 ### 1.2. Enclosure Placement
 
@@ -52,7 +52,7 @@ The [colour_scheme](https://github.com/pieterberg/Smartie-Sorter/tree/main/asset
 
 The colour scheme used for the design of the mini arcade game enclosure is presented by Figure 2. The outside surfaces of the mini arcade game enclosure are painted brown while the internal surfaces of the mini arcade game enclosure are painted white.
 
-The brown colour used for the design of the mini arcade game enclosure is based on the Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg paint.
+The brown colour used for the design of the mini arcade game enclosure is based on the colour of the Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg paint.
 
 <img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="70%">
 
@@ -84,7 +84,7 @@ Table 2: The hex codes for the Sanwa arcade game buttons' colour scheme
 | Blue                  | `#07AEE9` |
 | White                 | `#FFFFFF` |
 
-More information about the arcade game buttons and how they control the sorting process is given in [sorting.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/sorting.md).
+Information about the arcade game buttons and how they control the sorting process is provided in [sorting.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/sorting.md).
 
 ### 2.3. Smartie Colours
 
@@ -132,13 +132,32 @@ Table 4: The hex codes for the official M&M colour scheme
 
 ## 3. Sorting Locations
 
-Once sorted, the Smarties and M&M's are transferred to the acrylic Sorted Smarties Collector component. The sorted positions of the Smarties and M&M's are presented in this section.
+Once sorted, the Smarties and M&M's are transferred to the acrylic Sorted Smarties Collector component. The Sorted Smarties Collector component contains 8 compartments, and the locations of the sorted Smarties and M&M's are dependent on the value of the `SORTING_MODE` property. 
+
+The Smartie Sorter 3000 can operate in 2 different sorting modes, as shown by Table 5.
+
+Table 5: Sorting modes and their descriptions
+
+| Sorting Mode | Description                                                                          |
+|--------------|--------------------------------------------------------------------------------------|
+| Uncollated   | Smarties and M&M's of the same colour are grouped together in the same compartment.  |
+| Collated     | Consecutive Smarties and M&Ms of the same colour end up in consecutive compartments. |
+
+Information about setting and viewing the value of the `SORTING_MODE` property is provided in [sorting.md](sorting.md).
 
 ### 3.1. Smartie Locations
 
-The locations of the sorted Smarties in the Sorted Smarties Collector component are similar to their locations in the Smartie chocolates' colour scheme that was presented in Figure 4.
+Figure 6 provides the sorted Smartie locations. The uncollated Smarties locations correspond with the Smartie colour scheme that was presented in Figure 4.
+
+<img src="../assets/design/sorting_locations/smartie_locations.png" alt="Smartie Locations" width="70%">
+
+Figure 6: The uncollated and collated sorted Smartie locations
+
 ### 3.2. M&M Locations
 
-The locations of the sorted M&M's in the Sorted Smarties Collector component are similar to their locations in the official M&M colour scheme that was presented in Figure 5. Since there are only 6 M&M colours, the final two locations in the Sorted Smarties Collector component are not used when sorting M&M's.
+Figure 6 provides the sorted M&M locations. The uncollated M&M locations correspond with the official M&M colour scheme that was presented in Figure 5. Since there are only 6 M&M colours, only the first 6 compartments of the Sorted Smarties Collector component are used.
 
+<img src="../assets/design/sorting_locations/m_and_m_locations.png" alt="M&M Locations" width="70%">
+
+Figure 7: The uncollated and collated sorted M&M locations
 
