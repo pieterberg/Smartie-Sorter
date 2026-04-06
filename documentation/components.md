@@ -183,6 +183,7 @@ The following Fusion 360 files are available in the fusion_360 folder:
 
 - Fusion 360 archive files (.f3d) of the components
 - Fusion 360 archive file (.f3z) of the Colour Detection Mechanism
+- Fusion 360 archive file (.f3z) of the Smartie Hopper
 - Fusion 360 archive file (.f3z) of the Smartie Sorter
 
 ### 3.2. Fusion 360 Folder Structure
@@ -211,6 +212,6 @@ The folder structure of the fusion_360 folder is presented below:
 ```
 The Smartie Sorter 3000 assembly is available in the fusion_360 folder.
 
-The Colour Detection Mechanism assembly is available in the [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies) folder.
+The Colour Detection Mechanism and Smartie Hopper assemblies are available in the [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies) folder.
 
 
