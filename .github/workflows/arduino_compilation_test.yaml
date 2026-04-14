@@ -10,7 +10,7 @@ jobs:
      - uses: arduino/compile-sketches@v1
        with:
          fqbn: arduino:avr:nano
-         sketch_paths: |
+         sketch-paths: |
            - ./
          libraries: |
            # No libraries are required
