@@ -1,0 +1,7 @@
+name: Arduino Compilation Test
+on: workflow_dispatch
+jobs:
+  compile-sketch:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "A GitHub Actions workflow for testing whether the Arduino sketches compile"
