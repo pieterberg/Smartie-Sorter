@@ -6,6 +6,14 @@ on:
 jobs:
   compile-sketch:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+       paths:
+           - smartie_sorter
+           - enclosure_code
+           - management  
+           
     steps:
      - name: Checkout the Smartie Sorter repository
        uses: actions/checkout@v6 
@@ -14,10 +22,7 @@ jobs:
        uses: arduino/compile-sketches@v1
        with:
          fqbn: arduino:avr:nano
-         sketch-paths: |
-           - smartie_sorter
-           - enclosure_code
-           - management
+         sketch-paths: ${{ matrix.paths }}
          libraries: |
            # No libraries are required
            -
