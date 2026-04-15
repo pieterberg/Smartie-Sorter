@@ -1,13 +1,17 @@
 name: Arduino Compilation Test
 on: 
   - push
+  - pull_request
   - workflow_dispatch
 jobs:
   compile-sketch:
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v6 
-     - uses: arduino/compile-sketches@v1
+     - name: Checkout the Smartie Sorter repository
+       uses: actions/checkout@v6 
+       
+     - name: Test whether the Arduino sketches compile successfully
+       uses: arduino/compile-sketches@v1
        with:
          fqbn: arduino:avr:nano
          sketch-paths: |
