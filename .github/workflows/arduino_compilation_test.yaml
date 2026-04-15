@@ -15,7 +15,9 @@ jobs:
        with:
          fqbn: arduino:avr:nano
          sketch-paths: |
-           - ./
+           - smartie_sorter
+           - enclosure_code
+           - management
          libraries: |
            # No libraries are required
            -
