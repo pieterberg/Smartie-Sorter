@@ -4,18 +4,31 @@
 # Created on:     14 April 2026
 #
 # A GitHub Actions workflow that uses the Arduino Compile Sketch action to 
-# test whether the following sketches compile:
+# test whether the following three sketches compile:
 # 
 #   1. smartie_sorter/smartie_sorter.ino 
 #   2. enclosure_code/enclosure_code.ino 
 #   3. management/management.ino 
 #
+# The workflow uses a matrix structure to provide separate checks for each sketch.
+# The workflow is only triggered when the Arduino sketches are modified.
+#
 
 name: Arduino Compilation Test
+
 on: 
-  - push
-  - pull_request
-  - workflow_dispatch
+  push:
+    paths:
+      - 'smartie_sorter/**'
+      - 'enclosure_code/**'
+      - 'management/**' 
+  pull_request:
+    paths:
+      - 'smartie_sorter/**'
+      - 'enclosure_code/**'
+      - 'management/**'    
+  workflow_dispatch:
+  
 jobs:
   compile-sketch:
     runs-on: ubuntu-latest
