@@ -1,3 +1,16 @@
+# Project name:   Smartie Sorter 3000
+# Workflow name:  arduino_compilation_test.yaml
+# Created by:     Pieter van den Berg
+# Created on:     14 April 2026
+#
+# A GitHub Actions workflow that uses the Arduino Compile Sketch action to 
+# test whether the following sketches compile:
+# 
+#   1. smartie_sorter/smartie_sorter.ino 
+#   2. enclosure_code/enclosure_code.ino 
+#   3. management/management.ino 
+#
+
 name: Arduino Compilation Test
 on: 
   - push
