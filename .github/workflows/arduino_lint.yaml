@@ -19,14 +19,26 @@ on:
   workflow_dispatch:
   
 jobs:
-  compile-sketch:
+  arduino-lint:
     runs-on: ubuntu-latest
            
     steps:
      - name: Checkout the Smartie Sorter repository
        uses: actions/checkout@v6 
        
-     - name: Run the Arduino Lint tool
+     - name: Lint the smartie_sorter sketch
        uses: arduino/arduino-lint-action@v2
        with:
          path: smartie_sorter
+
+     - name: Lint the enclosure_code sketch
+       uses: arduino/arduino-lint-action@v2
+       with:
+         path: enclosure_code
+
+     - name: Lint the management sketch
+       uses: arduino/arduino-lint-action@v2
+       with:
+         path: management
+     
+
