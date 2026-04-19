@@ -28,3 +28,5 @@ jobs:
        
      - name: Run the Arduino Lint tool
        uses: arduino/arduino-lint-action@v2
+       with:
+         path: smartie_sorter
