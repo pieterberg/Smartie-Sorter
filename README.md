@@ -1,6 +1,6 @@
 # Smartie Sorter 3000
 
-<img src="https://img.shields.io/badge/Arduino-Nano-008BC0?logo=arduino&logoColor=FFFFFF&style=flat"/> <img src="https://img.shields.io/badge/Autodesk-Fusion 360-008BC0?logo=autodesk&logoColor=FFFFFF&style=flat"/> [![Arduino Compilation Test](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_compilation_test.yaml/badge.svg)](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_compilation_test.yaml)
+<img src="https://img.shields.io/badge/Arduino-Nano-008BC0?logo=arduino&logoColor=FFFFFF&style=flat"/> <img src="https://img.shields.io/badge/Autodesk-Fusion 360-008BC0?logo=autodesk&logoColor=FFFFFF&style=flat"/> [![Arduino Lint](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_lint.yaml/badge.svg)](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_lint.yaml) [![Arduino Compilation Test](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_compilation_test.yaml/badge.svg)](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_compilation_test.yaml)
 
 <img src="images/Smartie_Sorter.png" alt="Arduino Smartie Sorter" width="50%"/><img src="images/smartie_sorter_interface.png" alt="Smartie Sorter Interface" width="50%"/>
 
