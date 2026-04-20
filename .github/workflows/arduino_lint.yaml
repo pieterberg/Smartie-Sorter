@@ -4,18 +4,29 @@
 # Created on:     19 April 2026
 #
 # A GitHub Actions workflow that uses the Arduino Lint tool to 
-# check for problems in the following three sketches:
+# check for problems in the following three Arduino sketches:
 # 
 #   1. smartie_sorter/smartie_sorter.ino 
 #   2. enclosure_code/enclosure_code.ino 
 #   3. management/management.ino 
+#
+# The workflow uses a single check to lint all three Arduino sketches.
+# The workflow is only triggered when the Arduino sketches are modified.
 #
 
 name: Arduino Lint
 
 on: 
   push:
-  pull_request: 
+    paths:
+      - 'smartie_sorter/**'
+      - 'enclosure_code/**'
+      - 'management/**' 
+  pull_request:
+    paths:
+      - 'smartie_sorter/**'
+      - 'enclosure_code/**'
+      - 'management/**'    
   workflow_dispatch:
   
 jobs:
