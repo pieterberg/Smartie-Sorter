@@ -1,5 +1,5 @@
 # Project name:   Smartie Sorter 3000
-# Workflow name:  arduino_compilation_test.yaml
+# Workflow name:  arduino_compilation.yaml
 # Created by:     Pieter van den Berg
 # Created on:     14 April 2026
 #
@@ -14,7 +14,7 @@
 # The workflow is only triggered when the Arduino sketches are modified.
 #
 
-name: Arduino Compilation Test
+name: Arduino Compilation
 
 on: 
   push:
