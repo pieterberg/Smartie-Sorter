@@ -42,17 +42,20 @@ jobs:
        with:
          path: smartie_sorter
          verbose: true
+         compliance: specification
 
      - name: Lint the enclosure_code sketch
        uses: arduino/arduino-lint-action@v2
        with:
          path: enclosure_code
          verbose: true
+         compliance: specification
 
      - name: Lint the management sketch
        uses: arduino/arduino-lint-action@v2
        with:
          path: management
          verbose: true
+         compliance: specification
      
 
