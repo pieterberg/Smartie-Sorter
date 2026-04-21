@@ -1,0 +1,58 @@
+# Project name:   Smartie Sorter 3000
+# Workflow name:  arduino_lint.yaml
+# Created by:     Pieter van den Berg
+# Created on:     19 April 2026
+#
+# A GitHub Actions workflow that uses the Arduino Lint tool to 
+# check for problems in the following three Arduino sketches:
+# 
+#   1. smartie_sorter/smartie_sorter.ino 
+#   2. enclosure_code/enclosure_code.ino 
+#   3. management/management.ino 
+#
+# The workflow uses a single check to lint all three Arduino sketches.
+# The workflow is only triggered when the Arduino sketches are modified.
+#
+
+name: Arduino Lint
+
+on: 
+  push:
+    paths:
+      - 'smartie_sorter/**'
+      - 'enclosure_code/**'
+      - 'management/**' 
+  pull_request:
+    paths:
+      - 'smartie_sorter/**'
+      - 'enclosure_code/**'
+      - 'management/**'    
+  workflow_dispatch:
+  
+jobs:
+  arduino-lint:
+    runs-on: ubuntu-latest
+           
+    steps:
+     - name: Checkout the Smartie Sorter repository
+       uses: actions/checkout@v6 
+       
+     - name: Lint the smartie_sorter sketch
+       uses: arduino/arduino-lint-action@v2
+       with:
+         path: smartie_sorter
+         verbose: true
+
+     - name: Lint the enclosure_code sketch
+       uses: arduino/arduino-lint-action@v2
+       with:
+         path: enclosure_code
+         verbose: true
+
+     - name: Lint the management sketch
+       uses: arduino/arduino-lint-action@v2
+       with:
+         path: management
+         verbose: true
+     
+
