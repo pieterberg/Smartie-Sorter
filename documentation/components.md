@@ -21,16 +21,18 @@ This documents provides information about the components used in the design of t
 
 ## 1. Components
 
-There are eight different types of components used in the design of the Smartie Sorter 3000, namely: 
+There are ten different types of components used in the design of the Smartie Sorter 3000, namely: 
 
 1. 3D printed components
 2. Acrylic components
 3. Chocolates
 4. Connectors
 5. Electronics
-6. Labels
-7. Supports
-8. Wooden panels
+6. Fasteners
+7. Labels
+8. Steel components
+9. Supports
+10. Wooden panels
 
 This section provides information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, and labels.
 
@@ -206,7 +208,9 @@ The folder structure of the fusion_360 folder is presented below:
         |   |__ smarties
         |__ connectors
         |__ electronics
-        |__ labels      
+        |__ fasteners
+        |__ labels
+        |__ steel_components      
         |__ supports
         |__ wooden_panels
 ```
