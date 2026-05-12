@@ -1,3 +1,11 @@
 ## Fusion 360 files
 *.f3d binary
 *.f3z binary
+
+## Affinity Designer files
+*.afdesign binary
+
+## Image file types
+*.png binary
+*.jpg binary
+
