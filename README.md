@@ -12,6 +12,16 @@ The project was written using C++ and runs on an Arduino Nano microcontroller. T
 
 The [smartie_sorter](https://github.com/pieterberg/Smartie-Sorter/tree/main/smartie_sorter) folder contains the code to determine the Smartie and M&M colours using the TCS3200 colour sensor module. The [enclosure_code](https://github.com/pieterberg/Smartie-Sorter/tree/main/enclosure_code) folder contains the code to control the Smartie Sorter 3000's mini arcade game enclosure.
 
+## Git Signatures
+
+The [signatures](./signatures) folder contains the required public SSH keys to verify the git commit signatures. These public SSH keys have been configured in the allowed_signers file.
+
+Run the following command in the project's root directory to configure the repository's local git config file to use the allowed_signers file for verifying the git commmit signatures:
+
+```shell
+git config --local gpg.ssh.allowedSignersFile "./signatures/allowed_signers"
+```
+
 ## Documentation
 
 - [Components.md](documentation/components.md) provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, it provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, it provides information about laser cutting the wooden panels and acrylic components. Finally, it provides information about the Fusion 360 computer aided design (CAD) files.
