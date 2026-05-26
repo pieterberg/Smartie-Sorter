@@ -19,11 +19,13 @@ name: Arduino Compilation
 on: 
   push:
     paths:
+      - '.github/workflows/arduino_compilation.yaml'
       - 'smartie_sorter/**'
       - 'enclosure_code/**'
       - 'management/**' 
   pull_request:
     paths:
+      - '.github/workflows/arduino_compilation.yaml'
       - 'smartie_sorter/**'
       - 'enclosure_code/**'
       - 'management/**'    
