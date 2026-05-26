@@ -19,11 +19,13 @@ name: Arduino Lint
 on: 
   push:
     paths:
+      - '.github/workflows/arduino_lint.yaml'
       - 'smartie_sorter/**'
       - 'enclosure_code/**'
       - 'management/**' 
   pull_request:
     paths:
+      - '.github/workflows/arduino_lint.yaml'
       - 'smartie_sorter/**'
       - 'enclosure_code/**'
       - 'management/**'    
