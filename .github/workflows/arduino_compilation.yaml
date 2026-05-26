@@ -47,7 +47,7 @@ jobs:
      - name: Test whether the Arduino sketches compile successfully
        uses: arduino/compile-sketches@v1
        with:
-         fqbn: arduino:avr:nano
+         fqbn: arduino:renesas_uno:nanor4
          sketch-paths: ${{ matrix.paths }}
          libraries: |
            # No libraries are required
