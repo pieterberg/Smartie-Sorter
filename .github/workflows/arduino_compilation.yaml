@@ -1,0 +1,56 @@
+# Project name:   Smartie Sorter 3000
+# Workflow name:  arduino_compilation.yaml
+# Created by:     Pieter van den Berg
+# Created on:     14 April 2026
+#
+# A GitHub Actions workflow that uses the Arduino Compile Sketch action to 
+# test whether the following three Arduino sketches compile:
+# 
+#   1. smartie_sorter/smartie_sorter.ino 
+#   2. enclosure_code/enclosure_code.ino 
+#   3. management/management.ino 
+#
+# The workflow uses a matrix structure to provide separate checks for each Arduino sketch.
+# The workflow is only triggered when the Arduino sketches are modified.
+#
+
+name: Arduino Compilation
+
+on: 
+  push:
+    paths:
+      - 'smartie_sorter/**'
+      - 'enclosure_code/**'
+      - 'management/**' 
+  pull_request:
+    paths:
+      - 'smartie_sorter/**'
+      - 'enclosure_code/**'
+      - 'management/**'    
+  workflow_dispatch:
+  
+jobs:
+  compile-sketch:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+       paths:
+           - smartie_sorter
+           - enclosure_code
+           - management  
+           
+    steps:
+     - name: Checkout the Smartie Sorter repository
+       uses: actions/checkout@v6 
+       
+     - name: Test whether the Arduino sketches compile successfully
+       uses: arduino/compile-sketches@v1
+       with:
+         fqbn: arduino:avr:nano
+         sketch-paths: ${{ matrix.paths }}
+         libraries: |
+           # No libraries are required
+           -
+         verbose: true
+
