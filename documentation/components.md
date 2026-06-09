@@ -200,6 +200,7 @@ The folder structure of the fusion_360 folder is presented below:
         |__ 3d_printed_components
         |   |__ colour_sensor_holder
         |   |__ colour_sensor_servo_seat
+        |   |__ name_sign_LED_holder_top
         |__ acrylic_components
         |   |__ smartie_slide
         |   |__ sorted_smarties_collector
