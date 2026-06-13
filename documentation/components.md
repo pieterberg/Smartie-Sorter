@@ -109,11 +109,15 @@ These DXF files can be used for laser cutting the wooden panels and acrylic comp
 
 ### 2.1. Manufacturing Folder Structure
 
-The folder structure of the dxf_files folder is presented below:
+The folder structure of the manufacturing folder is presented below:
 
 ```
 .
 |__ manufacturing
+    |__ drawings
+    |   |__ acrylic_components
+    |   |__ wooden_panels
+    |   |__ supports
     |__ dxf_files
         |__ acrylic_components
         |   |__ name_sign
