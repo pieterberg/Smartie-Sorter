@@ -120,6 +120,7 @@ The folder structure of the dxf_files folder is presented below:
         |   |__ smartie_slide
         |   |__ sorted_smarties_collector
         |__ wooden_panels
+        |__ supports
 ```
 
 ### 2.2. Name Sign
