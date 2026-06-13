@@ -9,8 +9,8 @@ This documents provides information about the components used in the design of t
   - [1.2. Acrylic Components](#12-acrylic-components)
   - [1.3. 3D Printed Components](#13-3d-printed-components)
   - [1.4. Labels](#14-labels)
-- [2. Laser Cutting](#2-laser-cutting)
-  - [2.1. DXF Files Folder Structure](#21-dxf-files-folder-structure)
+- [2. Manufacturing](#2-manufacturing)
+  - [2.1. Manufacturing Folder Structure](#21-manufacturing-folder-structure)
   - [2.2. Name Sign](#22-name-sign)
   - [2.3. Smartie Slide](#23-smartie-slide)
   - [2.4. Sorted Smarties Collector](#24-sorted-smarties-collector)
@@ -101,13 +101,13 @@ The labels should be printed using a label maker, such as the Brother PT-H110 la
 
 The labels should then be affixed in position and sealed using a clear coat.
 
-## 2. Laser Cutting
+## 2. Manufacturing
 
 The outlines of the wooden panels and acrylic components have been exported as DXF files and are available in the [dxf_files](../manufacturing/dxf_files) folder.
 
 These DXF files can be used for laser cutting the wooden panels and acrylic components out of MDF and clear acrylic, respectively.
 
-### 2.1. DXF Files Folder Structure
+### 2.1. Manufacturing Folder Structure
 
 The folder structure of the dxf_files folder is presented below:
 
