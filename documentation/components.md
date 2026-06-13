@@ -184,9 +184,9 @@ The CAD files have been exported and are available in the [fusion_360](https://g
 The following Fusion 360 files are available in the fusion_360 folder:
 
 - Fusion 360 archive files (.f3d) of the components
-- Fusion 360 archive file (.f3z) of the Colour Detection Mechanism
-- Fusion 360 archive file (.f3z) of the Smartie Hopper
-- Fusion 360 archive file (.f3z) of the Smartie Sorter
+- Fusion 360 archive file (.f3z) of the Colour Detection Mechanism assembly
+- Fusion 360 archive file (.f3z) of the Smartie Hopper assembly
+- Fusion 360 archive file (.f3z) of the Smartie Sorter assembly
 
 ### 3.2. Fusion 360 Folder Structure
 
