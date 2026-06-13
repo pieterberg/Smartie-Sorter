@@ -1,6 +1,6 @@
 # Components
 
-This documents provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, Section 1 provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides information about laser cutting the wooden panels and acrylic components. Finally, Section 3 provides information about the Fusion 360 computer aided design (CAD) files.
+This documents provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, Section 1 provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides information about manufacturing the wooden panels, supports, and acrylic components. Finally, Section 3 provides information about the Fusion 360 computer aided design (CAD) files.
 
 ### Table of Contents
 
@@ -103,7 +103,7 @@ The labels should then be affixed in position and sealed using a clear coat.
 
 ## 2. Laser Cutting
 
-The outlines of the wooden panels and acrylic components have been exported as DXF files and are available in the [dxf_files](../assets/dxf_files) folder.
+The outlines of the wooden panels and acrylic components have been exported as DXF files and are available in the [dxf_files](../manufacturing/dxf_files) folder.
 
 These DXF files can be used for laser cutting the wooden panels and acrylic components out of MDF and clear acrylic, respectively.
 
@@ -113,7 +113,7 @@ The folder structure of the dxf_files folder is presented below:
 
 ```
 .
-|__ assets
+|__ manufacturing
     |__ dxf_files
         |__ acrylic_components
         |   |__ name_sign
@@ -124,13 +124,13 @@ The folder structure of the dxf_files folder is presented below:
 
 ### 2.2. Name Sign
 
-Laser cut the following DXF file in the [name_sign](../assets/dxf_files/acrylic_components/name_sign) folder out of 6 mm clear acrylic to create the Name Sign:
+Laser cut the following DXF file in the [name_sign](../manufacturing/dxf_files/acrylic_components/name_sign) folder out of 6 mm clear acrylic to create the Name Sign:
 
 - 1 × name_sign.dxf
 
 ### 2.3. Smartie Slide
 
-Laser cut the following DXF files in the [smartie_slide](../assets/dxf_files/acrylic_components/smartie_slide) folder out of 3 mm clear acrylic to construct the Smartie Slide:
+Laser cut the following DXF files in the [smartie_slide](../manufacturing/dxf_files/acrylic_components/smartie_slide) folder out of 3 mm clear acrylic to construct the Smartie Slide:
 
 - 1 × back_panel.dxf
 - 1 × bottom_panel.dxf
@@ -142,7 +142,7 @@ Laser cut the following DXF files in the [smartie_slide](../assets/dxf_files/acr
 
 ### 2.4. Sorted Smarties Collector
 
-Laser cut the following DXF files in the [sorted_smarties_collector](../assets/dxf_files/acrylic_components/sorted_smarties_collector) folder out of 3 mm clear acrylic to construct the Sorted Smarties Collector:
+Laser cut the following DXF files in the [sorted_smarties_collector](../manufacturing/dxf_files/acrylic_components/sorted_smarties_collector) folder out of 3 mm clear acrylic to construct the Sorted Smarties Collector:
 
 - 1 × back_panel.dxf
 - 3 × divider_bottom.dxf
@@ -154,7 +154,7 @@ Laser cut the following DXF files in the [sorted_smarties_collector](../assets/d
 
 ### 2.5. Wooden Panels
 
-Laser cut the following DXF files in the [wooden_panels](../assets/dxf_files/wooden_panels) folder out of 6 mm MDF to construct the mini arcade game enclosure:
+Laser cut the following DXF files in the [wooden_panels](../manufacturing/dxf_files/wooden_panels) folder out of 6 mm MDF to construct the mini arcade game enclosure:
 
 - 1 × back_panel.dxf
 - 1 × base_plate.dxf
