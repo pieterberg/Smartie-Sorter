@@ -116,15 +116,17 @@ The folder structure of the manufacturing folder is presented below:
 |__ manufacturing
     |__ drawings
     |   |__ acrylic_components
-    |   |__ wooden_panels
+    |   |__ stainless_steel_components
     |   |__ supports
+    |   |__ wooden_panels
     |__ dxf_files
         |__ acrylic_components
         |   |__ name_sign
         |   |__ smartie_slide
         |   |__ sorted_smarties_collector
-        |__ wooden_panels
+        |__ stainless_steel_components
         |__ supports
+        |__ wooden_panels
 ```
 
 ### 2.2. Name Sign
