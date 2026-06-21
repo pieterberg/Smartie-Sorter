@@ -117,7 +117,6 @@ The folder structure of the manufacturing folder is presented below:
     |__ drawings
     |   |__ acrylic_components
     |   |__ stainless_steel_components
-    |   |__ supports
     |   |__ wooden_panels
     |__ dxf_files
         |__ acrylic_components
