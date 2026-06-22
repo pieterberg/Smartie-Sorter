@@ -179,6 +179,19 @@ Laser cut the following DXF files in the [wooden_panels](../manufacturing/dxf_fi
 - 1 × unsorted_smarties_back_panel.dxf
 - 1 × unsorted_smarties_top_panel.dxf
 
+### 2.6. Supports
+
+The following supports should be cut from 21 mm x 21 mm pine:
+
+| Quantity | Component                         | Length (mm) |
+|:--------:|-----------------------------------|------------:|
+|    1x    | Back Panel Support Left           |       478.6 |
+|    1x    | Back Panel Support Right          |       270.0 |
+|    1x    | Back Panel Support Middle         |       249.0 |
+|    1x    | Back Panel Support Bottom         |       228.0 |
+|    1x    | Sorted Smarties Top Support Left  |       142.0 |
+|    1x    | Sorted Smarties Top Support Right |        28.0 |
+
 ## 3. Fusion 360 Files
 
 All components, mechanisms, and assemblies were designed and modelled using Fusion 360.
