@@ -19,17 +19,17 @@ The Smartie Sorter 3000 has three different circuits, namely a 5V circuit used t
 
 Table 1: Electronic components
 
-| Component                                 | Amount |
-|-------------------------------------------|:------:|
-| Arduino Nano R4                           |   1x   |
-| Light blue Sanwa arcade game button       |   1x   |
-| White Sanwa arcade game buttons           |   2x   |
-| Pull-up resistors                         |   3x   |
-| 4-segment IP20 60 LEDs/m 12V LED strips   |   2x   |
-| 5-segment IP20 60 LEDs/m 12V LED strips   |   4x   |
-| TCS3200 colour sensor breakout board      |   1x   | 
-| Savöx SH 0255 MG micro servos             |   2x   |
-| Power switch                              |   1x   |
+| Component                                            | Amount |
+|------------------------------------------------------|:------:|
+| Arduino Nano R4                                      |   1x   |
+| Light blue Sanwa arcade game button                  |   1x   |
+| White Sanwa arcade game buttons                      |   2x   |
+| Pull-up resistors                                    |   3x   |
+| 4-segment IP20 60 LEDs/m 12V cool white LED strips   |   2x   |
+| 5-segment IP20 60 LEDs/m 12V cool white LED strips   |   4x   |
+| TCS3200 colour sensor breakout board                 |   1x   | 
+| Savöx SH 0255 MG micro servos                        |   2x   |
+| Power switch                                         |   1x   |
 
 
 ## 2. Schematics
