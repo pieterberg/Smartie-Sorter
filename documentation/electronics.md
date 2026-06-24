@@ -13,27 +13,23 @@ All circuit schematics were designed using Fritzing. The Fritzing file is availa
 
 ## 1. Component list
 
-The Smartie Sorter 3000 uses an Arduino Nano microcontroller. Table 1 lists the electronic components used for the mini arcade game enclosure.
+The Smartie Sorter 3000 uses an Arduino Nano R4 microcontroller. Table 1 lists the electronic components used for the mini arcade game enclosure.
 
-The Smartie Sorter 3000 has two different circuits, namely a 9V circuit used to power the Arduino Nano and circuit components, and a 12V circuit used to power the LED strips. The 12V LED strips are controlled by the Arduino Nano using a 2N2222 NPN transistor.
+The Smartie Sorter 3000 has three different circuits, namely a 5V circuit used to power the Arduino Nano, arcade game buttons, and colour sensor; a 6V circuit to power the servo motors; and a 12V circuit used to power the LED strips. The 12V LED strips are controlled by the Arduino Nano using a 2N2222 NPN transistor.
 
-Table 1: Electronic component list
+Table 1: Electronic components
 
-| Component                           | Amount |
-|-------------------------------------|:------:|
-| Arduino Nano                        |   1x   |
-| 9V batteries                        |   2x   |
-| 1.5V batteries                      |   2x   |
-| 9V battery holders                  |   2x   |
-| 3V battery holder                   |   1x   |
-| Light blue Sanwa arcade game button |   1x   |
-| White Sanwa arcade game buttons     |   2x   |
-| Pull-up resistors                   |   3x   |
-| 2N2222 transistor                   |   1x   |
-| Transistor resistor                 |   1x   |
-| 4-part 12V LED strips               |   2x   |
-| 5-part 12V LED strips               |   4x   |
-| Power switch                        |   1x   |
+| Component                                 | Amount |
+|-------------------------------------------|:------:|
+| Arduino Nano R4                           |   1x   |
+| Light blue Sanwa arcade game button       |   1x   |
+| White Sanwa arcade game buttons           |   2x   |
+| Pull-up resistors                         |   3x   |
+| 4-segment IP20 60 LEDs/m 12V LED strips   |   2x   |
+| 5-segment IP20 60 LEDs/m 12V LED strips   |   4x   |
+| TCS3200 colour sensor breakout board      |   1x   | 
+| Savöx SH 0255 MG micro servos             |   2x   |
+| Power switch                              |   1x   |
 
 
 ## 2. Schematics
