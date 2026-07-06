@@ -11,5 +11,5 @@ install:
 # Compile the management.ino sketch
 .PHONY: compile-management
 compile-management:
-	arduino-cli compile ./management --fqbn arduino:renesas_uno:nanor4
+	arduino-cli compile ./management --fqbn arduino:renesas_uno:nanor4 --export-binaries
 

@@ -3,4 +3,6 @@
 # Created by:   Pieter van den Berg
 # Created on:   5 July 2026
 
+## Ignore the compiled Arduino binaries
+management/build
 
