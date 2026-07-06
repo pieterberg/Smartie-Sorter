@@ -8,4 +8,8 @@
 install:
 	arduino-cli core install arduino:renesas_uno
 
+# Compile the management.ino sketch
+.PHONY: compile-management
+compile-management:
+	arduino-cli compile ./management --fqbn arduino:renesas_uno:nanor4
 
