@@ -22,7 +22,7 @@ compile-management: ./management/build/arduino.renesas_uno.nanor4/management.ino
 
 # Upload the compiled management.ino.bin binary file to the Arduino Nano R4 board
 .PHONY: upload-management
-upload-management:
+upload-management: ./management/build/arduino.renesas_uno.nanor4/management.ino.bin
 	arduino-cli upload --config-file ${management-config-file} --port ${port} --input-file ${management-build-folder}/management.ino.bin
 
 
