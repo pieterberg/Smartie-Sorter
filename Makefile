@@ -3,6 +3,10 @@
 # Created by:   Pieter van den Berg
 # Created on:   5 July 2026
 
+# Define the build variables for the management.ino sketch
+management-config-file := ./management/sketch.yaml
+management-build-folder := ./management/build/arduino.renesas_uno.nanor4
+
 # Install the Arduino Renesas core for the Arduino Nano R4 board
 .PHONY: install
 install:
@@ -11,5 +15,11 @@ install:
 # Compile the management.ino sketch
 .PHONY: compile-management
 compile-management:
-	arduino-cli compile ./management --config-file ./management/sketch.yaml --export-binaries
+	arduino-cli compile ./management --config-file ${management-config-file} --export-binaries
+
+# Upload the compiled management.ino sketch to the Arduino Nano R4 board
+.PHONY: upload-management
+upload-management:
+	arduino-cli upload --config-file ${management-config-file} --port ${port} --input-file ${management-build-folder}/management.ino.bin
+
 
