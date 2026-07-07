@@ -25,4 +25,7 @@ compile-management: ./management/build/arduino.renesas_uno.nanor4/management.ino
 upload-management: ./management/build/arduino.renesas_uno.nanor4/management.ino.bin
 	arduino-cli upload --config-file ${management-config-file} --port ${port} --input-file ${management-build-folder}/management.ino.bin
 
-
+# Delete the build folder for the management.ino sketch
+.PHONY: clean-management
+clean-management:
+	rm -rf ./management/build
