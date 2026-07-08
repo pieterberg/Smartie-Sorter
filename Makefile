@@ -3,6 +3,11 @@
 # Created by:   Pieter van den Berg
 # Created on:   5 July 2026
 
+# Define the build variables for the smartie_sorter.ino sketch
+smartie-sorter-config-file := ./smartie_sorter/sketch.yaml
+smartie-sorter-build-folder := ./smartie_sorter/build
+smartie-sorter-profile := arduino.renesas_uno.nanor4
+
 # Define the build variables for the management.ino sketch
 management-config-file := ./management/sketch.yaml
 management-build-folder := ./management/build
@@ -12,6 +17,14 @@ management-profile := arduino.renesas_uno.nanor4
 .PHONY: install
 install:
 	arduino-cli core install arduino:renesas_uno
+
+# Compile the smartie_sorter.ino sketch
+.PHONY: compile
+compile: ${smartie-sorter-build-folder}/${smartie-sorter-profile}/smartie_sorter.ino.bin
+
+# Generate the compiled smartie_sorter.ino.bin binary file
+${smartie-sorter-build-folder}/${smartie-sorter-profile}/smartie_sorter.ino.bin: ./smartie_sorter/smartie_sorter.ino
+	arduino-cli compile ./smartie_sorter --config-file ${smartie-sorter-config-file} --export-binaries
 
 # Compile the management.ino sketch
 .PHONY: compile-management
@@ -30,3 +43,4 @@ upload-management: ${management-build-folder}/${management-profile}/management.i
 .PHONY: clean-management
 clean-management:
 	rm -rf ${management-build-folder}
+
