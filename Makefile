@@ -13,6 +13,10 @@ management-config-file := ./management/sketch.yaml
 management-build-folder := ./management/build
 management-profile := arduino.renesas_uno.nanor4
 
+# Set the default target to the upload command
+.PHONY: default
+default: upload
+
 # Install the Arduino Renesas core for the Arduino Nano R4 board
 .PHONY: install
 install:
