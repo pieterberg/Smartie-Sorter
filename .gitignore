@@ -4,5 +4,7 @@
 # Created on:   5 July 2026
 
 ## Ignore the compiled Arduino binaries
+smartie_sorter/build
 management/build
+
 
