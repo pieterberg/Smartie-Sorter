@@ -86,9 +86,6 @@ void setup() {
   chocolate_mode = (CHOCOLATE_MODE)EEPROM.read(eeAddressChocolateMode);
   sorting_mode   = (SORTING_MODE)EEPROM.read(eeAddressSortingMode);
 
-  // Begin a serial channel
-  Serial.begin(9600);
-
   // Flash the built-in LEDs 2 times to indicate that the setup is complete
   delay(1000);
   flashLEDs(2);
