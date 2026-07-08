@@ -39,6 +39,11 @@ ${management-build-folder}/${management-profile}/management.ino.bin: ./managemen
 upload-management: ${management-build-folder}/${management-profile}/management.ino.bin
 	arduino-cli upload --config-file ${management-config-file} --port ${port} --input-file ${management-build-folder}/${management-profile}/management.ino.bin
 
+# Delete the build folder for the smartie_sorter.ino sketch
+.PHONY: clean
+clean:
+	rm -rf ${smartie-sorter-build-folder}
+
 # Delete the build folder for the management.ino sketch
 .PHONY: clean-management
 clean-management:
