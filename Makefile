@@ -26,6 +26,11 @@ compile: ${smartie-sorter-build-folder}/${smartie-sorter-profile}/smartie_sorter
 ${smartie-sorter-build-folder}/${smartie-sorter-profile}/smartie_sorter.ino.bin: ./smartie_sorter/smartie_sorter.ino
 	arduino-cli compile ./smartie_sorter --config-file ${smartie-sorter-config-file} --export-binaries
 
+# Upload the compiled smartie_sorter.ino.bin binary file to the Arduino Nano R4 board
+.PHONY: upload
+upload: ${smartie-sorter-build-folder}/${smartie-sorter-profile}/smartie_sorter.ino.bin
+	arduino-cli upload --config-file ${smartie-sorter-config-file} --port ${port} --input-file ${smartie-sorter-build-folder}/${smartie-sorter-profile}/smartie_sorter.ino.bin
+
 # Compile the management.ino sketch
 .PHONY: compile-management
 compile-management: ${management-build-folder}/${management-profile}/management.ino.bin
