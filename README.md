@@ -12,6 +12,10 @@ The project was written using C++ and runs on an Arduino Nano R4 microcontroller
 
 The [smartie_sorter](https://github.com/pieterberg/Smartie-Sorter/tree/main/smartie_sorter) folder contains the code to determine the Smartie and M&M colours using the TCS3200 colour sensor module. The [enclosure_code](https://github.com/pieterberg/Smartie-Sorter/tree/main/enclosure_code) folder contains the code to control the Smartie Sorter 3000's mini arcade game enclosure.
 
+## Arduino CLI
+
+A Makefile is provided that can be used to compile and upload the Arduino sketches using the [Arduino CLI](https://github.com/arduino/arduino-cli). The make commands should be run from the project's root directory.
+
 ## Git Signatures
 
 The [signatures](./signatures) folder contains the required public SSH keys to verify the git commit signatures. These public SSH keys have been configured in the allowed_signers file.
