@@ -14,7 +14,7 @@ The [smartie_sorter](https://github.com/pieterberg/Smartie-Sorter/tree/main/smar
 
 ## Arduino CLI
 
-A Makefile is provided that can be used to compile and upload the Arduino sketches using the [Arduino CLI](https://github.com/arduino/arduino-cli). The make commands should be run from the project's root directory.
+A Makefile is provided that can be used to compile and upload the Arduino sketches using the [Arduino CLI](https://github.com/arduino/arduino-cli). The make commands should all be run from the project's root directory.
 
 First, run the install command to install the required core for the Arduino Nano R4 board. This will install the Arduino Renesas core (arduino:renesas_uno) if it is not already installed.
 
@@ -27,6 +27,8 @@ The upload command can be used to compile and upload the smartie_sorter.ino sket
 ```shell
 make upload port=COM7
 ```
+
+The upload-management command can be used to compile and upload the management.ino sketch to the Arduino Nano R4 board. Once again replace the `port` parameter with the relevant port of the Arduino Nano R4 board.
 
 ```shell
 make upload-management port=COM7
