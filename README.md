@@ -16,6 +16,18 @@ The [smartie_sorter](https://github.com/pieterberg/Smartie-Sorter/tree/main/smar
 
 A Makefile is provided that can be used to compile and upload the Arduino sketches using the [Arduino CLI](https://github.com/arduino/arduino-cli). The make commands should be run from the project's root directory.
 
+```shell
+make install
+```
+
+```shell
+make upload port=COM7
+```
+
+```shell
+make upload-management port=COM7
+```
+
 ## Git Signatures
 
 The [signatures](./signatures) folder contains the required public SSH keys to verify the git commit signatures. These public SSH keys have been configured in the allowed_signers file.
