@@ -10,7 +10,7 @@ The project was written using C++ and runs on an Arduino Nano R4 microcontroller
 
 ## Arduino Sketches
 
-The [smartie_sorter](https://github.com/pieterberg/Smartie-Sorter/tree/main/smartie_sorter) folder contains the code to determine the Smartie and M&M colours using the TCS3200 colour sensor module. The [enclosure_code](https://github.com/pieterberg/Smartie-Sorter/tree/main/enclosure_code) folder contains the code to control the Smartie Sorter 3000's mini arcade game enclosure.
+- [Management.ino](management/management.ino) provides the required utilities to manage the Smartie Sorter 3000. The sketch contains code to initialise the EEPROM addresses of new Arduino boards. The management tool can then be used to generate training datasets of the RGB spectra detected by the TCS3200 colour sensor in order to train the colour-detection classifiers. An interface for calibrating the servo motors is also provided. Finally, an option is available to view the total number of sorted Smarties and M&M chocolates. These utilities can be accessed through a 9600 Baud serial channel.
 
 ## Arduino CLI
 
