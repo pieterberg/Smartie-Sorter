@@ -16,6 +16,8 @@ The [smartie_sorter](https://github.com/pieterberg/Smartie-Sorter/tree/main/smar
 
 A Makefile is provided that can be used to compile and upload the Arduino sketches using the [Arduino CLI](https://github.com/arduino/arduino-cli). The make commands should be run from the project's root directory.
 
+First, run the following command to install the required core for the Arduino Nano R4 board. This will install the Arduino Renesas core (arduino:renesas_uno) if it is not already installed.
+
 ```shell
 make install
 ```
