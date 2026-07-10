@@ -10,7 +10,9 @@ The project was written using C++ and runs on an Arduino Nano R4 microcontroller
 
 ## Arduino Sketches
 
-- [Management.ino](management/management.ino) provides the required utilities to manage the Smartie Sorter 3000. The sketch contains code to initialise the EEPROM addresses of new Arduino boards. The management tool can then be used to generate training datasets of the RGB spectra detected by the TCS3200 colour sensor in order to train the colour-detection classifiers. An interface for calibrating the servo motors is also provided. Finally, an option is available to view the total number of sorted Smarties and M&M chocolates. These utilities can be accessed through a 9600 Baud serial channel.
+- The [smartie_sorter.ino](smartie_sorter/smartie_sorter.ino) sketch contains the main logic for the Smartie Sorter 3000 mini arcade game. First, the sketch initialises the Smartie Sorter 3000 after the power is switched on. The user interaction is handled by reading the button presses and providing feedback to the user through flashing the built-in LED lights. The RGB spectra of the Smarties and M&M chocolates are measured using the TCS3200 colour sensor and their colours are determined using the trained colour-detection classifier. The chocolates are then sorted using the servo motors by reading the calibrated positions stored in the EEPROM. Finally, the total number of sorted chocolates is updated and stored in the EEPROM.
+
+- [Management.ino](management/management.ino) provides the required utilities to manage the Smartie Sorter 3000. The sketch contains code to initialise the EEPROM addresses of new Arduino boards. The management tool can then be used to generate training datasets of the RGB spectra measured by the TCS3200 colour sensor in order to train the colour-detection classifiers. An interface for calibrating the servo motors is also provided. Finally, an option is available to view the total number of sorted Smarties and M&M chocolates. These utilities can be accessed through a 9600 Baud serial channel.
 
 ## Arduino CLI
 
