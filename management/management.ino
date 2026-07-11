@@ -41,6 +41,11 @@ void setup() {
   // Begin a serial channel
   Serial.begin(9600);
 
+  // Wait until the serial channel is established before printing the welcome message
+  while (!Serial) {
+    delay(1);
+  }
+
   // Print the welcome message
   Serial.println(F("Welcome to the Smartie Sorter 3000's management utility"));
   Serial.println();
