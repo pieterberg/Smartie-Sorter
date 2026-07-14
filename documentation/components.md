@@ -228,6 +228,7 @@ The folder structure of the fusion_360 folder is presented below:
         |   |__ smarties
         |__ connectors
         |__ electronics
+        |   |__ servo_horns
         |__ fasteners
         |__ labels
         |__ steel_components      
