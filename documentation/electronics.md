@@ -26,7 +26,7 @@ Table 1: Electronic components
 | White Sanwa arcade game buttons                      |   2x   |
 | 4-segment IP20 60 LEDs/m 12V cool white LED strips   |   2x   |
 | 5-segment IP20 60 LEDs/m 12V cool white LED strips   |   4x   |
-| TCS3200 colour sensor breakout board                 |   1x   | 
+| Waveshare TCS3200 colour sensor breakout board       |   1x   | 
 | Savöx SH 0255 MG micro servos                        |   2x   |
 | Power switch                                         |   1x   |
 
