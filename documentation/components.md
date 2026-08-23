@@ -12,11 +12,9 @@ This documents provides information about the components used in the design of t
   - [1.5. Connectors](#15-connectors)
 - [2. Manufacturing](#2-manufacturing)
   - [2.1. Manufacturing Folder Structure](#21-manufacturing-folder-structure)
-  - [2.2. Name Sign](#22-name-sign)
-  - [2.3. Smartie Slide](#23-smartie-slide)
-  - [2.4. Sorted Smarties Collector](#24-sorted-smarties-collector)
-  - [2.5. Wooden Panels](#25-wooden-panels)
-  - [2.6. Supports](#26-supports)
+  - [2.2. Wooden Panels](#22-wooden-panels)
+  - [2.3. Supports](#23-supports)
+  - [2.4. Acrylic Components](#24-acrylic-components)
 - [3. Fusion 360 Files](#3-fusion-360-files)
   - [3.1. Resources](#31-resources)
   - [3.2. Fusion 360 Folder Structure](#32-fusion-360-folder-structure)
@@ -48,7 +46,7 @@ The wooden panels should be laser cut out of:
 
 - 6 mm MDF
 
-Section 2.5 provides more information about laser cutting the wooden panels.
+Section 2.1 provides more information about laser cutting the wooden panels.
 
 The pine supports should be cut from:
 
@@ -136,37 +134,7 @@ The folder structure of the manufacturing folder is presented below:
         |__ wooden_panels
 ```
 
-### 2.2. Name Sign
-
-Laser cut the following DXF file in the [name_sign](../manufacturing/dxf_files/acrylic_components/name_sign) folder out of 6 mm clear acrylic to create the Name Sign:
-
-- 1 × name_sign.dxf
-
-### 2.3. Smartie Slide
-
-Laser cut the following DXF files in the [smartie_slide](../manufacturing/dxf_files/acrylic_components/smartie_slide) folder out of 3 mm clear acrylic to construct the Smartie Slide:
-
-- 1 × back_panel.dxf
-- 1 × bottom_panel.dxf
-- 1 × front_panel.dxf
-- 2 × middle_panel.dxf
-- 2 × side_panel.dxf
-- 1 × slide_panel.dxf
-- 1 × top_panel.dxf
-
-### 2.4. Sorted Smarties Collector
-
-Laser cut the following DXF files in the [sorted_smarties_collector](../manufacturing/dxf_files/acrylic_components/sorted_smarties_collector) folder out of 3 mm clear acrylic to construct the Sorted Smarties Collector:
-
-- 1 × back_panel.dxf
-- 3 × divider_bottom.dxf
-- 3 × divider_top.dxf
-- 1 × front_panel.dxf
-- 2 × horizontal_panel.dxf
-- 2 × side_panel.dxf
-- 1 × top_panel.dxf
-
-### 2.5. Wooden Panels
+### 2.2. Wooden Panels
 
 Laser cut the following DXF files in the [wooden_panels](../manufacturing/dxf_files/wooden_panels) folder out of 6 mm MDF to construct the mini arcade game enclosure:
 
@@ -187,7 +155,7 @@ Laser cut the following DXF files in the [wooden_panels](../manufacturing/dxf_fi
 - 1 × unsorted_smarties_back_panel.dxf
 - 1 × unsorted_smarties_top_panel.dxf
 
-### 2.6. Supports
+### 2.3. Supports
 
 The following supports should be cut from 21 mm x 21 mm pine:
 
@@ -199,6 +167,32 @@ The following supports should be cut from 21 mm x 21 mm pine:
 |    1x    | Back Panel Support Bottom         |       228.0 |
 |    1x    | Sorted Smarties Top Support Left  |       142.0 |
 |    1x    | Sorted Smarties Top Support Right |        28.0 |
+
+### 2.4. Acrylic Components
+
+Laser cut the following DXF file in the [name_sign](../manufacturing/dxf_files/acrylic_components/name_sign) folder out of 6 mm clear acrylic to create the Name Sign:
+
+- 1 × name_sign.dxf
+
+Laser cut the following DXF files in the [smartie_slide](../manufacturing/dxf_files/acrylic_components/smartie_slide) folder out of 3 mm clear acrylic to construct the Smartie Slide:
+
+- 1 × back_panel.dxf
+- 1 × bottom_panel.dxf
+- 1 × front_panel.dxf
+- 2 × middle_panel.dxf
+- 2 × side_panel.dxf
+- 1 × slide_panel.dxf
+- 1 × top_panel.dxf
+
+Laser cut the following DXF files in the [sorted_smarties_collector](../manufacturing/dxf_files/acrylic_components/sorted_smarties_collector) folder out of 3 mm clear acrylic to construct the Sorted Smarties Collector:
+
+- 1 × back_panel.dxf
+- 3 × divider_bottom.dxf
+- 3 × divider_top.dxf
+- 1 × front_panel.dxf
+- 2 × horizontal_panel.dxf
+- 2 × side_panel.dxf
+- 1 × top_panel.dxf
 
 ## 3. Fusion 360 Files
 
@@ -239,7 +233,7 @@ The folder structure of the fusion_360 folder is presented below:
         |   |__ servo_horns
         |__ fasteners
         |__ labels
-        |__ steel_components      
+        |__ stainless_steel_components      
         |__ supports
         |__ wooden_panels
 ```
