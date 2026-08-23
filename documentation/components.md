@@ -42,16 +42,9 @@ Information about the electronic components is provided in [electronics.md](http
 
 The wooden components are comprised of medium density fibreboard (MDF) panels and pine supports.
 
-The wooden panels should be laser cut out of:
+Section 2.2 provides more information about laser cutting the wooden panels.
 
-- 6 mm MDF
-
-Section 2.1 provides more information about laser cutting the wooden panels.
-
-The pine supports should be cut from:
-
-- 12 mm pine
-- 21 mm × 21 mm pine
+Section 2.3 provides more information about manufacturing the supports.
 
 The wooden components should be painted according to the colour scheme provided in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md). The wooden components should then be sealed using a clear coat.
 
@@ -59,15 +52,7 @@ The wooden components should be painted according to the colour scheme provided 
 
 Clear acrylic is used for the Name Sign, Smartie Slide, and Sorted Smarties Collector.
 
-The Name Sign should be laser cut out of:
-
-- 6 mm clear acrylic
-
 The Smartie Slide and Sorted Smarties Collector are assemblies whose panels have been designed to fit together using finger joints.
-
-The Smartie Slide panels and Sorted Smarties Collector panels should be laser cut out of:
-
-- 3 mm transparent acrylic
 
 Section 2.4 provides more information about laser cutting the Name Sign, Smartie Slide panels, and Sorted Smarties Collector panels.
 
