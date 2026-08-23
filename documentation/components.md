@@ -153,6 +153,12 @@ Laser cut the following DXF files in the [wooden_panels](../manufacturing/dxf_fi
 - 1 × unsorted_smarties_back_panel.dxf
 - 1 × unsorted_smarties_top_panel.dxf
 
+Afterwards, slopes for the name sign need to be added to the Back Panel, Name Sign Bottom Panel, and Top Panel. These slopes should be added according to the following drawings:
+
+- [DWG_1001_back_panel](../manufacturing/drawings/wooden_panels/DWG_1001_back_panel.pdf)
+- [DWG_1002_name_sign_bottom_panel](../manufacturing/drawings/wooden_panels/DWG_1002_name_sign_bottom_panel.pdf)
+- [DWG_1003_top_panel](../manufacturing/drawings/wooden_panels/DWG_1003_top_panel.pdf)
+
 ### 2.3. Supports
 
 Laser cut the following DXF files in the [supports](../manufacturing/dxf_files/supports) folder out of 12 mm pine to construct the mini arcade game enclosure:
@@ -179,6 +185,8 @@ The following supports should be cut from 21 mm x 21 mm pine:
 Laser cut the following DXF file in the [name_sign](../manufacturing/dxf_files/acrylic_components/name_sign) folder out of 6 mm clear acrylic to create the Name Sign:
 
 - 1 × name_sign.dxf
+
+Afterwards, the slopes at the top and bottom of the Name Sign component need to be added according to [DWG_201_name_sign](../manufacturing/drawings/acrylic_components/DWG_201_name_sign.pdf).
 
 Laser cut the following DXF files in the [smartie_slide](../manufacturing/dxf_files/acrylic_components/smartie_slide) folder out of 3 mm clear acrylic to construct the Smartie Slide:
 
