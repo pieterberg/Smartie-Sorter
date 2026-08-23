@@ -30,7 +30,7 @@ There are ten different types of components used in the design of the Smartie So
 5. Electronics
 6. Fasteners
 7. Labels
-8. Steel components
+8. Stainless steel components
 9. Supports
 10. Wooden panels
 
@@ -63,15 +63,13 @@ The Name Sign should be laser cut out of:
 
 - 6 mm clear acrylic
 
-Section 2.2 provides more information about laser cutting the Name Sign.
-
 The Smartie Slide and Sorted Smarties Collector are assemblies whose panels have been designed to fit together using finger joints.
 
 The Smartie Slide panels and Sorted Smarties Collector panels should be laser cut out of:
 
 - 3 mm transparent acrylic
 
-Section 2.3 and 2.4 provide more information about laser cutting the Smartie Slide panels and Sorted Smarties Collector panels, respectively.
+Section 2.4 provides more information about laser cutting the Name Sign, Smartie Slide panels, and Sorted Smarties Collector panels.
 
 The Smartie Slide and Sorted Smarties Collector should then be assembled by welding their respective panels together using an acrylic cement such as ACRIFIX® 1S 0117. The acrylic cement should be applied using a fine needle and syringe, such as a 0.6&nbsp;mm × 32&nbsp;mm needle and a 1&nbsp;mL syringe.
 
@@ -109,9 +107,9 @@ It is important to ensure that the polarities of the corresponding magnets line 
 
 ## 2. Manufacturing
 
-The outlines of the wooden panels and acrylic components have been exported as DXF files and are available in the [dxf_files](../manufacturing/dxf_files) folder.
+The outlines of the wooden panels, supports, acrylic components, and stainless steel components have been exported as DXF files and are available in the [dxf_files](../manufacturing/dxf_files) folder. These DXF files can be used for laser cutting the different components out of their respective materials.
 
-These DXF files can be used for laser cutting the wooden panels and acrylic components out of MDF and clear acrylic, respectively.
+Drawings to facilitate the machining of the angled features for the name sign at the top of the mini arcade game enclosure are available in the [drawings](../manufacturing/drawings) folder.
 
 ### 2.1. Manufacturing Folder Structure
 
@@ -156,6 +154,14 @@ Laser cut the following DXF files in the [wooden_panels](../manufacturing/dxf_fi
 - 1 × unsorted_smarties_top_panel.dxf
 
 ### 2.3. Supports
+
+Laser cut the following DXF files in the [supports](../manufacturing/dxf_files/supports) folder out of 12 mm pine to construct the mini arcade game enclosure:
+
+- 2 × base_plate_support.dxf
+- 2 × control_panel_support.dxf 
+- 1 × name_sign_support_left.dxf
+- 1 × name_sign_support_right.dxf
+- 1 × smartie_feed_support.dxf
 
 The following supports should be cut from 21 mm x 21 mm pine:
 
