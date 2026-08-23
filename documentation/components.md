@@ -9,12 +9,14 @@ This documents provides information about the components used in the design of t
   - [1.2. Acrylic Components](#12-acrylic-components)
   - [1.3. 3D Printed Components](#13-3d-printed-components)
   - [1.4. Labels](#14-labels)
+  - [1.5. Connectors](#15-connectors)
 - [2. Manufacturing](#2-manufacturing)
   - [2.1. Manufacturing Folder Structure](#21-manufacturing-folder-structure)
   - [2.2. Name Sign](#22-name-sign)
   - [2.3. Smartie Slide](#23-smartie-slide)
   - [2.4. Sorted Smarties Collector](#24-sorted-smarties-collector)
   - [2.5. Wooden Panels](#25-wooden-panels)
+  - [2.6. Supports](#26-supports)
 - [3. Fusion 360 Files](#3-fusion-360-files)
   - [3.1. Resources](#31-resources)
   - [3.2. Fusion 360 Folder Structure](#32-fusion-360-folder-structure)
@@ -100,6 +102,12 @@ The labels should be printed using a label maker, such as the Brother PT-H110 la
 - 12 mm black on white laminated tape
 
 The labels should then be affixed in position and sealed using a clear coat.
+
+### 1.5. Connectors
+
+Neodymium disc magnets are used to connect the removable components. The magnets should be glued in place using a cyanoacrylate adhesive such as the Pattex Ultra Gel Super Glue.
+
+It is important to ensure that the polarities of the corresponding magnets line up before gluing them in place. This can be achieved by first gluing a single magnet in place on one side. This magnet can then be used to get the orientation of the corresponding magnet on the opposite side, which can then be glued in place. All of the other magnets can then be glued using these two reference magnets.
 
 ## 2. Manufacturing
 
