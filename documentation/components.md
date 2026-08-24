@@ -1,6 +1,6 @@
 # Components
 
-This documents provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, Section 1 provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides information about manufacturing the acrylic components, stainless steel components, supports, and wooden panels. Finally, Section 3 provides information about the Fusion 360 computer aided design (CAD) files.
+This documents provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, Section 1 provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides information about manufacturing the wooden panels, supports, acrylic components, and stainless steel components. Finally, Section 3 provides information about the Fusion 360 computer aided design (CAD) files.
 
 ### Table of Contents
 
@@ -92,7 +92,7 @@ It is important to ensure that the polarities of the corresponding magnets line 
 
 ## 2. Manufacturing
 
-The outlines of the wooden panels, supports, acrylic components, and stainless steel components have been exported as DXF files and are available in the [dxf_files](../manufacturing/dxf_files) folder. These DXF files can be used for laser cutting the different components out of their respective materials.
+The outlines of the wooden panels, supports, acrylic components, and stainless steel components have been exported as DXF files and are available in the [dxf_files](../manufacturing/dxf_files) folder. These DXF files can be used for laser cutting and CNC routing the different components out of their respective materials.
 
 Drawings to facilitate the machining of the angled features for the name sign at the top of the mini arcade game enclosure are available in the [drawings](../manufacturing/drawings) folder.
 
@@ -146,15 +146,18 @@ Afterwards, slopes for the name sign need to be added to the Back Panel, Name Si
 
 ### 2.3. Supports
 
-Laser cut the following DXF files in the [supports](../manufacturing/dxf_files/supports) folder out of 12 mm pine to construct the mini arcade game enclosure:
+Use a CNC router to cut the following DXF files in the [supports](../manufacturing/dxf_files/supports) folder out of 12 mm pine:
 
 - 2 × base_plate_support.dxf
 - 2 × control_panel_support.dxf 
 - 1 × name_sign_support_left.dxf
 - 1 × name_sign_support_right.dxf
+
+Use a CNC router to cut the following DXF files in the [supports](../manufacturing/dxf_files/supports) folder out of 21 mm pine plywood:
+
 - 1 × smartie_feed_support.dxf
 
-The following supports should be cut from 21 mm x 21 mm pine:
+Cut the following supports from 21 mm x 21 mm pine:
 
 | Quantity | Component                         | Length (mm) |
 |:--------:|-----------------------------------|------------:|
