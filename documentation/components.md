@@ -8,8 +8,10 @@ This documents provides information about the components used in the design of t
   - [1.1. Wooden Components](#11-wooden-components)
   - [1.2. Acrylic Components](#12-acrylic-components)
   - [1.3. 3D Printed Components](#13-3d-printed-components)
-  - [1.4. Labels](#14-labels)
-  - [1.5. Connectors](#15-connectors)
+  - [1.4. Stainless steel components](#14-stainless-steel-components)
+  - [1.5. Labels](#15-labels)
+  - [1.6. Connectors](#16-connectors)
+  - [1.7. Fasteners](#17-fasteners)
 - [2. Manufacturing](#2-manufacturing)
   - [2.1. Manufacturing Folder Structure](#21-manufacturing-folder-structure)
   - [2.2. Wooden Panels](#22-wooden-panels)
@@ -76,7 +78,11 @@ The 3D printed components should then be glued in place. The structural 3D print
 
 The 3D printed components that are involved in the Colour Detection Mechanism should be glued using a cyanoacrylate adhesive such as the Pattex Ultra Gel Super Glue.
 
-### 1.4. Labels
+Threaded brass inserts are used to add threads to the 3D printed components. Section 1.7 provides more information about installing the brass inserts.
+
+### 1.4. Stainless steel components
+
+### 1.5. Labels
 
 The labels should be printed using a label maker, such as the Brother PT-H110 label maker, using:
 
@@ -84,11 +90,21 @@ The labels should be printed using a label maker, such as the Brother PT-H110 la
 
 The labels should then be affixed in position and sealed using a clear coat.
 
-### 1.5. Connectors
+### 1.6. Connectors
 
 Neodymium disc magnets are used to connect the removable components. The magnets should be glued in place using a cyanoacrylate adhesive such as the Pattex Ultra Gel Super Glue.
 
 It is important to ensure that the polarities of the corresponding magnets line up before gluing them in place. This can be achieved by first gluing a single magnet in place on one side. This magnet can then be used to get the orientation of the corresponding magnet on the opposite side, which can then be glued in place. All of the other magnets can then be glued using these two reference magnets.
+
+### 1.7. Fasteners
+
+Threaded brass inserts are used to add threads to the 3D printed components. These threads are then used to fasten the servo motors to the 3D printed components.
+
+The guide holes for the brass inserts should have a diameter of about 0.9 times that of the knurled outer diameter of the brass inserts. The depths of the guide holes should be sized to provide enough space at the bottom for the melted plastic to flow into without pushing back up the brass inserts.
+
+The wall count of the 3D  printed components that house the brass inserts should be set to three perimeters. This ensures that there is sufficient plastic fo the brass inserts to melt into.
+
+The brass inserts can then be installed using specialised attachments, such as for a 900M soldering iron, to melt the brass inserts into place.
 
 ## 2. Manufacturing
 
