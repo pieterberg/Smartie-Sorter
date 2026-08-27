@@ -24,7 +24,7 @@ git config --local gpg.ssh.allowedSignersFile "./signatures/allowed_signers"
 
 ## Documentation
 
-- [Components.md](documentation/components.md) provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, it provides information about manufacturing the acrylic components, stainless steel components, supports, and wooden panels. Finally, it provides information about the Fusion 360 computer aided design (CAD) files.
+- [Components.md](documentation/components.md) provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, it provides information about manufacturing the wooden panels, supports, acrylic components, and stainless steel components. Finally, it provides information about the Fusion 360 computer aided design (CAD) files.
 
 - [Design.md](documentation/design.md) provides information about the design of the Smartie Sorter 3000. First, it provides information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, it provides information about the Smartie Sorter 3000's colour scheme. Finally, it provides information about the sorted Smartie and M&M locations.
 
