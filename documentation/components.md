@@ -98,6 +98,10 @@ It is important to ensure that the polarities of the corresponding magnets line 
 
 ### 1.7. Fasteners
 
+All screws, bolts, and nuts used to construct and assemble the Smartie Sorter 3000 should be made out of stainless steel. The countersunk wood screws, machine screws, and countersunk machine screws should all have a Pozidriv head.
+
+The M6 bolt used in the Smartie Hopper assembly should be cut to size and glued in place using a steel epoxy adhesive.
+
 Threaded brass inserts are used to add threads to the 3D printed components. These threads are then used to fasten the servo motors to the 3D printed components.
 
 The guide holes for the brass inserts should have a diameter of about 0.9 times that of the knurled outer diameter of the brass inserts. The depths of the guide holes should be sized to provide enough space at the bottom for the melted plastic to flow into without pushing back up the brass inserts.
