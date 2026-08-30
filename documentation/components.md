@@ -8,7 +8,7 @@ This documents provides information about the components used in the design of t
   - [1.1. Wooden Components](#11-wooden-components)
   - [1.2. Acrylic Components](#12-acrylic-components)
   - [1.3. 3D Printed Components](#13-3d-printed-components)
-  - [1.4. Stainless steel components](#14-stainless-steel-components)
+  - [1.4. Stainless Steel Components](#14-stainless-steel-components)
   - [1.5. Labels](#15-labels)
   - [1.6. Connectors](#16-connectors)
   - [1.7. Fasteners](#17-fasteners)
@@ -80,7 +80,15 @@ The 3D printed components that are involved in the Colour Detection Mechanism sh
 
 Threaded brass inserts are used to add threads to the 3D printed components. Section 1.7 provides more information about installing the brass inserts.
 
-### 1.4. Stainless steel components
+### 1.4. Stainless Steel Components
+
+Stainless steel components are used in the Smartie Hopper assembly and to provide structural support for the angled name sign section at the top of the mini arcade game enclosure.
+
+The stainless steel components should be laser cut out of 316 stainless steel. Section 2.5 provides more information about machining the stainless steel components.
+
+The Smartie Hopper Servo Arm should be glued to its servo horn using a steel epoxy adhesive, such as the Pratley Steel Quickset® Epoxy.
+
+The stainless steel brackets should be glued in place using a steel epoxy adhesive as well as fastened using countersunk machine screws. A high-strength threadlocker, such as LOCTITE® 270, should be used to glue the nuts in place.
 
 ### 1.5. Labels
 
