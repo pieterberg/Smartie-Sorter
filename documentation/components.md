@@ -17,6 +17,7 @@ This documents provides information about the components used in the design of t
   - [2.2. Wooden Panels](#22-wooden-panels)
   - [2.3. Supports](#23-supports)
   - [2.4. Acrylic Components](#24-acrylic-components)
+  - [2.5. Stainless Steel Components](#25-stainless-steel-components)
 - [3. Fusion 360 Files](#3-fusion-360-files)
   - [3.1. Resources](#31-resources)
   - [3.2. Fusion 360 Folder Structure](#32-fusion-360-folder-structure)
@@ -223,6 +224,23 @@ Laser cut the following DXF files in the [sorted_smarties_collector](../manufact
 - 2 × horizontal_panel.dxf
 - 2 × side_panel.dxf
 - 1 × top_panel.dxf
+
+### 2.5. Stainless Steel Components
+
+Laser cut the following DXF files in the [stainless_steel_components](../manufacturing/dxf_files/stainless_steel_components) folder out of 3 mm 316 stainless steel:
+
+- 1 × mixer_arm.dxf
+- 1 × smartie_hopper_servo_arm.dxf
+
+Laser cut the following DXF files in the [stainless_steel_components](../manufacturing/dxf_files/stainless_steel_components) folder out of 2 mm 316 stainless steel:
+
+- 1 × name_sign_bottom_bracket.dxf
+- 1 × top_panel_bracket.dxf
+
+Afterwards, the stainless steel brackets need to be bent to shape. The brackets should be bent according to the following drawings:
+
+- [DWG_801_name_sign_bottom_bracket](../manufacturing/drawings/stainless_steel_components/DWG_801_name_sign_bottom_bracket.pdf)
+- [DWG_802_top_panel_bracket](../manufacturing/drawings/stainless_steel_components/DWG_802_top_panel_bracket.pdf)
 
 ## 3. Fusion 360 Files
 
