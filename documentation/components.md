@@ -36,7 +36,7 @@ There are ten different types of components used in the design of the Smartie So
 9. Supports
 10. Wooden panels
 
-This section provides information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, and labels.
+This section provides information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, stainless steel components, labels, connectors, and fasteners.
 
 Information about the electronic components is provided in [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics.md).
 
