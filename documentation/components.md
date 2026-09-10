@@ -93,11 +93,9 @@ The stainless steel brackets should be glued in place using a steel epoxy adhesi
 
 ### 1.5. Labels
 
-The labels should be printed using a label maker, such as the Brother PT-H110 label maker, using:
+Labels are used to provide electrical information and to orient the removable components.
 
-- 12 mm black on white laminated tape
-
-The labels should then be affixed in position and sealed using a clear coat.
+The labels should be printed using a label maker, such as the Brother PT-H110 label maker, using 12&nbsp;mm black on white laminated tape. The labels should then be affixed in position and sealed using a satin clear coat.
 
 ### 1.6. Connectors
 
