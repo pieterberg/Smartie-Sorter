@@ -105,7 +105,7 @@ It is important to ensure that the polarities of the corresponding magnets line 
 
 ### 1.7. Fasteners
 
-All screws, bolts, and nuts used to construct and assemble the Smartie Sorter 3000 should be made out of stainless steel. The countersunk wood screws, machine screws, and countersunk machine screws should all have a Pozidriv head.
+All screws, bolts, and nuts used to construct and assemble the Smartie Sorter 3000 should be made out of stainless steel. The countersunk wood screws, machine screws, and countersunk machine screws should all have Pozidriv heads.
 
 The M6 bolt used in the Smartie Hopper assembly should be cut to size and glued in place using a steel epoxy adhesive.
 
