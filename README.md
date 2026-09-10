@@ -50,11 +50,5 @@ git config --local gpg.ssh.allowedSignersFile "./signatures/allowed_signers"
 
 - [Design.md](documentation/design.md) provides information about the design of the Smartie Sorter 3000. First, it provides information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, it provides information about the Smartie Sorter 3000's colour scheme. Finally, it provides information about the sorted Smartie and M&M locations.
 
-## Fusion 360
-
-The [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder contains the .f3d and .f3z Fusion 360 component and assembly files for the Smartie Sorter 3000's mini arcade game enclosure.
-
-
-
 
 
