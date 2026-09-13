@@ -63,21 +63,15 @@ The Smartie Slide and Sorted Smarties Collector should then be assembled by weld
 
 ### 1.3. 3D Printed Components
 
-3D printed components are used for the Colour Detection Mechanism and to house the electronic components.
+3D printed components are used for the Colour Detection Mechanism, the Smartie Hopper assembly, and to house the electronic components.
 
-The 3D printed components should be printed using a 3D printer, such as the Bambu Lab X1 Series 3D printer, using:
-
-- White PLA filament
-
-A layer height of 0.16 mm should be used for a high print quality.
-
-An infill setting of 35% should be used to maximise the strength of the 3D printed components while minimizing their weight.
+The 3D printed components should be printed using cool white PLA filament. A layer height of 0.16 mm should be used for a high print quality. An infill setting of 35% should be used to maximise the strength of the 3D printed components while minimizing their weight.
 
 The Smartie Hopper has a 10° slant on its front face which should be used as the bottom face when 3D printing the Smartie Hopper.
 
-The 3D printed components should then be glued in place. The structural 3D printed components, such as the Electronics Holder, should be glued using a clear epoxy adhesive such as the Pattex Clear Power Epoxy. The Servo Horn should also be glued to the Smartie Arm using the clear epoxy adhesive.
+Certain 3D printed components should be printed in segments. These segments should be glued together using a cyanoacrylate adhesive, such as the Pattex Ultra Gel Super Glue.
 
-The 3D printed components that are involved in the Colour Detection Mechanism should be glued using a cyanoacrylate adhesive such as the Pattex Ultra Gel Super Glue.
+The large 3D printed components should be glued in place using a steel epoxy adhesive, such as the Pratley Steel Quickset® Epoxy. The Smartie Arm should also be glued to its servo horn using a steel epoxy adhesive. The smaller 3D printed components can be glued in place using a cyanoacrylate adhesive.
 
 Threaded brass inserts are used to add threads to the 3D printed components. Section 1.7 provides more information about installing the brass inserts.
 
