@@ -69,9 +69,9 @@ The 3D printed components should be printed using cool white PLA filament. A lay
 
 The Smartie Hopper has a 10° slant on its front face which should be used as the bottom face when 3D printing the Smartie Hopper.
 
-Certain 3D printed components should be printed in segments. These segments should be glued together using a cyanoacrylate adhesive such as the Pattex Ultra Gel Super Glue.
+Certain 3D printed components should be printed in segments. These segments should be glued together using a cyanoacrylate adhesive such as Pattex Ultra Gel Super Glue.
 
-The large 3D printed components should be glued in place using a steel epoxy adhesive such as the Pratley Steel Quickset® Epoxy. The Smartie Arm should also be glued to its servo horn using a steel epoxy adhesive. The smaller 3D printed components can be glued in place using a cyanoacrylate adhesive.
+The large 3D printed components should be glued in place using a steel epoxy adhesive such as Pratley Steel Quickset® Epoxy. The Smartie Arm should also be glued to its servo horn using a steel epoxy adhesive. The smaller 3D printed components can be glued in place using a cyanoacrylate adhesive.
 
 Threaded brass inserts are used to add threads to the 3D printed components. Section 1.7 provides more information about installing the brass inserts.
 
@@ -81,7 +81,7 @@ Stainless steel components are used in the Smartie Hopper assembly and to provid
 
 The stainless steel components should be laser cut out of 316 stainless steel. Section 2.5 provides more information about machining the stainless steel components.
 
-The Smartie Hopper Servo Arm should be glued to its servo horn using a steel epoxy adhesive such as the Pratley Steel Quickset® Epoxy.
+The Smartie Hopper Servo Arm should be glued to its servo horn using a steel epoxy adhesive such as Pratley Steel Quickset® Epoxy.
 
 The stainless steel brackets should be glued in place using a steel epoxy adhesive as well as fastened using countersunk machine screws. A high-strength threadlocker, such as LOCTITE® 270, should be used to glue the nuts in place.
 
@@ -93,7 +93,7 @@ The labels should be printed using a label maker, such as the Brother PT-H110 la
 
 ### 1.6. Connectors
 
-Neodymium disc magnets are used to connect the removable components. The magnets should be glued in place using a cyanoacrylate adhesive such as the Pattex Ultra Gel Super Glue.
+Neodymium disc magnets are used to connect the removable components. The magnets should be glued in place using a cyanoacrylate adhesive such as Pattex Ultra Gel Super Glue.
 
 It is important to ensure that the polarities of the corresponding magnets line up before gluing them in place. This can be achieved by first gluing a single magnet in place on one side. This magnet can then be used to get the orientation of the corresponding magnet on the opposite side, which can then be glued in place. All of the other magnets can then be glued using these two reference magnets.
 
@@ -101,7 +101,7 @@ It is important to ensure that the polarities of the corresponding magnets line 
 
 All screws, bolts, and nuts used to construct and assemble the Smartie Sorter 3000 should be made out of stainless steel. The countersunk wood screws, machine screws, and countersunk machine screws should all have Pozidriv heads.
 
-The M6 bolt used in the Smartie Hopper assembly should be cut to size and glued in place using a steel epoxy adhesive such as the Pratley Steel Quickset® Epoxy.
+The M6 bolt used in the Smartie Hopper assembly should be cut to size and glued in place using a steel epoxy adhesive such as Pratley Steel Quickset® Epoxy.
 
 Threaded brass inserts are used to add threads to the 3D printed components. These threads are then used to fasten the servo motors to the 3D printed components.
 
