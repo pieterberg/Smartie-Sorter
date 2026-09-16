@@ -43,13 +43,15 @@ Information about the electronic components is provided in [electronics.md](http
 
 ### 1.1. Wooden Components
 
-The wooden components are comprised of medium density fibreboard (MDF) panels and pine supports.
+Wooden components are used to construct the Smartie Sorter 3000's mini arcade game enclosure. The wooden components are comprised of medium density fibreboard (MDF) panels and pine supports.
 
-Section 2.2 provides more information about laser cutting the wooden panels.
+Section 2.2 provides more information about laser cutting the wooden panels and Section 2.3 provides more information about manufacturing the supports.
 
-Section 2.3 provides more information about manufacturing the supports.
+The wooden components should be glued together using a polyvinyl acetate (PVA) adhesive such as Ponal Extra Strong Wood Glue. The wooden components should also be fastened using countersunk wood screws. A countersink drill bit should be used to drill the countersunk holes. Section 1.7 provides more information about the fasteners.
 
-The wooden components should be painted according to the colour scheme provided in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md). The wooden components should then be sealed using a clear coat.
+The countersunk holes and any gaps between the wooden components should be filled using a wood filler and sanded down once dry.
+
+The wooden components should be primed using an oil-based MDF primer. Afterwards, the wooden components should be painted using water-based paint according to the colour scheme provided in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md). The outside surfaces of the mini arcade game enclosure should be sealed using a water-based matte clear coat while the internal surfaces should be sealed using a water-based satin clear coat.
 
 ### 1.2. Acrylic Components
 
