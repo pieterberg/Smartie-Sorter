@@ -65,7 +65,7 @@ The Smartie Slide and Sorted Smarties Collector should then be assembled by weld
 
 ### 1.3. 3D Printed Components
 
-3D printed components are used for the Colour Detection Mechanism, the Smartie Hopper assembly, and to house the electronic components.
+3D printed components are used for the Colour Detection Mechanism, the Smartie Hopper Mechanism assembly, and to house the electronic components.
 
 The 3D printed components should be printed using cool white PLA filament. A layer height of 0.16 mm should be used for a high print quality. An infill setting of 35% should be used to maximise the strength of the 3D printed components while minimizing their weight.
 
@@ -79,7 +79,7 @@ Threaded brass inserts are used to add threads to the 3D printed components. Sec
 
 ### 1.4. Stainless Steel Components
 
-Stainless steel components are used in the Smartie Hopper assembly and to provide structural support for the angled name sign section at the top of the mini arcade game enclosure.
+Stainless steel components are used in the Smartie Hopper Mechanism assembly and to provide structural support for the angled name sign section at the top of the mini arcade game enclosure.
 
 The stainless steel components should be laser cut out of 316 stainless steel. Section 2.5 provides more information about machining the stainless steel components.
 
@@ -103,7 +103,7 @@ It is important to ensure that the polarities of the corresponding magnets line 
 
 All screws, bolts, and nuts used to construct and assemble the Smartie Sorter 3000 should be made out of stainless steel. The countersunk wood screws, machine screws, and countersunk machine screws should all have Pozidriv heads.
 
-The M6 bolt used in the Smartie Hopper assembly should be cut to size and glued in place using a steel epoxy adhesive such as Pratley Steel Quickset® Epoxy.
+The M6 bolt used in the Smartie Hopper Mechanism assembly should be cut to size and glued in place using a steel epoxy adhesive such as Pratley Steel Quickset® Epoxy.
 
 Threaded brass inserts are used to add threads to the 3D printed components. These threads are then used to fasten the servo motors to the 3D printed components.
 
@@ -247,8 +247,9 @@ The CAD files have been exported and are available in the [fusion_360](https://g
 The following Fusion 360 files are available in the fusion_360 folder:
 
 - Fusion 360 archive files (.f3d) of the components
+- Fusion 360 archive files (.f3z) of the sub-assemblies
 - Fusion 360 archive file (.f3z) of the Colour Detection Mechanism assembly
-- Fusion 360 archive file (.f3z) of the Smartie Hopper assembly
+- Fusion 360 archive file (.f3z) of the Smartie Hopper Mechanism assembly
 - Fusion 360 archive file (.f3z) of the Smartie Sorter 3000 assembly
 
 ### 3.2. Fusion 360 Folder Structure
@@ -259,27 +260,27 @@ The folder structure of the fusion_360 folder is presented below:
 .
 |__ fusion_360
     |__ assemblies
+    |   |__ acrylic_components
+    |   |__ conduits
+    |   |__ electronics
     |__ components
-        |__ 3d_printed_components
-        |   |__ colour_sensor_holder
-        |   |__ colour_sensor_servo_seat
-        |   |__ name_sign_LED_holder_top
-        |__ acrylic_components
-        |   |__ smartie_slide
-        |   |__ sorted_smarties_collector
-        |__ chocolates
-        |   |__ M&Ms
-        |   |__ smarties
-        |__ connectors
-        |__ electronics
-        |__ fasteners
-        |__ labels
-        |__ stainless_steel_components      
-        |__ supports
-        |__ wooden_panels
+    |   |__ 3d_printed_components
+    |   |__ acrylic_components
+    |   |   |__ smartie_slide
+    |   |   |__ sorted_smarties_collector
+    |   |__ chocolates
+    |   |   |__ M&Ms
+    |   |   |__ smarties
+    |   |__ connectors
+    |   |__ electronics
+    |   |__ fasteners
+    |   |__ labels
+    |   |__ stainless_steel_components      
+    |   |__ supports
+    |   |__ wooden_panels
+    |__ mechanisms
 ```
-The Smartie Sorter 3000 assembly is available in the fusion_360 folder.
 
-The Colour Detection Mechanism and Smartie Hopper assemblies are available in the [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies) folder.
+The Smartie Sorter 3000 assembly is available in the root fusion_360 folder. The Colour Detection Mechanism and Smartie Hopper Mechanism assemblies are available in the [mechanisms](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/mechanisms) folder. The sub-assemblies used to assemble the main Smartie Sorter 3000 assembly are available in the [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies) folder.
 
 
