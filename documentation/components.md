@@ -71,7 +71,7 @@ The 3D printed components should be printed using cool white PLA filament. A lay
 
 The Smartie Hopper has a 10° slant on its front face which should be used as the bottom face when 3D printing the Smartie Hopper.
 
-Certain 3D printed components should be printed in segments. These segments should be glued together using a cyanoacrylate adhesive such as Pattex Ultra Gel Super Glue.
+Certain 3D printed parts should be glued together to form larger components. These parts should be glued together using a cyanoacrylate adhesive such as Pattex Ultra Gel Super Glue.
 
 The large 3D printed components should be glued in place using a steel epoxy adhesive such as Pratley Steel Quickset® Epoxy. The Smartie Arm should also be glued to its servo horn using a steel epoxy adhesive. The smaller 3D printed components can be glued in place using a cyanoacrylate adhesive.
 
