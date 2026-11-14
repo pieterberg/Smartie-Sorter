@@ -2,9 +2,7 @@
 
 <img src="https://img.shields.io/badge/Arduino-Nano R4-008BC0?logo=arduino&logoColor=FFFFFF&style=flat"/> <img src="https://img.shields.io/badge/Autodesk-Fusion 360-008BC0?logo=autodesk&logoColor=FFFFFF&style=flat"/> [![Arduino Lint](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_lint.yaml/badge.svg)](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_lint.yaml) [![Arduino Compilation](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_compilation.yaml/badge.svg)](https://github.com/pieterberg/Smartie-Sorter/actions/workflows/arduino_compilation.yaml)
 
-Smartie Sorter 3000 project for sorting Smarties and M&M's based on their colour using the TCS3200 colour sensor built into a mini arcade game enclosure.
-
-The project was written using C++ and runs on an Arduino Nano R4 microcontroller. The mini arcade game enclosure was designed using Fusion 360. The physical components were either laser-cut out of MDF and acrylic, or 3D printed using a Bambu Lab X1 Series 3D printer.
+Arduino Smartie Sorter 3000 project for sorting Smarties and M&M's based on their colour using an Arduino Nano R4 and a TCS3200 colour sensor built into a mini arcade game enclosure.
 
 ## Arduino Sketches
 
