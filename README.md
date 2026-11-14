@@ -36,7 +36,7 @@ make upload-management port=COM7
 
 The [signatures](./signatures) folder contains the required public SSH keys to verify the git commit signatures. These public SSH keys have been configured in the allowed_signers file.
 
-Run the following command in the project's root directory to configure the repository's local git config file to use the allowed_signers file for verifying the git commmit signatures:
+Run the following command in the project's root directory to configure the repository's local git config file to use the allowed_signers file for verifying the git commit signatures:
 
 ```shell
 git config --local gpg.ssh.allowedSignersFile "./signatures/allowed_signers"
