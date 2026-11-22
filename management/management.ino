@@ -17,24 +17,24 @@
 #include <math.h>
 
 // Add the EEPROM addresses for the total number of sorted Smarties
-const byte eeAddressTotalNumberOfSortedSmartiesRed     = 2;       // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedSmartiesOrange  = 4;       // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedSmartiesYellow  = 6;       // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedSmartiesGreen   = 8;       // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedSmartiesBlue    = 10;      // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedSmartiesMauve   = 12;      // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedSmartiesPink    = 14;      // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedSmartiesBrown   = 16;      // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedSmartiesUnknown = 18;      // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesRed     = 2;       // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesOrange  = 4;       // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesYellow  = 6;       // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesGreen   = 8;       // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesBlue    = 10;      // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesMauve   = 12;      // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesPink    = 14;      // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesBrown   = 16;      // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedSmartiesUnknown = 18;      // uint16_t (2 bytes)
 
 // Add the EEPROM addresses for the total number of sorted M&M's
-const byte eeAddressTotalNumberOfSortedMMsRed     = 20;     // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedMMsOrange  = 22;     // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedMMsYellow  = 24;     // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedMMsGreen   = 26;     // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedMMsBlue    = 28;     // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedMMsBrown   = 30;     // unsigned int (2 bytes)
-const byte eeAddressTotalNumberOfSortedMMsUnknown = 32;     // unsigned int (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsRed     = 20;     // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsOrange  = 22;     // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsYellow  = 24;     // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsGreen   = 26;     // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsBlue    = 28;     // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsBrown   = 30;     // uint16_t (2 bytes)
+const byte eeAddressTotalNumberOfSortedMMsUnknown = 32;     // uint16_t (2 bytes)
 
 void setup() {
 
@@ -186,15 +186,15 @@ void viewSortedSmarties() {
   char current_selection = '0';
 
   // Create variables to store the number of sorted Smarties stored in the EEPROM
-  unsigned int totalNumberOfSortedSmartiesRed     = 0;
-  unsigned int totalNumberOfSortedSmartiesOrange  = 0;
-  unsigned int totalNumberOfSortedSmartiesYellow  = 0;
-  unsigned int totalNumberOfSortedSmartiesGreen   = 0;
-  unsigned int totalNumberOfSortedSmartiesBlue    = 0;
-  unsigned int totalNumberOfSortedSmartiesMauve   = 0;
-  unsigned int totalNumberOfSortedSmartiesPink    = 0;
-  unsigned int totalNumberOfSortedSmartiesBrown   = 0;
-  unsigned int totalNumberOfSortedSmartiesUnknown = 0;
+  uint16_t totalNumberOfSortedSmartiesRed     = 0;
+  uint16_t totalNumberOfSortedSmartiesOrange  = 0;
+  uint16_t totalNumberOfSortedSmartiesYellow  = 0;
+  uint16_t totalNumberOfSortedSmartiesGreen   = 0;
+  uint16_t totalNumberOfSortedSmartiesBlue    = 0;
+  uint16_t totalNumberOfSortedSmartiesMauve   = 0;
+  uint16_t totalNumberOfSortedSmartiesPink    = 0;
+  uint16_t totalNumberOfSortedSmartiesBrown   = 0;
+  uint16_t totalNumberOfSortedSmartiesUnknown = 0;
 
   // Print the introduction
   Serial.println(F("Now displaying the number of sorted Smarties stored in the EEPROM:"));
@@ -245,13 +245,13 @@ void viewSortedMMs() {
   char current_selection = '0';
 
   // Create variables to store the number of sorted M&M's stored in the EEPROM
-  unsigned int totalNumberOfSortedMMsRed     = 0;
-  unsigned int totalNumberOfSortedMMsOrange  = 0;
-  unsigned int totalNumberOfSortedMMsYellow  = 0;
-  unsigned int totalNumberOfSortedMMsGreen   = 0;
-  unsigned int totalNumberOfSortedMMsBlue    = 0;
-  unsigned int totalNumberOfSortedMMsBrown   = 0;
-  unsigned int totalNumberOfSortedMMsUnknown = 0;
+  uint16_t totalNumberOfSortedMMsRed     = 0;
+  uint16_t totalNumberOfSortedMMsOrange  = 0;
+  uint16_t totalNumberOfSortedMMsYellow  = 0;
+  uint16_t totalNumberOfSortedMMsGreen   = 0;
+  uint16_t totalNumberOfSortedMMsBlue    = 0;
+  uint16_t totalNumberOfSortedMMsBrown   = 0;
+  uint16_t totalNumberOfSortedMMsUnknown = 0;
 
   // Print the introduction
   Serial.println(F("Now displaying the number of sorted M&M's stored in the EEPROM:"));
