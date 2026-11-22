@@ -1,8 +1,8 @@
 # Design 
 
-Information about the design of the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides more information about the Smartie Sorter 3000's colour scheme.
+This document provides information about the design of the Smartie Sorter 3000. First, Section 1 provides information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides information about the Smartie Sorter 3000's colour scheme. Finally, Section 3 provides information about the sorted Smartie and M&M locations.
 
-The Smartie Sorter 3000 logo and the colour schemes were created using Affinity Designer. The .afdesign files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/affinity_designer) folder.
+The Smartie Sorter 3000 logo, colour scheme, and sorted Smartie and M&M locations were created using Affinity Designer. The `.afdesign` files are available in the [affinity_designer](https://github.com/pieterberg/Smartie-Sorter/tree/main/design/affinity_designer) folder.
 
 ### Table of Contents
 
@@ -20,7 +20,7 @@ The Smartie Sorter 3000 logo and the colour schemes were created using Affinity 
 
 ## 1. Name Sign
 
-This section provides more information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure.
+This section provides information about the name sign present at the top of the Smartie Sorter 3000's mini arcade game enclosure.
 
 The "3000" in the Smartie Sorter 3000's name comes from the TCS3200 colour sensor that the Smartie Sorter 3000 uses to determine the Smartie and M&M colours.
 
@@ -30,11 +30,11 @@ The logo was stylized using the Bauhaus 93 typeface.
 
 The Smartie Sorter 3000 logo is presented in Figure 1. The logo has 8 slanted stripes that correspond to the 8 Smartie colours, which are presented in Section 2.3. 
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/name_sign/name_sign.png" alt="Name sign" width="100%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/design/name_sign/name_sign.png" alt="Name sign" width="100%">
 
 Figure 1: The Smartie Sorter 3000 logo used for the name at the top of the mini arcade game enclosure
 
-The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/name_sign) folder contains both a .png version and an .svg version of the Smartie Sorter 3000 logo.
+The [name sign](https://github.com/pieterberg/Smartie-Sorter/tree/main/design/name_sign) folder contains both a `.png` version and an `.svg` version of the Smartie Sorter 3000 logo.
 
 ### 1.2. Enclosure Placement
 
@@ -46,15 +46,15 @@ The Name Sign component is backlit using 12 V LED strips present in the top-sect
 
 This section presents the colour schemes used to design the Smartie Sorter 3000. The colour schemes and hex codes of the mini arcade game enclosure, arcade game buttons, Smartie chocolates, and M&M chocolates are provided.
 
-The [colour_scheme](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/design/colour_scheme) folder contains .png versions of the colour schemes.
+The [colour_scheme](https://github.com/pieterberg/Smartie-Sorter/tree/main/design/colour_scheme) folder contains .png versions of the colour schemes.
 
 ### 2.1. Enclosure Design
 
 The colour scheme used for the design of the mini arcade game enclosure is presented by Figure 2. The outside surfaces of the mini arcade game enclosure are painted brown while the internal surfaces of the mini arcade game enclosure are painted white.
 
-The brown colour used for the design of the mini arcade game enclosure is based on the Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg paint.
+The brown colour used for the design of the mini arcade game enclosure is based on the colour of the Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg paint.
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="70%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/design/colour_scheme/enclosure_colours.png" alt="Enclosure colour scheme" width="70%">
 
 Figure 2: The mini arcade game enclosure's colour scheme
 
@@ -71,7 +71,7 @@ Table 1: The hex codes for the mini arcade game enclosure's colour scheme
 
 The Smartie Sorter 3000 uses three Sanwa arcade game buttons to control the sorting process: one light-blue arcade game button and two white arcade game buttons. Figure 3 presents the colour scheme for the selected Sanwa arcade game buttons.
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/button_colours.png" alt="Button colour scheme" width="70%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/design/colour_scheme/button_colours.png" alt="Button colour scheme" width="70%">
 
 Figure 3: The Sanwa arcade game buttons' colour scheme
 
@@ -84,13 +84,13 @@ Table 2: The hex codes for the Sanwa arcade game buttons' colour scheme
 | Blue                  | `#07AEE9` |
 | White                 | `#FFFFFF` |
 
-More information about the arcade game buttons and how they control the sorting process is given in [sorting.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/sorting.md).
+Information about the arcade game buttons and how they control the sorting process is provided in [sorting.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/sorting.md).
 
 ### 2.3. Smartie Colours
 
 There are 8 different Smartie colours, namely: red, orange, yellow, green, blue, mauve, pink, and brown. Figure 4 presents the Smarties colour scheme.
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/smartie_colours.png" alt="Smartie colours" width="70%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/design/colour_scheme/smartie_colours.png" alt="Smartie colours" width="70%">
 
 Figure 4: The Smarties colour scheme
 
@@ -113,7 +113,7 @@ Table 3: The hex codes for the Smarties colour scheme
 
 There are 6 different M&M colours, namely: red, orange, yellow, green, blue, and brown. Figure 5 presents the official M&M colour scheme.
 
-<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/assets/design/colour_scheme/m_and_m_colours.png" alt="M&M colours" width="70%">
+<img src="https://github.com/pieterberg/Smartie-Sorter/blob/main/design/colour_scheme/m_and_m_colours.png" alt="M&M colours" width="70%">
 
 Figure 5: The official M&M colour scheme
 
@@ -132,13 +132,32 @@ Table 4: The hex codes for the official M&M colour scheme
 
 ## 3. Sorting Locations
 
-Once sorted, the Smarties and M&M's are transferred to the acrylic Sorted Smarties Collector component. The sorted positions of the Smarties and M&M's are presented in this section.
+Once sorted, the Smarties and M&M's are transferred to the acrylic Sorted Smarties Collector component. The Sorted Smarties Collector component contains 8 compartments, and the locations of the sorted Smarties and M&M's are dependent on the value of the `SORTING_MODE` property. 
+
+The Smartie Sorter 3000 can operate in 2 different sorting modes, as shown by Table 5.
+
+Table 5: Sorting modes and their descriptions
+
+| Sorting Mode | Description                                                                          |
+|--------------|--------------------------------------------------------------------------------------|
+| Uncollated   | Smarties and M&M's of the same colour are grouped together in the same compartment.  |
+| Collated     | Consecutive Smarties and M&Ms of the same colour end up in consecutive compartments. |
+
+Information about setting and viewing the value of the `SORTING_MODE` property is provided in [sorting.md](sorting.md).
 
 ### 3.1. Smartie Locations
 
-The locations of the sorted Smarties in the Sorted Smarties Collector component are similar to their locations in the Smartie chocolates' colour scheme that was presented in Figure 4.
+Figure 6 provides the sorted Smartie locations. The uncollated Smarties locations correspond with the Smartie colour scheme that was presented in Figure 4.
+
+<img src="../design/sorting_locations/smartie_locations.png" alt="Smartie Locations" width="70%">
+
+Figure 6: The uncollated and collated sorted Smartie locations
+
 ### 3.2. M&M Locations
 
-The locations of the sorted M&M's in the Sorted Smarties Collector component are similar to their locations in the official M&M colour scheme that was presented in Figure 5. Since there are only 6 M&M colours, the final two locations in the Sorted Smarties Collector component are not used when sorting M&M's.
+Figure 6 provides the sorted M&M locations. The uncollated M&M locations correspond with the official M&M colour scheme that was presented in Figure 5. Since there are only 6 M&M colours, only the first 6 compartments of the Sorted Smarties Collector component are used.
 
+<img src="../design/sorting_locations/m_and_m_locations.png" alt="M&M Locations" width="70%">
+
+Figure 7: The uncollated and collated sorted M&M locations
 

@@ -1,0 +1,15 @@
+# Project name: Smartie Sorter 3000
+# File type:    Arduino CLI config file
+# Created by:   Pieter van den Berg
+# Created on:   6 July 2026
+
+default_fqbn: arduino:renesas_uno:nanor4
+default_protocol: serial
+default_profile: Arduino_Nano_R4
+
+profiles:
+  Arduino_Nano_R4:
+    platforms:
+      - platform: arduino:renesas_uno (1.6.0)
+
+

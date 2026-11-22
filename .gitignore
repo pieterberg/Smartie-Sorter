@@ -1,0 +1,10 @@
+# Project name: Smartie Sorter 3000
+# File type:    Git ignore
+# Created by:   Pieter van den Berg
+# Created on:   5 July 2026
+
+## Ignore the compiled Arduino binaries
+smartie_sorter/build
+management/build
+
+

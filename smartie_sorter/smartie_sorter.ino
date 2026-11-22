@@ -1,6 +1,9 @@
+// Project name: Smartie Sorter 3000
+// Sketch name:  smartie_sorter.ino
+// Created by:   Pieter van den Berg
+// Created on:   1 January 2021
+
 // Arduino Smartie Sorter Project
-// Created by Pieter van den Berg
-// on 1 January 2021
 
 #include <Arduino.h>
 #include "calibrated_values.h"

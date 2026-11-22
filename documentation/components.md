@@ -1,6 +1,6 @@
 # Components
 
-Information about the components used to build the Smartie Sorter 3000 is presented in this document. First, Section 1 provides more information about the different types of components used in the design. Thereafter, Section 2 provides more information about the computer aided design (CAD) files that are provided in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
+This documents provides information about the components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. First, Section 1 provides information about the different types of components used in the design of the Smartie Sorter 3000's mini arcade game enclosure. Thereafter, Section 2 provides information about manufacturing the wooden panels, supports, acrylic components, and stainless steel components. Finally, Section 3 provides information about the Fusion 360 computer aided design (CAD) files.
 
 ### Table of Contents
 
@@ -8,83 +8,251 @@ Information about the components used to build the Smartie Sorter 3000 is presen
   - [1.1. Wooden Components](#11-wooden-components)
   - [1.2. Acrylic Components](#12-acrylic-components)
   - [1.3. 3D Printed Components](#13-3d-printed-components)
-  - [1.4. Labels](#14-labels)
-- [2. Fusion 360 Files](#2-fusion-360-files)
-  - [2.1. Resources](#21-resources)
-  - [2.2. Folder Structure](#22-folder-structure)
+  - [1.4. Stainless Steel Components](#14-stainless-steel-components)
+  - [1.5. Labels](#15-labels)
+  - [1.6. Connectors](#16-connectors)
+  - [1.7. Fasteners](#17-fasteners)
+- [2. Manufacturing](#2-manufacturing)
+  - [2.1. Manufacturing Folder Structure](#21-manufacturing-folder-structure)
+  - [2.2. Wooden Panels](#22-wooden-panels)
+  - [2.3. Supports](#23-supports)
+  - [2.4. Acrylic Components](#24-acrylic-components)
+  - [2.5. Stainless Steel Components](#25-stainless-steel-components)
+- [3. Fusion 360 Files](#3-fusion-360-files)
+  - [3.1. Resources](#31-resources)
+  - [3.2. Fusion 360 Folder Structure](#32-fusion-360-folder-structure)
 
 ## 1. Components
 
-There are eight different types of components used in the design of the Smartie Sorter 3000, namely: 
+There are ten different types of components used in the design of the Smartie Sorter 3000, namely: 
 
 1. 3D printed components
 2. Acrylic components
 3. Chocolates
 4. Connectors
 5. Electronics
-6. Labels
-7. Supports
-8. Wooden panels
+6. Fasteners
+7. Labels
+8. Stainless steel components
+9. Supports
+10. Wooden panels
 
-This section provides more information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, and labels.
+This section provides information about the wooden components (wooden panels and supports), acrylic components, 3D printed components, stainless steel components, labels, connectors, and fasteners.
 
 Information about the electronic components is provided in [electronics.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/electronics.md).
 
 ### 1.1. Wooden Components
 
-The wooden components make use of medium density fibreboard (MDF) for the panels and pine for the supports.
+Wooden components are used to construct the Smartie Sorter 3000's mini arcade game enclosure. The wooden components are comprised of medium density fibreboard (MDF) panels and pine supports.
 
-DXF files for laser cutting the MDF components are provided in the [wooden_panels](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/dxf_files/wooden_panels) DXF folder. Using these DXF files, the wooden panels were laser cut from:
+Section 2.2 provides more information about laser cutting the wooden panels and Section 2.3 provides more information about manufacturing the supports.
 
-- 6 mm MDF
+The wooden components should be glued together using a polyvinyl acetate (PVA) adhesive such as Ponal Extra Strong Wood Glue. The wooden components should also be fastened using countersunk wood screws. A countersink drill bit should be used to drill the countersunk holes. Section 1.7 provides more information about the fasteners.
 
-The wooden components were painted according to the colour scheme presented in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md).
+The countersunk holes and any gaps between the wooden components should be filled using a wood filler and sanded down once dry.
 
-The brown colour was achieved using Rust-Oleum Painter's Touch Ultra Cover satin Nutmeg. The white colour was achieved using Rust-Oleum Painter's Touch Ultra Cover flat white. Finally, the white paint was sealed using Rust-Oleum Painter's Touch Ultra Cover satin clear coat.
+The wooden components should be primed using an oil-based MDF primer. Afterwards, the wooden components should be painted using water-based paint according to the colour scheme provided in [design.md](https://github.com/pieterberg/Smartie-Sorter/blob/main/documentation/design.md). The outside surfaces of the mini arcade game enclosure should be sealed using a water-based matte clear coat while the internal surfaces should be sealed using a water-based satin clear coat.
 
 ### 1.2. Acrylic Components
 
-The acrylic component use for the Name Sign was laser cut from:
+Clear acrylic is used for the Name Sign, Smartie Slide, and Sorted Smarties Collector.
 
-- 6 mm transparent acrylic
+The Smartie Slide and Sorted Smarties Collector are assemblies whose panels have been designed to fit together using finger joints.
 
-The Unsorted Smarties Holder and the Sorted Smarties Collector were constructed using acrylic panels that fit together using finger joints.
+Section 2.4 provides more information about laser cutting the Name Sign, Smartie Slide panels, and Sorted Smarties Collector panels.
 
-DXF files for laser cutting the acrylic panels are provided in the [unsorted_smarties_holder_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/dxf_files/unsorted_smarties_holder_finger_joints) and [sorted_smarties_collector_finger_joints](https://github.com/pieterberg/Smartie-Sorter/tree/main/assets/dxf_files/sorted_smarties_collector_finger_joints) DXF folders. Using these DXF files, the acrylic panels were laser cut from: 
-
-- 3 mm transparent acrylic
-
-The acrylic panels were then assembled using acrylic cement.
+The Smartie Slide and Sorted Smarties Collector should then be assembled by welding their respective panels together using an acrylic cement such as ACRIFIX® 1S 0117. The acrylic cement should be applied using a fine needle and syringe, such as a 0.6&nbsp;mm × 32&nbsp;mm needle and a 1&nbsp;mL syringe.
 
 ### 1.3. 3D Printed Components
 
-The mini arcade game enclosure's 3D printed components were printed using a Zortrax M300 3D printer using:
+3D printed components are used for the Colour Detection Mechanism, the Smartie Hopper Mechanism assembly, and to house the electronic components.
 
-- White PLA filament
+The 3D printed components should be printed using cool white PLA filament. A layer height of 0.16 mm should be used for a high print quality. An infill setting of 35% should be used to maximise the strength of the 3D printed components while minimizing their weight.
 
-### 1.4. Labels
+The Smartie Hopper has a 10° slant on its front face which should be used as the bottom face when 3D printing the Smartie Hopper.
 
-The labels were printed using a Brother PT-H110 label printer using:
+Certain 3D printed parts should be glued together to form larger components. These parts should be glued together using a cyanoacrylate adhesive such as Pattex Ultra Gel Super Glue.
 
-- 12 mm black on white laminated tape
+The large 3D printed components should be glued in place using a steel epoxy adhesive such as Pratley Steel Quickset® Epoxy. The Smartie Arm should also be glued to its servo horn using a steel epoxy adhesive. The smaller 3D printed components can be glued in place using a cyanoacrylate adhesive.
 
-The labels were affixed in position and sealed using Rust-Oleum Painter's Touch Ultra Cover satin clear coat.
+Threaded brass inserts are used to add threads to the 3D printed components. Section 1.7 provides more information about installing the brass inserts.
 
-## 2. Fusion 360 Files
+### 1.4. Stainless Steel Components
+
+Stainless steel components are used in the Smartie Hopper Mechanism assembly and to provide structural support for the angled name sign section at the top of the mini arcade game enclosure.
+
+The stainless steel components should be laser cut out of 316 stainless steel. Section 2.5 provides more information about machining the stainless steel components.
+
+The Smartie Hopper Servo Arm should be glued to its servo horn using a steel epoxy adhesive such as Pratley Steel Quickset® Epoxy.
+
+The stainless steel brackets should be glued in place using a steel epoxy adhesive as well as fastened using countersunk machine screws. A high-strength threadlocker, such as LOCTITE® 270, should be used to glue the nuts in place.
+
+### 1.5. Labels
+
+Labels are used to provide electrical information and to orient the removable components.
+
+The labels should be printed using a label maker, such as the Brother PT-H110 label maker, using 12&nbsp;mm black on white laminated tape. The labels should then be affixed in position using a cyanoacrylate adhesive, such as Pattex Ultra Gel Super Glue, and sealed using a water-based satin clear coat.
+
+### 1.6. Connectors
+
+Neodymium disc magnets are used to connect the removable components. The magnets should be glued in place using a cyanoacrylate adhesive such as Pattex Ultra Gel Super Glue.
+
+It is important to ensure that the polarities of the corresponding magnets line up before gluing them in place. This can be achieved by first gluing a single magnet in place on one side. This magnet can then be used to get the orientation of the corresponding magnet on the opposite side, which can then be glued in place. All of the other magnets can then be glued using these two reference magnets.
+
+### 1.7. Fasteners
+
+All screws, bolts, and nuts used to construct and assemble the Smartie Sorter 3000 should be made out of stainless steel. The countersunk wood screws, machine screws, and countersunk machine screws should all have Pozidriv heads.
+
+The M6 bolt used in the Smartie Hopper Mechanism assembly should be cut to size and glued in place using a steel epoxy adhesive such as Pratley Steel Quickset® Epoxy.
+
+Threaded brass inserts are used to add threads to the 3D printed components. These threads are then used to fasten the servo motors to the 3D printed components.
+
+The guide holes for the brass inserts should have a diameter of about 0.9 times that of the knurled outer diameter of the brass inserts. The depths of the guide holes should be sized to provide enough space at the bottom for the melted plastic to flow into without pushing back up the brass inserts.
+
+The wall count of the 3D  printed components that house the brass inserts should be set to three perimeters. This ensures that there is sufficient plastic fo the brass inserts to melt into.
+
+The brass inserts can then be installed using specialised attachments, such as for a 900M soldering iron, to melt the brass inserts into place.
+
+## 2. Manufacturing
+
+The outlines of the wooden panels, supports, acrylic components, and stainless steel components have been exported as DXF files and are available in the [dxf_files](../manufacturing/dxf_files) folder. These DXF files can be used for laser cutting and CNC routing the different components out of their respective materials.
+
+Drawings to facilitate the machining of the angled features for the name sign at the top of the mini arcade game enclosure are available in the [drawings](../manufacturing/drawings) folder.
+
+### 2.1. Manufacturing Folder Structure
+
+The folder structure of the manufacturing folder is presented below:
+
+```
+.
+|__ manufacturing
+    |__ drawings
+    |   |__ acrylic_components
+    |   |__ stainless_steel_components
+    |   |__ wooden_panels
+    |__ dxf_files
+        |__ acrylic_components
+        |   |__ name_sign
+        |   |__ smartie_slide
+        |   |__ sorted_smarties_collector
+        |__ stainless_steel_components
+        |__ supports
+        |__ wooden_panels
+```
+
+### 2.2. Wooden Panels
+
+Laser cut the following DXF files in the [wooden_panels](../manufacturing/dxf_files/wooden_panels) folder out of 6 mm MDF to construct the mini arcade game enclosure:
+
+- 1 × back_panel.dxf
+- 1 × base_plate.dxf
+- 1 × bottom_access_panel.dxf
+- 1 × colour_detection_mechanism_top_panel.dxf
+- 1 × control_panel_bottom.dxf
+- 1 × control_panel_front.dxf
+- 1 × control_panel_top.dxf
+- 1 × front_panel.dxf
+- 1 × name_sign_bottom_panel.dxf
+- 2 × side_panel.dxf
+- 1 × sorted_smarties_cover.dxf
+- 1 × sorted_smarties_top_panel.dxf
+- 1 × top_access_panel.dxf
+- 1 × top_panel.dxf
+- 1 × unsorted_smarties_back_panel.dxf
+- 1 × unsorted_smarties_top_panel.dxf
+
+Afterwards, slopes for the name sign need to be added to the Back Panel, Name Sign Bottom Panel, and Top Panel. These slopes should be added according to the following drawings:
+
+- [DWG_1001_back_panel](../manufacturing/drawings/wooden_panels/DWG_1001_back_panel.pdf)
+- [DWG_1002_name_sign_bottom_panel](../manufacturing/drawings/wooden_panels/DWG_1002_name_sign_bottom_panel.pdf)
+- [DWG_1003_top_panel](../manufacturing/drawings/wooden_panels/DWG_1003_top_panel.pdf)
+
+### 2.3. Supports
+
+Use a CNC router to cut the following DXF files in the [supports](../manufacturing/dxf_files/supports) folder out of 12 mm pine:
+
+- 2 × base_plate_support.dxf
+- 2 × control_panel_support.dxf 
+- 1 × name_sign_support_left.dxf
+- 1 × name_sign_support_right.dxf
+
+Use a CNC router to cut the following DXF files in the [supports](../manufacturing/dxf_files/supports) folder out of 21 mm pine plywood:
+
+- 1 × smartie_feed_support.dxf
+
+Cut the following supports from 21 mm x 21 mm pine:
+
+| Quantity | Component                         | Length (mm) |
+|:--------:|-----------------------------------|------------:|
+|    1x    | Back Panel Support Left           |       478.6 |
+|    1x    | Back Panel Support Right          |       270.0 |
+|    1x    | Back Panel Support Middle         |       249.0 |
+|    1x    | Back Panel Support Bottom         |       228.0 |
+|    1x    | Sorted Smarties Top Support Left  |       142.0 |
+|    1x    | Sorted Smarties Top Support Right |        28.0 |
+
+### 2.4. Acrylic Components
+
+Laser cut the following DXF file in the [name_sign](../manufacturing/dxf_files/acrylic_components/name_sign) folder out of 6 mm clear acrylic to create the Name Sign:
+
+- 1 × name_sign.dxf
+
+Afterwards, the slopes at the top and bottom of the Name Sign component need to be added according to [DWG_201_name_sign](../manufacturing/drawings/acrylic_components/DWG_201_name_sign.pdf).
+
+Laser cut the following DXF files in the [smartie_slide](../manufacturing/dxf_files/acrylic_components/smartie_slide) folder out of 3 mm clear acrylic to construct the Smartie Slide:
+
+- 1 × back_panel.dxf
+- 1 × bottom_panel.dxf
+- 1 × front_panel.dxf
+- 2 × middle_panel.dxf
+- 2 × side_panel.dxf
+- 1 × slide_panel.dxf
+- 1 × top_panel.dxf
+
+Laser cut the following DXF files in the [sorted_smarties_collector](../manufacturing/dxf_files/acrylic_components/sorted_smarties_collector) folder out of 3 mm clear acrylic to construct the Sorted Smarties Collector:
+
+- 1 × back_panel.dxf
+- 3 × divider_bottom.dxf
+- 3 × divider_top.dxf
+- 1 × front_panel.dxf
+- 2 × horizontal_panel.dxf
+- 2 × side_panel.dxf
+- 1 × top_panel.dxf
+
+### 2.5. Stainless Steel Components
+
+Laser cut the following DXF files in the [stainless_steel_components](../manufacturing/dxf_files/stainless_steel_components) folder out of 3 mm 316 stainless steel:
+
+- 1 × mixer_arm.dxf
+- 1 × smartie_hopper_servo_arm.dxf
+
+Laser cut the following DXF files in the [stainless_steel_components](../manufacturing/dxf_files/stainless_steel_components) folder out of 2 mm 316 stainless steel:
+
+- 1 × name_sign_bottom_bracket.dxf
+- 1 × top_panel_bracket.dxf
+
+Afterwards, the stainless steel brackets need to be bent to shape. The brackets should be bent according to the following drawings:
+
+- [DWG_801_name_sign_bottom_bracket](../manufacturing/drawings/stainless_steel_components/DWG_801_name_sign_bottom_bracket.pdf)
+- [DWG_802_top_panel_bracket](../manufacturing/drawings/stainless_steel_components/DWG_802_top_panel_bracket.pdf)
+
+## 3. Fusion 360 Files
 
 All components, mechanisms, and assemblies were designed and modelled using Fusion 360.
 
 The CAD files have been exported and are available in the [fusion_360](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360) folder.
 
-### 2.1. Resources
+### 3.1. Resources
 
 The following Fusion 360 files are available in the fusion_360 folder:
 
 - Fusion 360 archive files (.f3d) of the components
-- Fusion 360 archive file (.f3z) of the Colour Detection Mechanism
-- Fusion 360 archive file (.f3z) of the Smartie Sorter
+- Fusion 360 archive files (.f3z) of the sub-assemblies
+- Fusion 360 archive file (.f3z) of the Colour Detection Mechanism assembly
+- Fusion 360 archive file (.f3z) of the Smartie Hopper Mechanism assembly
+- Fusion 360 archive file (.f3z) of the Smartie Sorter 3000 assembly
 
-### 2.2. Folder Structure
+### 3.2. Fusion 360 Folder Structure
 
 The folder structure of the fusion_360 folder is presented below:
 
@@ -92,22 +260,27 @@ The folder structure of the fusion_360 folder is presented below:
 .
 |__ fusion_360
     |__ assemblies
+    |   |__ acrylic_components
+    |   |__ conduits
+    |   |__ electronics
     |__ components
-        |__ 3d_printed_components
-        |__ acrylic_components
-            |__ sorted_smarties_collector_finger_joints
-            |__ unsorted_smarties_holder_finger_joints
-        |__ chocolates
-            |__ M&Ms
-            |__ smarties
-        |__ connectors
-        |__ electronics
-        |__ labels      
-        |__ supports
-        |__ wooden_panels
+    |   |__ 3d_printed_components
+    |   |__ acrylic_components
+    |   |   |__ smartie_slide
+    |   |   |__ sorted_smarties_collector
+    |   |__ chocolates
+    |   |   |__ M&Ms
+    |   |   |__ smarties
+    |   |__ connectors
+    |   |__ electronics
+    |   |__ fasteners
+    |   |__ labels
+    |   |__ stainless_steel_components      
+    |   |__ supports
+    |   |__ wooden_panels
+    |__ mechanisms
 ```
-The Smartie Sorter 3000 assembly is available in the top-level of the fusion_360 folder.
 
-The Colour Detection Mechanism assembly is available in the [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies) folder.
+The Smartie Sorter 3000 assembly is available in the root fusion_360 folder. The Colour Detection Mechanism and Smartie Hopper Mechanism assemblies are available in the [mechanisms](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/mechanisms) folder. The sub-assemblies used to assemble the main Smartie Sorter 3000 assembly are available in the [assemblies](https://github.com/pieterberg/Smartie-Sorter/tree/main/fusion_360/assemblies) folder.
 
 

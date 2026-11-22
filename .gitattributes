@@ -1,0 +1,16 @@
+# Project name: Smartie Sorter 3000
+# File type:    Git attributes
+# Created by:   Pieter van den Berg
+# Created on:   12 May 2026
+
+## Fusion 360 files
+*.f3d binary
+*.f3z binary
+
+## Affinity Designer files
+*.afdesign binary
+
+## Image file types
+*.png binary
+*.jpg binary
+
