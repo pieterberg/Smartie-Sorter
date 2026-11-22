@@ -16,6 +16,21 @@
 #include <EEPROM.h>
 #include <math.h>
 
+// Create enums to track the states of the operating properties
+enum CHOCOLATE_MODE: uint8_t {
+  SMARTIES  = 0,
+  M_AND_M_S = 1
+};
+
+enum SORTING_MODE: uint8_t {
+  UNCOLLATED = 0,
+  COLLATED   = 1
+};
+
+// Add the EEPROM addresses for the operating modes
+const byte eeAddressChocolateMode = 0;      // uint8_t (1 byte)
+const byte eeAddressSortingMode   = 1;      // uint8_t (1 byte)
+
 // Add the EEPROM addresses for the total number of sorted Smarties
 const byte eeAddressTotalNumberOfSortedSmartiesRed     = 2;       // uint16_t (2 bytes)
 const byte eeAddressTotalNumberOfSortedSmartiesOrange  = 4;       // uint16_t (2 bytes)
