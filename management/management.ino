@@ -78,10 +78,10 @@ void printMainMenu() {
   Serial.println();
 
   // Print the list of options
-  Serial.println(F("   1. Servo calibration"));
-  Serial.println(F("   2. Colour sensor calibration"));
-  Serial.println(F("   3. Sorting data"));
-  Serial.println(F("   4. EEPROM settings"));
+  Serial.println(F("   1. EEPROM settings"));
+  Serial.println(F("   2. Servo calibration"));
+  Serial.println(F("   3. Colour sensor calibration"));
+  Serial.println(F("   4. Sorting data"));
   Serial.println();
 
   // Read the selected option
@@ -94,12 +94,12 @@ void printMainMenu() {
 
   // Call the selected function
   switch (current_selection) {
-    case '3':
-      printSortingDataMenu();
-      break;
-    case '4':
+    case '1':
       printEEPROMMenu();
-      break;      
+      break; 
+    case '4':
+      printSortingDataMenu();
+      break;     
   }
 }
 
@@ -402,7 +402,6 @@ void initialiseEEPROM() {
   Serial.println(F("Initialisation complete"));
   Serial.println();
 }
-
 
 // A function asking for confirmation before resetting the number of sorted Smarties stored in the EEPROM
 void confirmResetNumberOfSortedSmarties() {
