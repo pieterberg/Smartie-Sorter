@@ -40,5 +40,9 @@ Table 1: EEPROM addresses
 |      `28`      | Number of sorted blue M&M's      | `uint16_t` |       2      |
 |      `30`      | Number of sorted brown M&M's     | `uint16_t` |       2      |
 |      `32`      | Number of unknown M&M's          | `uint16_t` |       2      |
-
+|      `34`      | Smartie Arm Servo stop 1         | `uint8_t`  |       1      |
+|      `35`      | Smartie Arm Servo stop 2         | `uint8_t`  |       1      |
+|      `36`      | Smartie Arm Servo stop 3         | `uint8_t`  |       1      |
+|      `37`      | Smartie Hopper Servo stop 1      | `uint8_t`  |       1      |
+|      `38`      | Smartie Hopper Servo stop 2      | `uint8_t`  |       1      |
 

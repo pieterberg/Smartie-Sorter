@@ -40,6 +40,15 @@ const byte eeAddressTotalNumberOfSortedMMsBlue    = 28;     // uint16_t (2 bytes
 const byte eeAddressTotalNumberOfSortedMMsBrown   = 30;     // uint16_t (2 bytes)
 const byte eeAddressTotalNumberOfSortedMMsUnknown = 32;     // uint16_t (2 bytes)
 
+// Add the EEPROM addresses for the Smartie Arm Servo stops
+const byte eeAddressSmartieArmServoStop1 = 34;      // uint8_t (1 byte)
+const byte eeAddressSmartieArmServoStop2 = 35;      // uint8_t (1 byte)
+const byte eeAddressSmartieArmServoStop3 = 36;      // uint8_t (1 byte)
+
+// Add the EEPROM addresses for the Smartie Hopper Servo stops
+const byte eeAddressSmartieHopperServoStop1 = 37;     // uint8_t (1 byte)
+const byte eeAddressSmartieHopperServoStop2 = 38;     // uint8_t (1 byte)
+
 void setup() {
 
   // Begin a serial channel
