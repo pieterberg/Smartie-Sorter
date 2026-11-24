@@ -12,19 +12,19 @@ const byte eeAddressChocolateMode = 0;      // enum (1 byte)
 const byte eeAddressSortingMode   = 1;      // enum (1 byte)
 
 // Create enums to track the states of the three operating properties
-enum SORTING_STATE {
-  SORTING,
-  NOT_SORTING
+enum SORTING_STATE: uint8_t {
+  NOT_SORTING = 0,
+  SORTING = 1
 };
 
-enum CHOCOLATE_MODE {
-  SMARTIES,
-  M_AND_M_S
+enum CHOCOLATE_MODE: uint8_t {
+  SMARTIES = 0,
+  M_AND_M_S = 1
 };
 
-enum SORTING_MODE {
-  UNCOLLATED,
-  COLLATED
+enum SORTING_MODE: uint8_t {
+  UNCOLLATED = 0,
+  COLLATED = 1
 };
 
 // Set the default values of the three operating properties
