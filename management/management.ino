@@ -106,6 +106,9 @@ void printMainMenu() {
     case '1':
       printEEPROMMenu();
       break; 
+    case '2':
+      printServoCalibrationMenu();
+      break;
     case '4':
       printSortingDataMenu();
       break;     
@@ -189,6 +192,44 @@ void printEEPROMMenu() {
       break;
     case '2':
       break;    
+  }
+}
+
+// A function for printing the servo calibration menu
+void printServoCalibrationMenu() {
+
+  // Create a variable for keeping track of the selected servo
+  char current_selection = '0';
+
+  // Print the introduction
+  Serial.println(F("Servo calibration menu"));
+  Serial.println(F("Please select an option..."));
+  Serial.println();
+
+  // Print the list of servos
+  Serial.println(F("   1. Calibrate smartie arm servo")); 
+  Serial.println(F("   2. Calibrate smartie hopper servo"));
+  Serial.println(F("   3. Return to the main menu"));
+  Serial.println();
+
+  // Read the selected servo
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3'));
+
+  // Print a divider
+  printDivider();
+
+  // Call the selected servo menu
+  switch (current_selection) {
+    case '1':
+      
+      break;
+    case '2':
+      
+      break;
+    case '3':
+      break;
   }
 }
 
