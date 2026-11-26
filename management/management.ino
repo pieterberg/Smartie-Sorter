@@ -223,12 +223,70 @@ void printServoCalibrationMenu() {
   // Call the selected servo menu
   switch (current_selection) {
     case '1':
+        printSmartieArmServoCalibrationMenu();
+      break;
+    case '2':
+      
+      break;
+    case '3':
+      break;
+  }
+}
+
+// A function for printing the smartie arm servo calibration menu
+void printSmartieArmServoCalibrationMenu() {
+
+  // Create a variable for keeping track of the selected servo
+  char current_selection = '0';
+
+  // Print the introduction
+  Serial.println(F("Smartie arm servo calibration menu"));
+  Serial.println(F("Please select an option..."));
+  Serial.println();
+
+  // Print the list of smartie arm servo calibration options
+  Serial.println(F("   1. Calibrate servo stop 1")); 
+  Serial.println(F("   2. Calibrate servo stop 2"));
+  Serial.println(F("   3. Calibrate servo stop 3"));
+  Serial.println(F("   4. View servo stop 1")); 
+  Serial.println(F("   5. View servo stop 2"));
+  Serial.println(F("   6. View servo stop 3"));
+  Serial.println(F("   7. Return to the servo calibration menu"));
+  Serial.println(F("   8. Return to the main menu"));
+  Serial.println();
+
+  // Read the selected option
+  do {
+    current_selection = Serial.read();
+  } while ((current_selection != '1') && (current_selection != '2') && (current_selection != '3') && (current_selection != '4') && (current_selection != '5') && (current_selection != '6') && (current_selection != '7') && (current_selection != '8'));
+
+  // Print a divider
+  printDivider();
+
+  // Call the selected option
+  switch (current_selection) {
+    case '1':
       
       break;
     case '2':
       
       break;
     case '3':
+
+      break;
+    case '4':
+      
+      break;
+    case '5':
+
+      break;  
+    case '6':
+
+      break;
+    case '7': 
+      printServoCalibrationMenu();
+      break;
+    case '8':
       break;
   }
 }
